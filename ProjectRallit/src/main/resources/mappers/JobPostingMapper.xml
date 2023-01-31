@@ -4,7 +4,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.human.dao.JobPostingDAO">
-<insert id="create">insert into jobPosting 
+<insert id="insert">insert into jobPosting 
 (textNumber,title,company_id,deteCreated,deadline,occupation,minCareer,maxCareer,
 province,city,mainWork,preferential,welfare,qualifications,holdState)
 values (jobPosting_seq.nextval,#{title},#{company_id},sysdate, #{deadline},#{occupation},#{minCarrer},#{maxCareer},
@@ -35,7 +35,7 @@ update jobPosting set holdState=2 where textNumber=#{textNumber}</update>
 
 <delete id="delete"> delete from jobPosting where textNumber = #{textNumber} </delete><!-- 삭제(admin) -->
 
-<select id="listAll" resultType="com.human.dto.JobPostingDto">
+<select id="selectAll" resultType="com.human.dto.JobPostingDto"> <!-- 채용공고 전체 조회 -->
 <![CDATA[ select * from JobPosting where holdState=0 and textnumber > 0 order by textnumber desc, regdate desc ]]>
  
 </select>

@@ -40,7 +40,4 @@ public class HomeController {
 	public String adminlogin(Locale locale, Model model) {
 		return "admin/adminlogin";
 	}
-	
-	
-	
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.human.dao.JobPostingDAO">
+<insert id="create">insert into jobPosting 
+(textNumber,title,company_id,deteCreated,deadline,occupation,minCareer,maxCareer,
+province,city,mainWork,preferential,welfare,qualifications,holdState)
+values (seq_board.nextval,#{title},#{company_id},sysdate, #{deadline},#{occupation},#{minCarrer},#{maxCareer},
+#{province},#{city},#{mainWork},#{preferential},#{welfare},#{qualifications},#{holdState})</insert>
+
+<select id="read" resultType="JobPostingDto"> <!-- Select One -->
+select * from JobPosting where textNumber = #{textNumber} and holdState=0</select>
+
+<update id="update"> update jobPosting set 
+title =#{title}, content =#{content} where textNumber = #{textNumber} </update>
+
+
+<delete id="delete"> delete from jobPosting where textNumber = #{textNumber} </delete>
+<select id="listAll" resultType="com.human.dto.JobPostingDto">
+
+<![CDATA[ select * from JobPosting where textnumber > 0 order by textnumber desc, regdate desc ]]>
+ 
+</select>
+</mapper>

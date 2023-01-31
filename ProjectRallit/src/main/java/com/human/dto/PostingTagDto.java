@@ -5,6 +5,13 @@ public class PostingTagDto {
 	private String languageTag;
 	private String modifyTag; // 수정 후 태그
 
+	public PostingTagDto() {}
+	public PostingTagDto(int textNumber, String languageTag) {
+		super();
+		this.textNumber = textNumber;
+		this.modifyTag = languageTag;
+	}
+	
 	@Override
 	public String toString() {
 		return "PostingTagDto [textNumber=" + textNumber + ", languageTag=" + languageTag + "]";

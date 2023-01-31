@@ -1,10 +1,9 @@
-package com.human.dao;
+package com.human.service;
 
 import java.util.List;
-
 import com.human.dto.JobPostingDto;
 
-public interface JobPostingDao {
+public interface IJobPostingService {
 	public void insert(JobPostingDto dto) throws Exception;
 	public JobPostingDto read(int textNumber) throws Exception;
 	public List<JobPostingDto> readHoldState() throws Exception;

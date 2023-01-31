@@ -53,6 +53,7 @@
 			<version>4.2</version>
 		</dependency>
 		<!-- Spring Security -->
+		<!-- Spring Security -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-core</artifactId>

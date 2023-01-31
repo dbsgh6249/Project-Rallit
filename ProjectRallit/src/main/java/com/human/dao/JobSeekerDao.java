@@ -1,6 +1,6 @@
 package com.human.dao;
 
-public interface IJobSeekerDao {
+public interface JobSeekerDao {
 	public void insert(JobSeekerDto dto) throws Exception;
 	public JobSeekerDto select(String seeker_id) throws Exception;
 	public List<JobSeekerDto> selectAll() throws Exception;

@@ -1,6 +1,6 @@
 package com.human.dao;
 
-public interface ICompanyDao {
+public interface CompanyDao {
 	public void insert(CompanyDto dto) throws Exception;
 	public CompanyDto select(String company_id) throws Exception;
 	public List<CompanyDto> selectAll() throws Exception;

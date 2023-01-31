@@ -3,6 +3,7 @@ package com.human.dto;
 public class PostingTagDto {
 	private int textNumber;
 	private String languageTag;
+	private String modifyTag; // 수정 후 태그
 
 	@Override
 	public String toString() {

@@ -27,7 +27,7 @@ public class JobSeekerDto {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		jobSeekerDto other = (jobSeekerDto) obj;
+		JobSeekerDto other = (JobSeekerDto) obj;
 		if (seeker_id == null) {
 			if (other.seeker_id != null)
 				return false;

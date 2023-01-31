@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.human.dao.JobPostingDAO">
+<insert id="create">insert into jobPosting 
+(textNumber,title,company_id,deteCreated,deadline,occupation,minCareer,maxCareer,
+province,city,mainWork,preferential,welfare,qualifications,holdState)
+values (jobPosting_seq.nextval,#{title},#{company_id},sysdate, #{deadline},#{occupation},#{minCarrer},#{maxCareer},
+#{province},#{city},#{mainWork},#{preferential},#{welfare},1)</insert>
+
+<select id="read" resultType="com.human.dto.JobPostingDto"> <!-- 채용공고 상세페이지(Select One) -->
+select * from JobPosting where textNumber = #{textNumber}</select>
+
+<select id="readHoldState" resultType="com.human.dto.JobPostingDto"> <!-- 승인요청 목록 --> 
+select * from JobPosting where holdState=1 order by textNum
+</select>
+
+<select id="readDelete" resultType="com.human.dto.JobPostingDto"> <!-- 삭제요청 목록 -->
+select * from JobPosting where holdState=2 order by textNum
+</select>
+
+<update id="updateJobPosting"> <!-- 채용공고 수정(요청) -->
+update jobPosting set 
+title =#{title},deadline=#{deadline},occupation=#{occupation},minCareer=#{minCareer},maxCareer=#{maxCareer},
+province=#{province},city=#{city},address=#{address},mainWork=#{mainWork},preferential=#{preferential},
+qualifications=#{qualifications} and holdState=1 where textNumber = #{textNumber} </update>
+
+<update id="updateHoldState"> <!-- 등록 or 수정사항 승인 -->
+update jobPosting set holdState=0 where textNumber=#{textNumber}</update>
+
+<update id="updateDelete"> <!-- 삭제 요청 -->
+update jobPosting set holdState=2 where textNumber=#{textNumber}</update>
+
+<delete id="delete"> delete from jobPosting where textNumber = #{textNumber} </delete><!-- 삭제(admin) -->
+
+<select id="listAll" resultType="com.human.dto.JobPostingDto">
+<![CDATA[ select * from JobPosting where holdState=0 and textnumber > 0 order by textnumber desc, regdate desc ]]>
+ 
+</select>
+</mapper>

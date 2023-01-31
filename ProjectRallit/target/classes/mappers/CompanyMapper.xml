@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.human.dao.CompanyDao">
+<insert id="insert">
+insert into Company
+values(#{company_id},#{pw},#{company_manager},#{phone},#{company_name},#{introduce},#{oneWord},#{companyPicture},9)
+</insert>
+<select id="select" resultType="com.human.dto.CompanyDto">
+select * from Company where company_id=#{company_id}
+</select>
+<select id="selectAll" resultType="com.human.dto.CompanyDto">
+select * from Company order by company_id
+</select>
+
+<delete id="delete">
+delete from Company where company_id=#{company_id}
+</delete>
+<update id="update">
+update Company set pw=#{pw},company_manager=#{company_manager},phone=#{phone},company_name=#{company_name},
+introduce=#{introduce},oneWord=#{oneWord},companyPicture=#{companyPicture}
+ where company_id=#{company_id}
+</update>
+
+<select id="selectMaxId" resultType="Integer">
+select max(id) as id from customer
+</select>
+
+
+
+</mapper>
+
+
+
+
+
+
+
+
+

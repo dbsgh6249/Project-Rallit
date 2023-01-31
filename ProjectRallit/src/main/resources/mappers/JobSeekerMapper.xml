@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.human.dao.JobSeekerDao">
+<insert id="insert">
+insert into JobSeeker
+values(#{seeker_id},#{pw},#{phone},#{province},#{city},#{address},1)
+</insert>
+<select id="select" resultType="com.human.dto.JobSeekerDto">
+select * from JobSeeker where seeker_id=#{seeker_id}
+</select>
+<select id="selectAll" resultType="com.human.dto.JobSeekerDto">
+select * from JobSeeker order by seeker_id
+</select>
+
+<delete id="delete">
+delete from JobSeeker where seeker_id=#{seeker_id}
+</delete>
+<update id="update">
+update JobSeeker set pw=#{pw},phone=#{phone},province=#{province},city=#{city}
+ where seeker_id=#{seeker_id}
+</update>
+
+
+</mapper>
+
+
+
+
+
+
+
+
+

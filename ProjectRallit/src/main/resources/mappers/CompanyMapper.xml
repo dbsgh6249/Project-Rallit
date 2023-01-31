@@ -24,11 +24,6 @@ introduce=#{introduce},oneWord=#{oneWord},companyPicture=#{companyPicture}
  where company_id=#{company_id}
 </update>
 
-<select id="selectMaxId" resultType="Integer">
-select max(id) as id from customer
-</select>
-
-
 
 </mapper>
 

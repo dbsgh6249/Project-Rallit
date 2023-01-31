@@ -1,0 +1,60 @@
+.container{
+    margin-top: 200px;     
+    text-align: center;  
+    margin-left: 20px;
+    margin-right: 20px;   
+}
+::placeholder{
+    position: relative;
+    color: #ced4ec;
+}
+.loginbar input{
+    border-color:#ced4ec;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    height: 48px;
+    width: 312px;   
+    margin-bottom: -10px;
+    padding-left: 10px;
+}
+.loginbar input[type="submit"]{
+    cursor: pointer;
+}
+.loginbar input:focus{
+border-color:#00C471;
+outline: none;
+}
+.loginbar input[type="submit"]{
+    height: 44px;
+    width: 320px;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    background-color: #00C471;
+}
+.loginbar p{
+    font-size: 15px;
+}
+a{
+    position: relative;top: 20px;
+    color: gray;
+    font-size: 12px;
+}
+.space{
+    position: relative;top: 18px;
+    color: gray;
+    font-size: 10px;
+    margin-left: 5px;
+}
+.fastlogin{
+    font-weight: bolder;
+    color: #ced4ec;
+    font-size: 10px;
+    margin-top: 40px;
+}
+.fastlogin a img{ 
+    height: 60px;       
+}
+
+

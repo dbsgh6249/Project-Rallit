@@ -1,0 +1,68 @@
+body,
+html {
+    font-size: 15px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    height: 100%;
+    -webkit-tap-highlight-color: transparent
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased
+}
+
+body,
+body * {
+    box-sizing: border-box
+}
+
+#root {
+    overflow-x: hidden;
+    height: 100%
+}
+
+button {
+    padding: 0
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+input[type=number] {
+    -moz-appearance: textfield
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-display: swap;
+    src: local("Pretendard Bold"), url(/static/media/Pretendard-Bold.subset.9651800b.woff2) format("woff2"), url(/static/media/Pretendard-Bold.subset.22e79aaf.woff) format("woff")
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-display: swap;
+    src: local("Pretendard Medium"), url(/static/media/Pretendard-Medium.subset.2b9770ac.woff2) format("woff2"), url(/static/media/Pretendard-Medium.subset.ecb54fbd.woff) format("woff")
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-display: swap;
+    src: local("Pretendard Regular"), url(/static/media/Pretendard-Regular.subset.2c5f464a.woff2) format("woff2"), url(/static/media/Pretendard-Regular.subset.248f1c48.woff) format("woff")
+}
+
+/*# sourceMappingURL=main.586f5b29.chunk.css.map */

@@ -42,5 +42,5 @@ public class PostingTagServiceImpl implements IPostingTagService{
 		PostingTagDao dao = sqlSession.getMapper(PostingTagDao.class);
 		dao.update(dto);
 	}
-// test
+
 }

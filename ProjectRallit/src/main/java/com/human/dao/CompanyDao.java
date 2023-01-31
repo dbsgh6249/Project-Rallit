@@ -1,5 +1,9 @@
 package com.human.dao;
 
+import java.util.List;
+
+import com.human.dto.CompanyDto;
+
 public interface CompanyDao {
 	public void insert(CompanyDto dto) throws Exception;
 	public CompanyDto select(String company_id) throws Exception;

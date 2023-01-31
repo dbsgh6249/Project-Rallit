@@ -1,5 +1,9 @@
 package com.human.dao;
 
+import java.util.List;
+
+import com.human.dto.JobPostingDto;
+
 public interface JobPostingDao {
 	public void create(JobPostingDto dto) throws Exception;
 	public JobPostingDto read(int textNumber) throws Exception;

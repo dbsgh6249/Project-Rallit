@@ -8,14 +8,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 insert into PostingTag
 values(jobposting_seq.currval ,#{languageTag})
 </insert>
-<select id="select" resultType="com.human.dto.PostingTagDto">
+
+<select id="select" resultType="com.human.dto.PostingTagDto"><!-- 글번호에 해당하는 태그 -->
 select * from PostingTag where textNumber=#{textNumber}
 </select>
-<select id="selectAll" resultType="com.human.dto.PostingTagDto">
-select * from PostingTag order by textNumber
-</select>
 
-<delete id="delete"> <!-- 채용공고 삭제시 해당 태그 전체 삭제 -->
+<delete id="delete"> <!-- 채용공고 삭제시 해당 글번호에 해당하는 태그 전체 삭제 -->
 delete from PostingTag where textNumber=#{textNumber}
 </delete>
 
@@ -27,10 +25,6 @@ delete from PostingTag where textNumber=#{textNumber} and languageTag=#{language
 update PostingTag set languageTag=#{modifyTag}
  where textNumber=#{textNumber} and languageTag=#{languageTag}
 </update>
-
-<select id="selectMaxId" resultType="Integer">
-select max(id) as id from customer
-</select>
 
 
 

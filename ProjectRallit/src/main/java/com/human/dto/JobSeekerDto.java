@@ -1,6 +1,6 @@
 package com.human.dto;
 
-public class jobSeekerDto {
+public class JobSeekerDto {
 	private String seeker_id;
 	private String pw;
 	private String phone;
@@ -9,7 +9,7 @@ public class jobSeekerDto {
 	private int authority;
 	@Override
 	public String toString() {
-		return "jobSeeker [seeker_id=" + seeker_id + ", pw=" + pw + ", phone=" + phone + ", city=" + city + ", address="
+		return "JobSeeker [seeker_id=" + seeker_id + ", pw=" + pw + ", phone=" + phone + ", city=" + city + ", address="
 				+ address + ", authority=" + authority + "]";
 	}
 	@Override

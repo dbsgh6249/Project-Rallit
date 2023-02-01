@@ -26,7 +26,6 @@ public class JobSeekerController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(JobSeekerController.class);
 	
-	//####은 추후 수정
 	@RequestMapping(value = "/insert", method = RequestMethod.GET)
 	//insert 페이지로이동
 	public String insert() {
@@ -55,15 +54,13 @@ public class JobSeekerController {
 		jobSeekerservice.delete(seeker_id);
 		ra.addFlashAttribute("msg","success");
 		return "redirect:/jobSeeker/selectAll";
-	}
-	
+	}	
 	@RequestMapping(value = "/select", method = RequestMethod.GET)
 	//자신의 회원정보 출력화면
 	public String selectName(String seeker_id,Model model) throws Exception {
 		model.addAttribute("dto", jobSeekerservice.select(seeker_id) );
 		return "/jobSeeker/select";
-	}
-	
+	}	
 	@RequestMapping(value = "/selectAll", method = RequestMethod.GET)
 	//관리자가 모든 회원정보 열람
 	public String selectAll(Model model) throws Exception {

@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.human.dto.PostingTagDto;
 
-public interface PostingTagDao {
+public interface IPostingTagDao {
 	public void insert(PostingTagDto dto) throws Exception;
 	public List<PostingTagDto> select(int posting_num) throws Exception;
 	public void delete(int posting_num) throws Exception;

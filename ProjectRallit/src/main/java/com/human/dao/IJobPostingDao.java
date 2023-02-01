@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.human.dto.JobPostingDto;
 
-public interface JobPostingDao {
+public interface IJobPostingDao {
 	public void insert(JobPostingDto dto) throws Exception;
 	public JobPostingDto selectOne(String posting_num) throws Exception;
 	public List<JobPostingDto> selectCompanyPosting() throws Exception;

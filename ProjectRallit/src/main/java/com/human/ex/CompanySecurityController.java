@@ -11,15 +11,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 
 @Controller
-public class AdminController {
+public class CompanySecurityController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(AdminController.class);
+	private static final Logger logger = LoggerFactory.getLogger(CompanySecurityController.class);
 	
-	@RequestMapping(value = "/admin/holdstate", method = RequestMethod.GET)
-	public String admin() {
-
-		return "/admin/holdstate";
+	@RequestMapping(value = "/company/member", method = RequestMethod.GET)
+	public String member(Locale locale, Model model) {
+	
+		return "/company/member";
 	}
-	
 	
 }

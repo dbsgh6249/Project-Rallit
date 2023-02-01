@@ -13,35 +13,35 @@
 	<!-- URL 설정 -->
 	<http use-expressions="true">
 	<csrf disabled="true"/>
-		<intercept-url pattern="/seeker/" access="permitAll" /><!--permitAll:모든  사용자 -->
+		<intercept-url pattern="/jobSeeker/" access="permitAll" /><!--permitAll:모든  사용자 -->
 		<intercept-url pattern="/company/**" access="hasAnyRole('COMPANY,ADMIN')" />
 		<intercept-url pattern="/admin/**" access="hasRole('ADMIN')" /> 
 	<!-- 	<intercept-url pattern="/admin/**" access="permitAll" /> -->
  
-		<form-login login-page="/admin/adminlogin"
+		<form-login login-page="/jobSeeker/login"
 			authentication-success-handler-ref="LoginSuccess"
-			default-target-url="/user/user"
-			authentication-failure-url="/user/login?error"
+			default-target-url="/jobSeeker/register"
+			authentication-failure-url="/jobSeeker/login?error"
 			username-parameter="id" password-parameter="password" />
-		<logout logout-url="/user/logout" invalidate-session="true" />
+		<logout logout-url="/jobSeeker/logout" invalidate-session="true" />
 		<!--화면 없이 해당 주소로 오면 session이 지워지고 로그아웃이 진행됨 -->
 		<!-- 에러 났을 때 에러 처리하는 페이지 -->
-		<access-denied-handler error-page="/user/error" />
+		<access-denied-handler error-page="/jobSeeker/error" />
 	</http>
 
 	<!-- BCryptPasswordEncoder 클래스 빈 추가  -->
-	<beans:bean id="bcryptPasswordEncoder" 
+	<!-- <beans:bean id="bcryptPasswordEncoder" 
 	             class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
-	
+	 -->
 	<!-- provider -->
 	<authentication-manager>
 		<authentication-provider>
 		  <!-- 로그인 시 비밀번호를 암호화해서 DB에서 조회한 비밀번호와 비교 -->
-		    <password-encoder ref="bcryptPasswordEncoder"/>
+		   <!--  <password-encoder ref="bcryptPasswordEncoder"/> -->
 		    
 			<jdbc-user-service
-				authorities-by-username-query="select user_ID, authority from authorities where user_ID = ?"
-				users-by-username-query="select user_ID password, enabled from users where user_ID = ?"
+				authorities-by-username-query="select user_ID, password, 1 from jobseeker where user_ID, = ?"
+				users-by-username-query="select user_ID, authority from authorities where user_ID, = ?"
 				role-prefix="" data-source-ref="dataSource" />
 		</authentication-provider>
 	</authentication-manager>

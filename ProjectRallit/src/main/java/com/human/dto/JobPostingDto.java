@@ -19,6 +19,7 @@ public class JobPostingDto {
 	private String preferential;
 	private String welfare;
 	private String qualifications;
+	private int holdState;
 	
 
 	@Override

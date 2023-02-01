@@ -7,6 +7,7 @@ import com.human.dto.JobPostingDto;
 public interface JobPostingDao {
 	public void insert(JobPostingDto dto) throws Exception;
 	public JobPostingDto read(int textNumber) throws Exception;
+	public List<JobPostingDto> readCompanyPosting(String company_id) throws Exception;
 	public List<JobPostingDto> readHoldState() throws Exception;
 	public List<JobPostingDto> readDelete() throws Exception;
 	public void delete(int textNumber) throws Exception;

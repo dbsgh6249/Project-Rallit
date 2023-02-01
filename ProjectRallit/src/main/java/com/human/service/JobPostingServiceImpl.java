@@ -26,6 +26,12 @@ public class JobPostingServiceImpl implements IJobPostingService {
 	}
 
 	@Override
+	public List<JobPostingDto> readCompanyPosting(String company_id) throws Exception {
+		JobPostingDao dao = sqlSession.getMapper(JobPostingDao.class);
+		return dao.readCompanyPosting(company_id);
+	}
+	
+	@Override
 	public List<JobPostingDto> readHoldState() throws Exception {
 		JobPostingDao dao = sqlSession.getMapper(JobPostingDao.class);
 		return dao.readHoldState();

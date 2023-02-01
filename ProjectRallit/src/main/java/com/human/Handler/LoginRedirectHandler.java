@@ -30,11 +30,11 @@ public class LoginRedirectHandler implements AuthenticationSuccessHandler {
 			return;
 		}
 		if(roleNames.contains("ROLE_COMPANY")) {
-			response.sendRedirect("/ex/home");
+			response.sendRedirect("/ex/main/main");
 			return;
 		}
 		if(roleNames.contains("ROLE_SEEKER")) {
-			response.sendRedirect("/ex/home");
+			response.sendRedirect("/ex/main/main");
 			return;
 		}
 	}

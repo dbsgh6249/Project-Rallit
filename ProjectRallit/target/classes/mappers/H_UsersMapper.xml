@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.human.dao.H_UsersDao">
+<insert id="insert">
+insert into h_users
+values(#{user_id},#{user_pw},#{user_name},1,#{user_phone},#{user_company},#{user_province},#{user_city},#{user_address})
+</insert>
+
+<select id="select" resultType="com.human.dto.H_UsersDto"> <!-- 마이페이지 정보조회(select One), 로그인 시 사용 -->
+select * from h_users where user_id=#{user_id}
+</select>
+<select id="selectAll" resultType="com.human.dto.H_UsersDto"> <!-- admin 회원관리(select All) -->
+select * from h_users user_id by user_id
+</select>
+
+<delete id="delete">
+delete from h_users where user_id=#{user_id}
+</delete>
+<update id="update">
+update h_users set user_pw=#{user_pw},user_name=#{user_name},user_phone=#{user_phone},user_company=#{user_company},
+province=#{user_province},user_city=#{user_city}, address=#{address}
+ where user_id=#{user_id}
+</update>
+
+
+</mapper>
+
+
+
+
+
+
+
+
+

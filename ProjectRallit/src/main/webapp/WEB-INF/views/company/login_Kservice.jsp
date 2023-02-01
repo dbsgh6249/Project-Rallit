@@ -11,9 +11,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>기업회원 로그인</title>
 
-<link rel="stylesheet" href="resources/css/1.css">
-<link rel="stylesheet" href="resources/css/2.css">
 <link rel="stylesheet" href="resources/css/loginK.css">
+<link rel="stylesheet" href="resources/css/loginK2.css">
+<link rel="stylesheet" href="resources/css/loginK3.css">
 </head>
 
 <body>

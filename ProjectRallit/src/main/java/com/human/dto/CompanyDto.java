@@ -10,12 +10,12 @@ public class CompanyDto {
 	private String introduce;
 	private String oneword;
 	private String companyPicture;
-	private String authority;
+	private int authority; // 사용 가/부 여부 확인(가:1 부:0)
 	
-	public String getAuthority() {
+	public int getAuthority() {
 		return authority;
 	}
-	public void setAuthority(String authority) {
+	public void setAuthority(int authority) {
 		this.authority = authority;
 	}
 	@Override

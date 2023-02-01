@@ -6,12 +6,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="com.human.dao.CompanyDao">
 <insert id="insert">
 insert into Company
-values(#{company_id},#{pw},#{company_manager},#{phone},#{company_name},#{introduce},#{oneWord},#{companyPicture},'9')
+values(#{company_id},#{pw},#{company_manager},#{phone},#{company_name},#{introduce},#{oneWord},#{companyPicture},1)
 </insert>
-<select id="select" resultType="com.human.dto.CompanyDto">
+<select id="select" resultType="com.human.dto.CompanyDto"> <!-- 마이페이지 정보조회(Select One), 로그인 시 사용 -->
 select * from Company where company_id=#{company_id}
 </select>
-<select id="selectAll" resultType="com.human.dto.CompanyDto">
+<select id="selectAll" resultType="com.human.dto.CompanyDto"> <!-- admin의 기업회원 정보 조회 -->
 select * from Company order by company_id
 </select>
 

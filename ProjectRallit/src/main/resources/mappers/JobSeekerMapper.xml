@@ -6,12 +6,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="com.human.dao.JobSeekerDao">
 <insert id="insert">
 insert into JobSeeker
-values(#{seeker_id},#{pw},#{phone},#{province},#{city},#{address},'1')
+values(#{seeker_id},#{pw},#{phone},#{province},#{city},#{address},1)
 </insert>
-<select id="select" resultType="com.human.dto.JobSeekerDto">
+
+
+<select id="select" resultType="com.human.dto.JobSeekerDto"> <!-- 마이페이지 정보조회(select One), 로그인 시 사용 -->
 select * from JobSeeker where seeker_id=#{seeker_id}
 </select>
-<select id="selectAll" resultType="com.human.dto.JobSeekerDto">
+<select id="selectAll" resultType="com.human.dto.JobSeekerDto"> <!-- admin 회원관리(select All) -->
 select * from JobSeeker order by seeker_id
 </select>
 

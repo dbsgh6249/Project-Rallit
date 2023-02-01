@@ -6,7 +6,8 @@ public class JobSeekerDto {
 	private String phone;
 	private String city;
 	private String address;
-	private String authority;
+	private int authority; // 사용 가/부 여부 확인(가:1 부:0)
+	
 	@Override
 	public String toString() {
 		return "JobSeeker [seeker_id=" + seeker_id + ", pw=" + pw + ", phone=" + phone + ", city=" + city + ", address="
@@ -65,10 +66,10 @@ public class JobSeekerDto {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public String getAuthority() {
+	public int getAuthority() {
 		return authority;
 	}
-	public void setAuthority(String authority) {
+	public void setAuthority(int authority) {
 		this.authority = authority;
 	}
 }

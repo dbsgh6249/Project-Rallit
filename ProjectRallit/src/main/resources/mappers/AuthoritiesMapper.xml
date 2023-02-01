@@ -23,7 +23,7 @@ select * from Authorities where authority='role_company'
 </select>
 
 
-<delete id="delete"> <!-- 회원탈퇴시 권한 함께 삭제(아이디 중복우려 있어 권한조건 추가함) -->
+<delete id="delete"> <!-- 회원탈퇴시 권한 함께 삭제(아이디 중복우려 있어 권한조건 추가) -->
 delete from Authorities where user_id=#{user_id} and authority=#{authority}
 </delete>
 

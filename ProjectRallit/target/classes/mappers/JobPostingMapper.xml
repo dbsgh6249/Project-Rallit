@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.human.dao.JobPostingDAO">
+<insert id="insert">insert into jobPosting 
+(posting_num,title,user_id,dateCreated,deadline,occupation,minCareer,maxCareer,
+text1,text2,text3,text4,text5,text6,picture)
+values (jobPosting_seq.nextval,#{title},#{user_id},sysdate, #{deadline},#{occupation},#{minCarrer},#{maxCareer},
+#{text1},#{text2},#{text3},#{text4},#{text5},#{text6},#{picture})</insert>
+
+<select id="read" resultType="com.human.dto.JobPostingDto"> <!-- 채용공고 상세페이지(Select One) -->
+select * from posting_num_seq where posting_num = #{posting_num}
+</select>
+
+<select id="readCompanyPosting" resultType="com.human.dto.JobPostingDto"> <!-- 기업회원 마이페이지에서 조회되는 공고 목록 -->
+select * from JobPosting where user_id=#{user_id} order by posting_num
+</select>
+
+<update id="updateJobPosting"> <!-- 채용공고 수정 -->
+update jobPosting set 
+title =#{title},deadline=#{deadline},occupation=#{occupation},minCareer=#{minCareer},maxCareer=#{maxCareer},
+text1=#{text1},text2=#{text2},text3=#{text3},text4=#{text4},text5=#{text5},
+text6=#{text6},picture=#{picture}  where posting_num = #{posting_num} </update>
+
+<delete id="delete"> delete from jobPosting where posting_num = #{posting_num} </delete><!-- 삭제(admin) -->
+
+<select id="selectAll" resultType="com.human.dto.JobPostingDto"> <!-- 채용공고 전체 조회 -->
+<![CDATA[ select * from JobPosting where posting_num > 0 order by posting_num desc, dateCreated desc ]]>
+ 
+</select>
+</mapper>

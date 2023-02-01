@@ -3980,3 +3980,76 @@ div + .css-fi5x0a {
         align-items: center;
     }
 }
+@font-face {
+    font-family: Pretendard;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Pretendard Bold"), url(/fonts/Pretendard/Pretendard-Bold.subset.woff2) format("woff2"), url(/fonts/Pretendard/Pretendard-Bold.subset.woff) format("woff")
+}
+
+@font-face {
+    font-family: Pretendard;
+    font-weight: 500;
+    font-display: swap;
+    src: local("Pretendard Medium"), url(/fonts/Pretendard/Pretendard-Medium.subset.woff2) format("woff2"), url(/fonts/Pretendard/Pretendard-Medium.subset.woff) format("woff")
+}
+
+@font-face {
+    font-family: Pretendard;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Pretendard Regular"), url(/fonts/Pretendard/Pretendard-Regular.subset.woff2) format("woff2"), url(/fonts/Pretendard/Pretendard-Regular.subset.woff) format("woff")
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, Helvetica Neue, Segoe UI, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #21252a;
+    background-color: #fff;
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+body::-webkit-scrollbar {
+    display: none
+}
+
+body>div {
+    position: relative;
+    z-index: 0
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+* {
+    box-sizing: border-box
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap
+}
+
+@media (min-width:769px) {
+    body.header--fixed main {
+        margin-top: 60px
+    }
+
+    body.header--fixed #__next>header {
+        position: fixed
+    }
+}

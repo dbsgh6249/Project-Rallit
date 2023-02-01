@@ -2,14 +2,10 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
-<!-- 수정이 아주 많이 필요한 상태  -->
-<!-- 수정이 아주 많이 필요한 상태  -->
-<!-- 수정이 아주 많이 필요한 상태  -->
-<!-- 수정이 아주 많이 필요한 상태  -->
+
 <head>
-    <link rel="stylesheet" href="sp.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script type="text/javascript" src="manifest.json"></script>
+    <link rel="stylesheet" href="resources/css/main.css">
+    <script type="text/javascript" src="resources/manifest.json"></script>
     <style>
 
     </style>
@@ -27,15 +23,11 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-WGJ7X69');</script>
     <meta charset="utf-8">
-    <title>IT 인재 채용 플랫폼 - 랠릿</title>
+    <title>휴먼 프로젝트 - 랠릿</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <meta name="title" content="IT 인재 채용 플랫폼 - 랠릿">
-    <meta name="description" content="업계에서 검증된 회사들의 채용 채용 공고를 랠릿에서 만나보세요">
-    <meta name="robots" content="index, follow">
     <meta name="thumbnail" content="https://cdn.rallit.com/image/meta-image.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.rallit.com/">
-    <meta property="og:title" content="IT 인재 채용 플랫폼 - 랠릿">
     <meta property="og:image" content="https://cdn.rallit.com/image/meta-image.png">
     <meta property="og:description" content="업계에서 검증된 회사들의 채용 채용 공고를 랠릿에서 만나보세요">
     <meta property="og:site_name" content="랠릿">
@@ -60,8 +52,8 @@
     <meta name="next-head-count" content="38">
 </head>
 
-<body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGJ7X69" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+<!-- <body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGJ7X69" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript> -->
     <div id="__next" data-reactroot="">
         <section class="inflab-integrated css-1cp3pcs">
             <div class="inflab-integrated__header">
@@ -86,7 +78,7 @@
                                             fill="#00CCAA"></path>
                                     </svg></div><span>채용</span>
                             </a></li>
-                    </ul><a href="https://business.rallit.com">
+                    </ul><a href="https://business.rallit.com"> <!--기업서비스 로그인 링크-->
                         <p class="css-11cix4b">기업 서비스</p>
                     </a>
                 </div>
@@ -375,273 +367,70 @@
 
                     <!--------------------------채용중인 공고 껍데기 자리----------------------->
                     <ul class="css-1nwykk">
-                        <li>
-                            <article class="css-1pr9edg"><a href="/positions/1235">
-                                    <figure class="css-1gd0osy"><img alt="주식회사 게임듀오 대표이미지" sizes="100vw"
-                                            srcset="https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=640 640w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 750w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 828w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1080w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1200w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1920w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 2048w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 3840w"
-                                            src="https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720"
-                                            decoding="async" data-nimg="future-fill" loading="lazy"
-                                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
-                                    </figure>
-                                    <div class="css-1gw9rd1">
-                                        <div>
-                                            <div role="button" tabindex="0">
-                                                <p class="summary__company-name css-fk1zjv">주식회사 게임듀오</p>
+                        <c:forEach var="test" items="${test }"> <!-- c태그 forEach 실행 시작(채용공고 데이터) -->
+                            <li>
+                                <article class="css-1pr9edg">
+                                    <a href="/positions/1235">
+                                        <figure class="css-1gd0osy"> <!-- 이 부분 이미지 삽입 방식 수정 예정 -->
+                                            <img alt="주식회사 게임듀오 대표이미지" sizes="100vw"
+                                                srcset="https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=640 640w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 750w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 828w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1080w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1200w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1920w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 2048w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 3840w"
+                                                src="https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720"
+                                                decoding="async" data-nimg="future-fill" loading="lazy"
+                                                style="position: absolute; height: 100%; width: 100%; left: 0; top: 0; right: 0; bottom: 0; color: transparent">
+                                        </figure>
+                                        <div class="css-1gw9rd1">
+                                            <div>
+                                                <div role="button" tabindex="0">
+                                                    <p class="summary__company-name css-fk1zjv">${test.company_id}<!--회사명-->
+                                                    </p>
+                                                </div>
+                                                <div role="button" tabindex="0">
+                                                    <h3 class="summary__title css-1to8sx0">${test.occupation}<!--직무(ex.서버 프로그래머)-->
+                                                    </h3>
+                                                </div>
                                             </div>
-                                            <div role="button" tabindex="0">
-                                                <h3 class="summary__title css-1to8sx0">서버 프로그래머</h3>
-                                            </div>
-                                        </div>
-                                        <ul class="css-1kivyvq">
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Node.js</p>
-                                            </li>
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">TypeScript</p>
-                                            </li>
-                                        </ul>
-                                        <div class="css-1rtzn1u"><span>
-                                                <p class="css-oz575p">주니어 (1~3년)</p>
-                                            </span>
-                                            <div class="css-106dojg"></div><span>
-                                                <p class="css-oz575p">서울</p>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="css-16nb092">
-                                        <div class="css-15v8v1b">
-                                            <p>입사축하금 <!-- -->100<!-- -->만원</p>
-                                        </div>
-                                    </div>
-                                </a><button type="button" aria-label="북마크" class="css-mzz592">
-                                    <div class="rallit-icon  css-1bdht9e"><svg width="16" height="16"
-                                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M4.75 2.5a.25.25 0 0 0-.25.25v9.91l3.023-2.489a.75.75 0 0 1 .954 0l3.023 2.49V2.75a.25.25 0 0 0-.25-.25h-6.5zM3 2.75C3 1.784 3.784 1 4.75 1h6.5c.966 0 1.75.784 1.75 1.75v11.5a.75.75 0 0 1-1.227.579L8 11.722l-3.773 3.107A.75.75 0 0 1 3 14.25V2.75z"
-                                                fill="#eaecee"></path>
-                                        </svg></div>
-                                </button></article>
-                        </li>
-                        <li>
-                            <article class="css-1pr9edg"><a href="/positions/1110">
-                                    <figure class="css-1gd0osy"><img alt="주식회사 게임듀오 대표이미지" sizes="100vw"
-                                            srcset="https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=640 640w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 750w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 828w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1080w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1200w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1920w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 2048w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 3840w"
-                                            src="https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720"
-                                            decoding="async" data-nimg="future-fill" loading="lazy"
-                                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
-                                    </figure>
-                                    <div class="css-1gw9rd1">
-                                        <div>
-                                            <div role="button" tabindex="0">
-                                                <p class="summary__company-name css-fk1zjv">주식회사 게임듀오</p>
-                                            </div>
-                                            <div role="button" tabindex="0">
-                                                <h3 class="summary__title css-1to8sx0">유니티 클라이언트 프로그래머 (Entry)</h3>
+                                            <ul class="css-1kivyvq">
+                                                <li class="css-1uz98zw">
+                                                    <p class="css-1cyvqo4">${test.mainwork}<!--ex Node.js-->
+                                                    </p>
+                                                </li>
+                                                <li class="css-1uz98zw">
+                                                    <p class="css-1cyvqo4">${test.mainwork}<!--ex TypeScript 배열처리로 나오게 하기 -->
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <div class="css-1rtzn1u">
+                                                <span>
+                                                    <p class="css-oz575p">${test.minCareer}
+                                                        ~ ${test.maxCareer}년
+                                                        <!--ex.주니어 (1~3년) if넣어서 경력에 따른 표현-->
+                                                    </p>
+                                                </span>
+                                                <div class="css-106dojg"></div>
+                                                <span>
+                                                    <p class="css-oz575p">${test.city}<!--ex.서울-->
+                                                    </p>
+                                                </span>
                                             </div>
                                         </div>
-                                        <ul class="css-1kivyvq">
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Unity</p>
-                                            </li>
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">C#</p>
-                                            </li>
-                                        </ul>
-                                        <div class="css-1rtzn1u"><span>
-                                                <p class="css-oz575p">신입 (1년이하)</p>
-                                            </span>
-                                            <div class="css-106dojg"></div><span>
-                                                <p class="css-oz575p">서울</p>
-                                            </span>
+                                    </a>
+                                    <button type="button" aria-label="북마크" class="css-mzz592">
+                                        <div class="rallit-icon  css-1bdht9e">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M4.75 2.5a.25.25 0 0 0-.25.25v9.91l3.023-2.489a.75.75 0 0 1 .954 0l3.023 2.49V2.75a.25.25 0 0 0-.25-.25h-6.5zM3 2.75C3 1.784 3.784 1 4.75 1h6.5c.966 0 1.75.784 1.75 1.75v11.5a.75.75 0 0 1-1.227.579L8 11.722l-3.773 3.107A.75.75 0 0 1 3 14.25V2.75z"
+                                                    fill="#eaecee"></path>
+                                </svg>
                                         </div>
-                                    </div>
-                                    <div class="css-16nb092">
-                                        <div class="css-15v8v1b">
-                                            <p>입사축하금 <!-- -->100<!-- -->만원</p>
-                                        </div>
-                                    </div>
-                                </a><button type="button" aria-label="북마크" class="css-mzz592">
-                                    <div class="rallit-icon  css-1bdht9e"><svg width="16" height="16"
-                                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M4.75 2.5a.25.25 0 0 0-.25.25v9.91l3.023-2.489a.75.75 0 0 1 .954 0l3.023 2.49V2.75a.25.25 0 0 0-.25-.25h-6.5zM3 2.75C3 1.784 3.784 1 4.75 1h6.5c.966 0 1.75.784 1.75 1.75v11.5a.75.75 0 0 1-1.227.579L8 11.722l-3.773 3.107A.75.75 0 0 1 3 14.25V2.75z"
-                                                fill="#eaecee"></path>
-                                        </svg></div>
-                                </button></article>
-                        </li>
-                        <li>
-                            <article class="css-1pr9edg"><a href="/positions/892">
-                                    <figure class="css-1gd0osy"><img alt="브레이브모바일 (숨고) 대표이미지" sizes="100vw"
-                                            srcset="https://cdn.rallit.com/image/2022-10-24/pcpXcPaKAYas7AMLgewVc.jpg?w=640 640w, https://cdn.rallit.com/image/2022-10-24/pcpXcPaKAYas7AMLgewVc.jpg?w=720 750w, https://cdn.rallit.com/image/2022-10-24/pcpXcPaKAYas7AMLgewVc.jpg?w=720 828w, https://cdn.rallit.com/image/2022-10-24/pcpXcPaKAYas7AMLgewVc.jpg?w=720 1080w, https://cdn.rallit.com/image/2022-10-24/pcpXcPaKAYas7AMLgewVc.jpg?w=720 1200w, https://cdn.rallit.com/image/2022-10-24/pcpXcPaKAYas7AMLgewVc.jpg?w=720 1920w, https://cdn.rallit.com/image/2022-10-24/pcpXcPaKAYas7AMLgewVc.jpg?w=720 2048w, https://cdn.rallit.com/image/2022-10-24/pcpXcPaKAYas7AMLgewVc.jpg?w=720 3840w"
-                                            src="https://cdn.rallit.com/image/2022-10-24/pcpXcPaKAYas7AMLgewVc.jpg?w=720"
-                                            decoding="async" data-nimg="future-fill" loading="lazy"
-                                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
-                                    </figure>
-                                    <div class="css-1gw9rd1">
-                                        <div>
-                                            <div role="button" tabindex="0">
-                                                <p class="summary__company-name css-fk1zjv">브레이브모바일 (숨고)</p>
-                                            </div>
-                                            <div role="button" tabindex="0">
-                                                <h3 class="summary__title css-1to8sx0">[숨고] Sr. Back-end Engineer
-                                                    (Python)</h3>
-                                            </div>
-                                        </div>
-                                        <ul class="css-1kivyvq">
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Python</p>
-                                            </li>
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Flask</p>
-                                            </li>
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">FastAPI</p>
-                                            </li>
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Django</p>
-                                            </li>
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Elasticsearch</p>
-                                            </li>
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">MongoDB</p>
-                                            </li>
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Redis</p>
-                                            </li>
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Kafka</p>
-                                            </li>
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Kubernetes</p>
-                                            </li>
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Git</p>
-                                            </li>
-                                        </ul>
-                                        <div class="css-1rtzn1u"><span>
-                                                <p class="css-oz575p">시니어 (9년 이상)</p>
-                                            </span>
-                                            <div class="css-106dojg"></div><span>
-                                                <p class="css-oz575p">서울</p>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="css-16nb092"></div>
-                                </a><button type="button" aria-label="북마크" class="css-mzz592">
-                                    <div class="rallit-icon  css-1bdht9e"><svg width="16" height="16"
-                                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M4.75 2.5a.25.25 0 0 0-.25.25v9.91l3.023-2.489a.75.75 0 0 1 .954 0l3.023 2.49V2.75a.25.25 0 0 0-.25-.25h-6.5zM3 2.75C3 1.784 3.784 1 4.75 1h6.5c.966 0 1.75.784 1.75 1.75v11.5a.75.75 0 0 1-1.227.579L8 11.722l-3.773 3.107A.75.75 0 0 1 3 14.25V2.75z"
-                                                fill="#eaecee"></path>
-                                        </svg></div>
-                                </button></article>
-                        </li>
-                        <li>
-                            <article class="css-1pr9edg"><a href="/positions/285">
-                                    <figure class="css-1gd0osy"><img alt="올거나이즈코리아주식회사 대표이미지" sizes="100vw"
-                                            srcset="https://cdn.rallit.com/image/2022-03-08/_oAvHrQHWqDFQdNSvvWqV.jpg?w=640 640w, https://cdn.rallit.com/image/2022-03-08/_oAvHrQHWqDFQdNSvvWqV.jpg?w=720 750w, https://cdn.rallit.com/image/2022-03-08/_oAvHrQHWqDFQdNSvvWqV.jpg?w=720 828w, https://cdn.rallit.com/image/2022-03-08/_oAvHrQHWqDFQdNSvvWqV.jpg?w=720 1080w, https://cdn.rallit.com/image/2022-03-08/_oAvHrQHWqDFQdNSvvWqV.jpg?w=720 1200w, https://cdn.rallit.com/image/2022-03-08/_oAvHrQHWqDFQdNSvvWqV.jpg?w=720 1920w, https://cdn.rallit.com/image/2022-03-08/_oAvHrQHWqDFQdNSvvWqV.jpg?w=720 2048w, https://cdn.rallit.com/image/2022-03-08/_oAvHrQHWqDFQdNSvvWqV.jpg?w=720 3840w"
-                                            src="https://cdn.rallit.com/image/2022-03-08/_oAvHrQHWqDFQdNSvvWqV.jpg?w=720"
-                                            decoding="async" data-nimg="future-fill" loading="lazy"
-                                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
-                                    </figure>
-                                    <div class="css-1gw9rd1">
-                                        <div>
-                                            <div role="button" tabindex="0">
-                                                <p class="summary__company-name css-fk1zjv">올거나이즈코리아주식회사</p>
-                                            </div>
-                                            <div role="button" tabindex="0">
-                                                <h3 class="summary__title css-1to8sx0">[AI Starup] 데브옵스 엔지니어</h3>
-                                            </div>
-                                        </div>
-                                        <ul class="css-1kivyvq">
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Docker</p>
-                                            </li>
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Python</p>
-                                            </li>
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Linux</p>
-                                            </li>
-                                        </ul>
-                                        <div class="css-1rtzn1u"><span>
-                                                <p class="css-oz575p">미들 (4~8년)</p>
-                                            </span>
-                                            <div class="css-106dojg"></div><span>
-                                                <p class="css-oz575p">서울</p>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="css-16nb092">
-                                        <div class="css-15v8v1b">
-                                            <p>입사축하금 <!-- -->100<!-- -->만원</p>
-                                        </div>
-                                    </div>
-                                </a><button type="button" aria-label="북마크" class="css-mzz592">
-                                    <div class="rallit-icon  css-1bdht9e"><svg width="16" height="16"
-                                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M4.75 2.5a.25.25 0 0 0-.25.25v9.91l3.023-2.489a.75.75 0 0 1 .954 0l3.023 2.49V2.75a.25.25 0 0 0-.25-.25h-6.5zM3 2.75C3 1.784 3.784 1 4.75 1h6.5c.966 0 1.75.784 1.75 1.75v11.5a.75.75 0 0 1-1.227.579L8 11.722l-3.773 3.107A.75.75 0 0 1 3 14.25V2.75z"
-                                                fill="#eaecee"></path>
-                                        </svg></div>
-                                </button></article>
-                        </li>
-                        <li>
-                            <article class="css-1pr9edg"><a href="/positions/1248">
-                                    <figure class="css-1gd0osy"><img alt="휴머스온 대표이미지" sizes="100vw"
-                                            srcset="https://cdn.rallit.com/image/2023-01-18/ZUGWXpF67KsAHA-5m_jif.jpg?w=640 640w, https://cdn.rallit.com/image/2023-01-18/ZUGWXpF67KsAHA-5m_jif.jpg?w=720 750w, https://cdn.rallit.com/image/2023-01-18/ZUGWXpF67KsAHA-5m_jif.jpg?w=720 828w, https://cdn.rallit.com/image/2023-01-18/ZUGWXpF67KsAHA-5m_jif.jpg?w=720 1080w, https://cdn.rallit.com/image/2023-01-18/ZUGWXpF67KsAHA-5m_jif.jpg?w=720 1200w, https://cdn.rallit.com/image/2023-01-18/ZUGWXpF67KsAHA-5m_jif.jpg?w=720 1920w, https://cdn.rallit.com/image/2023-01-18/ZUGWXpF67KsAHA-5m_jif.jpg?w=720 2048w, https://cdn.rallit.com/image/2023-01-18/ZUGWXpF67KsAHA-5m_jif.jpg?w=720 3840w"
-                                            src="https://cdn.rallit.com/image/2023-01-18/ZUGWXpF67KsAHA-5m_jif.jpg?w=720"
-                                            decoding="async" data-nimg="future-fill" loading="lazy"
-                                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
-                                    </figure>
-                                    <div class="css-1gw9rd1">
-                                        <div>
-                                            <div role="button" tabindex="0">
-                                                <p class="summary__company-name css-fk1zjv">휴머스온</p>
-                                            </div>
-                                            <div role="button" tabindex="0">
-                                                <h3 class="summary__title css-1to8sx0">데이터 엔지니어 (Hadoop)</h3>
-                                            </div>
-                                        </div>
-                                        <ul class="css-1kivyvq">
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Hadoop</p>
-                                            </li>
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Elasticsearch</p>
-                                            </li>
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Apache Spark</p>
-                                            </li>
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Kubernetes</p>
-                                            </li>
-                                            <li class="css-1uz98zw">
-                                                <p class="css-1cyvqo4">Python</p>
-                                            </li>
-                                        </ul>
-                                        <div class="css-1rtzn1u"><span>
-                                                <p class="css-oz575p">미들 (4~8년)</p>
-                                            </span>
-                                            <div class="css-106dojg"></div><span>
-                                                <p class="css-oz575p">서울</p>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="css-16nb092"></div>
-                                </a><button type="button" aria-label="북마크" class="css-mzz592">
-                                    <div class="rallit-icon  css-1bdht9e"><svg width="16" height="16"
-                                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M4.75 2.5a.25.25 0 0 0-.25.25v9.91l3.023-2.489a.75.75 0 0 1 .954 0l3.023 2.49V2.75a.25.25 0 0 0-.25-.25h-6.5zM3 2.75C3 1.784 3.784 1 4.75 1h6.5c.966 0 1.75.784 1.75 1.75v11.5a.75.75 0 0 1-1.227.579L8 11.722l-3.773 3.107A.75.75 0 0 1 3 14.25V2.75z"
-                                                fill="#eaecee"></path>
-                                        </svg></div>
-                                </button></article>
-                        </li>
-                        <!------------------------------------------------------------------->
-
-                    </ul>
+                                    </button>
+                                </article>
+                            </li>
+                            </c:forEach> <!-- c태그 forEach 실행 종료(채용공고 데이터) -->
+                            
+                            
+                        </ul>
                 </section>
                 <section class="css-xi4ft8">
                     <h2 class="css-6gjqqg">요즘 핫한 직업</h2>

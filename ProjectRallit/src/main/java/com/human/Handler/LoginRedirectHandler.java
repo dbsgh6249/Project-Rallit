@@ -25,12 +25,16 @@ public class LoginRedirectHandler implements AuthenticationSuccessHandler {
 		});
 		
 		//권한에 따라 페이지 이동
-		if(roleNames.contains("ROLE_ADMIN")) {
-			response.sendRedirect("/ex/admin/admin");
+		if(roleNames.contains("0")) {
+			response.sendRedirect("/ex/admin/holdstate");
 			return;
 		}
-		if(roleNames.contains("ROLE_MEMBER")) {
-			response.sendRedirect("/ex/member/member");
+		if(roleNames.contains("1")) {
+			response.sendRedirect("/ex/home");
+			return;
+		}
+		if(roleNames.contains("9")) {
+			response.sendRedirect("/ex/home");
 			return;
 		}
 	}

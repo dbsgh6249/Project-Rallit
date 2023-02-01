@@ -6,7 +6,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="com.human.dao.JobSeekerDao">
 <insert id="insert">
 insert into JobSeeker
-values(#{seeker_id},#{pw},#{phone},#{province},#{city},#{address},1)
+values(#{seeker_id},#{pw},#{phone},#{province},#{city},#{address},'1')
 </insert>
 <select id="select" resultType="com.human.dto.JobSeekerDto">
 select * from JobSeeker where seeker_id=#{seeker_id}

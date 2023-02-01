@@ -6,7 +6,7 @@ public class JobSeekerDto {
 	private String phone;
 	private String city;
 	private String address;
-	private int authority;
+	private String authority;
 	@Override
 	public String toString() {
 		return "JobSeeker [seeker_id=" + seeker_id + ", pw=" + pw + ", phone=" + phone + ", city=" + city + ", address="
@@ -65,10 +65,10 @@ public class JobSeekerDto {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public int getAuthority() {
+	public String getAuthority() {
 		return authority;
 	}
-	public void setAuthority(int authority) {
+	public void setAuthority(String authority) {
 		this.authority = authority;
 	}
 }

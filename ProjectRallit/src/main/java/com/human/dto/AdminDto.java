@@ -3,7 +3,7 @@ package com.human.dto;
 public class AdminDto {
 	private String admin_id;
 	private String admin_pw;
-	private int authority;
+	private String authority;
 	
 	public String getAdmin_id() {
 		return admin_id;
@@ -17,10 +17,10 @@ public class AdminDto {
 	public void setAdmin_pw(String admin_pw) {
 		this.admin_pw = admin_pw;
 	}
-	public int getAuthority() {
+	public String getAuthority() {
 		return authority;
 	}
-	public void setAuthority(int authority) {
+	public void setAuthority(String authority) {
 		this.authority = authority;
 	}
 }

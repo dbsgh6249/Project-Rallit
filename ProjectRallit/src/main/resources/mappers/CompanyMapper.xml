@@ -6,7 +6,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="com.human.dao.CompanyDao">
 <insert id="insert">
 insert into Company
-values(#{company_id},#{pw},#{company_manager},#{phone},#{company_name},#{introduce},#{oneWord},#{companyPicture},9)
+values(#{company_id},#{pw},#{company_manager},#{phone},#{company_name},#{introduce},#{oneWord},#{companyPicture},'9')
 </insert>
 <select id="select" resultType="com.human.dto.CompanyDto">
 select * from Company where company_id=#{company_id}

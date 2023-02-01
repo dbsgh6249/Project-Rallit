@@ -10,12 +10,12 @@ public class CompanyDto {
 	private String introduce;
 	private String oneword;
 	private String companyPicture;
-	private int authority;
+	private String authority;
 	
-	public int getAuthority() {
+	public String getAuthority() {
 		return authority;
 	}
-	public void setAuthority(int authority) {
+	public void setAuthority(String authority) {
 		this.authority = authority;
 	}
 	@Override

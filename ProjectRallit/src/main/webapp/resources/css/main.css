@@ -1,0 +1,3982 @@
+@charset "UTF-8";
+
+:root {
+    --swiper-navigation-size: 44px;
+}
+:root {
+    --swiper-theme-color: #007aff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,html {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, Helvetica Neue, Segoe UI, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #21252a;
+    background-color: #fff;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+user agent stylesheet html {
+    display: block;
+}
+
+
+
+div + .css-fi5x0a {
+    margin-left: 12px;
+}
+
+.css-fi5x0a {
+    position: relative;
+    all: unset;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+}
+.css-niuhbk {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    position: relative;
+    color: rgb(33, 37, 42);
+}
+.css-1cp3pcs {
+    height: 2.667rem;
+    border-bottom: 1px solid #F1F3F5;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.css-1cp3pcs .inflab-integrated__header {
+    padding: 0 32px;
+    max-width: 80.000rem;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .css-1cp3pcs .inflab-integrated__header {
+        padding: 0 16px;
+    }
+}
+
+.css-1cp3pcs .inflab-integrated__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: 500;
+}
+
+.css-1cp3pcs .inflab-integrated__container ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+}
+
+.css-1cp3pcs .inflab-integrated__container ul li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.css-o1ev2s:hover{
+    border: 1px solid rgb(0, 255, 162);
+    border-radius: 8px;
+}
+.css-o1ev2s {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 8px 10px;
+    height: 60px;
+    border: 1px solid rgb(234, 236, 238);
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.css-o1ev2s .skill-tag-link__name {
+    font-weight: 500;
+    margin: 0px;
+}
+.css-1cp3pcs .inflab-integrated__container ul li:not(:last-child):after {
+    content: '';
+    display: block;
+    margin: 0px 8px;
+    width: 1px;
+    height: 12px;
+    background: #D5DBE2;
+}
+
+.css-1cp3pcs .inflab-integrated__container ul li:not(:first-of-type) {
+    margin-left: 2px;
+}
+
+.css-1cp3pcs .inflab-integrated__container .inflab-integrated__service {
+    margin: 0;
+    color: #878e98;
+}
+
+.css-1cp3pcs .inflab-integrated__container .inflab-integrated__service a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.css-1cp3pcs .inflab-integrated__container .rallit-icon {
+    margin-right: 4px;
+    margin-left: 0;
+}
+
+.css-1cp3pcs .inflab-integrated__container .active {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: bold;
+    color: #3E4042;
+}
+
+.css-5wonz9 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+}
+
+.css-10rvbm3 {
+    font-weight: 500;
+}
+
+.css-11cix4b {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: normal;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+    font-weight: 500;
+}
+
+.css-1gzra86 {
+    z-index: 40;
+    top: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .css-1gzra86 {
+        position: fixed;
+        top: unset;
+        bottom: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 0;
+    }
+}
+
+.css-o8aacz {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+    max-width: 80.000rem;
+    height: 3.933rem;
+}
+
+.css-o8aacz .left-GNB,
+.css-o8aacz .right-GNB {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(4, auto);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+}
+
+.css-o8aacz .right-GNB {
+    grid-template-columns: repeat(5, auto);
+    gap: 0;
+}
+
+@media (max-width: 768px) {
+    .css-o8aacz {
+        padding: 8px 0 20px 0;
+        height: unset;
+    }
+
+    .css-o8aacz .left-GNB {
+        width: 75%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+    }
+
+    .css-o8aacz .right-GNB {
+        width: 25%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.css-p1vanc {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+}
+
+.css-avxbst {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+.css-avxbst .GNB-menu__noti-container {
+    position: relative;
+}
+
+.css-avxbst .GNB-menu__noti {
+    position: absolute;
+    right: -0.400rem;
+    top: -0.800rem;
+}
+
+@media (max-width: 768px) {
+    .css-avxbst .GNB-menu__noti {
+        top: unset;
+        bottom: 1rem;
+        right: -0.400rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-avxbst {
+        width: 100%;
+    }
+}
+
+.css-wodprq {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .css-wodprq {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.css-1sepp5i {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.css-ekuvz3 {
+    margin-top: 4px;
+    color: #00CCAA;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 11px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: -0.3px;
+    font-weight: bold;
+}
+
+.css-176b8zp {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .css-176b8zp {
+        display: none;
+    }
+}
+
+.css-1ttw3p7 {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: -0.3px;
+    margin: 0;
+    white-space: pre-line;
+    word-break: break-all;
+    color: #21252a;
+}
+
+.css-3fe575 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+}
+
+.css-3fe575 .dropdownList__container {
+    display: none;
+    width: auto;
+}
+
+.css-3fe575 .dropdownList__container {
+    display: none;
+}
+
+.css-jk5git {
+    margin-top: 4px;
+    color: #a1aab2;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 11px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: -0.3px;
+    font-weight: 500;
+}
+
+.css-4qldrf {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    position: relative;
+    color: #535961;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    font-weight: bold;
+    color: #21252a;
+}
+
+.css-4qldrf .rallit-icon>svg>path {
+    fill: #535961;
+}
+
+.css-4qldrf:hover,
+.css-4qldrf:active {
+    color: #21252a;
+}
+
+.css-4qldrf:hover::after,
+.css-4qldrf:active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 1px;
+    background: #21252a;
+}
+
+.css-4qldrf:disabled {
+    color: #c6cad0;
+    cursor: not-allowed;
+}
+
+.css-4qldrf:disabled .rallit-icon>svg>path {
+    fill: #c6cad0;
+}
+
+.css-4qldrf:disabled::after {
+    display: none;
+}
+
+.css-1gkmlwz::before {
+    position: absolute;
+    z-index: 180;
+    content: "";
+    width: 0.267rem;
+    height: 0.267rem;
+    bottom: 8.9px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 1px solid #eaecee;
+    border-top-left-radius: 1px;
+    border-right: none;
+    border-bottom: none;
+    background-color: #fff;
+}
+
+.css-1gkmlwz>div {
+    border: none;
+}
+
+.css-1gkmlwz::before {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+    .css-1gkmlwz::before {
+        display: none;
+    }
+
+    .css-1gkmlwz ul {
+        display: none;
+    }
+}
+.css-avxbst .GNB-menu__noti-container {
+    position: relative;
+}
+.css-1n7ju9x {
+    position: absolute;
+    top: 66px;
+    left: 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+    height: 30.000rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+    top: 0;
+    border: 1px solid #eaecee;
+}
+
+@media (max-width: 768px) {
+    .css-1n7ju9x {
+        top: 66px;
+        left: 0;
+        right: 0;
+        height: 20.667rem;
+        width: calc(100vw - 40px);
+        border: none;
+        border-radius: 6px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+    }
+}
+
+@media (max-width: 768px) {
+    .css-1n7ju9x {
+        display: none;
+    }
+}
+
+.css-14ypdl9 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    gap: 0.000rem;
+    width: 100%;
+    height: 100%;
+}
+
+.css-1so5lt {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.css-1fdx6k3 {
+    overflow-y: scroll;
+    background-color: #f8f9fa;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border-radius: 6px 0 0 6px;
+}
+
+.css-1fdx6k3::-webkit-scrollbar {
+    display: none;
+}
+
+.css-1k185p7 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+    margin-bottom: 4px;
+    width: 100%;
+    height: 2.933rem;
+    border: none;
+    color: #a1aab2;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+.css-1piurjj {
+    all: unset;
+    border-bottom-left-radius: 6px;
+}
+
+.css-ziljwy {
+    overflow-y: scroll;
+    padding: 0 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.css-ziljwy::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .css-ziljwy {
+        padding: 0 16px;
+    }
+}
+
+.css-pwu5ys {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+    margin-bottom: 4px;
+    width: 100%;
+    height: 2.933rem;
+    border: none;
+    color: #a1aab2;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+}
+
+.css-1kxn32n {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0;
+    height: calc(100% - 68px);
+    color: #a1aab2;
+    cursor: default;
+}
+
+.css-5by9vu {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+}
+
+.css-1xxao48 {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.css-1xxao48.disabled {
+    cursor: not-allowed;
+}
+
+.css-1xxao48 .header__search-wrapper {
+    margin-right: 24px;
+    padding: 0 0 0 12px;
+    width: 18.667rem;
+    height: 2.533rem;
+}
+
+.css-1xxao48 button {
+    margin: 0 4px 0 12px;
+}
+
+@media (max-width: 967px) {
+    .css-1xxao48 .header__search-wrapper {
+        width: 10.667rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-1xxao48 {
+        display: none;
+    }
+}
+
+.css-1u763tv {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 16px;
+    height: 2.933rem;
+    border: 1px solid #eaecee;
+    border-radius: 6px;
+    background-color: #fff;
+    cursor: text;
+}
+
+.css-1u763tv:hover {
+    border-color: #c6cad0;
+}
+
+.css-1u763tv:focus-within {
+    border-color: #535961;
+}
+
+.css-1u763tv input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.css-1u763tv input::-webkit-input-placeholder {
+    color: #c6cad0;
+}
+
+.css-1u763tv input::-moz-placeholder {
+    color: #c6cad0;
+}
+
+.css-1u763tv input:-ms-input-placeholder {
+    color: #c6cad0;
+}
+
+.css-1u763tv input::placeholder {
+    color: #c6cad0;
+}
+
+.css-10xzrfw {
+    padding: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.css-10xzrfw:disabled {
+    -webkit-text-fill-color: #a1aab2;
+    opacity: 1;
+    color: #a1aab2;
+    cursor: not-allowed;
+}
+
+.css-1gerhyj {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 8px;
+    border: 0;
+    border-radius: 6px;
+    background: none;
+    cursor: pointer;
+    margin: -8px -8px -8px 0;
+}
+
+.css-1gerhyj:enabled:hover {
+    background-color: #f2f4f6;
+}
+
+.css-1gerhyj:disabled {
+    cursor: not-allowed;
+}
+
+.css-1ljwjjg {
+    background-color: #f2f4f6;
+    width: 100%;
+    height: 1px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .css-1ljwjjg {
+        -webkit-order: -1;
+        -ms-flex-order: -1;
+        order: -1;
+    }
+}
+
+.css-ac13em {
+    margin-top: 0;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .css-ac13em {
+        margin-top: 0;
+    }
+}
+
+.css-8mcuh1 {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: -0.3px;
+    white-space: pre-line;
+    word-break: break-all;
+    display: none;
+}
+
+.css-14c50mj {
+    background-color: #00ccaa;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    margin-bottom: calc(84px);
+    padding: 0 32px;
+    -webkit-transition: 500ms ease-in-out;
+    transition: 500ms ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .css-14c50mj {
+        height: auto;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.css-1yposw6 {
+    position: relative;
+    max-width: 1084px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transform: translateY(36px);
+    -moz-transform: translateY(36px);
+    -ms-transform: translateY(36px);
+    transform: translateY(36px);
+    border-radius: 6px;
+    box-shadow: 0px 7px 30px -20px rgba(0, 0, 0, 0.24), 0px 32px 54px -40px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .css-1yposw6 {
+        border-radius: unset;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+.css-176lt66 {
+    position: relative;
+    background-color: #f2f4f6;
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.css-176lt66 img {
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .css-176lt66 {
+        height: auto;
+        padding-top: 55.5%;
+    }
+}
+
+.css-1eg6wcz {
+    position: relative;
+    background-color: #f2f4f6;
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    -webkit-transform: scale(1.001, 1);
+    -moz-transform: scale(1.001, 1);
+    -ms-transform: scale(1.001, 1);
+    transform: scale(1.001, 1);
+}
+
+.css-1eg6wcz img {
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .css-1eg6wcz {
+        height: auto;
+        padding-top: 55.5%;
+    }
+}
+
+.css-y033ci {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    gap: 0.000rem;
+    position: absolute;
+    right: 1.067rem;
+    bottom: 1.067rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 7.733rem;
+    height: 1.867rem;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .css-y033ci {
+        right: 1.333rem;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
+    }
+
+    .css-y033ci>div {
+        margin: 0;
+    }
+
+    .css-y033ci button {
+        display: none;
+    }
+}
+
+.css-b4963y {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 10px;
+    color: #fff;
+    border-radius: 100px;
+    width: 3.067rem;
+    height: 1.867rem;
+    border: solid 1px #fff;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+.css-b4963y p {
+    margin: 0;
+}
+
+.css-oz575p {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: normal;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+}
+
+.css-1ccx5y7 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 2px;
+    padding: 0;
+    border-radius: 100px;
+    width: 1.867rem;
+    height: 1.867rem;
+    border: solid 1px #fff;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+.css-1ccx5y7:hover {
+    cursor: pointer;
+}
+
+.css-1gvano {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.css-19wcm20 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 32px;
+}
+
+@media (max-width: 768px) {
+    .css-19wcm20 {
+        padding: 0 20px;
+    }
+}
+
+.css-1xw6rpm {
+    max-width: 1084px;
+    width: 100%;
+}
+
+.css-1ixgpnt {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+    margin-bottom: 20px;
+}
+
+.css-1elspdf {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: -0.3px;
+    white-space: pre-line;
+    word-break: break-all;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .css-1elspdf {
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+        font-size: 18px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        font-weight: bold;
+    }
+}
+
+.css-fl7us7 {
+    margin-left: auto;
+}
+
+.css-fl7us7:hover {
+    cursor: pointer;
+}
+
+.css-p1vanc {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+}
+
+.css-byjqmz {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+    margin: 0;
+    color: #535961;
+}
+
+.css-1nwykk {
+    display: grid;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2.667rem 1.333rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .css-1nwykk {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.867rem 0.667rem;
+    }
+}
+
+.css-1pr9edg {
+    position: relative;
+    height: 100%;
+    color: #21252a;
+}
+
+.css-1pr9edg a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+}
+
+.css-1gd0osy {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding-top: 55.46875%;
+    border-radius: 6px;
+    border: solid 1px #f2f4f6;
+}
+
+.css-1gd0osy img {
+    opacity: 1;
+    background-color: #fff;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.css-1gw9rd1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 100%;
+}
+
+.css-1gw9rd1 a {
+    height: auto;
+}
+
+.css-1gw9rd1 .summary__company-name {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.css-1gw9rd1 .summary__title {
+    margin: 2px 0 10px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .css-1gw9rd1 .summary__company-name {
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+        font-size: 13px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.46;
+        letter-spacing: normal;
+        font-weight: normal;
+    }
+
+    .css-1gw9rd1 .summary__title {
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+        font-size: 15px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        font-weight: 500;
+    }
+}
+
+.css-fk1zjv {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: normal;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    white-space: pre-line;
+    -webkit-line-clamp: 1;
+}
+
+.css-1to8sx0 {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    font-weight: bold;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    white-space: pre-line;
+    word-break: break-all;
+}
+
+.css-1kivyvq {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 4px;
+    padding: 0;
+    height: 1.267rem;
+    overflow: hidden;
+    list-style: none;
+}
+
+.css-1uz98zw {
+    position: relative;
+}
+
+.css-1uz98zw+* {
+    margin-left: 13px;
+}
+
+.css-1uz98zw+*:before {
+    position: absolute;
+    bottom: 4px;
+    left: -6px;
+    display: block;
+    content: "";
+    width: 1px;
+    height: 10px;
+    background: #878e98;
+}
+
+.css-1cyvqo4 {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    font-weight: normal;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+    color: #878e98;
+}
+
+.css-1rtzn1u {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+}
+
+.css-1rtzn1u span>* {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: 500;
+    color: #878e98;
+}
+
+@media (max-width: 768px) {
+    .css-1rtzn1u span>* {
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+        font-size: 13px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.46;
+        letter-spacing: normal;
+        font-weight: normal;
+    }
+}
+
+.css-106dojg {
+    background-color: #dfe2e6;
+    width: 1px;
+    height: 0.9em;
+    margin: 0 6px;
+}
+
+.css-zzljwe {
+    margin-top: 10px;
+    height: 24px;
+    min-height: 24px;
+}
+
+.css-16nb092 {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    gap: 0.000rem;
+    margin-top: 10px;
+    height: 24px;
+    min-height: 24px;
+}
+
+.css-15v8v1b {
+    background-color: #E9FBF8;
+    color: #00B594;
+    border-radius: 62px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 11px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: -0.3px;
+    font-weight: bold;
+    padding: 4px 8px;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.css-15v8v1b p {
+    margin: 0;
+}
+
+.css-mzz592 {
+    all: unset;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0.800rem;
+    right: 0.800rem;
+    width: 2.133rem;
+    height: 2.133rem;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.16);
+    box-shadow: 0 8px 20px -7px rgba(0, 0, 0, 0.03), 2px 2px 4px 0 rgba(0, 0, 0, 0.04);
+}
+
+.css-mzz592:hover {
+    background-color: rgba(0, 0, 0, 0.32);
+}
+
+.css-1bdht9e {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.css-1bdht9e path {
+    fill: #fff;
+}
+
+.css-xi4ft8 {
+    margin-top: 64px;
+    max-width: 1084px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .css-xi4ft8 {
+        margin-top: 48px;
+    }
+}
+
+.css-6gjqqg {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: -0.3px;
+    white-space: pre-line;
+    word-break: break-all;
+    margin: 0 0 20px 0;
+}
+
+@media (max-width: 768px) {
+    .css-6gjqqg {
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+        font-size: 18px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        font-weight: bold;
+    }
+}
+
+.css-pjp278 {
+    display: grid;
+    padding: 0;
+    margin: 0 0 40px 0;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.333rem;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .css-pjp278 {
+        margin: 0 0 28px 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.667rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-nzv1o8 {
+        margin-bottom: 68px;
+    }
+}
+
+.css-yyqtxc {
+    background-color: #f2f4f6;
+    width: 100%;
+    height: 1px;
+    margin: 0;
+}
+
+.css-8t0ewa {
+    max-width: 76.533rem;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+@media (max-width: 1084px) {
+    .css-8t0ewa {
+        padding: 32px 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-8t0ewa {
+        padding: 32px 20px;
+    }
+}
+
+.css-192tn2r {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .css-192tn2r {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: flex-start;
+        -webkit-box-align: flex-start;
+        -ms-flex-align: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.css-120gsus {
+    margin-right: 32px;
+}
+
+.css-sx764e {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .css-sx764e {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 12px 0 16px;
+    }
+}
+
+.css-sx764e>div {
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .css-sx764e>div {
+        margin-top: 10px;
+    }
+}
+
+.css-sx764e a {
+    color: #535961;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: 500;
+    margin-right: 32px;
+}
+
+@media (max-width: 768px) {
+    .css-sx764e a {
+        margin-right: 18px;
+    }
+
+    .css-sx764e a:last-of-type {
+        margin-right: 0;
+    }
+}
+
+.css-p1vanc {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+}
+
+.css-szycpx {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.css-b3uwyt {
+    margin: 18px 0 0 0;
+    color: #878e98;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 11px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: -0.3px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .css-b3uwyt {
+        margin: 0;
+    }
+}
+
+.css-yce0pl {
+    box-sizing: border-box;
+    position: absolute;
+    left: 100px;
+    bottom: 80px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 0px;
+    z-index: 1000;
+    position: fixed;
+}
+
+@media (max-width: 768px) {
+    .css-yce0pl {
+        left: 0;
+        bottom: 89px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-yce0pl {
+        bottom: 4.533rem;
+    }
+}
+
+.css-1g9upls {
+    box-sizing: inherit;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 0px;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .css-1g9upls {
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.css-1cp3pcs {
+    height: 2.667rem;
+    border-bottom: 1px solid #F1F3F5;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.css-1cp3pcs .inflab-integrated__header {
+    padding: 0 32px;
+    max-width: 80.000rem;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .css-1cp3pcs .inflab-integrated__header {
+        padding: 0 16px;
+    }
+}
+
+.css-1cp3pcs .inflab-integrated__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: 500;
+}
+
+.css-1cp3pcs .inflab-integrated__container ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+}
+
+.css-1cp3pcs .inflab-integrated__container ul li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.css-1cp3pcs .inflab-integrated__container ul li:not(:last-child):after {
+    content: '';
+    display: block;
+    margin: 0px 8px;
+    width: 1px;
+    height: 12px;
+    background: #D5DBE2;
+}
+
+.css-1cp3pcs .inflab-integrated__container ul li:not(:first-of-type) {
+    margin-left: 2px;
+}
+
+.css-1cp3pcs .inflab-integrated__container .inflab-integrated__service {
+    margin: 0;
+    color: #878e98;
+}
+
+.css-1cp3pcs .inflab-integrated__container .inflab-integrated__service a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.css-1cp3pcs .inflab-integrated__container .rallit-icon {
+    margin-right: 4px;
+    margin-left: 0;
+}
+
+.css-1cp3pcs .inflab-integrated__container .active {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: bold;
+    color: #3E4042;
+}
+
+.css-5wonz9 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+}
+
+.css-10rvbm3 {
+    font-weight: 500;
+}
+
+.css-11cix4b {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: normal;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+    font-weight: 500;
+}
+
+.css-1gzra86 {
+    z-index: 40;
+    top: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .css-1gzra86 {
+        position: fixed;
+        top: unset;
+        bottom: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 0;
+    }
+}
+
+.css-o8aacz {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+    max-width: 80.000rem;
+    height: 3.933rem;
+}
+
+.css-o8aacz .left-GNB,
+.css-o8aacz .right-GNB {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(4, auto);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+}
+
+.css-o8aacz .right-GNB {
+    grid-template-columns: repeat(5, auto);
+    gap: 0;
+}
+
+@media (max-width: 768px) {
+    .css-o8aacz {
+        padding: 8px 0 20px 0;
+        height: unset;
+    }
+
+    .css-o8aacz .left-GNB {
+        width: 75%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+    }
+
+    .css-o8aacz .right-GNB {
+        width: 25%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.css-p1vanc {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+}
+
+.css-avxbst {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+.css-avxbst .GNB-menu__noti-container {
+    position: relative;
+}
+
+.css-avxbst .GNB-menu__noti {
+    position: absolute;
+    right: -0.400rem;
+    top: -0.800rem;
+}
+
+@media (max-width: 768px) {
+    .css-avxbst .GNB-menu__noti {
+        top: unset;
+        bottom: 1rem;
+        right: -0.400rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-avxbst {
+        width: 100%;
+    }
+}
+
+.css-wodprq {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .css-wodprq {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.css-1sepp5i {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.css-ekuvz3 {
+    margin-top: 4px;
+    color: #00CCAA;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 11px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: -0.3px;
+    font-weight: bold;
+}
+
+.css-176b8zp {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .css-176b8zp {
+        display: none;
+    }
+}
+
+.css-1ttw3p7 {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: -0.3px;
+    margin: 0;
+    white-space: pre-line;
+    word-break: break-all;
+    color: #21252a;
+}
+
+.css-3fe575 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+}
+
+.css-3fe575 .dropdownList__container {
+    display: none;
+    width: auto;
+}
+
+.css-3fe575 .dropdownList__container {
+    display: none;
+}
+
+.css-jk5git {
+    margin-top: 4px;
+    color: #a1aab2;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 11px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: -0.3px;
+    font-weight: 500;
+}
+
+.css-4qldrf {
+    display: flex;
+    
+    -webkit-box-align: center;
+
+    align-items: center;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+  
+    position: relative;
+ 
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    font-weight: bold;
+    color: #21252a;
+}
+
+.css-4qldrf .rallit-icon>svg>path {
+    fill: #535961;
+}
+
+.css-4qldrf:hover,
+.css-4qldrf:active {
+    color: #21252a;
+}
+
+.css-4qldrf:hover::after,
+.css-4qldrf:active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 1px;
+    background: #21252a;
+}
+
+.css-1gkmlwz >div {
+    border: none;
+}
+.css-1395hwr {
+    position: absolute;
+    z-index: 100;
+    top: 48.5312px;
+    left: 0px;
+    width: 30.667rem;
+    /* border: 1px solid rgb(234, 236, 238); */
+}
+.css-14ypdl9 {
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -ms-flexbox;
+    display: flex;
+    /* -webkit-flex-direction: column; */
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    /* -webkit-justify-content: start; */
+    justify-content: start;
+    /* -webkit-align-items: start; */
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    gap: 0rem;
+    width: 100%;
+    height: 100%;
+}
+.css-1k185p7 {
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -ms-flexbox;
+    display: flex;
+    /* -webkit-align-items: flex-end; */
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+    margin-bottom: 4px;
+    width: 100%;
+    height: 2.933rem;
+    border: none;
+    color: #a1aab2;
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,'Helvetica Neue','Segoe UI','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    padding: 0 20px;
+}
+.css-494cde button {
+    border-bottom: unset;
+}
+.css-184xd0e {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    padding: 12px 20px;
+    background-color: rgb(248, 249, 250);
+    color: rgb(53, 58, 64);
+}
+.css-494cde {
+    all: unset;
+}
+.css-1piurjj {
+    all: unset;
+    border-bottom-left-radius: 6px;
+}
+.css-1so5lt {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    width: 100%;
+    height: 100%;
+}
+.css-1fdx6k3 {
+    overflow-y: scroll;
+    background-color: #f8f9fa;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border-radius: 6px 0 0 6px;
+}
+.css-1n7ju9x {
+    position: absolute;
+    top: 66px;
+    left: 0px;
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -ms-flexbox;
+    display: flex;
+    /* -webkit-flex-direction: column; */
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    /* -webkit-justify-content: space-between; */
+    justify-content: space-between;
+    width: 100%;
+    height: 30rem;
+    /* border: none; */
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 8px rgb(0 0 0 / 12%);
+    top: 0;
+    border: 1px solid #eaecee;
+}
+
+.css-4qldrf:disabled {
+    color: #c6cad0;
+    cursor: not-allowed;
+}
+
+.css-4qldrf:disabled .rallit-icon>svg>path {
+    fill: #c6cad0;
+}
+
+.css-4qldrf:disabled::after {
+    display: none;
+}
+
+.css-1gkmlwz::before {
+    position: absolute;
+    z-index: 180;
+    content: "";
+    width: 0.267rem;
+    height: 0.267rem;
+    bottom: 8.9px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 1px solid #eaecee;
+    border-top-left-radius: 1px;
+    border-right: none;
+    border-bottom: none;
+    background-color: #fff;
+}
+
+.css-1gkmlwz>div {
+    border: none;
+}
+
+.css-1gkmlwz::before {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+    .css-1gkmlwz::before {
+        display: none;
+    }
+
+    .css-1gkmlwz ul {
+        display: none;
+    }
+}
+
+.css-1n7ju9x {
+    position: absolute;
+    top: 66px;
+    left: 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+    height: 30.000rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+    top: 0;
+    border: 1px solid #eaecee;
+}
+
+@media (max-width: 768px) {
+    .css-1n7ju9x {
+        top: 66px;
+        left: 0;
+        right: 0;
+        height: 20.667rem;
+        width: calc(100vw - 40px);
+        border: none;
+        border-radius: 6px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+    }
+}
+
+@media (max-width: 768px) {
+    .css-1n7ju9x {
+        display: none;
+    }
+}
+
+.css-14ypdl9 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    gap: 0.000rem;
+    width: 100%;
+    height: 100%;
+}
+
+.css-1so5lt {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.css-1fdx6k3 {
+    overflow-y: scroll;
+    background-color: #f8f9fa;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border-radius: 6px 0 0 6px;
+}
+
+.css-1fdx6k3::-webkit-scrollbar {
+    display: none;
+}
+
+.css-1k185p7 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+    margin-bottom: 4px;
+    width: 100%;
+    height: 2.933rem;
+    border: none;
+    color: #a1aab2;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+.css-1piurjj {
+    all: unset;
+    border-bottom-left-radius: 6px;
+}
+
+.css-ziljwy {
+    overflow-y: scroll;
+    padding: 0 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.css-ziljwy::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .css-ziljwy {
+        padding: 0 16px;
+    }
+}
+
+.css-pwu5ys {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+    margin-bottom: 4px;
+    width: 100%;
+    height: 2.933rem;
+    border: none;
+    color: #a1aab2;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+}
+
+.css-1kxn32n {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0;
+    height: calc(100% - 68px);
+    color: #a1aab2;
+    cursor: default;
+}
+
+.css-5by9vu {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+}
+
+.css-1xxao48 {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.css-1xxao48.disabled {
+    cursor: not-allowed;
+}
+
+.css-1xxao48 .header__search-wrapper {
+    margin-right: 24px;
+    padding: 0 0 0 12px;
+    width: 18.667rem;
+    height: 2.533rem;
+}
+
+.css-1xxao48 button {
+    margin: 0 4px 0 12px;
+}
+
+@media (max-width: 967px) {
+    .css-1xxao48 .header__search-wrapper {
+        width: 10.667rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-1xxao48 {
+        display: none;
+    }
+}
+
+.css-1u763tv {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 16px;
+    height: 2.933rem;
+    border: 1px solid #eaecee;
+    border-radius: 6px;
+    background-color: #fff;
+    cursor: text;
+}
+
+.css-1u763tv:hover {
+    border-color: #c6cad0;
+}
+
+.css-1u763tv:focus-within {
+    border-color: #535961;
+}
+
+.css-1u763tv input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.css-1u763tv input::-webkit-input-placeholder {
+    color: #c6cad0;
+}
+
+.css-1u763tv input::-moz-placeholder {
+    color: #c6cad0;
+}
+
+.css-1u763tv input:-ms-input-placeholder {
+    color: #c6cad0;
+}
+
+.css-1u763tv input::placeholder {
+    color: #c6cad0;
+}
+
+.css-10xzrfw {
+    padding: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.css-10xzrfw:disabled {
+    -webkit-text-fill-color: #a1aab2;
+    opacity: 1;
+    color: #a1aab2;
+    cursor: not-allowed;
+}
+
+.css-1gerhyj {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 8px;
+    border: 0;
+    border-radius: 6px;
+    background: none;
+    cursor: pointer;
+    margin: -8px -8px -8px 0;
+}
+
+.css-1gerhyj:enabled:hover {
+    background-color: #f2f4f6;
+}
+
+.css-1gerhyj:disabled {
+    cursor: not-allowed;
+}
+
+.css-1ljwjjg {
+    background-color: #f2f4f6;
+    width: 100%;
+    height: 1px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .css-1ljwjjg {
+        -webkit-order: -1;
+        -ms-flex-order: -1;
+        order: -1;
+    }
+}
+
+.css-ac13em {
+    margin-top: 0;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .css-ac13em {
+        margin-top: 0;
+    }
+}
+
+.css-8mcuh1 {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: -0.3px;
+    white-space: pre-line;
+    word-break: break-all;
+    display: none;
+}
+
+.css-14c50mj {
+    background-color: #00ccaa;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    margin-bottom: calc(84px);
+    padding: 0 32px;
+    -webkit-transition: 500ms ease-in-out;
+    transition: 500ms ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .css-14c50mj {
+        height: auto;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.css-1yposw6 {
+    position: relative;
+    max-width: 1084px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transform: translateY(36px);
+    -moz-transform: translateY(36px);
+    -ms-transform: translateY(36px);
+    transform: translateY(36px);
+    border-radius: 6px;
+    box-shadow: 0px 7px 30px -20px rgba(0, 0, 0, 0.24), 0px 32px 54px -40px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .css-1yposw6 {
+        border-radius: unset;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+.css-176lt66 {
+    position: relative;
+    background-color: #f2f4f6;
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.css-176lt66 img {
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .css-176lt66 {
+        height: auto;
+        padding-top: 55.5%;
+    }
+}
+
+.css-1eg6wcz {
+    position: relative;
+    background-color: #f2f4f6;
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    -webkit-transform: scale(1.001, 1);
+    -moz-transform: scale(1.001, 1);
+    -ms-transform: scale(1.001, 1);
+    transform: scale(1.001, 1);
+}
+
+.css-1eg6wcz img {
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .css-1eg6wcz {
+        height: auto;
+        padding-top: 55.5%;
+    }
+}
+
+.css-y033ci {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    gap: 0.000rem;
+    position: absolute;
+    right: 1.067rem;
+    bottom: 1.067rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 7.733rem;
+    height: 1.867rem;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .css-y033ci {
+        right: 1.333rem;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
+    }
+
+    .css-y033ci>div {
+        margin: 0;
+    }
+
+    .css-y033ci button {
+        display: none;
+    }
+}
+
+.css-b4963y {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 10px;
+    color: #fff;
+    border-radius: 100px;
+    width: 3.067rem;
+    height: 1.867rem;
+    border: solid 1px #fff;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+.css-b4963y p {
+    margin: 0;
+}
+
+.css-oz575p {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: normal;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+}
+
+.css-1ccx5y7 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 2px;
+    padding: 0;
+    border-radius: 100px;
+    width: 1.867rem;
+    height: 1.867rem;
+    border: solid 1px #fff;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+.css-1ccx5y7:hover {
+    cursor: pointer;
+}
+
+.css-1gvano {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.css-19wcm20 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 32px;
+}
+
+@media (max-width: 768px) {
+    .css-19wcm20 {
+        padding: 0 20px;
+    }
+}
+
+.css-1xw6rpm {
+    max-width: 1084px;
+    width: 100%;
+}
+
+.css-1ixgpnt {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+    margin-bottom: 20px;
+}
+
+.css-1elspdf {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: -0.3px;
+    white-space: pre-line;
+    word-break: break-all;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .css-1elspdf {
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+        font-size: 18px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        font-weight: bold;
+    }
+}
+
+.css-fl7us7 {
+    margin-left: auto;
+}
+
+.css-fl7us7:hover {
+    cursor: pointer;
+}
+
+.css-p1vanc {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+}
+
+.css-byjqmz {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+    margin: 0;
+    color: #535961;
+}
+
+.css-1nwykk {
+    display: grid;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2.667rem 1.333rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .css-1nwykk {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.867rem 0.667rem;
+    }
+}
+
+.css-1pr9edg {
+    position: relative;
+    height: 100%;
+    color: #21252a;
+}
+
+.css-1pr9edg a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+}
+
+.css-1gd0osy {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding-top: 55.46875%;
+    border-radius: 6px;
+    border: solid 1px #f2f4f6;
+}
+
+.css-1gd0osy img {
+    opacity: 1;
+    background-color: #fff;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.css-1gw9rd1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 100%;
+}
+
+.css-1gw9rd1 a {
+    height: auto;
+}
+
+.css-1gw9rd1 .summary__company-name {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.css-1gw9rd1 .summary__title {
+    margin: 2px 0 10px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .css-1gw9rd1 .summary__company-name {
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+        font-size: 13px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.46;
+        letter-spacing: normal;
+        font-weight: normal;
+    }
+
+    .css-1gw9rd1 .summary__title {
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+        font-size: 15px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        font-weight: 500;
+    }
+}
+
+.css-fk1zjv {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: normal;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    white-space: pre-line;
+    -webkit-line-clamp: 1;
+}
+
+.css-1to8sx0 {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    font-weight: bold;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    white-space: pre-line;
+    word-break: break-all;
+}
+
+.css-1kivyvq {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 4px;
+    padding: 0;
+    height: 1.267rem;
+    overflow: hidden;
+    list-style: none;
+}
+
+.css-1uz98zw {
+    position: relative;
+}
+
+.css-1uz98zw+* {
+    margin-left: 13px;
+}
+
+.css-1uz98zw+*:before {
+    position: absolute;
+    bottom: 4px;
+    left: -6px;
+    display: block;
+    content: "";
+    width: 1px;
+    height: 10px;
+    background: #878e98;
+}
+
+.css-1cyvqo4 {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    font-weight: normal;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+    color: #878e98;
+}
+
+.css-1rtzn1u {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+}
+
+.css-1rtzn1u span>* {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: 500;
+    color: #878e98;
+}
+
+@media (max-width: 768px) {
+    .css-1rtzn1u span>* {
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+        font-size: 13px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.46;
+        letter-spacing: normal;
+        font-weight: normal;
+    }
+}
+
+.css-106dojg {
+    background-color: #dfe2e6;
+    width: 1px;
+    height: 0.9em;
+    margin: 0 6px;
+}
+
+.css-zzljwe {
+    margin-top: 10px;
+    height: 24px;
+    min-height: 24px;
+}
+
+.css-16nb092 {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    gap: 0.000rem;
+    margin-top: 10px;
+    height: 24px;
+    min-height: 24px;
+}
+
+.css-15v8v1b {
+    background-color: #E9FBF8;
+    color: #00B594;
+    border-radius: 62px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 11px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: -0.3px;
+    font-weight: bold;
+    padding: 4px 8px;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.css-15v8v1b p {
+    margin: 0;
+}
+
+.css-mzz592 {
+    all: unset;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0.800rem;
+    right: 0.800rem;
+    width: 2.133rem;
+    height: 2.133rem;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.16);
+    box-shadow: 0 8px 20px -7px rgba(0, 0, 0, 0.03), 2px 2px 4px 0 rgba(0, 0, 0, 0.04);
+}
+
+.css-mzz592:hover {
+    background-color: rgba(0, 0, 0, 0.32);
+}
+
+.css-1bdht9e {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.css-1bdht9e path {
+    fill: #fff;
+}
+
+.css-xi4ft8 {
+    margin-top: 64px;
+    max-width: 1084px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .css-xi4ft8 {
+        margin-top: 48px;
+    }
+}
+
+.css-6gjqqg {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: -0.3px;
+    white-space: pre-line;
+    word-break: break-all;
+    margin: 0 0 20px 0;
+}
+
+@media (max-width: 768px) {
+    .css-6gjqqg {
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+        font-size: 18px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        font-weight: bold;
+    }
+}
+
+.css-pjp278 {
+    display: grid;
+    padding: 0;
+    margin: 0 0 40px 0;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.333rem;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .css-pjp278 {
+        margin: 0 0 28px 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.667rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-nzv1o8 {
+        margin-bottom: 68px;
+    }
+}
+
+.css-yyqtxc {
+    background-color: #f2f4f6;
+    width: 100%;
+    height: 1px;
+    margin: 0;
+}
+
+.css-8t0ewa {
+    max-width: 76.533rem;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+@media (max-width: 1084px) {
+    .css-8t0ewa {
+        padding: 32px 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-8t0ewa {
+        padding: 32px 20px;
+    }
+}
+
+.css-192tn2r {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .css-192tn2r {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: flex-start;
+        -webkit-box-align: flex-start;
+        -ms-flex-align: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.css-120gsus {
+    margin-right: 32px;
+}
+
+.css-sx764e {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .css-sx764e {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 12px 0 16px;
+    }
+}
+
+.css-sx764e>div {
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .css-sx764e>div {
+        margin-top: 10px;
+    }
+}
+
+.css-sx764e a {
+    color: #535961;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: 500;
+    margin-right: 32px;
+}
+
+@media (max-width: 768px) {
+    .css-sx764e a {
+        margin-right: 18px;
+    }
+
+    .css-sx764e a:last-of-type {
+        margin-right: 0;
+    }
+}
+
+
+.css-p1vanc {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+}
+
+.css-szycpx {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.css-b3uwyt {
+    margin: 18px 0 0 0;
+    color: #878e98;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 11px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: -0.3px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .css-b3uwyt {
+        margin: 0;
+    }
+}
+
+.css-yce0pl {
+    box-sizing: border-box;
+    position: absolute;
+    left: 100px;
+    bottom: 80px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 0px;
+    z-index: 1000;
+    position: fixed;
+}
+
+@media (max-width: 768px) {
+    .css-yce0pl {
+        left: 0;
+        bottom: 89px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-yce0pl {
+        bottom: 4.533rem;
+    }
+}
+
+.css-1g9upls {
+    box-sizing: inherit;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 0px;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .css-1g9upls {
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}

@@ -12,26 +12,20 @@ insert into Authorities values(#{user_id}, 'role_seeker')
 insert into Authorities values(#{user_id}, 'role_company')
 </insert>
 
-<select id="selectSeeker" resultType="com.human.dto.AuthoritiesDto"> <!-- 일반유저목록 조회 -->
+<select id="selectAll" resultType="com.human.dto.AuthoritiesDto"> <!-- 전체 유저목록 조회 -->
+select * from Authorities
+</select>
+<select id="selectSeeker" resultType="com.human.dto.AuthoritiesDto"> <!-- 일반 유저 목록 조회 -->
 select * from Authorities where authority='role_seeker'
 </select>
-<select id="selectCompany" resultType="com.human.dto.AuthoritiesDto"><!-- 기업회원목록 조회 -->
+<select id="selectCompany" resultType="com.human.dto.AuthoritiesDto"><!-- 기업회원 목록 조회 -->
 select * from Authorities where authority='role_company'
 </select>
 
 
-<delete id="delete"> <!-- 회원탈퇴시 권한 함께 삭제(아이디 중복우려 있어 권한조건 추가함. 이후 프론트 설정따라 변경 가능) -->
+<delete id="delete"> <!-- 회원탈퇴시 권한 함께 삭제(아이디 중복우려 있어 권한조건 추가) -->
 delete from Authorities where user_id=#{user_id} and authority=#{authority}
 </delete>
 <!-- test -->
 
 </mapper>
-
-
-
-
-
-
-
-
-

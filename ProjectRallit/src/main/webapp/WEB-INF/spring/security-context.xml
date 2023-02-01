@@ -40,7 +40,7 @@
 		   <!--  <password-encoder ref="bcryptPasswordEncoder"/> -->
 		    
 			<jdbc-user-service
-				authorities-by-username-query="select user_ID, password, 1 from jobseeker where user_ID, = ?"
+				authorities-by-username-query="select user_ID, user_PW,user_enabled from h_users where user_ID, = ?"
 				users-by-username-query="select user_ID, authority from authorities where user_ID, = ?"
 				role-prefix="" data-source-ref="dataSource" />
 		</authentication-provider>

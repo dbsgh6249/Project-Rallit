@@ -3,21 +3,27 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.human.dao.AuthorityDao">
-<insert id="insert"> <!-- 유저 생성 시 권한 함께 부여 必 -->
-insert into Authority
-values(#{user_id},#{authority})
+<mapper namespace="com.human.dao.AuthoritiesDao">
+<!-- 권한부여 (회원가입 페이지를 분리하면 권한명 넣어두고 하는 게 낫지 않을까 싶음 -->
+<insert id="insertSeeker"> <!-- 유저 권한설정 -->)
+insert into Authorities values(#{user_id}, 'role_seeker')
 </insert>
-<select id="selectOne" resultType="com.human.dto.CompanyDto">
-select * from Authority where user_id=#{user_id}
+<insert id="insertCompany"> <!-- 기업회원 권한설정 -->
+insert into Authorities values(#{user_id}, 'role_company')
+</insert>
+
+<select id="selectSeeker" resultType="com.human.dto.AuthoritiesDto"> <!-- 일반유저목록 조회 -->
+select * from Authorities where authority='role_seeker'
 </select>
-<select id="selectAll" resultType="com.human.dto.CompanyDto">
-select * from Authority order by user_id
+<select id="selectCompany" resultType="com.human.dto.AuthoritiesDto"><!-- 기업회원목록 조회 -->
+select * from Authorities where authority='role_company'
 </select>
 
-<delete id="delete"> <!-- 유저 삭제 시 권한 함께 삭제 必 , authority확인은 seeker와 company의 id 중복 사례 우려 -->
-delete from Authority where user_id=#{user_id} and authority=#{authority}
+
+<delete id="delete"> <!-- 회원탈퇴시 권한 함께 삭제(아이디 중복우려 있어 권한조건 추가함. 이후 프론트 설정따라 변경 가능) -->
+delete from Authorities where user_id=#{user_id} and authority=#{authority}
 </delete>
+
 
 </mapper>
 

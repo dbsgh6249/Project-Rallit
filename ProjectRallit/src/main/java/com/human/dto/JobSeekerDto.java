@@ -1,17 +1,30 @@
 package com.human.dto;
 
 public class JobSeekerDto {
-	private String seeker_id;
-	private String pw;
-	private String phone;
-	private String city;
-	private String address;
-	private int authority; // 사용 가/부 여부 확인(가:1 부:0)
+	private String seeker_id; // 사용자 ID
+	private String pw;		// 사용자 PW
+	private String phone;	// 휴대폰번호
+	private String province; // 도/특별/광역시
+	private String city;	// 시/군/구
+	private String address;	// 상세주소
+	private String cvnum;	// 이력서
 	
+	public String getProvince() {
+		return province;
+	}
+	public void setProvince(String province) {
+		this.province = province;
+	}
+	public String getCvnum() {
+		return cvnum;
+	}
+	public void setCvnum(String cvnum) {
+		this.cvnum = cvnum;
+	}
 	@Override
 	public String toString() {
 		return "JobSeeker [seeker_id=" + seeker_id + ", pw=" + pw + ", phone=" + phone + ", city=" + city + ", address="
-				+ address + ", authority=" + authority + "]";
+				+ address + "]";
 	}
 	@Override
 	public int hashCode() {
@@ -65,11 +78,5 @@ public class JobSeekerDto {
 	}
 	public void setAddress(String address) {
 		this.address = address;
-	}
-	public int getAuthority() {
-		return authority;
-	}
-	public void setAuthority(int authority) {
-		this.authority = authority;
 	}
 }

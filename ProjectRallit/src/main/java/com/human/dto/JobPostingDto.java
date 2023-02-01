@@ -4,22 +4,22 @@ import java.util.Date;
 
 public class JobPostingDto {
 
-	private int textNumber;
-	private String title;
-	private String company_id;
-	private Date dateCreated;
-	private Date deadline;
-	private String occupation;
-	private int minCareer;
-	private int maxCareer;
-	private String province;
-	private String city;
-	private String address;
-	private String mainwork;
-	private String preferential;
-	private String welfare;
-	private String qualifications;
-	private int holdState;
+	private int textNumber;			// 글번호
+	private String title;			// 제목
+	private String company_id;		// 회사 ID
+	private Date dateCreated;		// 작성일
+	private Date deadline;			// 마감일
+	private String occupation;		// 직종
+	private int minCareer;			// 경력 최솟값
+	private int maxCareer;			// 경력 최댓값
+	private String province;		// 도/특별/광역시
+	private String city;			// 시/군/구
+	private String address;			// 상세주소
+	private String mainwork;		// 주요업무
+	private String preferential;	// 우대사항
+	private String welfare;			// 복지
+	private String qualifications;	// 자격요건
+	private int holdState;			// 승인(0),보류(1),삭제(2) 상태
 	
 
 	@Override

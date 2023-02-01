@@ -2,22 +2,15 @@ package com.human.dto;
 
 public class CompanyDto {
 
-	private String company_id;
-	private String pw;
-	private String company_manager;
-	private String phone;
-	private String company_name;
-	private String introduce;
-	private String oneword;
-	private String companyPicture;
-	private int authority; // 사용 가/부 여부 확인(가:1 부:0)
+	private String company_id; 		// 회사 ID
+	private String pw;				// 비밀번호
+	private String company_manager;	// 담당자
+	private String phone;			// 휴대폰번호
+	private String company_name;	// 회사명
+	private String introduce;		// 소개
+	private String oneword;			// 한마디
+	private String companyPicture;	// 회사사진
 	
-	public int getAuthority() {
-		return authority;
-	}
-	public void setAuthority(int authority) {
-		this.authority = authority;
-	}
 	@Override
 	public String toString() {
 		return "CompanyDto [company_id=" + company_id + ", pw=" + pw + ", company_manager=" + company_manager

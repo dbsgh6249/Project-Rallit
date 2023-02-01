@@ -6,7 +6,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="com.human.dao.JobSeekerDao">
 <insert id="insert">
 insert into JobSeeker
-values(#{seeker_id},#{pw},#{phone},#{province},#{city},#{address},1)
+values(#{seeker_id},#{pw},#{phone},#{province},#{city},#{address},#{cvNum})
 </insert>
 
 
@@ -21,7 +21,7 @@ select * from JobSeeker order by seeker_id
 delete from JobSeeker where seeker_id=#{seeker_id}
 </delete>
 <update id="update">
-update JobSeeker set pw=#{pw},phone=#{phone},province=#{province},city=#{city}
+update JobSeeker set pw=#{pw},phone=#{phone},province=#{province},city=#{city}, address=#{address},cvNum=#{cvNum}
  where seeker_id=#{seeker_id}
 </update>
 

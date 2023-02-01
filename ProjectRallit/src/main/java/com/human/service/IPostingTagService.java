@@ -10,3 +10,4 @@ public interface IPostingTagService {
 	public void deleteTag(int posting_num,String languageTag) throws Exception;
 	public void update(PostingTagDto dto) throws Exception;
 }
+//

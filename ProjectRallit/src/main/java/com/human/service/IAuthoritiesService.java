@@ -12,3 +12,4 @@ public interface IAuthoritiesService {
 	public List<AuthoritiesDto> selectCompany() throws Exception;
 	public void delete(String user_id, String authority) throws Exception;
 }
+//

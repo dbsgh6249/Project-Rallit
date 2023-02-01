@@ -9,7 +9,7 @@ public class PostingTagDto {
 	public PostingTagDto(int textNumber, String languageTag) {
 		super();
 		this.textNumber = textNumber;
-		this.modifyTag = languageTag;
+		this.languageTag = languageTag;
 	}
 	
 	@Override
@@ -27,5 +27,11 @@ public class PostingTagDto {
 	}
 	public void setLanguageTag(String languageTag) {
 		this.languageTag = languageTag;
+	}
+	public String getModifyTag() {
+		return modifyTag;
+	}
+	public void setModifyTag(String modifyTag) {
+		this.modifyTag = modifyTag;
 	}
 }

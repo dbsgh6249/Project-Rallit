@@ -13,12 +13,12 @@
 	<!-- URL 설정 -->
 	<http use-expressions="true">
 	<csrf disabled="true"/>
-		<intercept-url pattern="/user/user" access="permitAll" /><!--permitAll:모든  사용자 -->
-		<intercept-url pattern="/member/**" access="hasAnyRole('MEMBER,ADMIN')" />
+		<intercept-url pattern="/seeker/" access="permitAll" /><!--permitAll:모든  사용자 -->
+		<intercept-url pattern="/company/**" access="hasAnyRole('COMPANY,ADMIN')" />
 		<intercept-url pattern="/admin/**" access="hasRole('ADMIN')" /> 
 	<!-- 	<intercept-url pattern="/admin/**" access="permitAll" /> -->
-
-		<form-login login-page="/user/login"
+ 
+		<form-login login-page="/admin/adminlogin"
 			authentication-success-handler-ref="LoginSuccess"
 			default-target-url="/user/user"
 			authentication-failure-url="/user/login?error"
@@ -40,8 +40,8 @@
 		    <password-encoder ref="bcryptPasswordEncoder"/>
 		    
 			<jdbc-user-service
-				authorities-by-username-query="select username, authority from authorities where username = ?"
-				users-by-username-query="select username, password, enabled from users where username = ?"
+				authorities-by-username-query="select user_ID, authority from authorities where user_ID = ?"
+				users-by-username-query="select user_ID password, enabled from users where user_ID = ?"
 				role-prefix="" data-source-ref="dataSource" />
 		</authentication-provider>
 	</authentication-manager>

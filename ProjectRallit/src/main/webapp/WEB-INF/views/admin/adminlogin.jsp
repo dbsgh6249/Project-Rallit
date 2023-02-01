@@ -10,15 +10,19 @@
 <link href="resources/css/admin.css" rel="stylesheet">
 </head>
 <body>
+
+	<c:if test="${param.error != null}">
+		<p>아이디와 비밀번호가 잘못되었습니다.</p>
+	</c:if>
+	<c:if test="${param.logout != null}">
+		<p>로그아웃 하였습니다.</p>
+	</c:if>
+
+
 	<section class="login-form">
 		<h1>LOGIN</h1>
-		<form action="">
-			<c:if test="${param.error != null}">
-				<p>아이디와 비밀번호가 잘못되었습니다.</p>
-			</c:if>
-			<c:if test="${param.logout != null}">
-				<p>로그아웃 하였습니다.</p>
-			</c:if>
+		<c:url value="/login" var="loginUrl" />
+		<form:form name="frmLogin" action="${loginUrl}" method="POST">
 			<c:if test="${param.error != null}">
 				<p>아이디와 비밀번호가 잘못되었습니다.</p>
 			</c:if>
@@ -36,9 +40,7 @@
 			<div class="btn-area">
 				<button type="submit">LOGIN</button>
 			</div>
-		</form>
+		</form:form>
 	</section>
-</body>
-
 </body>
 </html>

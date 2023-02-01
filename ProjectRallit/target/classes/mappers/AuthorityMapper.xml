@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.human.dao.AuthorityDao">
+<insert id="insert"> <!-- 유저 생성 시 권한 함께 부여 必 -->
+insert into Authority
+values(#{user_id},#{authority})
+</insert>
+<select id="selectOne" resultType="com.human.dto.CompanyDto">
+select * from Authority where user_id=#{user_id}
+</select>
+<select id="selectAll" resultType="com.human.dto.CompanyDto">
+select * from Authority order by user_id
+</select>
+
+<delete id="delete"> <!-- 유저 삭제 시 권한 함께 삭제 必 , authority확인은 seeker와 company의 id 중복 사례 우려 -->
+delete from Authority where user_id=#{user_id} and authority=#{authority}
+</delete>
+
+</mapper>
+
+
+
+
+
+
+
+
+

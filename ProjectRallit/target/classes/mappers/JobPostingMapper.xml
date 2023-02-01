@@ -11,14 +11,19 @@ values (jobPosting_seq.nextval,#{title},#{company_id},sysdate, #{deadline},#{occ
 #{province},#{city},#{mainWork},#{preferential},#{welfare},1)</insert>
 
 <select id="read" resultType="com.human.dto.JobPostingDto"> <!-- 채용공고 상세페이지(Select One) -->
-select * from JobPosting where textNumber = #{textNumber}</select>
+select * from JobPosting where textNumber = #{textNumber}
+</select>
+
+<select id="readCompanyPosting" resultType="com.human.dto.JobPostingDto"> <!-- 기업회원 마이페이지에서 조회되는 공고 목록 -->
+select * from JobPosting where company_id=#{company_id} order by textNumber
+</select>
 
 <select id="readHoldState" resultType="com.human.dto.JobPostingDto"> <!-- 승인요청 목록 --> 
-select * from JobPosting where holdState=1 order by textNum
+select * from JobPosting where holdState=1 order by textNumber
 </select>
 
 <select id="readDelete" resultType="com.human.dto.JobPostingDto"> <!-- 삭제요청 목록 -->
-select * from JobPosting where holdState=2 order by textNum
+select * from JobPosting where holdState=2 order by textNumber
 </select>
 
 <update id="updateJobPosting"> <!-- 채용공고 수정(요청) -->

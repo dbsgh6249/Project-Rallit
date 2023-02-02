@@ -1,0 +1,4740 @@
+@charset "UTF-8";
+html {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: swiper-icons;
+    src: url("data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAAkQAAACIAAABYt6F0cBjdnQgAAACzAAAAAQAAAAEABEBRGdhc3AAAAWYAAAACAAAAAj//wADZ2x5ZgAAAywAAADMAAAD2MHtryVoZWFkAAABbAAAADAAAAA2E2+eoWhoZWEAAAGcAAAAHwAAACQC9gDzaG10eAAAAigAAAAZAAAArgJkABFsb2NhAAAC0AAAAFoAAABaFQAUGG1heHAAAAG8AAAAHwAAACAAcABAbmFtZQAAA/gAAAE5AAACXvFdBwlwb3N0AAAFNAAAAGIAAACE5s74hXjaY2BkYGAAYpf5Hu/j+W2+MnAzMYDAzaX6QjD6/4//Bxj5GA8AuRwMYGkAPywL13jaY2BkYGA88P8Agx4j+/8fQDYfA1AEBWgDAIB2BOoAeNpjYGRgYNBh4GdgYgABEMnIABJzYNADCQAACWgAsQB42mNgYfzCOIGBlYGB0YcxjYGBwR1Kf2WQZGhhYGBiYGVmgAFGBiQQkOaawtDAoMBQxXjg/wEGPcYDDA4wNUA2CCgwsAAAO4EL6gAAeNpj2M0gyAACqxgGNWBkZ2D4/wMA+xkDdgAAAHjaY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQrMOgyWDLEM1T9/w8UBfEMgLzE////P/5//f/V/xv+r4eaAAeMbAxwIUYmIMHEgKYAYjUcsDAwsLKxc3BycfPw8jEQA/gZBASFhEVExcQlJKWkZWTl5BUUlZRVVNXUNTQZBgMAAMR+E+gAEQFEAAAAKgAqACoANAA+AEgAUgBcAGYAcAB6AIQAjgCYAKIArAC2AMAAygDUAN4A6ADyAPwBBgEQARoBJAEuATgBQgFMAVYBYAFqAXQBfgGIAZIBnAGmAbIBzgHsAAB42u2NMQ6CUAyGW568x9AneYYgm4MJbhKFaExIOAVX8ApewSt4Bic4AfeAid3VOBixDxfPYEza5O+Xfi04YADggiUIULCuEJK8VhO4bSvpdnktHI5QCYtdi2sl8ZnXaHlqUrNKzdKcT8cjlq+rwZSvIVczNiezsfnP/uznmfPFBNODM2K7MTQ45YEAZqGP81AmGGcF3iPqOop0r1SPTaTbVkfUe4HXj97wYE+yNwWYxwWu4v1ugWHgo3S1XdZEVqWM7ET0cfnLGxWfkgR42o2PvWrDMBSFj/IHLaF0zKjRgdiVMwScNRAoWUoH78Y2icB/yIY09An6AH2Bdu/UB+yxopYshQiEvnvu0dURgDt8QeC8PDw7Fpji3fEA4z/PEJ6YOB5hKh4dj3EvXhxPqH/SKUY3rJ7srZ4FZnh1PMAtPhwP6fl2PMJMPDgeQ4rY8YT6Gzao0eAEA409DuggmTnFnOcSCiEiLMgxCiTI6Cq5DZUd3Qmp10vO0LaLTd2cjN4fOumlc7lUYbSQcZFkutRG7g6JKZKy0RmdLY680CDnEJ+UMkpFFe1RN7nxdVpXrC4aTtnaurOnYercZg2YVmLN/d/gczfEimrE/fs/bOuq29Zmn8tloORaXgZgGa78yO9/cnXm2BpaGvq25Dv9S4E9+5SIc9PqupJKhYFSSl47+Qcr1mYNAAAAeNptw0cKwkAAAMDZJA8Q7OUJvkLsPfZ6zFVERPy8qHh2YER+3i/BP83vIBLLySsoKimrqKqpa2hp6+jq6RsYGhmbmJqZSy0sraxtbO3sHRydnEMU4uR6yx7JJXveP7WrDycAAAAAAAH//wACeNpjYGRgYOABYhkgZgJCZgZNBkYGLQZtIJsFLMYAAAw3ALgAeNolizEKgDAQBCchRbC2sFER0YD6qVQiBCv/H9ezGI6Z5XBAw8CBK/m5iQQVauVbXLnOrMZv2oLdKFa8Pjuru2hJzGabmOSLzNMzvutpB3N42mNgZGBg4GKQYzBhYMxJLMlj4GBgAYow/P/PAJJhLM6sSoWKfWCAAwDAjgbRAAB42mNgYGBkAIIbCZo5IPrmUn0hGA0AO8EFTQAA");
+    font-weight: 400;
+    font-style: normal
+}
+
+.css-et343p {
+    grid-area: aside / aside / aside / aside;
+    align-self: start;
+    position: sticky;
+    margin-left: 16px;
+    top: 74px;
+    width: 314px;
+}
+
+:root {
+    --swiper-theme-color: #007aff
+}
+
+.css-1rlc6km {
+    grid-area: swiper / swiper / swiper / swiper;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-right: 48px;
+    border: 1px solid rgb(242, 244, 246);
+    border-radius: 6px;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1
+}
+
+.swiper-vertical>.swiper-wrapper {
+    flex-direction: column
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box
+}
+
+.swiper-android .swiper-slide,
+.swiper-wrapper {
+    transform: translateZ(0)
+}
+
+.swiper-backface-hidden .swiper-slide {
+    transform: translateZ(0);
+    /* -webkit-backface-visibility: hidden; */
+    backface-visibility: hidden;
+}
+
+.swiper-pointer-events.swiper-vertical {
+    touch-action: pan-x
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform
+}
+
+.swiper-slide-invisible-blank {
+    visibility: hidden
+}
+
+.swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+    height: auto
+}
+
+.swiper-autoheight .swiper-wrapper {
+    align-items: flex-start;
+    transition-property: transform, height
+}
+
+
+.swiper-3d,
+.swiper-3d.swiper-css-mode .swiper-wrapper {
+    perspective: 1200px
+}
+
+.swiper-3d .swiper-cube-shadow,
+.swiper-3d .swiper-slide,
+.swiper-3d .swiper-slide-shadow,
+.swiper-3d .swiper-slide-shadow-bottom,
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-top,
+.swiper-3d .swiper-wrapper {
+    transform-style: preserve-3d
+}
+
+.swiper-3d .swiper-slide-shadow,
+.swiper-3d .swiper-slide-shadow-bottom,
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10
+}
+
+.swiper-3d .swiper-slide-shadow {
+    background: rgba(0, 0, 0, .15)
+}
+
+.swiper-3d .swiper-slide-shadow-left {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, .5), transparent)
+}
+
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, .5), transparent)
+}
+
+.swiper-3d .swiper-slide-shadow-top {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), transparent)
+}
+
+.swiper-3d .swiper-slide-shadow-bottom {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), transparent)
+}
+
+.swiper-css-mode>.swiper-wrapper {
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none
+}
+
+.swiper-css-mode>.swiper-wrapper::-webkit-scrollbar {
+    display: none
+}
+
+.swiper-css-mode>.swiper-wrapper>.swiper-slide {
+    scroll-snap-align: start start
+}
+
+.swiper-horizontal.swiper-css-mode>.swiper-wrapper {
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory
+}
+
+.swiper-vertical.swiper-css-mode>.swiper-wrapper {
+    -ms-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory
+}
+
+.swiper-centered>.swiper-wrapper:before {
+    content: "";
+    flex-shrink: 0;
+    order: 9999
+}
+
+.swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child {
+    -webkit-margin-start: var(--swiper-centered-offset-before);
+    margin-inline-start: var(--swiper-centered-offset-before)
+}
+
+.swiper-centered.swiper-horizontal>.swiper-wrapper:before {
+    height: 100%;
+    min-height: 1px;
+    width: var(--swiper-centered-offset-after)
+}
+
+.swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child {
+    -webkit-margin-before: var(--swiper-centered-offset-before);
+    margin-block-start: var(--swiper-centered-offset-before)
+}
+
+.swiper-centered.swiper-vertical>.swiper-wrapper:before {
+    width: 100%;
+    min-width: 1px;
+    height: var(--swiper-centered-offset-after)
+}
+
+.swiper-centered>.swiper-wrapper>.swiper-slide {
+    scroll-snap-align: center center
+}
+
+:root {
+    --swiper-navigation-size: 44px
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color, var(--swiper-theme-color))
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none !important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: normal;
+    line-height: 1
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: 10px;
+    right: auto
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: "prev"
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: 10px;
+    left: auto
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: "next"
+}
+
+.swiper-button-lock {
+    display: none
+}
+
+
+.css-1cp3pcs {
+    height: 2.667rem;
+    border-bottom: 1px solid #F1F3F5;
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -ms-flexbox;
+    display: flex;
+    /* -webkit-align-items: center; */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    /* -webkit-justify-content: center; */
+    justify-content: center;
+}
+
+.css-1cp3pcs .inflab-integrated__header {
+    padding: 0 32px;
+    max-width: 80.000rem;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .css-1cp3pcs .inflab-integrated__header {
+        padding: 0 16px;
+    }
+}
+
+.css-1cp3pcs .inflab-integrated__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: 500;
+}
+
+.css-1cp3pcs .inflab-integrated__container ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+}
+
+.css-1cp3pcs .inflab-integrated__container ul li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.css-1cp3pcs .inflab-integrated__container ul li:not(:last-child):after {
+    content: '';
+    display: block;
+    margin: 0px 8px;
+    width: 1px;
+    height: 12px;
+    background: #D5DBE2;
+}
+
+.css-1cp3pcs .inflab-integrated__container ul li:not(:first-of-type) {
+    margin-left: 2px;
+}
+
+.css-1cp3pcs .inflab-integrated__container .inflab-integrated__service {
+    margin: 0;
+    color: #878e98;
+}
+
+.css-1cp3pcs .inflab-integrated__container .inflab-integrated__service a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.css-1cp3pcs .inflab-integrated__container .rallit-icon {
+    margin-right: 4px;
+    margin-left: 0;
+}
+
+.css-1cp3pcs .inflab-integrated__container .active {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: bold;
+    color: #3E4042;
+}
+
+.css-5wonz9 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+}
+
+.css-10rvbm3 {
+    font-weight: 500;
+}
+
+.css-11cix4b {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    /* font-weight: normal; */
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+    font-weight: 500;
+}
+
+
+.css-o8aacz {
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -ms-flexbox;
+    display: flex;
+    /* -webkit-align-items: center; */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    /* -webkit-justify-content: space-between; */
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+    max-width: 80rem;
+    height: 3.933rem;
+}
+
+.css-o8aacz .left-GNB,
+.css-o8aacz .right-GNB {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(4, auto);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+}
+
+.css-o8aacz .right-GNB {
+    grid-template-columns: repeat(5, auto);
+    gap: 0;
+}
+
+.css-o8aacz .left-GNB,
+.css-o8aacz .right-GNB {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(4, auto);
+    /* width: -webkit-fit-content; */
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .css-o8aacz {
+        padding: 8px 0 20px 0;
+        height: unset;
+    }
+
+    .css-o8aacz .left-GNB {
+        width: 75%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+    }
+
+    .css-o8aacz .right-GNB {
+        width: 25%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.css-p1vanc {
+    /* width: 100%; */
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -ms-flexbox;
+    /* display: flex; */
+    /* -webkit-flex-direction: row; */
+    -ms-flex-direction: row;
+    /* flex-direction: row; */
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    /* -webkit-justify-content: start; */
+    justify-content: start;
+    /* -webkit-align-items: center; */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* gap: 0rem;
+
+.css-avxbst {
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -ms-flexbox;
+    display: flex;
+    /* -webkit-flex-direction: column; */
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* -webkit-align-items: center; */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    /* -webkit-justify-content: center; */
+    justify-content: center;
+    /* width: -webkit-max-content; */
+    width: -moz-max-content;
+    width: max-content;
+}
+
+.css-avxbst .GNB-menu__noti-container {
+    position: relative;
+}
+
+.css-avxbst .GNB-menu__noti {
+    position: absolute;
+    right: -0.400rem;
+    top: -0.800rem;
+}
+
+@media (max-width: 768px) {
+    .css-avxbst .GNB-menu__noti {
+        top: unset;
+        bottom: 1rem;
+        right: -0.400rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-avxbst {
+        width: 100%;
+    }
+}
+
+.css-wodprq {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .css-wodprq {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.css-1sepp5i {
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    /* -webkit-justify-content: center; */
+    justify-content: center;
+    /* -webkit-align-items: center; */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* -webkit-flex-shrink: 0; */
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.css-jk5git {
+    margin-top: 4px;
+    color: #a1aab2;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 11px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: -0.3px;
+    font-weight: 500;
+}
+
+.css-176b8zp {
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .css-176b8zp {
+        display: none;
+    }
+}
+
+strong {
+    font-weight: bold;
+}
+
+.css-1ttw3p7 {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: -0.3px;
+    margin: 0;
+    white-space: pre-line;
+    word-break: break-all;
+    color: #21252a;
+}
+
+.css-ekuvz3 {
+    margin-top: 4px;
+    color: #00CCAA;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 11px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: -0.3px;
+    font-weight: bold;
+}
+
+.css-4qldrf {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    position: relative;
+    color: #535961;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    font-weight: bold;
+    color: #21252a;
+}
+
+.css-4qldrf .rallit-icon>svg>path {
+    fill: #535961;
+}
+
+.css-4qldrf:hover,
+.css-4qldrf:active {
+    color: #21252a;
+}
+
+.css-4qldrf:hover::after,
+.css-4qldrf:active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 1px;
+    background: #21252a;
+}
+
+.css-4qldrf:disabled {
+    color: #c6cad0;
+    cursor: not-allowed;
+}
+
+.css-4qldrf:disabled .rallit-icon>svg>path {
+    fill: #c6cad0;
+}
+
+.css-4qldrf:disabled::after {
+    display: none;
+}
+
+.css-3fe575 {
+    position: relative;
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -ms-flexbox;
+    display: flex;
+    /* -webkit-flex-direction: column; */
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    /* -webkit-justify-content: center; */
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+}
+
+.css-3fe575 .dropdownList__container {
+    display: none;
+    width: auto;
+}
+
+.css-3fe575 .dropdownList__container {
+    display: none;
+}
+
+.css-1gkmlwz::before {
+    position: absolute;
+    z-index: 180;
+    content: "";
+    width: 0.267rem;
+    height: 0.267rem;
+    bottom: 8.9px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 1px solid #eaecee;
+    border-top-left-radius: 1px;
+    border-right: none;
+    border-bottom: none;
+    background-color: #fff;
+}
+
+.css-1gkmlwz>div {
+    border: none;
+}
+
+.css-1gkmlwz::before {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+    .css-1gkmlwz::before {
+        display: none;
+    }
+
+    .css-1gkmlwz ul {
+        display: none;
+    }
+}
+
+.css-1n7ju9x {
+    position: absolute;
+    top: 66px;
+    left: 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+    height: 30.000rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+    top: 0;
+    border: 1px solid #eaecee;
+}
+
+@media (max-width: 768px) {
+    .css-1n7ju9x {
+        top: 66px;
+        left: 0;
+        right: 0;
+        height: 20.667rem;
+        width: calc(100vw - 40px);
+        border: none;
+        border-radius: 6px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+    }
+}
+
+@media (max-width: 768px) {
+    .css-1n7ju9x {
+        display: none;
+    }
+}
+
+.css-14ypdl9 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    gap: 0.000rem;
+    width: 100%;
+    height: 100%;
+}
+
+.css-1so5lt {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.css-1fdx6k3 {
+    overflow-y: scroll;
+    background-color: #f8f9fa;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border-radius: 6px 0 0 6px;
+}
+
+.css-1fdx6k3::-webkit-scrollbar {
+    display: none;
+}
+
+.css-1k185p7 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+    margin-bottom: 4px;
+    width: 100%;
+    height: 2.933rem;
+    border: none;
+    color: #a1aab2;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+.css-1piurjj {
+    all: unset;
+    border-bottom-left-radius: 6px;
+}
+
+.css-ziljwy {
+    overflow-y: scroll;
+    padding: 0 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.css-ziljwy::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .css-ziljwy {
+        padding: 0 16px;
+    }
+}
+
+.css-pwu5ys {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+    margin-bottom: 4px;
+    width: 100%;
+    height: 2.933rem;
+    border: none;
+    color: #a1aab2;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+}
+
+.css-1kxn32n {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0;
+    height: calc(100% - 68px);
+    color: #a1aab2;
+    cursor: default;
+}
+
+.css-5by9vu {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+}
+
+.css-1xxao48 {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.css-1xxao48.disabled {
+    cursor: not-allowed;
+}
+
+.css-1xxao48 .header__search-wrapper {
+    margin-right: 24px;
+    padding: 0 0 0 12px;
+    width: 18.667rem;
+    height: 2.533rem;
+}
+
+.css-1xxao48 button {
+    margin: 0 4px 0 12px;
+}
+
+@media (max-width: 967px) {
+    .css-1xxao48 .header__search-wrapper {
+        width: 10.667rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-1xxao48 {
+        display: none;
+    }
+}
+
+.css-1u763tv {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 16px;
+    height: 2.933rem;
+    border: 1px solid #eaecee;
+    border-radius: 6px;
+    background-color: #fff;
+    cursor: text;
+}
+
+.css-16s6tkq {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: start;
+    align-items: start;
+    gap: 0rem;
+    margin-top: 0.933rem;
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+}
+
+.css-wlnobz {
+    /* margin: 0px; */
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    /* font-weight: normal; */
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+}
+
+.css-1u8yjw6 {
+    width: 6rem;
+    color: rgb(161, 170, 178);
+}
+
+.css-tf6ktq p {
+    margin: 0px;
+    color: rgb(33, 37, 42);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.css-tf6ktq {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.css-1pvdrt3 {
+    margin-left: 0px;
+    color: rgb(33, 37, 42);
+}
+
+.css-1u763tv:hover {
+    border-color: #c6cad0;
+}
+
+.css-1u763tv:focus-within {
+    border-color: #535961;
+}
+
+.css-1u763tv input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.css-1u763tv input::-webkit-input-placeholder {
+    color: #c6cad0;
+}
+
+.css-1u763tv input::-moz-placeholder {
+    color: #c6cad0;
+}
+
+.css-1u763tv input:-ms-input-placeholder {
+    color: #c6cad0;
+}
+
+.css-1u763tv input::placeholder {
+    color: #c6cad0;
+}
+
+.css-10xzrfw {
+    padding: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.css-10xzrfw:disabled {
+    -webkit-text-fill-color: #a1aab2;
+    opacity: 1;
+    color: #a1aab2;
+    cursor: not-allowed;
+}
+
+.css-1gerhyj {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 8px;
+    border: 0;
+    border-radius: 6px;
+    background: none;
+    cursor: pointer;
+    margin: -8px -8px -8px 0;
+}
+
+.css-1gerhyj:enabled:hover {
+    background-color: #f2f4f6;
+}
+
+.css-1gerhyj:disabled {
+    cursor: not-allowed;
+}
+
+.css-1ljwjjg {
+    background-color: #f2f4f6;
+    width: 100%;
+    height: 1px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .css-1ljwjjg {
+        -webkit-order: -1;
+        -ms-flex-order: -1;
+        order: -1;
+    }
+}
+
+.css-ac13em {
+    margin-top: 0;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .css-ac13em {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-6shsqf {
+        padding-bottom: 213px;
+        background: #f2f4f6;
+    }
+}
+
+.css-fyikhi {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: -0.3px;
+    white-space: pre-line;
+    word-break: break-all;
+}
+
+.css-1k9ek97 {
+    background-color: #fff;
+}
+
+.css-8mcuh1 {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: -0.3px;
+    white-space: pre-line;
+    word-break: break-all;
+    display: none;
+}
+
+.css-7p16x3 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 16px 56px;
+    width: 100%;
+    min-height: 2.667rem;
+    max-height: 4.000rem;
+    z-index: 79;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    background: #eaf8fd;
+    position: relative;
+    z-index: 20;
+    padding: 14px 0;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+}
+
+@media (max-width: 768px) {
+    .css-7p16x3 {
+        padding: 14px 16px;
+    }
+}
+
+.css-clmvor {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-right: 8px;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: flex-start;
+    align-self: flex-start;
+    margin-top: 1px;
+}
+
+.css-13ki8y2 {
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-break: break-all;
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    color: #04a6e1;
+}
+
+@media (max-width: 768px) {
+    .css-13ki8y2 {
+        padding-right: 0;
+    }
+}
+
+.css-1ex97n {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    gap: 0.000rem;
+    margin: 0 auto;
+    max-width: 75.733rem;
+}
+
+@media (max-width: 1024px) {
+    .css-1ex97n {
+        padding: 0 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-1ex97n {
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        padding: 16px;
+        gap: 16px;
+    }
+}
+
+.css-yx392q {
+    -webkit-flex: 0 1 56.000rem;
+    -ms-flex: 0 1 56.000rem;
+    flex: 0 1 56.000rem;
+    margin-right: 16px;
+    padding: 40px 28px;
+}
+
+@media (max-width: 1024px) {
+    .css-yx392q {
+        -webkit-flex: 0 1 55.467rem;
+        -ms-flex: 0 1 55.467rem;
+        flex: 0 1 55.467rem;
+        padding: 32px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-yx392q {
+        -webkit-flex: 1 1 fit-content;
+        -ms-flex: 1 1 fit-content;
+        flex: 1 1 fit-content;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.css-133pvyo {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 3.733rem;
+}
+
+@media (max-width: 768px) {
+    .css-133pvyo {
+        height: 2.267rem;
+        margin-bottom: 8px;
+    }
+}
+
+.css-133pvyo>input {
+    width: 100%;
+    height: 3.733rem;
+    font-size: 40px;
+    font-weight: 700;
+    text-underline-offset: 0.533rem;
+}
+
+@media (max-width: 768px) {
+    .css-133pvyo>input {
+        font-size: 24px;
+        height: 2.267rem;
+        text-underline-offset: 0.333rem;
+    }
+}
+
+.css-1hyfx7x {
+    display: none;
+}
+
+.css-1qvqm7m {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    border: none;
+    padding: 0;
+    outline: none;
+    -webkit-text-decoration: underline #21252a 1px;
+    text-decoration: underline #21252a 1px;
+    letter-spacing: -0.3px;
+}
+
+.css-1qvqm7m::-webkit-input-placeholder {
+    color: #a1aab2;
+}
+
+.css-1qvqm7m::-moz-placeholder {
+    color: #a1aab2;
+}
+
+.css-1qvqm7m:-ms-input-placeholder {
+    color: #a1aab2;
+}
+
+.css-1qvqm7m::placeholder {
+    color: #a1aab2;
+}
+
+.css-p4oz64 {
+    margin-bottom: 16px;
+    width: 100%;
+    height: 2.267rem;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .css-p4oz64 {
+        height: 1.600rem;
+        margin-bottom: 16px;
+    }
+}
+
+.css-p4oz64>input {
+    width: 100%;
+    max-width: 100%;
+    height: 2.267rem;
+    font-size: 24px;
+    font-weight: 500;
+    text-underline-offset: 0.333rem;
+}
+
+@media (max-width: 768px) {
+    .css-p4oz64>input {
+        font-size: 18px;
+        height: 1.733rem;
+        text-underline-offset: 0.200rem;
+    }
+}
+
+.css-1chys3l {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    gap: 0.000rem;
+    gap: 16px;
+    display: grid;
+    -webkit-align-items: baseline;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    grid-template-rows: auto;
+    row-gap: 2px;
+    -webkit-column-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "phoneNumber email" "addressMainAndBuildingName addressMainAndBuildingName" "coverLetter coverLetter";
+}
+
+@media (max-width: 768px) {
+    .css-1chys3l {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
+.css-1chys3l+.css-1chys3l {
+    margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+    .css-1chys3l>*+* {
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+.css-1chys3l>div:nth-of-type(1) {
+    grid-area: phoneNumber;
+}
+
+.css-1chys3l>div:nth-of-type(2) {
+    grid-area: email;
+    width: 100%;
+}
+
+.css-1chys3l>div:nth-of-type(3) {
+    grid-area: addressMainAndBuildingName;
+}
+
+.css-1chys3l>div:nth-of-type(4) {
+    grid-area: coverLetter;
+}
+
+@media (max-width: 768px) {
+    .css-1chys3l {
+        row-gap: 2px;
+        -webkit-column-gap: 8px;
+        column-gap: 8px;
+        grid-template-columns: 100%;
+        grid-template-areas: "phoneNumber" "email" "addressMainAndBuildingName" "coverLetter";
+    }
+}
+
+.css-1ugo2e6 {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .css-1ugo2e6 {
+        width: 100%;
+    }
+}
+
+.css-1ugo2e6 label>span {
+    display: none;
+}
+
+.css-1ugo2e6>input+div>span {
+    display: none;
+}
+
+.css-14ly3ew {
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+.css-79elbk {
+    position: relative;
+}
+
+.css-817y00 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 4px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+    color: #21252a;
+    word-break: break-all;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.css-mdh6b {
+    margin-left: 3px;
+    color: #e50000;
+}
+
+.css-1qnlkji {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 16px;
+    height: 2.933rem;
+    border: 1px solid #eaecee;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.css-1qnlkji:hover {
+    border-color: #c6cad0;
+}
+
+.css-1qnlkji>*+* {
+    margin-left: 16px;
+}
+
+.css-yiolqq {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+    color: #21252a;
+}
+
+.css-yiolqq .icon-wrapper--focused {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.css-yiolqq>*+* {
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.css-koyv6e {
+    display: inline-block;
+    min-width: 38px;
+    color: inherit;
+}
+
+.css-12r39mb {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.css-jpk05f {
+    -moz-appearance: textfield;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+    color: #21252a;
+    border: 0;
+    width: 100%;
+    background: none;
+    outline: none;
+    text-align: left;
+}
+
+.css-jpk05f::-webkit-outer-spin-button,
+.css-jpk05f::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.css-jpk05f:disabled {
+    -webkit-text-fill-color: #a1aab2;
+    opacity: 1;
+    color: #a1aab2;
+}
+
+.css-jpk05f::-webkit-input-placeholder {
+    color: #c6cad0;
+}
+
+.css-jpk05f::-moz-placeholder {
+    color: #c6cad0;
+}
+
+.css-jpk05f:-ms-input-placeholder {
+    color: #c6cad0;
+}
+
+.css-jpk05f::placeholder {
+    color: #c6cad0;
+}
+
+.css-olpytc {
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(100% + 8px);
+    overflow-y: auto;
+    margin: 0;
+    padding: 16px;
+    max-height: 22.000rem;
+    background-color: #fff;
+    border: 1px solid #eaecee;
+    border-radius: 6px;
+    list-style: none;
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .css-olpytc {
+        max-height: 16.667rem;
+    }
+}
+
+.css-he45e8 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    color: #21252a;
+    border-radius: 2px;
+    cursor: default;
+}
+
+.css-he45e8>*+* {
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.css-he45e8:hover {
+    background-color: #f8f9fa;
+}
+
+.css-he45e8.ccc-item--selected {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: bold;
+    color: #00CCAA;
+    background-color: #f8f9fa;
+}
+
+.css-he45e8>dt {
+    width: 39px;
+}
+
+.css-he45e8>dd {
+    margin: 0;
+}
+
+.css-fiamws {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 4px;
+    opacity: 0;
+}
+
+.css-ce81wa {
+    position: relative;
+    top: 1px;
+    margin-left: 4px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 12px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    font-weight: normal;
+    color: #e50000;
+}
+
+dd {
+    display: block;
+    margin-inline-start: 40px;
+}
+
+.css-1k3gdd {
+    width: 100%;
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+}
+
+.css-1k3gdd.disabled {
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .css-1k3gdd {
+        width: 100%;
+    }
+}
+
+.css-1k3gdd label>span {
+    display: none;
+}
+
+.css-1u763tv {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 16px;
+    height: 2.933rem;
+    border: 1px solid #eaecee;
+    border-radius: 6px;
+    background-color: #fff;
+    cursor: text;
+}
+
+.css-1u763tv:hover {
+    border-color: #c6cad0;
+}
+
+.css-1u763tv:focus-within {
+    border-color: #535961;
+}
+
+.css-1u763tv input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.css-1u763tv input::-webkit-input-placeholder {
+    color: #c6cad0;
+}
+
+.css-1u763tv input::-moz-placeholder {
+    color: #c6cad0;
+}
+
+.css-1u763tv input:-ms-input-placeholder {
+    color: #c6cad0;
+}
+
+.css-1u763tv input::placeholder {
+    color: #c6cad0;
+}
+
+.css-10xzrfw {
+    padding: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.css-10xzrfw:disabled {
+    -webkit-text-fill-color: #a1aab2;
+    opacity: 1;
+    color: #a1aab2;
+    cursor: not-allowed;
+}
+
+.css-7fca1 {
+    width: 100%;
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+}
+
+.css-7fca1.disabled {
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .css-7fca1 {
+        width: 100%;
+    }
+}
+
+.css-7fca1 label>span {
+    display: none;
+}
+
+.css-1gerhyj {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 8px;
+    border: 0;
+    border-radius: 6px;
+    background: none;
+    cursor: pointer;
+    margin: -8px -8px -8px 0;
+}
+
+.css-1gerhyj:enabled:hover {
+    background-color: #f2f4f6;
+}
+
+.css-1gerhyj:disabled {
+    cursor: not-allowed;
+}
+
+.css-qxp9ow {
+    width: 100%;
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+}
+
+@media (max-width: 768px) {
+    .css-qxp9ow {
+        width: 100%;
+    }
+}
+
+.css-qxp9ow label>span {
+    display: none;
+}
+
+.css-1vvgunx {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #eaecee;
+    border-radius: 6px;
+    background-color: #fff;
+    cursor: text;
+    overflow: auto;
+}
+
+.css-1vvgunx:hover {
+    border-color: #c6cad0;
+}
+
+.css-1vvgunx:focus-within {
+    border-color: #535961;
+}
+
+.css-1f6rmap {
+    margin: 0;
+    padding: 0.800rem 16px;
+    width: 100%;
+    height: 7.200rem;
+    border: none;
+    outline: none;
+    background: #fff;
+    font-family: inherit;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    font-weight: normal;
+    resize: vertical;
+}
+
+.css-1f6rmap::-webkit-input-placeholder {
+    color: #c6cad0;
+}
+
+.css-1f6rmap::-moz-placeholder {
+    color: #c6cad0;
+}
+
+.css-1f6rmap:-ms-input-placeholder {
+    color: #c6cad0;
+}
+
+.css-1f6rmap::placeholder {
+    color: #c6cad0;
+}
+
+.css-1f6rmap::-webkit-input-placeholder {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.css-1f6rmap::-moz-placeholder {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.css-1f6rmap:-ms-input-placeholder {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.css-1f6rmap::placeholder {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.css-1f6rmap:disabled {
+    -webkit-text-fill-color: #a1aab2;
+    color: #a1aab2;
+    background: #f8f9fa;
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+.css-1d7hmzo {
+    margin: 0;
+    margin-top: 4px;
+    padding: 0;
+    list-style: none;
+}
+
+.css-1d7hmzo>li:nth-of-type(n + 2) {
+    margin-top: 2px;
+}
+
+.css-ab5dye {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+}
+
+.css-4duij1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2px 4px 0 0;
+    display: none;
+}
+
+.css-nwu3e5 {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 12px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    font-weight: normal;
+    white-space: pre-line;
+    color: #a1aab2;
+}
+
+.css-1bdzk06 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 0 1 18.133rem;
+    -ms-flex: 0 1 18.133rem;
+    flex: 0 1 18.133rem;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 40px 21px;
+}
+
+@media (max-width: 1024px) {
+    .css-1bdzk06 {
+        padding: 40px 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-1bdzk06 {
+        -webkit-flex: 0 0 9.333rem;
+        -ms-flex: 0 0 9.333rem;
+        flex: 0 0 9.333rem;
+        -webkit-align-items: flex-start;
+        -webkit-box-align: flex-start;
+        -ms-flex-align: flex-start;
+        align-items: flex-start;
+        margin-left: 0;
+        padding: 0;
+    }
+}
+
+.css-1v0y0ql {
+    position: relative;
+    display: block;
+    width: 256px;
+    border-radius: 6px;
+    width: 256px;
+    background-color: #fff;
+    width: 15.333rem;
+    height: 15.333rem;
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .css-1v0y0ql {
+        width: 9.333rem;
+        height: 9.333rem;
+    }
+}
+
+.css-1v0y0ql button+button {
+    right: unset;
+}
+
+.css-1v0y0ql>div>div {
+    border-radius: 140px 10px 140px 140px;
+}
+
+@media (max-width: 768px) {
+    .css-1v0y0ql button {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-1v0y0ql p {
+        display: none;
+    }
+}
+
+.css-vx1dyz {
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.css-wbgzev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #eaecee;
+    border-radius: 6px;
+}
+
+.css-wbgzev:hover {
+    border-color: #c6cad0;
+}
+
+.css-wbgzev:hover>.image-uploader-cover {
+    opacity: 0.14;
+}
+
+.css-wbgzev:hover button {
+    opacity: 1;
+}
+
+.css-14dxa7q {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    z-index: unset;
+}
+
+.css-1ngnjh4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #000;
+    z-index: 2;
+}
+
+.css-hdg8y2 {
+    margin: 6px 0 0 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 12px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    font-weight: normal;
+    color: #a1aab2;
+}
+
+.css-q2j5hf {
+    z-index: 3;
+    margin-top: 16px;
+}
+
+.css-1gx0rvp {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: #f2f4f6;
+    color: #535961;
+    padding: 7px 12px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 11px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: -0.3px;
+    font-weight: bold;
+    z-index: 3;
+    margin-top: 16px;
+}
+
+.css-1gx0rvp:disabled {
+    cursor: not-allowed;
+}
+
+.css-1gx0rvp:hover,
+.css-1gx0rvp:active {
+    background-color: #dfe2e6;
+}
+
+.css-1gx0rvp:disabled {
+    background-color: #f2f4f6;
+    color: #c6cad0;
+}
+
+.css-1gx0rvp .rallit-icon {
+    width: 0.800rem;
+    height: 0.800rem;
+    margin: 0;
+}
+
+.css-1gx0rvp .rallit-icon>svg>path {
+    fill: #535961;
+}
+
+.css-hspij9 {
+    margin-top: 8px;
+    font-size: 0.800rem;
+    line-height: 1.200rem;
+    color: #878e98;
+}
+
+@media (max-width: 768px) {
+    .css-hspij9 {
+        margin-top: 16px;
+    }
+}
+
+.css-1jmiz42 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    background-color: #f2f4f6;
+}
+
+.css-5m4ka1 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 17.067rem;
+    row-gap: 0px;
+    -webkit-column-gap: 2.133rem;
+    column-gap: 2.133rem;
+    margin: 32px;
+    width: 100%;
+    max-width: 75.733rem;
+}
+
+@media (max-width: 1024px) {
+    .css-5m4ka1 {
+        max-width: 73.867rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-5m4ka1 {
+        grid-template-columns: 1fr 0;
+        margin: 0;
+        padding: 16px 0;
+        gap: 0;
+        row-gap: 32px;
+    }
+}
+
+.css-1qz0a5d {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 0px;
+    -webkit-column-gap: 0px;
+    column-gap: 0px;
+    row-gap: 32px;
+}
+
+@media (max-width: 768px) {
+    .css-1qz0a5d {
+        row-gap: 16px;
+    }
+}
+
+.css-c3ve7p {
+    border-radius: 16px;
+    padding: 32px;
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+    .css-c3ve7p {
+        padding: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-c3ve7p {
+        padding: 16px;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .css-c3ve7p {
+        padding-bottom: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-c3ve7p {
+        padding-bottom: 0;
+    }
+}
+
+.css-nxdy76 {
+    border-bottom: 3px solid #21252a;
+    margin-bottom: 32px;
+    padding-bottom: 7px;
+}
+
+@media (max-width: 1024px) {
+    .css-nxdy76 {
+        margin-bottom: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-nxdy76 {
+        margin-bottom: 16px;
+    }
+}
+
+.css-swd362 {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+    height: 2.933rem;
+}
+
+@media (max-width: 768px) {
+    .css-swd362 {
+        height: 2.533rem;
+    }
+}
+
+.css-1siu9uq {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+    gap: 0.000rem;
+    height: 2.267rem;
+}
+
+@media (max-width: 768px) {
+    .css-1siu9uq {
+        height: 1.867rem;
+    }
+}
+
+.css-1vin2lb {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: -0.3px;
+    white-space: pre-line;
+    word-break: break-all;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .css-1vin2lb {
+        font-size: 20px;
+        line-height: 1.867rem;
+    }
+}
+
+.css-1r5wwma {
+    height: 1.867rem;
+    margin-left: 4px;
+    color: #e50000;
+    font-weight: 500;
+    font-size: 0.933rem;
+    line-height: 1.333rem;
+}
+
+@media (max-width: 768px) {
+    .css-1r5wwma {
+        font-size: 0.867rem;
+        line-height: 1.267rem;
+    }
+}
+
+.css-zdpt2t {
+    margin-left: auto;
+}
+
+.css-1dw3lh5 {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    gap: 0.000rem;
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .css-1dw3lh5 {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
+.css-1dw3lh5+.css-1dw3lh5 {
+    margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+    .css-1dw3lh5>*+* {
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+.css-180u3m1 {
+    width: 100%;
+}
+
+.css-13o7eu2 {
+    display: block;
+}
+
+.css-18ia305 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 16px;
+    height: 2.933rem;
+    border: 1px solid #eaecee;
+    border-radius: 6px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.css-18ia305:hover {
+    border-color: #c6cad0;
+}
+
+.css-18ia305 .icon-wrapper--focused {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.css-18ia305.disabled {
+    cursor: not-allowed;
+}
+
+.css-1i1o4y5 {
+    overflow: hidden;
+    margin-right: auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    font-weight: normal;
+    color: #21252a;
+}
+
+.css-116b9m9 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.css-1x0fcs1 {
+    box-sizing: border-box;
+    overflow-y: auto;
+    position: absolute;
+    top: calc(100% + 8px);
+    margin: 0;
+    padding: 16px;
+    width: 100%;
+    max-height: 22.000rem;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #eaecee;
+    border-radius: 6px;
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .css-1x0fcs1 {
+        max-height: 16.667rem;
+    }
+}
+
+.css-ivzpf6 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    color: #21252a;
+    cursor: pointer;
+}
+
+.css-ivzpf6:hover {
+    border-radius: 2px;
+    background-color: #f8f9fa;
+}
+
+.css-ivzpf6.option--selected {
+    background-color: #f2f4f6;
+    font-weight: bold;
+    color: #21252a;
+    border-radius: 2px;
+}
+
+.css-ivzpf6>span {
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.css-1p5dvd8 {
+    border-radius: 16px;
+    padding: 32px;
+    background-color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .css-1p5dvd8 {
+        padding: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-1p5dvd8 {
+        padding: 16px;
+        border-radius: 0;
+    }
+}
+
+.css-qw9rwq {
+    height: 1.867rem;
+    margin-left: 4px;
+    color: #e50000;
+    font-weight: 500;
+    font-size: 0.933rem;
+    line-height: 1.333rem;
+    color: #0084F4;
+}
+
+@media (max-width: 768px) {
+    .css-qw9rwq {
+        font-size: 0.867rem;
+        line-height: 1.267rem;
+    }
+}
+
+.css-1c9tpv {
+    position: relative;
+    position: relative;
+    display: block;
+}
+
+.css-2uv5lm {
+    width: 100%;
+}
+
+.css-2uv5lm.disabled {
+    cursor: not-allowed;
+}
+
+.css-gqpgy4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 8px;
+    border: 0;
+    border-radius: 6px;
+    background: none;
+    cursor: pointer;
+    margin: -8px 8px -8px -8px;
+}
+
+.css-gqpgy4:enabled:hover {
+    background-color: #f2f4f6;
+}
+
+.css-gqpgy4:disabled {
+    cursor: not-allowed;
+}
+
+.css-1al1mym {
+    padding: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.css-1al1mym:disabled {
+    -webkit-text-fill-color: #a1aab2;
+    opacity: 1;
+    color: #a1aab2;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .css-1al1mym {
+        scroll-margin-top: 89px;
+    }
+}
+
+.css-18hl5m5 {
+    margin: 0 0 2px 8px;
+    color: #878e98;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.333rem;
+}
+
+@media (max-width: 768px) {
+    .css-18hl5m5 {
+        font-size: 13px;
+        line-height: 1.267rem;
+    }
+}
+
+.css-1t87mh9 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #535961;
+    padding: 8px 12px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: bold;
+    width: 2.933rem;
+    height: 2.933rem;
+    border: none;
+}
+
+.css-1t87mh9:disabled {
+    cursor: not-allowed;
+}
+
+.css-1t87mh9:hover,
+.css-1t87mh9:active {
+    background-color: #f2f4f6;
+}
+
+.css-1t87mh9:disabled {
+    background-color: #fff;
+    color: #c6cad0;
+}
+
+.css-1t87mh9 .rallit-icon {
+    width: 0.933rem;
+    height: 0.933rem;
+    margin: 0;
+}
+
+.css-1t87mh9 .rallit-icon>svg>path {
+    fill: #535961;
+}
+
+@media (max-width: 768px) {
+    .css-1t87mh9 {
+        width: 2.533rem;
+        height: 2.533rem;
+    }
+}
+
+.css-822ryp {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+}
+
+.css-aj40vv {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.css-aj40vv>li::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #535961;
+    margin: 10px 0 32px 0;
+}
+
+@media (max-width: 1024px) {
+    .css-aj40vv>li::after {
+        margin: 6px 0 28px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-aj40vv>li::after {
+        margin: 0 0 16px 0;
+    }
+}
+
+.css-aj40vv>li:last-child::after {
+    display: none;
+}
+
+.css-fstzjo {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    font-weight: bold;
+    white-space: pre-line;
+    word-break: break-all;
+    margin: 0;
+}
+
+.css-1o00n93 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: #f2f4f6;
+    color: #535961;
+    padding: 12px 14px 12px 12px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-weight: bold;
+    margin-top: 8px;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.css-1o00n93:disabled {
+    cursor: not-allowed;
+}
+
+.css-1o00n93:hover,
+.css-1o00n93:active {
+    background-color: #dfe2e6;
+}
+
+.css-1o00n93:disabled {
+    background-color: #f2f4f6;
+    color: #c6cad0;
+}
+
+.css-1o00n93 .rallit-icon {
+    width: 1.067rem;
+    height: 1.067rem;
+    margin: 0px 4px 0px 0px;
+}
+
+.css-1o00n93 .rallit-icon>svg>path {
+    fill: #535961;
+}
+
+@media (max-width: 768px) {
+    .css-1o00n93 {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .css-1o00n93 {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-1o00n93 {
+        margin-top: 8px;
+    }
+}
+
+.css-j0flry {
+    margin-top: 8px;
+    margin-bottom: 32px;
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width: 1024px) {
+    .css-j0flry {
+        margin-bottom: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-j0flry {
+        margin-bottom: 22px;
+    }
+}
+
+.css-1juceow {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+    -webkit-column-gap: 0px;
+    column-gap: 0px;
+}
+
+.css-u7t9ih {
+    padding-left: 20px;
+    color: #878e98;
+    margin-top: 32px;
+}
+
+.css-u7t9ih p {
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .css-u7t9ih {
+        margin-top: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-u7t9ih {
+        margin-top: 22px;
+    }
+}
+
+.css-oz575p {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: normal;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+}
+
+.css-1ctunha {
+    margin: 0;
+    padding: 0.800rem 16px;
+    width: 100%;
+    height: 33.333rem;
+    border: none;
+    outline: none;
+    background: #fff;
+    font-family: inherit;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    font-weight: normal;
+    resize: vertical;
+}
+
+.css-1ctunha::-webkit-input-placeholder {
+    color: #c6cad0;
+}
+
+.css-1ctunha::-moz-placeholder {
+    color: #c6cad0;
+}
+
+.css-1ctunha:-ms-input-placeholder {
+    color: #c6cad0;
+}
+
+.css-1ctunha::placeholder {
+    color: #c6cad0;
+}
+
+.css-1ctunha::-webkit-input-placeholder {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.css-1ctunha::-moz-placeholder {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.css-1ctunha:-ms-input-placeholder {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.css-1ctunha::placeholder {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.css-1ctunha:disabled {
+    -webkit-text-fill-color: #a1aab2;
+    color: #a1aab2;
+    background: #f8f9fa;
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+.css-2g8nzb {
+    position: -webkit-sticky;
+    position: sticky;
+    display: grid;
+    row-gap: 8px;
+    top: 80px;
+}
+
+@media (max-width: 768px) {
+    .css-2g8nzb {
+        display: none;
+    }
+}
+
+.css-5fvs67 {
+    z-index: 1;
+    position: relative;
+    padding: 16px;
+    margin: 0;
+    border-radius: 16px;
+    height: auto;
+    background-color: #fff;
+}
+
+.css-1k4ltyp {
+    position: relative;
+}
+
+.css-1k4ltyp::before,
+.css-1k4ltyp::after {
+    position: absolute;
+    width: 100%;
+    height: 1.600rem;
+    background: linear-gradient(180deg, #FFFFFF 33.33%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    z-index: 2;
+    opacity: 0;
+    -webkit-transition: 0.2 ease;
+    transition: 0.2 ease;
+    pointer-events: none;
+}
+
+.css-1k4ltyp::before {
+    top: 0;
+}
+
+.css-1k4ltyp::after {
+    bottom: 0;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.css-idcsor {
+    height: auto;
+    max-height: calc(100vh - 475px);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.css-1tp5rqy {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+}
+
+.css-1tp5rqy svg {
+    margin-right: 12px;
+}
+
+.css-1tp5rqy span {
+    margin-left: 4px;
+    color: #e50000;
+}
+
+.css-1tp5rqy:hover {
+    background-color: #f2f4f6;
+    cursor: pointer;
+}
+
+.css-1tp5rqy:hover svg,
+.css-1tp5rqy:hover path {
+    fill: #21252a;
+}
+
+.css-brluy {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+}
+
+.css-brluy svg {
+    margin-right: 12px;
+}
+
+.css-brluy span {
+    margin-left: 4px;
+    color: #e50000;
+}
+
+.css-brluy:hover {
+    background-color: #f2f4f6;
+    cursor: pointer;
+}
+
+.css-brluy:hover svg,
+.css-brluy:hover path {
+    fill: #21252a;
+}
+
+.css-1kmgs36 {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    gap: 0.000rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.css-159r7cq {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+}
+
+.css-hhqicn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.css-1awrv0f {
+    background-color: #dfe2e6;
+    width: 100%;
+    height: 1px;
+    margin: 8px 0;
+    margin: 10px 0;
+    background-color: #eaecee;
+}
+
+.css-whh5e5 {
+    opacity: 1;
+}
+
+.css-bzva7w {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.css-imsj7n {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.css-q5z071 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: #f2f4f6;
+    color: #535961;
+    padding: 12px 14px 12px 12px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-weight: bold;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.css-q5z071:disabled {
+    cursor: not-allowed;
+}
+
+.css-q5z071:hover,
+.css-q5z071:active {
+    background-color: #dfe2e6;
+}
+
+.css-q5z071:disabled {
+    background-color: #f2f4f6;
+    color: #c6cad0;
+}
+
+.css-q5z071 .rallit-icon {
+    width: 1.067rem;
+    height: 1.067rem;
+    margin: 0px 4px 0px 0px;
+}
+
+.css-q5z071 .rallit-icon>svg>path {
+    fill: #c6cad0;
+}
+
+.css-9qbyrr {
+    position: absolute;
+    display: none;
+    padding: 16px;
+    border: solid 1px #eaecee;
+    border-radius: 6px;
+    width: 100%;
+    background: #fff;
+    list-style: none;
+    z-index: 20;
+}
+
+.css-rdr8tt {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    border: 1px solid #eaecee;
+    background-color: #fff;
+    color: #21252a;
+    padding: 12px 14px 12px 12px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.css-rdr8tt:disabled {
+    cursor: not-allowed;
+}
+
+.css-rdr8tt:hover,
+.css-rdr8tt:active {
+    background-color: #f2f4f6;
+}
+
+.css-rdr8tt:disabled {
+    color: #c6cad0;
+    background-color: #fff;
+}
+
+.css-rdr8tt .rallit-icon {
+    width: 1.067rem;
+    height: 1.067rem;
+    margin: 0px 4px 0px 0px;
+}
+
+.css-rdr8tt .rallit-icon>svg>path {
+    fill: #21252a;
+}
+
+.css-hf1y6k {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: #535961;
+    color: #fff;
+    padding: 12px 14px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.css-hf1y6k:disabled {
+    cursor: not-allowed;
+}
+
+@media (hover: hover) {
+
+    .css-hf1y6k:hover,
+    .css-hf1y6k:active {
+        background-color: #353a40;
+    }
+}
+
+.css-hf1y6k:disabled {
+    background-color: #dfe2e6;
+}
+
+.css-hf1y6k .rallit-icon {
+    width: 1.067rem;
+    height: 1.067rem;
+    margin: 0;
+}
+
+.css-hf1y6k .rallit-icon>svg>path {
+    fill: #fff;
+}
+
+.css-1pmjh0w {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 48px;
+    background-color: #fff;
+    border: 1px solid #eaecee;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .css-1pmjh0w {
+        border-radius: 0;
+    }
+}
+
+.css-dpxhdm {
+    display: grid;
+    grid-column: 1/2;
+    padding: 14px 20px;
+    border-right: 1px solid #eaecee;
+    row-gap: 10px;
+}
+
+.css-zdub8d {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.css-4huplz {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-decoration: solid underline 4px;
+    text-decoration: solid underline 4px;
+    text-decoration-color: #00CCAA33;
+    text-underline-offset: -3px;
+}
+
+.css-dfbrnx {
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+.css-1tntp95 {
+    cursor: pointer;
+    width: 34px;
+    height: 20px;
+    background-color: #dfe2e6;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.css-t439qn {
+    position: relative;
+    left: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    width: 14px;
+    height: 14px;
+    background-color: #f2f4f6;
+    border-radius: 7px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.08), 0px 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.css-19mplzx {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #c6cad0;
+}
+
+.css-ff6u8z {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #535961;
+    padding: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: bold;
+    height: 2.533rem;
+    width: 2.533rem;
+    width: 100%;
+    grid-column: 2/2;
+    width: 48px;
+    height: 100%;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.css-ff6u8z:disabled {
+    cursor: not-allowed;
+}
+
+.css-ff6u8z:hover,
+.css-ff6u8z:active {
+    background-color: #f2f4f6;
+}
+
+.css-ff6u8z:disabled {
+    background-color: #fff;
+    color: #c6cad0;
+}
+
+.css-ff6u8z .rallit-icon {
+    width: 0.933rem;
+    height: 0.933rem;
+    margin: 0;
+}
+
+.css-ff6u8z .rallit-icon>svg>path {
+    fill: #535961;
+}
+
+@media (max-width: 768px) {
+    .css-ff6u8z {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.css-ff6u8z:hover {
+    background-color: #fff;
+}
+
+.css-ff6u8z .rallit-icon svg>path {
+    fill: #c6cad0;
+}
+
+.css-r3744e {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    font-weight: normal;
+    white-space: pre-line;
+    text-align: right;
+    word-break: break-all;
+    background-color: #f2f4f6;
+    color: #e50000;
+}
+
+@media (max-width: 768px) {
+    .css-r3744e {
+        padding-top: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-1pe92m1 {
+        margin-bottom: 68px;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-1pe92m1 {
+        display: none;
+    }
+}
+
+.css-yyqtxc {
+    background-color: #f2f4f6;
+    width: 100%;
+    height: 1px;
+    margin: 0;
+}
+
+.css-8t0ewa {
+    max-width: 76.533rem;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+@media (max-width: 1084px) {
+    .css-8t0ewa {
+        padding: 32px 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-8t0ewa {
+        padding: 32px 20px;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.css-192tn2r {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .css-192tn2r {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: flex-start;
+        -webkit-box-align: flex-start;
+        -ms-flex-align: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.css-120gsus {
+    margin-right: 32px;
+}
+
+.css-sx764e {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .css-sx764e {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 12px 0 16px;
+    }
+}
+
+.css-sx764e>div {
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .css-sx764e>div {
+        margin-top: 10px;
+    }
+}
+
+.css-sx764e a {
+    color: #535961;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: 500;
+    margin-right: 32px;
+}
+
+@media (max-width: 768px) {
+    .css-sx764e a {
+        margin-right: 18px;
+    }
+
+    .css-sx764e a:last-of-type {
+        margin-right: 0;
+    }
+}
+
+
+.css-szycpx {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.000rem;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+body>div {
+    position: relative;
+    z-index: 0;
+}
+
+.css-b3uwyt {
+    margin: 18px 0 0 0;
+    color: #878e98;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 11px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: -0.3px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .css-b3uwyt {
+        margin: 0;
+    }
+}
+
+.css-yce0pl {
+    box-sizing: border-box;
+    position: absolute;
+    left: 100px;
+    bottom: 80px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 0px;
+    z-index: 1000;
+    position: fixed;
+}
+
+@media (max-width: 768px) {
+    .css-yce0pl {
+        left: 0;
+        bottom: 89px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-yce0pl {
+        bottom: 4.533rem;
+    }
+}
+
+.css-1g9upls {
+    box-sizing: inherit;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 0px;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .css-1g9upls {
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.css-niuhbk {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    position: relative;
+    color: rgb(33, 37, 42);
+}
+
+.css-70qvj9 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+/*------------------------------------------------------*/
+.css-j9rl1c {
+    width: 100%;
+    max-width: 70.133rem;
+    padding: 32px 0px;
+}
+
+.css-1gzra86 {
+    z-index: 40;
+    top: 0;
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -ms-flexbox;
+    /* display: flex; */
+    /* -webkit-flex-direction: column; */
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+}
+
+.css-164zaq6 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.css-19hn2nu {
+    background-color: rgb(242, 244, 246);
+}
+
+.css-g298dc {
+    border-radius: 50%;
+    border: 1px solid rgb(242, 244, 246);
+    width: 2.267rem;
+    height: 2.267rem;
+    margin-right: 4px;
+}
+
+.css-10lpnky {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    font-weight: 500;
+    white-space: pre-line;
+    word-break: break-all;
+    margin: 0px;
+}
+
+.css-dg9k1l {
+    padding: 0px;
+    display: none;
+    background: none;
+    border: none;
+}
+
+.css-3oq5by {
+    display: block;
+    width: fit-content;
+}
+
+.css-17ueevk {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    white-space: pre-line;
+    word-break: break-all;
+    margin: 4px 0px 0px;
+}
+
+.css-1yoja6p {
+    margin-top: 32px;
+}
+
+.css-ldqbpg {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    justify-content: start;
+    -webkit-box-align: start;
+    align-items: start;
+    gap: 0rem;
+    padding: 24px;
+    border: 1px solid rgb(234, 236, 238);
+    border-radius: 6px;
+}
+
+
+.css-85pt97 {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: rgb(0, 204, 170);
+    color: rgb(255, 255, 255);
+    padding: 12px 14px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-weight: bold;
+    margin-left: 8px;
+    width: 14.267rem;
+}
+
+.css-1qamhtj {
+    white-space: pre-line;
+    word-break: break-all;
+    width: 100%;
+    margin: 0px 0px 0.933rem;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: -0.3px;
+    color: rgb(33, 37, 42);
+}
+
+.css-150elap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: start;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 0rem;
+    height: 2.667rem;
+}
+
+.css-dnxlq5 {
+    margin: 0px;
+    /* border-top: 1px solid rgb(242, 244, 246); */
+    width: 100%;
+}
+
+dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.css-dnxlq5:first-of-type {
+    border-top: none;
+}
+
+.css-1385rv7 {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    justify-content: start;
+    -webkit-box-align: start;
+    align-items: start;
+    gap: 0rem;
+    width: 100%;
+}
+
+.css-i0vojs {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid rgb(234, 236, 238);
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 37, 42);
+    padding: 0px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-weight: bold;
+    height: 2.933rem;
+    width: 2.933rem;
+}
+
+
+.css-1vbiael {
+    grid-area: content / content / content / content;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.css-16a5xne {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: -0.3px;
+    white-space: pre-line;
+    word-break: break-all;
+    margin: 0px 0px 10px;
+}
+
+.css-y1gt6f {
+    margin-top: 40px;
+}
+
+.css-104fbyc {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px 0px 26px -8px;
+    width: calc(100% + 8px);
+    padding: 0px;
+}
+
+.css-kgsirb {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 6px 12px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: normal;
+    border-radius: 1.6rem;
+    background-color: rgb(242, 244, 246);
+    color: rgb(33, 37, 42);
+    border: none;
+    margin: 8px 0px 0px 8px;
+}
+
+.css-7tzyz7 {
+    position: absolute;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    bottom: 1.067rem;
+    right: 1.067rem;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    width: 3.067rem;
+    height: 1.867rem;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+.css-1fby83s {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: start;
+    -webkit-box-align: start;
+    align-items: start;
+    gap: 0rem;
+    position: absolute;
+    top: 50%;
+    left: 1.067rem;
+    margin: 0px auto;
+    max-width: calc(100% - 2.133rem);
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.css-1no16mp:disabled {
+    opacity: 0.5;
+}
+
+.css-1no16mp:disabled {
+    color: rgb(198, 202, 208);
+    background-color: rgb(255, 255, 255);
+}
+
+
+.css-1no16mp:disabled {
+    cursor: not-allowed;
+}
+
+.css-1no16mp {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgb(234, 236, 238);
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 37, 42);
+    padding: 0px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: bold;
+    height: 2.533rem;
+    width: 2.533rem;
+    margin-left: auto;
+}
+
+.css-5ltb0x {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 20.933rem;
+    background-color: rgb(255, 255, 255);
+}
+
+aside {
+    display: block;
+}
+
+.css-n1n4ej {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    align-items: start;
+    gap: 0rem;
+    margin: 20px 0px;
+}
+
+@media (max-width: 1084px) {}
+
+.css-1f20ni2 {
+    display: block;
+}
+
+.css-1f20ni2 {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 32px;
+    color: rgb(33, 37, 42);
+}
+
+.swiper-pointer-events {
+    touch-action: pan-y;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+element.style {
+    transform: translate3d(-1884px, 0px, 0px);
+    transition-duration: 0ms;
+}
+
+.swiper-android .swiper-slide,
+.swiper-wrapper {
+    transform: translateZ(0);
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.css-1ymg2sk {
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    padding-top: 54.6377%;
+    background-color: rgb(242, 244, 246);
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, Helvetica Neue, Segoe UI, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    /* color: #21252a; */
+    background-color: #fff;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+:root {
+    --swiper-navigation-size: 44px;
+}
+
+:root {
+    --swiper-theme-color: #007aff;
+}
+
+.css-tlmr97 {
+    /* position: absolute; */
+    /* top: 0px; */
+    /* left: 0px; */
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.css-1fby83s {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: start;
+    -webkit-box-align: start;
+    align-items: start;
+    gap: 0rem;
+    position: absolute;
+    top: 50%;
+    left: 1.067rem;
+    margin: 0px auto;
+    max-width: calc(100% - 2.133rem);
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.css-s6yz71 {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgb(234, 236, 238);
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 37, 42);
+    padding: 0px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: bold;
+    height: 2.533rem;
+    width: 2.533rem;
+}
+
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    margin: 0em;
+}
+
+.css-1no16mp:disabled {
+    opacity: 0.5;
+}
+
+.css-1no16mp:disabled {
+    color: rgb(198, 202, 208);
+    background-color: rgb(255, 255, 255);
+}
+
+.css-1no16mp:disabled {
+    cursor: not-allowed;
+}
+
+.css-1no16mp {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgb(234, 236, 238);
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 37, 42);
+    padding: 0px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: bold;
+    height: 2.533rem;
+    width: 2.533rem;
+    margin-left: auto;
+}
+
+.css-7tzyz7 {
+    position: absolute;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    bottom: 1.067rem;
+    right: 1.067rem;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    width: 3.067rem;
+    height: 1.867rem;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+.css-j6s3yv {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border: none;
+    padding: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.css-j6s3yv+* {
+    margin-left: 24px;
+}
+
+.css-j6s3yv {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border: none;
+    padding: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.css-1gli82r {
+    position: relative;
+    display: grid;
+    grid-template-areas:
+        "swiper aside"
+        "content aside";
+    grid-template-columns: 1fr auto;
+    width: 100%;
+    max-width: 70.133rem;
+}
+
+.css-19hzmb1 {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    font-weight: normal;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+    margin: 0px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.css-1dcto04 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: start;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 0rem;
+    margin: 0px 0px 8px;
+}
+/**/

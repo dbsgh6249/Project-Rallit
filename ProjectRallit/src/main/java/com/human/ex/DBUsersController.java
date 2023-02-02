@@ -21,16 +21,20 @@ import com.human.service.IH_UsersService;
  * Handles requests for the application home page.
  */
 @Controller
-public class UsersController {
+public class DBUsersController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(UsersController.class);
+	private static final Logger logger = LoggerFactory.getLogger(DBUsersController.class);
 	@Autowired
 	private IH_UsersService user_service;
 	
-	
-	@RequestMapping(value = "/jobSeeker/register", method = RequestMethod.GET)
-	public String seekerregister(Locale locale, Model model) {
-		return "/jobSeeker/register";
+
+	@RequestMapping(value = "/seeker/register", method = RequestMethod.POST)
+	public String testsingup(H_UsersDto dto) throws Exception {
+		System.out.println(dto);
+		System.out.println("insert befor");
+		user_service.insert(dto);
+		System.out.println("insert after");
+		return "/jobSeeker/login";
 	}
 	
 }

@@ -17,6 +17,7 @@ public class AuthoritiesServiceImpl implements IAuthoritiesService{
 	@Override
 	public void insertSeeker(AuthoritiesDto dto) throws Exception {
 		IAuthoritiesDao dao = sqlSession.getMapper(IAuthoritiesDao.class);
+		System.out.println(dto);
 		dao.insertSeeker(dto);
 	}
 

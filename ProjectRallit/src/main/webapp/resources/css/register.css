@@ -39,8 +39,8 @@
         margin-left: 40px;
         margin-right: 40px;
     }
-    .reg input{
 
+    .reg input{
         border-color:#ced4ec;
         border-style: solid;
         border-radius: 5px;
@@ -54,12 +54,14 @@
     outline: none;
 	}
     .reg p{
-        font-size: 15px;
+        color: #576266;
+        height: 10px;
+        font-size: 12px;
         margin: 0px;
-        position: relative;top: 20px;
+        position: relative;top: 12px;
         text-align: left;
-        margin-left: 45px;
-        margin-bottom: 2px;
+        margin-left: 35px;
+        margin-bottom: 0px;
     }
     ::placeholder{
     
@@ -69,7 +71,7 @@
         font-size: 15px;
         font-weight: bolder;
         color: white;
-        margin-top: 20px;
+        margin-top: 5px;
         background-color: #00C471;
         cursor: pointer;
         

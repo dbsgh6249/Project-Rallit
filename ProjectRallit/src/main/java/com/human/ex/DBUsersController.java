@@ -28,6 +28,7 @@ public class DBUsersController {
 	private static final Logger logger = LoggerFactory.getLogger(DBUsersController.class);
 	@Autowired
 	private IH_UsersService user_service;
+	@Autowired
 	private IAuthoritiesService authorities_service;
 	
 	

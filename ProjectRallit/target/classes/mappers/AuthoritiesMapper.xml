@@ -5,8 +5,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <mapper namespace="com.human.dao.IAuthoritiesDao">
 <!-- 권한부여 (회원가입 페이지를 분리하면 권한명 넣어두고 하는 게 낫지 않을까 싶음 -->
-<insert id="insertSeeker"> <!-- 유저 권한설정 -->)
-insert into Authorities values(#{user_id}, #{authority})
+<insert id="insertSeeker"> <!-- 유저 권한설정 -->
+insert into Authorities values(#{user_id},#{authority})
 </insert>
 <insert id="insertCompany"> <!-- 기업회원 권한설정 -->
 insert into Authorities values(#{user_id}, #{authority})

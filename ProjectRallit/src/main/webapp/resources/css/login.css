@@ -35,7 +35,7 @@
 border-color:#00C471;
 outline: none;
 }
-.loginbar input[type="submit"]{
+.loginbar button[type="submit"]{
     height: 44px;
     width: 320px;
     font-weight: bolder;

@@ -69,19 +69,19 @@
         font-size: 15px;
         font-weight: bolder;
         color: white;
-        margin-top: 30px;
+        margin-top: 20px;
         background-color: #00C471;
         cursor: pointer;
         
     }
      .reg select{
-
+		padding: 1px 2px;
         border-color:#ced4ec;
         border-style: solid;
         border-radius: 5px;
         border-width: 1px;
-        height: 48px;
-        width: 320px;
+        height: 52px;
+        width: 339px;
         padding-left: 15px;
     }
     .reg select:focus {

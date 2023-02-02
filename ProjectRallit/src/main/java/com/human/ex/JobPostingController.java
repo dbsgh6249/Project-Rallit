@@ -74,6 +74,6 @@ public class JobPostingController {
 		model.addAttribute("list",jobPosting_Service.selectCompanyPosting(user_id));
 		
 		return "/jobPosting/selectCompanyPosting";
-	}//6
+	}//64
 	
 }

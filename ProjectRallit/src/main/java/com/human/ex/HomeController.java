@@ -40,5 +40,10 @@ public class HomeController {
 		
 		return "/jobSeeker/login";
 	}
+	@RequestMapping(value = "/jpd", method = RequestMethod.GET)
+	public String jpd(Model model) {
+		
+		return "jobPosting/jobPostingDetail";
+	}
 	
 }

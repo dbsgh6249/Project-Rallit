@@ -24,7 +24,7 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-WGJ7X69');</script>
     <meta charset="utf-8">
-    <title>휴먼 프로젝트 - 랠릿</title>
+        <title>휴먼 프로젝트 - 랠릿</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta name="thumbnail" content="https://cdn.rallit.com/image/meta-image.png">
     <meta property="og:type" content="website">
@@ -195,7 +195,7 @@
                                     </svg></button></div>
                         </label></div>
                     <div class="css-fi5x0a"><a
-                            href="jobSeeker/login"
+                            href="https://www.inflearn.com/signin?referUrl=https%3A%2F%2Fwww.rallit.com%2F"
                             class="css-avxbst">
                             <div class="css-wodprq">
                                 <div class="GNB-menu__noti-container"></div><span class="css-jk5git"></span>

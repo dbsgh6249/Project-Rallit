@@ -52,14 +52,5 @@ public class HomeController {
 		return "jobPosting/jobPostingDetail";
 	}
 	
-	@RequestMapping(value = "/temporary/register", method = RequestMethod.POST)
-	public String testsingup(H_UsersDto dto) throws Exception {
-		System.out.println(dto);
-		System.out.println("insert befor");
-		user_service.insert(dto);
-		System.out.println("insert after");
-		return "/main/main";
-	}
-	
 	
 }

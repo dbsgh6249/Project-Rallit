@@ -24,8 +24,8 @@ import com.human.service.IH_UsersService;
 public class UsersController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(UsersController.class);
-	@Autowired
-	private IH_UsersService user_service;
+//	@Autowired
+//	private IH_UsersService user_service;
 	
 	
 	@RequestMapping(value = "/jobSeeker/register", method = RequestMethod.GET)

@@ -16,13 +16,12 @@ public class JobPostingDto {
 	private String text4;			// 우대사항
 	private String text5;			// 혜택 및 복지
 	private String text6;			// 한마디
-	private String picture;			// 회사 사진
 	@Override
 	public String toString() {
 		return "JobPostingDto [posting_num=" + posting_num + ", title=" + title + ", dateCreated=" + dateCreated
 				+ ", deadline=" + deadline + ", occupation=" + occupation + ", minCareer=" + minCareer + ", maxCareer="
 				+ maxCareer + ", text1=" + text1 + ", text2=" + text2 + ", text3=" + text3 + ", text4=" + text4
-				+ ", text5=" + text5 + ", text6=" + text6 + ", picture=" + picture + "]";
+				+ ", text5=" + text5 + ", text6=" + text6 + "]";
 	}
 	@Override
 	public int hashCode() {
@@ -115,11 +114,5 @@ public class JobPostingDto {
 	}
 	public void setText6(String text6) {
 		this.text6 = text6;
-	}
-	public String getPicture() {
-		return picture;
-	}
-	public void setPicture(String picture) {
-		this.picture = picture;
 	}
 }

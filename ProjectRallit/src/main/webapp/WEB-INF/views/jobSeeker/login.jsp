@@ -15,13 +15,14 @@
       rel="stylesheet" type="text/css">
 </head>
 <body>
- <c:if test="${param.error != null}">
+<%--  <c:if test="${param.error != null}">
         <p>아이디와 비밀번호가 잘못되었습니다.</p>
     </c:if>
     <c:if test="${param.logout != null}">
         <p>로그아웃 하였습니다.</p>
 </c:if>
-    <div class="container">
+ --%>    
+ 		<div class="container">
         <span class="logoheader">
             
         </span>
@@ -33,7 +34,7 @@
         <c:url value="/login" var="loginUrl" />
         <form:form name="frmLogin" action="${loginUrl}" method="POST">
 				<c:if test="${param.error != null}">
-					<p>아이디와 비밀번호가 잘못되었습니다.</p>
+					<script>alert("아이디 또는 패스워드가 잘못되었습니다.")</script>
 				</c:if>
 				<c:if test="${param.logout != null}">
 					<p>로그아웃 하였습니다.</p>

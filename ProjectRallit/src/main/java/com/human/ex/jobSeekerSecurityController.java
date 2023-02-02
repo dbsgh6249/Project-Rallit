@@ -16,10 +16,10 @@ public class jobSeekerSecurityController {
 	private static final Logger logger = LoggerFactory.getLogger(jobSeekerSecurityController.class);
 	
 
-	@RequestMapping(value = "/jobSeeker/register", method = RequestMethod.GET)
+	@RequestMapping(value = "/jobSeeker/user", method = RequestMethod.GET)
 	public String user(Locale locale, Model model) {
-		
-		return "/jobSeeker/register";
+		System.out.println("aaa?");
+		return "/jobSeeker/user";
 	}
 	
 	@RequestMapping(value = "/jobSeeker/error", method = RequestMethod.GET)

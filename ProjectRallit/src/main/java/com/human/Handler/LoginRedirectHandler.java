@@ -2,13 +2,17 @@ package com.human.Handler;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 
 public class LoginRedirectHandler implements AuthenticationSuccessHandler {
@@ -26,15 +30,32 @@ public class LoginRedirectHandler implements AuthenticationSuccessHandler {
 		
 		//권한에 따라 페이지 이동
 		if(roleNames.contains("ROLE_ADMIN")) {
-			response.sendRedirect("/ex/admin/holdstate");
+			SecurityContextHolder.getContext().setAuthentication(authentication);
+	         System.out.println(SecurityContextHolder.getContext().getAuthentication());
+	         UsernamePasswordAuthenticationToken token = (UsernamePasswordAuthenticationToken)authentication;
+	         String id = token.getName();
+	         System.out.println("됐냐? : " + id);
+			response.sendRedirect("/ex/admin/user");
 			return;
 		}
 		if(roleNames.contains("ROLE_COMPANY")) {
-			response.sendRedirect("/ex/main/main");
+			SecurityContextHolder.getContext().setAuthentication(authentication);
+	         System.out.println(SecurityContextHolder.getContext().getAuthentication());
+	         UsernamePasswordAuthenticationToken token = (UsernamePasswordAuthenticationToken)authentication;
+	         String id = token.getName();
+	         System.out.println("됐냐? : " + id);
+			response.sendRedirect("/ex/company/user");
 			return;
 		}
 		if(roleNames.contains("ROLE_SEEKER")) {
-			response.sendRedirect("/ex/main/main");
+			SecurityContextHolder.getContext().setAuthentication(authentication);
+	         System.out.println(SecurityContextHolder.getContext().getAuthentication());
+	         UsernamePasswordAuthenticationToken token = (UsernamePasswordAuthenticationToken)authentication;
+	         String id = token.getName();
+	         Collection<GrantedAuthority> authorities = token.getAuthorities();
+	         System.out.println("됐냐? : " + id + authorities);
+	         
+			response.sendRedirect("/ex/jobSeeker/user");
 			return;
 		}
 	}

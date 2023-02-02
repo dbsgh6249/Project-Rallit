@@ -15,10 +15,10 @@ public class CompanySecurityController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(CompanySecurityController.class);
 	
-	@RequestMapping(value = "/main/main", method = RequestMethod.GET)
+	@RequestMapping(value = "/company/user", method = RequestMethod.GET)
 	public String member(Locale locale, Model model) {
 	
-		return "/main/main";
+		return "/company/user";
 	}
 	
 }

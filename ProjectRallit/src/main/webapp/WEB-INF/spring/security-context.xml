@@ -21,7 +21,7 @@
  
 		<form-login login-page="/jobSeeker/login"
 			authentication-success-handler-ref="LoginSuccess"
-			default-target-url="/jobSeeker/register"
+			default-target-url="/jobSeeker/user"
 			authentication-failure-url="/jobSeeker/login?error"
 			username-parameter="id" password-parameter="password" />
 		<logout logout-url="/jobSeeker/logout" invalidate-session="true" />

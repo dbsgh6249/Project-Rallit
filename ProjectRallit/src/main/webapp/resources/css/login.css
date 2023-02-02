@@ -18,6 +18,16 @@
     margin-bottom: -10px;
     padding-left: 10px;
 }
+.loginbar button{
+    border-color:#ced4ec;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    height: 48px;
+    width: 312px;   
+    margin-bottom: -10px;
+    padding-left: 10px;
+}
 .loginbar input[type="submit"]{
     cursor: pointer;
 }

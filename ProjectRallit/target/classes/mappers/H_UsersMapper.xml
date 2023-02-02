@@ -9,7 +9,7 @@ insert into h_users
 values(#{user_id},#{user_pw},#{user_name},1,#{user_phone},#{user_company},#{user_province},#{user_city},#{user_address})
 </insert>
 
-<select id="select" resultType="com.human.dto.H_UsersDto"> <!-- 마이페이지 정보조회(select One), 로그인 시 사용 -->
+<select id="selectOne" resultType="com.human.dto.H_UsersDto"> <!-- 마이페이지 정보조회(select One), 로그인 시 사용 -->
 select * from h_users where user_id=#{user_id}
 </select>
 <select id="selectAll" resultType="com.human.dto.H_UsersDto"> <!-- admin 회원관리(select All) -->

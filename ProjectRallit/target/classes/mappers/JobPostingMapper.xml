@@ -10,15 +10,15 @@ text1,text2,text3,text4,text5,text6,picture)
 values (jobPosting_seq.nextval,#{title},#{user_id},sysdate, #{deadline},#{occupation},#{minCarrer},#{maxCareer},
 #{text1},#{text2},#{text3},#{text4},#{text5},#{text6},#{picture})</insert>
 
-<select id="read" resultType="com.human.dto.JobPostingDto"> <!-- 채용공고 상세페이지(Select One) -->
+<select id="selectOne" resultType="com.human.dto.JobPostingDto"> <!-- 채용공고 상세페이지(Select One) -->
 select * from posting_num_seq where posting_num = #{posting_num}
 </select>
 
-<select id="readCompanyPosting" resultType="com.human.dto.JobPostingDto"> <!-- 기업회원 마이페이지에서 조회되는 공고 목록 -->
+<select id="selectCompanyPosting" resultType="com.human.dto.JobPostingDto"> <!-- 기업회원 마이페이지에서 조회되는 공고 목록 -->
 select * from JobPosting where user_id=#{user_id} order by posting_num
 </select>
 
-<update id="updateJobPosting"> <!-- 채용공고 수정 -->
+<update id="update"> <!-- 채용공고 수정 -->
 update jobPosting set 
 title =#{title},deadline=#{deadline},occupation=#{occupation},minCareer=#{minCareer},maxCareer=#{maxCareer},
 text1=#{text1},text2=#{text2},text3=#{text3},text4=#{text4},text5=#{text5},

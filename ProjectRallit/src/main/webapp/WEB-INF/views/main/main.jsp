@@ -4,7 +4,8 @@
 <html lang="ko">
 
 <head>
-    <link rel="stylesheet" href="resources/css/main.css">
+    <link href="${pageContext.request.contextPath}/resources/css/main.css"
+      rel="stylesheet" type="text/css">
     <script type="text/javascript" src="resources/manifest.json"></script>
     <style>
 
@@ -194,7 +195,7 @@
                                     </svg></button></div>
                         </label></div>
                     <div class="css-fi5x0a"><a
-                            href="https://www.inflearn.com/signin?referUrl=https%3A%2F%2Fwww.rallit.com%2F"
+                            href="jobSeeker/login"
                             class="css-avxbst">
                             <div class="css-wodprq">
                                 <div class="GNB-menu__noti-container"></div><span class="css-jk5git"></span>

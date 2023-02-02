@@ -13,7 +13,8 @@
 	<!-- URL 설정 -->
 	<http use-expressions="true">
 	<csrf disabled="true"/>
-		<intercept-url pattern="/jobSeeker/" access="permitAll" /><!--permitAll:모든  사용자 -->
+	<intercept-url pattern="/resources/**" access="permitAll" />
+		<intercept-url pattern="/jobSeeker/**" access="permitAll" /><!--permitAll:모든  사용자 -->
 		<intercept-url pattern="/company/**" access="hasAnyRole('COMPANY,ADMIN')" />
 		<intercept-url pattern="/admin/**" access="hasRole('ADMIN')" /> 
 	<!-- 	<intercept-url pattern="/admin/**" access="permitAll" /> -->

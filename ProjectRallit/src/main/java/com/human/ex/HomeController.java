@@ -35,5 +35,10 @@ public class HomeController {
 		
 		return "/main/main";
 	}
+	@RequestMapping(value = "/testlogin", method = RequestMethod.GET)
+	public String testlogin() {
+		
+		return "/jobSeeker/login";
+	}
 	
 }

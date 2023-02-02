@@ -9,7 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>랠릿 회원가입</title>
-    <link rel="stylesheet" href="resources/css/register.css">
+    <link href="${pageContext.request.contextPath}/resources/css/register.css"
+      rel="stylesheet" type="text/css">
 </head>
 <body>
     <div class="regbar">

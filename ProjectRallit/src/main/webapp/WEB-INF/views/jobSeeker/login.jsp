@@ -11,7 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>랠릿 로그인</title>
-    <link rel="stylesheet" href="resources/css/login.css">
+     <link href="${pageContext.request.contextPath}/resources/css/login.css"
+      rel="stylesheet" type="text/css">
 </head>
 <body>
  <c:if test="${param.error != null}">

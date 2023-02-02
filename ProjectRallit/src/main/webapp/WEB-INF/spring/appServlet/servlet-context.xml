@@ -23,6 +23,13 @@
 	
 	<context:component-scan base-package="com.human.ex" />
 	
+	<!-- file Upload용 -->
+	<beans:bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<beans:property name="maxUploadSize" value="10485760"></beans:property>
+		<beans:property name="defaultEncoding" value="utf-8"/>
+	</beans:bean>
+	
 	
 	
 </beans:beans>

@@ -5,9 +5,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <mapper namespace="com.human.dao.IJobPostingDAO">
 <insert id="insert">insert into jobPosting 
-(posting_num,title,user_id,dateCreated,deadline,occupation,minCareer,maxCareer,
+(posting_num,title,user_id,dateCreated,deadline,occ_main,occ_sub,minCareer,maxCareer,
 text1,text2,text3,text4,text5,text6,picture)
-values (jobPosting_seq.nextval,#{title},#{user_id},sysdate, #{deadline},#{occupation},#{minCarrer},#{maxCareer},
+values (jobPosting_seq.nextval,#{title},#{user_id},sysdate, #{deadline},#{occ_main},#{occ_sub},#{minCarrer},#{maxCareer},
 #{text1},#{text2},#{text3},#{text4},#{text5},#{text6})</insert>
 
 <select id="selectOne" resultType="com.human.dto.JobPostingDto"> <!-- 채용공고 상세페이지(Select One) -->
@@ -20,7 +20,7 @@ select * from JobPosting where user_id=#{user_id} order by posting_num
 
 <update id="update"> <!-- 채용공고 수정 -->
 update jobPosting set 
-title =#{title},deadline=#{deadline},occupation=#{occupation},minCareer=#{minCareer},maxCareer=#{maxCareer},
+title =#{title},deadline=#{deadline},occ_main=#{occ_main},occ_sub=#{occ_sub},minCareer=#{minCareer},maxCareer=#{maxCareer},
 text1=#{text1},text2=#{text2},text3=#{text3},text4=#{text4},text5=#{text5},
 text6=#{text6}  where posting_num = #{posting_num} </update>
 

@@ -7,7 +7,8 @@ public class JobPostingDto {
 	private String title;			// 글제목
 	private Date dateCreated;		// 작성일
 	private Date deadline;			// 공고마감일
-	private String occupation;		// 직종
+	private String occ_main;		// 직종
+	private String occ_sub;
 	private int minCareer;			// 경력 최솟값
 	private int maxCareer;			// 경력 최댓값
 	private String text1;			// 소개
@@ -16,12 +17,20 @@ public class JobPostingDto {
 	private String text4;			// 우대사항
 	private String text5;			// 혜택 및 복지
 	private String text6;			// 한마디
+
+	
 	@Override
 	public String toString() {
 		return "JobPostingDto [posting_num=" + posting_num + ", title=" + title + ", dateCreated=" + dateCreated
-				+ ", deadline=" + deadline + ", occupation=" + occupation + ", minCareer=" + minCareer + ", maxCareer="
-				+ maxCareer + ", text1=" + text1 + ", text2=" + text2 + ", text3=" + text3 + ", text4=" + text4
-				+ ", text5=" + text5 + ", text6=" + text6 + "]";
+				+ ", deadline=" + deadline + ", occ_main=" + occ_main + ", occ_sub=" + occ_sub + ", minCareer="
+				+ minCareer + ", maxCareer=" + maxCareer + ", text1=" + text1 + ", text2=" + text2 + ", text3=" + text3
+				+ ", text4=" + text4 + ", text5=" + text5 + ", text6=" + text6 + "]";
+	}
+	public int getPosting_num() {
+		return posting_num;
+	}
+	public void setPosting_num(int posting_num) {
+		this.posting_num = posting_num;
 	}
 	@Override
 	public int hashCode() {
@@ -61,11 +70,18 @@ public class JobPostingDto {
 	public void setDeadline(Date deadline) {
 		this.deadline = deadline;
 	}
-	public String getOccupation() {
-		return occupation;
+
+	public String getOcc_main() {
+		return occ_main;
 	}
-	public void setOccupation(String occupation) {
-		this.occupation = occupation;
+	public void setOcc_main(String occ_main) {
+		this.occ_main = occ_main;
+	}
+	public String getOcc_sub() {
+		return occ_sub;
+	}
+	public void setOcc_sub(String occ_sub) {
+		this.occ_sub = occ_sub;
 	}
 	public int getMinCareer() {
 		return minCareer;

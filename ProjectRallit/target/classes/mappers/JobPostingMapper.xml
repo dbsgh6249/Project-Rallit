@@ -3,7 +3,7 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.human.dao.JobPostingDAO">
+<mapper namespace="com.human.dao.IJobPostingDAO">
 <insert id="insert">insert into jobPosting 
 (posting_num,title,user_id,dateCreated,deadline,occupation,minCareer,maxCareer,
 text1,text2,text3,text4,text5,text6,picture)

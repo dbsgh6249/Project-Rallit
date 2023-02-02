@@ -3,7 +3,7 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.human.dao.H_UsersDao">
+<mapper namespace="com.human.dao.IH_UsersDao">
 <insert id="insert">
 insert into h_users
 values(#{user_id},#{user_pw},#{user_name},1,#{user_phone},#{user_company},#{user_province},#{user_city},#{user_address})

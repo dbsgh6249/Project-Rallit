@@ -16,4 +16,10 @@ public class AuthoritiesDto {
 	public void setAuthority(String authority) {
 		this.authority = authority;
 	}
+	@Override
+	public String toString() {
+		return "AuthoritiesDto [user_id=" + user_id + ", authority=" + authority + "]";
+	}
+	
+	
 }

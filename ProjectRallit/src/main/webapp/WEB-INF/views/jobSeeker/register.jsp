@@ -34,6 +34,7 @@
                 
                 <form action="/ex/seeker/register" method="POST">
                 <input type="hidden" name="user_company">
+                
                 <p>이메일</p><br>
                 <input type="text" name="user_id"placeholder="example@inflab.com"><br>
                 <p>비밀번호</p><br>

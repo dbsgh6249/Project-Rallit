@@ -49,10 +49,10 @@
             </span>
             <div class="fastlogin">
                 간편 로그인 <br>
-                <a href=""><img src="resources/imgs/kakaoTalklogo.png" alt=""></a>
-                <a href=""><img src="resources/imgs/googlelogo.png" alt=""></a>
-                <a href=""><img src="resources/imgs/githublogo.png" alt=""></a>
-                <a href=""><img src="resources/imgs/applelogo.png" alt=""></a>
+                <a href=""><img src="../resources/imgs/kakaoTalklogo.png" alt=""></a>
+                <a href=""><img src="../resources/imgs/googlelogo.png" alt=""></a>
+                <a href=""><img src="../resources/imgs/githublogo.png" alt=""></a>
+                <a href=""><img src="../resources/imgs/applelogo.png" alt=""></a>
             </div>
     </div>
 </body>

@@ -49,5 +49,5 @@ public class JobPostingServiceImpl implements IJobPostingService{
 		IJobPostingDao dao = sqlSession.getMapper(IJobPostingDao.class);
 		dao.update(dto);
 	}
-
+//6
 }

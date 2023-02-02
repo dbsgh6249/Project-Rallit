@@ -12,3 +12,4 @@ public interface IJobPostingDao {
 	public void delete(String posting_num) throws Exception;
 	public void update(JobPostingDto dto) throws Exception;
 }
+//6

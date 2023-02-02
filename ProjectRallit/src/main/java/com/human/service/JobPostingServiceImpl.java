@@ -27,9 +27,9 @@ public class JobPostingServiceImpl implements IJobPostingService{
 	}
 
 	@Override
-	public List<JobPostingDto> selectCompanyPosting() throws Exception {
+	public List<JobPostingDto> selectCompanyPosting(String user_id) throws Exception {
 		IJobPostingDao dao = sqlSession.getMapper(IJobPostingDao.class);
-		return dao.selectCompanyPosting();
+		return dao.selectCompanyPosting(user_id);
 	}
 
 	@Override
@@ -49,5 +49,5 @@ public class JobPostingServiceImpl implements IJobPostingService{
 		IJobPostingDao dao = sqlSession.getMapper(IJobPostingDao.class);
 		dao.update(dto);
 	}
-
+//643
 }

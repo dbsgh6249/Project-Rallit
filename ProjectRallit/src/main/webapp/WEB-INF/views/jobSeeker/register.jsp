@@ -41,8 +41,6 @@
                 <input type="text" name="user_name" placeholder="김OO"><br>
                 <p>휴대폰 번호</p><br>
                 <input type="text" name="user_phone" placeholder="010-0000-0000"><br>
-                <p>소속 회사</p><br>
-                <input type="text" name="user_company" placeholder="구직자는 적지 않아도 되요"><br>
                 <p>시,도</p><br>
                 <select name="user_province">
 					<option value="서울 ">서울</option>

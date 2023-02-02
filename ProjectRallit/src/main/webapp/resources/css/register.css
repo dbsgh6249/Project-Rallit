@@ -52,7 +52,7 @@
     .reg input:focus{
     border-color:#00C471;
     outline: none;
-}
+	}
     .reg p{
         font-size: 15px;
         margin: 0px;
@@ -74,7 +74,22 @@
         cursor: pointer;
         
     }
-    span a{
+     .reg select{
+
+        border-color:#ced4ec;
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        height: 48px;
+        width: 320px;
+        padding-left: 15px;
+    }
+    .reg select:focus {
+	border-color: #00C471;
+	outline: none;
+}
+
+span a{
         color: blue;
         text-decoration: none;
     }

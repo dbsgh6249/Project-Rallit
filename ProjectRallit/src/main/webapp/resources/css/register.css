@@ -72,8 +72,25 @@
         font-weight: bolder;
         color: white;
         margin-top: 5px;
+        height : 52px;
+        width : 339px;
         background-color: #00C471;
         cursor: pointer;
+        
+    }
+    
+     .reg input[type="button"]{
+        font-size: 15px;
+        font-weight: bolder;
+        color: white;
+        margin-top: 5px;
+        border-radius: 5px;
+        border-width: 1px;
+        height : 52px;
+        width : 339px;
+        background-color: #00C471;
+        cursor: pointer;
+        
         
     }
      .reg select{

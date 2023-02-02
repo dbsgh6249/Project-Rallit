@@ -84,6 +84,7 @@
 				<input type="text" id="full_address" name="full_address" 
 				placeholder="주소" readonly>
 				<br>
+				<p></p>
 				<input type="text" id="addr3" name="user_address" placeholder="상세주소"><br>
 
 

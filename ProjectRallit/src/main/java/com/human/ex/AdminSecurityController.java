@@ -12,10 +12,10 @@ public class AdminSecurityController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(AdminSecurityController.class);
 	
-	@RequestMapping(value = "/admin/holdstate", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin/user", method = RequestMethod.GET)
 	public String admin() {
 
-		return "/admin/holdstate";
+		return "/admin/user";
 	}
 	
 }

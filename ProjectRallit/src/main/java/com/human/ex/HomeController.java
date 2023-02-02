@@ -46,6 +46,11 @@ public class HomeController {
 	public String testregister(Locale locale, Model model) {
 		return "/temporary/register";
 	}
+	@RequestMapping(value = "/jpd", method = RequestMethod.GET)
+	public String jpd(Model model) {
+		
+		return "jobPosting/jobPostingDetail";
+	}
 	
 	@RequestMapping(value = "/temporary/register", method = RequestMethod.POST)
 	public String testsingup(H_UsersDto dto) throws Exception {

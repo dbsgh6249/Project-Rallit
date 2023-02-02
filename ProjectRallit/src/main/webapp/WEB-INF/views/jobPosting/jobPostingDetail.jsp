@@ -30,13 +30,6 @@
     <!-- <script
         type="application/ld+json">{"@context":"https://schema.org/","@type":"JobPosting","title":"[백패커/아이디어스] 웹서비스 프론트엔드 개발자(Vue)","description":"<p>웹서비스 프론트엔드 개발자(Vue) (경력 3년 이상)</p>","identifier":{"@type":"PropertyValue","name":"Google","value":1023},"datePosted":"1970-01-01","validThrough":"9999-12-3125340218200000000:00","employmentType":{"code":"FRONTEND_DEVELOPER","name":"프론트엔드/웹퍼블리셔"},"hiringOrganization":{"@type":"Organization","name":"(주)백패커","sameAs":"https://team.idus.com/","companyLogo":"https://cdn.rallit.com/image/2022-03-14/k-kO_VYdDeIKSLHcv9Vfz.png"},"jobLocation":{"@type":"Place","address":{"@type":"PostalAddress","streetAddress":"서울 서초구 서초대로 398","addressLocality":"서울 서초구 서초대로 398","addressRegion":"서울 서초구 서초대로 398","postalCode":"06619","addressCountry":"KO"}},"baseSalary":{"@type":"MonetaryAmount","currency":"KRW","value":{"@type":"QuantitativeValue","value":"","unitText":"YEAR"}}}</script> -->
     <meta name="next-head-count" content="38">
-    <link rel="preload" href="/_next/static/css/1c8308e9142ad043.css" as="style">
-    <link rel="stylesheet" href="/_next/static/css/1c8308e9142ad043.css" data-n-g="">
-    <link rel="preload" href="/_next/static/css/d09970df57419a48.css" as="style"><noscript data-n-css=""></noscript>
-    <style data-n-href="/_next/static/css/8292de043a10ca3b.css">
-
-    </style>
-
 </head>
 
 <body class=""><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGJ7X69" height="0" width="0"
@@ -54,7 +47,7 @@
                                             fill="#878E98"></path>
                                     </svg></div><span>교육</span>
                             </a></li>
-                        <li><a href="/" class="active">
+                        <li><a href="/ex/" class="active">
                                 <div class="rallit-icon  css-5wonz9"><svg width="20" height="20" viewBox="0 0 20 20"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -65,7 +58,7 @@
                                             fill="#00CCAA"></path>
                                     </svg></div><span>채용</span>
                             </a></li>
-                    </ul><a href="https://business.rallit.com">
+                    </ul><a href="jobSeeker/login">
                         <p class="css-11cix4b">기업 서비스</p>
                     </a>
                 </div>
@@ -73,7 +66,7 @@
         </section>
         <header class="css-1gzra86">
             <nav class="css-o8aacz">
-                <div class="left-GNB css-p1vanc"><a aria-label="홈" href="/" class="css-avxbst">
+                <div class="left-GNB css-p1vanc"><a aria-label="홈" href="/ex/" class="css-avxbst">
                         <div class="css-wodprq">
                             <div class="GNB-menu__noti-container">
                                 <div class="rallit-icon  css-1sepp5i"><svg width="20" height="20" fill="none"
@@ -531,7 +524,7 @@
             <div class="css-yyqtxc"></div>
             <div class="css-8t0ewa">
                 <div class="css-192tn2r">
-                    <div class="css-120gsus"><a aria-label="홈" href="/"><svg viewBox="0 0 82 22" width="82" height="22"
+                    <div class="css-120gsus"><a aria-label="홈" href="/ex/"><svg viewBox="0 0 82 22" width="82" height="22"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" fill="#21252A"
                                     d="M0 12.198c0-5.413 4.348-9.802 9.71-9.802h5.683v4.066H9.711c-3.139 0-5.683 2.569-5.683 5.736 0 3.168 2.544 5.736 5.683 5.736 3.138 0 5.682-2.568 5.682-5.736V6.462h4.028v5.736c0 5.414-4.348 9.802-9.71 9.802C4.348 22 0 17.612 0 12.198zM25.176 21.129V3.703h8.308c3.396 0 6.15 2.78 6.15 6.208 0 2.445-1.4 4.56-3.437 5.572a3.73 3.73 0 0 0 3.043 1.58h.394v4.066h-.394c-3.146 0-5.98-1.915-7.18-4.85l-.066-.16h-2.79v5.01h-4.028zm4.028-13.36h4.28c1.172 0 2.122.96 2.122 2.142 0 1.183-.95 2.142-2.122 2.142h-4.28V7.769z">
@@ -547,14 +540,14 @@
                                 </path>
                             </svg></a></div>
                     <div class="css-sx764e">
-                        <div class="css-p1vanc"><a href="https://business.rallit.com" target="_blank" rel="noreferrer"
-                                class="css-0">기업 서비스</a><a href="https://www.inflearn.com" target="_blank"
+                        <div class="css-p1vanc"><a href="jobSeeker/login" target="_blank" rel="noreferrer"
+                                class="css-0">기업 서비스</a><a href="https://i.ytimg.com/vi/5rCcqk2QxrM/maxresdefault.jpg" target="_blank"
                                 rel="noreferrer" class="css-0">인프런</a></div>
-                        <div class="css-szycpx"><a href="/terms-of-service" target="_blank" rel="noreferrer"
-                                class="css-0">이용약관</a><a href="/privacy-policy" target="_blank" rel="noreferrer"
+                        <div class="css-szycpx"><a href="https://i.ytimg.com/vi/5rCcqk2QxrM/maxresdefault.jpg" target="_blank" rel="noreferrer"
+                                class="css-0">이용약관</a><a href="https://i.ytimg.com/vi/5rCcqk2QxrM/maxresdefault.jpg" target="_blank" rel="noreferrer"
                                 class="css-0">개인정보 처리방침</a><a
-                                href="https://inflearn.typeform.com/rallit-cs#rallit_id=20582&amp;rallit_email=ysb217@gmail.com"
-                                target="_blank" rel="noreferrer" class="css-0">문의하기</a><a href="/propose-feature">기능
+                                href="https://i.ytimg.com/vi/5rCcqk2QxrM/maxresdefault.jpg"
+                                target="_blank" rel="noreferrer" class="css-0">문의하기</a><a href="https://i.ytimg.com/vi/5rCcqk2QxrM/maxresdefault.jpg">기능
                                 제안하기</a></div>
                     </div>
                 </div>

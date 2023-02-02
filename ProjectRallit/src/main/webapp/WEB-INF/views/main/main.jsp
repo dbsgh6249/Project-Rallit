@@ -68,7 +68,7 @@
                                             fill="#878E98"></path>
                                     </svg></div><span>교육</span>
                             </a></li>
-                        <li><a href="/" class="active">
+                        <li><a href="/ex/" class="active">
                                 <div class="rallit-icon  css-5wonz9"><svg width="20" height="20" viewBox="0 0 20 20"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -79,7 +79,7 @@
                                             fill="#00CCAA"></path>
                                     </svg></div><span>채용</span>
                             </a></li>
-                    </ul><a href="https://business.rallit.com"> <!--기업서비스 로그인 링크-->
+                    </ul><a href="jobSeeker/login"> <!--기업서비스 로그인 링크-->
                         <p class="css-11cix4b">기업 서비스</p>
                     </a>
                 </div>
@@ -87,7 +87,7 @@
         </section>
         <header class="css-1gzra86">
             <nav class="css-o8aacz">
-                <div class="left-GNB css-p1vanc"><a aria-label="홈" href="/" class="css-avxbst">
+                <div class="left-GNB css-p1vanc"><a aria-label="홈" href="/ex/" class="css-avxbst">
                         <div class="css-wodprq">
                             <div class="GNB-menu__noti-container">
                                 <div class="rallit-icon  css-1sepp5i"><svg width="20" height="20" fill="none"
@@ -195,7 +195,7 @@
                                     </svg></button></div>
                         </label></div>
                     <div class="css-fi5x0a"><a
-                            href="https://www.inflearn.com/signin?referUrl=https%3A%2F%2Fwww.rallit.com%2F"
+                            href="jobSeeker/login"
                             class="css-avxbst">
                             <div class="css-wodprq">
                                 <div class="GNB-menu__noti-container"></div><span class="css-jk5git"></span>
@@ -204,7 +204,7 @@
                                     class="css-niuhbk">로그인</button></div>
                         </a></div>
                     <div class="css-fi5x0a"><a
-                            href="https://www.inflearn.com/signup?referUrl=https%3A%2F%2Fwww.rallit.com%2F"
+                            href="jobSeeker/register"
                             class="css-avxbst">
                             <div class="css-wodprq">
                                 <div class="GNB-menu__noti-container"></div><span class="css-jk5git"></span>

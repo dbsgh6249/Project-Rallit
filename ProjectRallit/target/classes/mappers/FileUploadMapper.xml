@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.human.dao.IFileUploadDao">
+<insert id="addFile">
+insert into tbl_attach(fullName,posting_num) values (#{fullName},#{posting_num})
+</insert>
+
+<select id="getFiles" resultType="String">
+select * from tbl_attach where posting_num=#{posting_num} order by regdate
+</select>
+
+<delete id="deleteFile">
+delete from tbl_attach where posting_num=#{posting_num}
+</delete>
+
+</mapper>
+
+
+
+
+
+
+
+
+

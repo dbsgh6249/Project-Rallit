@@ -42,8 +42,8 @@
         <input type="password" id="password" name="password" placeholder="비밀번호"><br><br>
         <button type="submit">로그인</button><br>
         </form:form>
-        <a href="findid">아이디(이메일) 찾기</a><span class="space">|</span>
-        <a href="findpw">비밀번호 찾기</a><span class="space">|</span>
+        <a href="https://i.ytimg.com/vi/5rCcqk2QxrM/maxresdefault.jpg">아이디(이메일) 찾기</a><span class="space">|</span>
+        <a href="https://i.ytimg.com/vi/5rCcqk2QxrM/maxresdefault.jpg">비밀번호 찾기</a><span class="space">|</span>
         <a href="register.html">회원가입</a>
             </span>
             <div class="fastlogin">

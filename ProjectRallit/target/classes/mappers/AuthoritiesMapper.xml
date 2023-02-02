@@ -3,7 +3,7 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.human.dao.AuthoritiesDao">
+<mapper namespace="com.human.dao.IAuthoritiesDao">
 <!-- 권한부여 (회원가입 페이지를 분리하면 권한명 넣어두고 하는 게 낫지 않을까 싶음 -->
 <insert id="insertSeeker"> <!-- 유저 권한설정 -->)
 insert into Authorities values(#{user_id}, 'role_seeker')

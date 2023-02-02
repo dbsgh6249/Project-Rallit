@@ -58,13 +58,7 @@ public class HomeController {
 		System.out.println("insert befor");
 		user_service.insert(dto);
 		System.out.println("insert after");
-		return "/userSelect";
-	}
-	
-	@RequestMapping(value = "/userSelect", method = RequestMethod.GET)
-	public String testUserSelect(Model model) throws Exception {
-		model.addAttribute("list",user_service.selectAll());
-		return "/temporary/userSelect";
+		return "/main/main";
 	}
 	
 	

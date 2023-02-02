@@ -34,12 +34,34 @@
                 
                 <form action="">
                 <p>이메일</p><br>
-                <input type="text" placeholder="example@inflab.com"><br>
+                <input type="text" name="user_id"placeholder="example@inflab.com"><br>
                 <p>비밀번호</p><br>
-                <input type="password" placeholder="******"><br>
-                <p>비밀번호 확인</p><br>
-                <input type="password" placeholder="******"><br>
-                <input type="submit"value="가입하기"><br><br>
+                <input type="password" name="user_pw" placeholder="******"><br>
+                <p>이름</p><br>
+                <input type="text" name="user_name" placeholder="김OO"><br>
+                <p>휴대폰 번호</p><br>
+                <input type="text" name="user_phone" placeholder="010-0000-0000"><br>
+                <p>소속 회사</p><br>
+                <input type="text" name="user_company" placeholder="구직자는 적지 않아도 되요"><br>
+                <p>시,도</p><br>
+                <select name="user_province">
+					<option value="서울 ">서울</option>
+					<option value="경기 ">경기</option>
+					<option value="대전 ">대전</option>
+					<option value="충남 ">충남</option>
+				</select><br>
+				<p>도,군,구</p><br>
+				<select name="user_city">
+					<option value="강남구 ">강남</option>
+					<option value="마포구 ">마포</option>
+					<option value="천안시 ">천안시</option>
+					<option value="유성구 ">유성구</option>
+				</select><br>
+				<p>상세 주소</p><br>
+				<input type="text" name="user_address" placeholder="상세 주소(OO동 OO아파트)">
+				<br><br>
+				
+				<input type="submit"value="가입하기"><br><br>
                 </form>
                 
                 <span class="footer__policy">

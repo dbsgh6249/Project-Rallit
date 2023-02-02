@@ -32,16 +32,19 @@ public class DBUsersController {
 	
 	
 	@RequestMapping(value = "/seeker/register", method = RequestMethod.POST)
-	public String testsingup(H_UsersDto dto) throws Exception {
+	public String seekersingup(H_UsersDto dto) throws Exception {
+//		user_info insert
 		System.out.println(dto);
-		System.out.println("insert befor");
-		
 		user_service.insert(dto);
-		System.out.println("insert after");
-		
+//		user_authorities insert
 		AuthoritiesDto authoritiesDto = new AuthoritiesDto(); // 권한 설정 확인용
+		
+		System.out.println(dto.getUser_id());
 		authoritiesDto.setUser_id(dto.getUser_id());
+		
 		authoritiesDto.setAuthority("ROLE_SEEKER");
+		System.out.println(authoritiesDto);
+		
 		authorities_service.insertSeeker(authoritiesDto);
 		
 		return "/jobSeeker/login";

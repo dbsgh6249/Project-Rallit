@@ -16,9 +16,9 @@ public class PostingTagServiceImpl implements IPostingTagService{
 	private SqlSession sqlSession;
 	
 	@Override
-	public void insert(PostingTagDto dto) throws Exception {
+	public void insert(String languageTag) throws Exception {
 		IPostingTagDao dao = sqlSession.getMapper(IPostingTagDao.class);
-		dao.insert(dto);
+		dao.insert(languageTag);
 	}
 
 	@Override

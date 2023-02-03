@@ -21,7 +21,7 @@ public class JobPostingServiceImpl implements IJobPostingService{
 	}
 
 	@Override
-	public JobPostingDto selectOne(String posting_num) throws Exception {
+	public JobPostingDto selectOne(int posting_num) throws Exception {
 		IJobPostingDao dao = sqlSession.getMapper(IJobPostingDao.class);
 		return dao.selectOne(posting_num);
 	}
@@ -39,7 +39,7 @@ public class JobPostingServiceImpl implements IJobPostingService{
 	}
 
 	@Override
-	public void delete(String posting_num) throws Exception {
+	public void delete(int posting_num) throws Exception {
 		IJobPostingDao dao = sqlSession.getMapper(IJobPostingDao.class);
 		dao.delete(posting_num);
 	}

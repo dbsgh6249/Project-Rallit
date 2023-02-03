@@ -37,7 +37,7 @@
 					<script>alert("아이디 또는 패스워드가 잘못되었습니다.")</script>
 				</c:if>
 				<c:if test="${param.logout != null}">
-					<p>로그아웃 하였습니다.</p>
+					<script>alert("로그아웃 되었습니다.")</script>
 				</c:if>
 		<input type="text" id="id" name="id" placeholder="이메일"><br><br>
         <input type="password" id="password" name="password" placeholder="비밀번호"><br><br>

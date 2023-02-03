@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -9,7 +10,7 @@
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script type="text/javascript" src="resources/manifest.json"></script>
+   
     <script type="text/javascript" async=""
         src="https://www.googletagmanager.com/gtag/js?id=G-QL4WB566QC&amp;l=dataLayer&amp;cx=c"></script>
     <script src="https://connect.facebook.net/signals/config/663413858428656?v=2.9.95&amp;r=stable" async=""></script>
@@ -35,28 +36,17 @@
     <meta property="og:locale" content="ko_KR">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="랠릿">
-    <meta name="twitter:title" content="IT 인재 채용 플랫폼 - 랠릿">
-    <meta name="twitter:description" content="업계에서 검증된 회사들의 채용 채용 공고를 랠릿에서 만나보세요">
-    <meta name="twitter:image" content="https://cdn.rallit.com/image/meta-image.png">
-    <meta name="twitter:url" content="https://www.rallit.com/">
+   
     <meta name="naver-site-verification" content="135ce61c0b836150b85556ca84fd83229e12ab67">
     <meta name="theme-color" content="#ffffff">
     <link rel="icon" href="https://cdn.rallit.com/image/favicon.ico" sizes="any">
     <link rel="icon" href="https://cdn.rallit.com/image/favicon.svg" type="image/svg+xml">
     <link rel="mask-icon" href="https://cdn.rallit.com/image/favicon.svg" color="#000000">
     <link rel="apple-touch-icon" href="https://cdn.rallit.com/image/favicon-180x180.png">
-    <link rel="manifest" href="/manifest.json">
     <script src="https://cdn.rallit.com/js/postcode.v2.js" defer=""></script>
     <script src="https://cdn.rallit.com/js/kakao.v1.14.0.min.js" defer=""></script>
     <meta name="next-head-count" content="38">
-        <link rel="preload" href="fonts/Pretendard/Pretendard-Bold.subset.woff2" as="font" crossorigin="">
-    <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Bold.subset.woff" as="font" crossorigin="">
-    <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Medium.subset.woff2" as="font" crossorigin="">
-    <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Medium.subset.woff" as="font" crossorigin="">
-    <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Regular.subset.woff2" as="font" crossorigin="">
-    <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Regular.subset.woff" as="font" crossorigin="">
+      
  	<script>
 /* 	
     	$(document).ready(function(){
@@ -115,7 +105,10 @@
 
 
 </head>
-<body>
+<body>    
+<c:if test="${param.logout != null}">
+        <script>alert("로그아웃 되었습니다.")</script>
+</c:if>
 
     <div id="__next" data-reactroot="">
         <section class="inflab-integrated css-1cp3pcs">
@@ -221,7 +214,23 @@
                                             <div class="css-ziljwy"><label class="css-pwu5ys">직무</label>
                                                 <ul class="css-1piurjj">
                                                     <p class="css-1kxn32n">직군을 선택해주세요</p>
-                                                </ul>
+													<li class="css-494cde"><button type="button"
+															name="직군 개발" class="css-184xd0e">개발</button></li>
+													<li class="css-494cde"><button type="button"
+															name="직군 게임개발" class="css-184xd0e">게임개발</button></li>
+													<li class="css-494cde"><button type="button"
+															name="직군 디자인" class="css-184xd0e">디자인</button></li>
+													<li class="css-494cde"><button type="button"
+															name="직군 기획" class="css-184xd0e">기획</button></li>
+													<li class="css-494cde"><button type="button"
+															name="직군 마케팅" class="css-184xd0e">마케팅</button></li>
+													<li class="css-494cde"><button type="button"
+															name="직군 경영/인사" class="css-184xd0e">경영/인사</button></li>
+													<li class="css-494cde"><button type="button"
+															name="직군 영업" class="css-184xd0e">영업</button></li>
+													<li class="css-494cde"><button type="button"
+															name="직군 엔지니어링" class="css-184xd0e">엔지니어링</button></li>
+												</ul>
                                             </div>
                                         </div>
                                     </div>
@@ -293,14 +302,16 @@
                           <a href="#">내 정보</a>
                           <form class="1" action="${pageContext.request.contextPath}/main/logout" method="POST">
                      	<input class="1" type="submit" value="로그아웃">
+                     	<c:if test="">
+                     	<script>alert("로그아웃 되었습니다.")</script>
+						</c:if>                     
                      </form>
                         </div>
                       </div>      
-                   </sec:authorize>
+                   </sec:authorize>                
                    
                    
-                   
-         <!-------------------------------------------------------------------------- -->
+         <!--------------------------------------------------------------------------- -->
          
          
          
@@ -448,7 +459,7 @@
                             </a></div>
                     </div>
 
-                    <!--------------------------채용중인 공고 껍데기 자리----------------------->
+                    <!---------------------------채용중인 공고 껍데기 자리----------------------->
                     <ul class="css-1nwykk">
                         <c:forEach var="test" items="${test }"> <!-- c태그 forEach 실행 시작(채용공고 데이터) -->
                             <li>
@@ -598,22 +609,9 @@
                     J1516020220003<br>경기도 성남시 분당구 대왕판교로 660 유스페이스 1A동 405호 <br>©Rallit. All rights reserved.</p>
             </div>
         </footer>
-        <div class="css-yce0pl">
-            <ul class="css-1g9upls"></ul>
+
         </div>
     </div>
-    <script id="__NEXT_DATA__"
-        type="application/json">{"props":{"pageProps":{"banners":[{"id":100,"sequence":1,"title":"랠릿 이력서 이벤트 ","link":"https://www.inflearn.com/tag-curation/tag/rallit-newresume-230119?utm_source=rallit\u0026utm_medium=mainbanner\u0026utm_campaign=traffic_event_newresume\u0026utm_content=\u0026utm_term=20230119","pcBannerUrl":"https://cdn.rallit.com/image/2023-01-26/-blAX8KlJELNWz8aw7AbL.gif","tabletBannerUrl":"https://cdn.rallit.com/image/2023-01-26/PtU4hA2pCkfavmhUDgX-X.gif","mobileBannerUrl":"https://cdn.rallit.com/image/2023-01-26/goXiGqmh3bG-QaXp3BeLA.gif","backgroundColor":"#00ccaa"},{"id":101,"sequence":2</script>
-    <script type="text/javascript"
-        id="">!function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js"); fbq("init", "663413858428656"); fbq("track", "PageView");</script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=663413858428656&amp;ev=PageView&amp;noscript=1"></noscript>
-    <div id="TooltipContainer"></div><next-route-announcer>
-        <p aria-live="assertive" id="__next-route-announcer__" role="alert"
-            style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; overflow-wrap: normal;">
-        </p>
-    </next-route-announcer>
-
 </body>
 
 </html>

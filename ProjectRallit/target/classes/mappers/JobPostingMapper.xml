@@ -7,7 +7,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <insert id="insert">insert into jobPosting 
 (posting_num,title,user_id,dateCreated,deadline,occ_main,occ_sub,minCareer,maxCareer,
 text1,text2,text3,text4,text5,text6,picture)
-values (jobPosting_seq.nextval,#{title},#{user_id},sysdate, #{deadline},#{occ_main},#{occ_sub},#{minCarrer},#{maxCareer},
+values (jobPosting_seq.nextval,#{title},#{user_id},sysdate, #{deadline},#{occ_main},#{occ_sub},#{minCareer},#{maxCareer},
 #{text1},#{text2},#{text3},#{text4},#{text5},#{text6})</insert>
 
 <select id="selectOne" resultType="com.human.dto.JobPostingDto"> <!-- 채용공고 상세페이지(Select One) -->
@@ -29,5 +29,9 @@ text6=#{text6}  where posting_num = #{posting_num} </update>
 <select id="selectAll" resultType="com.human.dto.JobPostingDto"> <!-- 채용공고 전체 조회 -->
 <![CDATA[ select * from JobPosting where posting_num > 0 order by posting_num desc, dateCreated desc ]]>
  
+</select>
+
+<select id="selectMaxPostingNum" resultType="Integer">
+select max(posting_num) as posting_num from JobPosting
 </select>
 </mapper>

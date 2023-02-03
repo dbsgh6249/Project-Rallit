@@ -46,10 +46,18 @@ public class HomeController {
 	public String testregister(Locale locale, Model model) {
 		return "/temporary/register";
 	}
+	
+	//test용
 	@RequestMapping(value = "/jpd", method = RequestMethod.GET)
 	public String jpd(Model model) {
 		
 		return "jobPosting/jobPostingDetail";
+	}
+	//test용
+	@RequestMapping(value = "/jps", method = RequestMethod.GET)
+	public String jps(Model model) {
+		
+		return "jobPosting/jobPostingSelect";
 	}
 	
 	

@@ -16,9 +16,9 @@ public class PostingTagServiceImpl implements IPostingTagService{
 	private SqlSession sqlSession;
 	
 	@Override
-	public void insert(String languageTag) throws Exception {
+	public void insert(PostingTagDto dto) throws Exception {
 		IPostingTagDao dao = sqlSession.getMapper(IPostingTagDao.class);
-		dao.insert(languageTag);
+		dao.insert(dto);
 	}
 
 	@Override
@@ -43,6 +43,12 @@ public class PostingTagServiceImpl implements IPostingTagService{
 	public void update(PostingTagDto dto) throws Exception {
 		IPostingTagDao dao = sqlSession.getMapper(IPostingTagDao.class);
 		dao.update(dto);
+	}
+
+	@Override
+	public List<String> selectPosting_num(int posting_num) throws Exception {
+		IPostingTagDao dao = sqlSession.getMapper(IPostingTagDao.class);
+		return dao.selectPosting_num(posting_num);
 	}
 
 }

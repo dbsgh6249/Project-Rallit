@@ -221,7 +221,23 @@
                                             <div class="css-ziljwy"><label class="css-pwu5ys">직무</label>
                                                 <ul class="css-1piurjj">
                                                     <p class="css-1kxn32n">직군을 선택해주세요</p>
-                                                </ul>
+													<li class="css-494cde"><button type="button"
+															name="직군 개발" class="css-184xd0e">개발</button></li>
+													<li class="css-494cde"><button type="button"
+															name="직군 게임개발" class="css-184xd0e">게임개발</button></li>
+													<li class="css-494cde"><button type="button"
+															name="직군 디자인" class="css-184xd0e">디자인</button></li>
+													<li class="css-494cde"><button type="button"
+															name="직군 기획" class="css-184xd0e">기획</button></li>
+													<li class="css-494cde"><button type="button"
+															name="직군 마케팅" class="css-184xd0e">마케팅</button></li>
+													<li class="css-494cde"><button type="button"
+															name="직군 경영/인사" class="css-184xd0e">경영/인사</button></li>
+													<li class="css-494cde"><button type="button"
+															name="직군 영업" class="css-184xd0e">영업</button></li>
+													<li class="css-494cde"><button type="button"
+															name="직군 엔지니어링" class="css-184xd0e">엔지니어링</button></li>
+												</ul>
                                             </div>
                                         </div>
                                     </div>

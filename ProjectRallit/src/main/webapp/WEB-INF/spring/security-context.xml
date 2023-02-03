@@ -21,15 +21,15 @@
 		<intercept-url pattern="/admin/**" access="hasRole('ADMIN')" /> 
 	<!-- 	<intercept-url pattern="/admin/**" access="permitAll" /> -->
  
-		<form-login login-page="/jobSeeker/login"
+		<form-login login-page="/main/login"
 			authentication-success-handler-ref="LoginSuccess"
-			default-target-url="/jobSeeker/user"
-			authentication-failure-url="/jobSeeker/login?error"
+			default-target-url="/main/main"
+			authentication-failure-url="/main/login?error"
 			username-parameter="id" password-parameter="password" />
-		<logout logout-url="/jobSeeker/logout" invalidate-session="true" />
+		<logout logout-url="/main/logout" invalidate-session="true" />
 		<!--화면 없이 해당 주소로 오면 session이 지워지고 로그아웃이 진행됨 -->
 		<!-- 에러 났을 때 에러 처리하는 페이지 -->
-		<access-denied-handler error-page="/jobSeeker/error" />
+		<access-denied-handler error-page="/main/error" />
 	</http>
 
 	<!-- BCryptPasswordEncoder 클래스 빈 추가  -->

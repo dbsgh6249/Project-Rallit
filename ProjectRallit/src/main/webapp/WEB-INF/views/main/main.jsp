@@ -10,9 +10,6 @@
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="resources/manifest.json"></script>
-    <style>
-
-    </style>
     <script type="text/javascript" async=""
         src="https://www.googletagmanager.com/gtag/js?id=G-QL4WB566QC&amp;l=dataLayer&amp;cx=c"></script>
     <script src="https://connect.facebook.net/signals/config/663413858428656?v=2.9.95&amp;r=stable" async=""></script>
@@ -89,11 +86,37 @@
     				});
     	});
     </script>
-    <!-- ttt -->
+
+    
+    <!-- MY랠릿 버튼------------------------------------------------ -->
+     <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
+            <!-- ------------------------------------------------------------- -->
+    
+
+
 </head>
 <body>
-<!-- <body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGJ7X69" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript> -->
+
     <div id="__next" data-reactroot="">
         <section class="inflab-integrated css-1cp3pcs">
             <div class="inflab-integrated__header">
@@ -257,102 +280,40 @@
                         </a></div>    
                    </sec:authorize>
                    </div> 
-                     
-                    
-          <!--  
-          <li class="css-1t40zbn">
-    <div class="dropdownList__wrapper css-3fe575"><a aria-label="MY 랠릿" href="/my" class="css-avxbst">
-            <div class="css-wodprq">
-                <div class="GNB-menu__noti-container">
-                    <div class="rallit-icon  css-1sepp5i"><svg width="20" height="20" fill="none" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M9.984 1.408c-2.817 0-5.1 2.354-5.1 5.257 0 1.806.883 3.4 2.23 4.346-2.903 1.095-5.05 3.814-5.42 7.084a.668.668 0 0 0 .663.747c.376 0 .68-.313.728-.703.438-3.52 3.36-6.217 6.9-6.217 3.517 0 6.523 2.85 6.91 6.183.046.398.353.725.737.725a.665.665 0 0 0 .664-.726c-.29-3.305-2.53-5.995-5.44-7.093a5.297 5.297 0 0 0 2.229-4.346c0-2.903-2.284-5.257-5.1-5.257zm-3.71 5.257c0-2.111 1.662-3.823 3.71-3.823 2.049 0 3.71 1.712 3.71 3.823 0 2.112-1.661 3.823-3.71 3.823-2.048 0-3.71-1.711-3.71-3.823z"
-                                fill="#a1aab2"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M9.984 1.567c-2.735 0-4.949 2.285-4.949 5.098 0 1.75.856 3.296 2.163 4.214l.248.175-.281.106c-2.85 1.075-4.958 3.745-5.32 6.954a.512.512 0 0 0 .512.569c.29 0 .538-.244.578-.564.448-3.601 3.435-6.356 7.05-6.356 3.592 0 6.664 2.908 7.06 6.323.039.33.29.585.587.585a.51.51 0 0 0 .512-.552c-.282-3.237-2.479-5.879-5.34-6.96l-.281-.106.248-.174a5.136 5.136 0 0 0 2.162-4.214c0-2.813-2.213-5.098-4.949-5.098zM4.732 6.665c0-2.993 2.353-5.415 5.252-5.415 2.9 0 5.253 2.422 5.253 5.415 0 1.755-.81 3.314-2.063 4.303 2.828 1.177 4.987 3.85 5.273 7.122a.821.821 0 0 1-.815.898c-.472 0-.834-.398-.888-.864-.377-3.252-3.316-6.044-6.76-6.044-3.464 0-6.32 2.64-6.749 6.08-.057.458-.417.84-.878.84a.824.824 0 0 1-.814-.923c.365-3.23 2.433-5.932 5.251-7.11a5.466 5.466 0 0 1-2.062-4.302zm1.391 0c0-2.2 1.73-3.981 3.861-3.981 2.13 0 3.861 1.78 3.861 3.981 0 2.201-1.73 3.982-3.86 3.982-2.131 0-3.862-1.78-3.862-3.982zm3.861-3.664C8.017 3 6.426 4.643 6.426 6.665c0 2.022 1.591 3.665 3.558 3.665 1.967 0 3.558-1.643 3.558-3.665 0-2.022-1.59-3.664-3.558-3.664z"
-                                fill="#a1aab2"></path>
-                        </svg></div>
-                </div>
-            </div>
-            <div class="GNB-menu__noti-container css-176b8zp"><button type="button" class="css-niuhbk">MY 랠릿</button>
-            </div>
-        </a>
-        <div class="dropdownList__container css-mumsip">
-            <ul class="css-1bwe846">
-                <li role="menuitem" class="css-83cc5o">
-                    <div class="css-47e4vb">
-                        <p class="dropdownList__title css-1182me">MY 홈</p>
-                        <p class="dropdownList__caption css-vzncwq"></p>
-                    </div>
-                </li>
-                <li role="menuitem" class="css-83cc5o">
-                    <div class="css-47e4vb">
-                        <p class="dropdownList__title css-1182me">작성 중인 지원서</p>
-                        <p class="dropdownList__caption css-vzncwq"></p>
-                    </div>
-                </li>
-                <li role="menuitem" class="css-83cc5o">
-                    <div class="css-47e4vb">
-                        <p class="dropdownList__title css-1182me">제출한 지원서</p>
-                        <p class="dropdownList__caption css-vzncwq"></p>
-                    </div>
-                </li>
-                <li role="menuitem" class="css-83cc5o">
-                    <div class="css-47e4vb">
-                        <p class="dropdownList__title css-1182me">북마크한 채용 공고</p>
-                        <p class="dropdownList__caption css-vzncwq"></p>
-                    </div>
-                </li>
-                <li role="menuitem" class="css-83cc5o">
-                    <div class="css-47e4vb">
-                        <p class="dropdownList__title css-1182me">설정</p>
-                        <p class="dropdownList__caption css-vzncwq"></p>
-                    </div>
-                </li>
-                <div class="css-yyqtxc"></div>
-                <li role="menuitem" class="css-jrt6fi">
-                    <div class="css-47e4vb">
-                        <p class="dropdownList__title css-1182me">로그아웃</p>
-                        <p class="dropdownList__caption css-vzncwq"></p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</li> -->
+  
+          
+          <!-- -------------------------MY 랠릿 드롭다운 메뉴 버튼 ------------------------ -->
+          
           
           
            <sec:authorize access="isAuthenticated()">
-           <li class="css-xgy32p"><button type="button" class="css-ea4tpn">
-                     <form action="${pageContext.request.contextPath}/main/logout" method="POST">
-                        <input type="submit" value="로그아웃">
+                      <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">MY 랠릿</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#">내 정보</a>
+                          <form class="1" action="${pageContext.request.contextPath}/main/logout" method="POST">
+                     	<input class="1" type="submit" value="로그아웃">
                      </form>
-                    <li class="css-xgy32p"><button type="button" class="css-ea4tpn">
-
-                            <div class="rallit-icon  css-1sepp5i"><svg width="20" height="20" fill="none"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M9.984 1.408c-2.817 0-5.1 2.354-5.1 5.257 0 1.806.883 3.4 2.23 4.346-2.903 1.095-5.05 3.814-5.42 7.084a.668.668 0 0 0 .663.747c.376 0 .68-.313.728-.703.438-3.52 3.36-6.217 6.9-6.217 3.517 0 6.523 2.85 6.91 6.183.046.398.353.725.737.725a.665.665 0 0 0 .664-.726c-.29-3.305-2.53-5.995-5.44-7.093a5.297 5.297 0 0 0 2.229-4.346c0-2.903-2.284-5.257-5.1-5.257zm-3.71 5.257c0-2.111 1.662-3.823 3.71-3.823 2.049 0 3.71 1.712 3.71 3.823 0 2.112-1.661 3.823-3.71 3.823-2.048 0-3.71-1.711-3.71-3.823z"
-                                        fill="#a1aab2"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M9.984 1.567c-2.735 0-4.949 2.285-4.949 5.098 0 1.75.856 3.296 2.163 4.214l.248.175-.281.106c-2.85 1.075-4.958 3.745-5.32 6.954a.512.512 0 0 0 .512.569c.29 0 .538-.244.578-.564.448-3.601 3.435-6.356 7.05-6.356 3.592 0 6.664 2.908 7.06 6.323.039.33.29.585.587.585a.51.51 0 0 0 .512-.552c-.282-3.237-2.479-5.879-5.34-6.96l-.281-.106.248-.174a5.136 5.136 0 0 0 2.162-4.214c0-2.813-2.213-5.098-4.949-5.098zM4.732 6.665c0-2.993 2.353-5.415 5.252-5.415 2.9 0 5.253 2.422 5.253 5.415 0 1.755-.81 3.314-2.063 4.303 2.828 1.177 4.987 3.85 5.273 7.122a.821.821 0 0 1-.815.898c-.472 0-.834-.398-.888-.864-.377-3.252-3.316-6.044-6.76-6.044-3.464 0-6.32 2.64-6.749 6.08-.057.458-.417.84-.878.84a.824.824 0 0 1-.814-.923c.365-3.23 2.433-5.932 5.251-7.11a5.466 5.466 0 0 1-2.062-4.302zm1.391 0c0-2.2 1.73-3.981 3.861-3.981 2.13 0 3.861 1.78 3.861 3.981 0 2.201-1.73 3.982-3.86 3.982-2.131 0-3.862-1.78-3.862-3.982zm3.861-3.664C8.017 3 6.426 4.643 6.426 6.665c0 2.022 1.591 3.665 3.558 3.665 1.967 0 3.558-1.643 3.558-3.665 0-2.022-1.59-3.664-3.558-3.664z"
-                                        fill="#a1aab2"></path>
-                                </svg></div><span class="css-jk5git">MY 랠릿</span>
-                        </button></li>
-                     </sec:authorize>
-                     
-                     
-                     
+                        </div>
+                      </div>      
+                   </sec:authorize>
+                   
+                   
+                   
+         <!-------------------------------------------------------------------------- -->
+         
+         
+         
                 </div>
             </nav>
+ 
             <div class="css-1ljwjjg"></div>
         </header>
         <main class="css-ac13em">
             <h1 class="css-8mcuh1">랠릿 메인페이지</h1>
             <section class="css-14c50mj">
                 <div class="css-1yposw6">
-                    <div
+                    <div style="z-index:2" 
                         class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
                         <div class="swiper-scrollbar"></div>
                         <div class="swiper-wrapper"

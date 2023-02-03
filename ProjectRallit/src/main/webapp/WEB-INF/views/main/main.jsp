@@ -86,7 +86,7 @@
     				});
     	});
     </script>
-<<<<<<< HEAD
+
     
     <!-- MY랠릿 버튼------------------------------------------------ -->
      <script>
@@ -112,13 +112,11 @@
             </script>
             <!-- ------------------------------------------------------------- -->
     
-=======
-    <!-- ttt -->
->>>>>>> branch 'master' of https://github.com/dbsgh6249/Project-Rallit.git
+
+
 </head>
 <body>
-<!-- <body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGJ7X69" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript> -->
+
     <div id="__next" data-reactroot="">
         <section class="inflab-integrated css-1cp3pcs">
             <div class="inflab-integrated__header">
@@ -284,23 +282,17 @@
                    </div> 
   
           
-          <!-- -------------------------MY 랠릿 드롭다운 메뉴 버튼 ---------------------- -->
+          <!-- -------------------------MY 랠릿 드롭다운 메뉴 버튼 ------------------------ -->
           
           
           
            <sec:authorize access="isAuthenticated()">
-<<<<<<< HEAD
                       <div class="dropdown">
                         <button onclick="myFunction()" class="dropbtn">MY 랠릿</button>
                         <div id="myDropdown" class="dropdown-content">
                           <a href="#">내 정보</a>
                           <form class="1" action="${pageContext.request.contextPath}/main/logout" method="POST">
                      	<input class="1" type="submit" value="로그아웃">
-=======
-           <li class="css-xgy32p"><button type="button" class="css-ea4tpn">
-                     <form action="${pageContext.request.contextPath}/main/logout" method="POST">
-                        <input type="submit" value="로그아웃">
->>>>>>> branch 'master' of https://github.com/dbsgh6249/Project-Rallit.git
                      </form>
                         </div>
                       </div>      

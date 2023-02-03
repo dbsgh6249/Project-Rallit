@@ -24,9 +24,17 @@
 그냥 input type=file 해서 권한 부여할 때처럼 각각 insert를 하나? 아니 글번호 시퀀스로 넣는데 그걸 어떻게 뽑더라......</p>
 
 </form>
-<form action="/ex/jobPosting/picture_upload" method="post" enctype="multipart/form-data">
+<form id="uploadPicture" action="/ex/jobPosting/picture_upload" method="post" enctype="multipart/form-data">
 파일 선택 : <input type="file" multiple="multiple" name="files">
 <input type="submit" value="전송">
 </form>
+
+<iframe name="zeroFrame"></iframe>
+<script>
+	function addFilePath(msg) {
+		alert(msg);
+		document.getElementById("uploadPicture").reset();
+	}
+</script>
 </body>
 </html>

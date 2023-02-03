@@ -1,15 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 <!DOCTYPE html>
-<!-- 세션정보 접근 -->
-<!-- 이제 어디에서든지 principal.~ 로 접근가능 -->
-<sec:authorize access="isAuthenticated()">
-	<sec:authentication property="principal" var="principal"/>
-    <!-- principal property가 UserDetails임-->
-</sec:authorize>
-<sec:authentication property="isAuthenticated()">
-	<sec:authentication property="principal" var="principal"/> 
-</sec:authentication>
 <html lang="ko">
 <head>
     <link href="${pageContext.request.contextPath}/resources/css/main.css"
@@ -253,8 +245,8 @@
                             </div>
                             <div class="GNB-menu__noti-container css-176b8zp"><button type="button"
                                     class="css-4qldrf">로그인</button></div>
-                        </a></div>
-                   </sec:authorize>  
+                        </a></div></sec:authorize>
+                     
                    <sec:authorize access="isAnonymous()">    
                     <div class="css-fi5x0a"><a
                             href="main/register"
@@ -269,6 +261,9 @@
                    </div> 
                      
                      <sec:authorize access="isAuthenticated()">
+                     <form action="${pageContext.request.contextPath}/main/logout" method="POST">
+                     	<input type="submit" value="로그아웃">
+                     </form>
                     <li class="css-xgy32p"><button type="button" class="css-ea4tpn">
                             <div class="rallit-icon  css-1sepp5i"><svg width="20" height="20" fill="none"
                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

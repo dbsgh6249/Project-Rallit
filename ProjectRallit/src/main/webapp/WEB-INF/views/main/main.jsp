@@ -222,6 +222,7 @@
                                             fill="#535961"></path>
                                     </svg></button></div>
                         </label></div>
+                <div class="left-GNB css-p1vanc">        
 				<sec:authorize access="isAnonymous()">
                     <div class="css-fi5x0a"><a
                             href="main/login"
@@ -232,8 +233,8 @@
                             <div class="GNB-menu__noti-container css-176b8zp"><button type="button"
                                     class="css-4qldrf">로그인</button></div>
                         </a></div>
-                 </sec:authorize>
-                 <sec:authorize access="isAnonymous()">
+                   </sec:authorize>  
+                   <sec:authorize access="isAnonymous()">    
                     <div class="css-fi5x0a"><a
                             href="main/register"
                             class="css-avxbst">
@@ -241,10 +242,10 @@
                                 <div class="GNB-menu__noti-container"></div><span class="css-jk5git"></span>
                             </div>
                             <div class="GNB-menu__noti-container css-176b8zp"><button type="button"
-                                    class="css-niuhbk">회원가입</button></div>
-                        </a></div>
+                                    class="css-4qldrf">회원가입</button></div>
+                        </a></div>    
                    </sec:authorize>
-                     
+                   </div> 
                      
                      <sec:authorize access="isAuthenticated()">
                     <li class="css-xgy32p"><button type="button" class="css-ea4tpn">

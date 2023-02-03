@@ -13,7 +13,7 @@
 <p>직군 : </p><input type="text" name="occ_main"><br>
 <p>직무 : </p><input type="text" name="occ_sub"><br>
 <p>경력 : </p><input type="text" name="minCareer" placeholder="숫자로 입력하세요(신입의 경우 0)">
-			~<input type="text" name="maxCarrer" placeholder="숫자로 입력하세요"><br>
+			~<input type="text" name="maxCareer" placeholder="숫자로 입력하세요"><br>
 <p>소개 : </p><input type="text" name="text1" placeholder="회사 소개글을 입력하세요"><br>
 <p>주요업무 : </p><input type="text" name="text2" placeholder="업무 내용을 입력하세요"><br>
 <p>자격요건 : </p><input type="text" name="text3" placeholder="자격 요건을 입력하세요"><br>

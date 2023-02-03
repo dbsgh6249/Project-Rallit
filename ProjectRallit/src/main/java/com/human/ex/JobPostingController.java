@@ -13,12 +13,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.human.dto.H_UsersDto;
 import com.human.dto.JobPostingDto;
 import com.human.service.IH_UsersService;
 import com.human.service.IJobPostingService;
+import com.human.service.IPostingTagService;
 
 /**
  * Handles requests for the application home page.
@@ -29,6 +31,8 @@ public class JobPostingController {
 	private static final Logger logger = LoggerFactory.getLogger(JobPostingController.class);
 	@Autowired
 	private IJobPostingService jobPosting_Service;
+	@Autowired
+	private IPostingTagService postingTag_Service;
 	
 	
 	@RequestMapping(value = "/jobPosting/insert", method = RequestMethod.GET)
@@ -37,7 +41,7 @@ public class JobPostingController {
 		return "/jobPosting/insert";
 	}
 	@RequestMapping(value = "/jobPosting/insert", method = RequestMethod.POST)
-	public String jobPostingInsertDB(JobPostingDto dto,RedirectAttributes ra) throws Exception {
+	public String jobPostingInsert(JobPostingDto dto,RedirectAttributes ra) throws Exception {
 		jobPosting_Service.insert(dto);
 		ra.addFlashAttribute("msg","success");
 		return "redirect:/jobPosting/selectAll";
@@ -48,14 +52,15 @@ public class JobPostingController {
 		return "/jobPosting/update";
 	}
 	@RequestMapping(value = "/jobPosting/update", method = RequestMethod.POST)
-	public String jobPostingUpdateDB(JobPostingDto dto,RedirectAttributes ra) throws Exception {
+	public String jobPostingUpdate(JobPostingDto dto,RedirectAttributes ra) throws Exception {
 		jobPosting_Service.update(dto);
 		ra.addFlashAttribute("msg","success");
 		return "redirect:/jobPosting/selectAll";
 	}
 	@RequestMapping(value = "/jobPosting/delete", method = RequestMethod.GET)
-	public String jobPostingDelete(String posting_num,RedirectAttributes ra) throws Exception{
+	public String jobPostingDelete(@RequestParam("posting_num")int posting_num,RedirectAttributes ra) throws Exception{
 		jobPosting_Service.delete(posting_num);
+		postingTag_Service.delete(posting_num);
 		ra.addFlashAttribute("msg","success");
 		return "redirect:/jobPosting/selectAll";
 	}
@@ -65,15 +70,15 @@ public class JobPostingController {
 		return "/jobPosting/selectAll";
 	}
 	@RequestMapping(value = "/jobPosting/selectOne", method = RequestMethod.GET)
-	public String jobPostingSelectOne(String posting_num,Model model) throws Exception {
+	public String jobPostingSelectOne(@RequestParam("posting_num")int posting_num,Model model) throws Exception {
 		model.addAttribute("dto",jobPosting_Service.selectOne(posting_num));
 		return "/jobPosting/selectOne";
 	}
 	@RequestMapping(value = "/jobPosting/selectCompanyPosting", method = RequestMethod.GET)
-	public String jobPostingSelectAll(String user_id,Model model) throws Exception {
+	public String jobPostingSelectCompanyPosting(String user_id,Model model) throws Exception {
 		model.addAttribute("list",jobPosting_Service.selectCompanyPosting(user_id));
 		
 		return "/jobPosting/selectCompanyPosting";
-	}//643
+	}
 	
 }

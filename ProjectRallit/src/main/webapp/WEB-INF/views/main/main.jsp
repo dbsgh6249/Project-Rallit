@@ -1,13 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<<<<<<< HEAD
-=======
-<!--  -->
 <sec:authentication property="isAuthenticated()">
 	<sec:authentication property="principal" var="principal"/> 
 </sec:authentication>
->>>>>>> branch 'master' of https://github.com/dbsgh6249/Project-Rallit.git
 <html lang="ko">
 <head>
     <link href="${pageContext.request.contextPath}/resources/css/main.css"

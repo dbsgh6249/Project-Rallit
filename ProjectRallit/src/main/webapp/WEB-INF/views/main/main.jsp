@@ -121,7 +121,62 @@
                                 </svg></h1>
                         </div>
                     </a>
+                    <!--  -->
+                      <div><a aria-label="내 이력서" href="https://i.ytimg.com/vi/5rCcqk2QxrM/maxresdefault.jpg" class="css-avxbst">
+                            <div class="css-wodprq">
+                                <div class="GNB-menu__noti-container">
+                                    <div class="rallit-icon  css-1sepp5i"><svg width="20" height="20"
+                                            viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.10417 2.4C4.04339 2.4 3.9851 2.42458 3.94212 2.46834C3.89915 2.5121 3.875 2.57145 3.875 2.63333V13.3667C3.875 13.4955 3.97767 13.6 4.10417 13.6H11.8958C11.9566 13.6 12.0149 13.5755 12.0579 13.5317C12.1009 13.4879 12.125 13.4285 12.125 13.3667V6.6H9.60417C9.17871 6.6 8.77069 6.42792 8.46985 6.12161C8.16901 5.8153 8 5.39985 8 4.96667V2.4H4.10417ZM9.375 2.92267V4.96667C9.375 5.09547 9.47767 5.2 9.60417 5.2H11.6117L9.375 2.92267ZM2.5 2.63333C2.5 1.73173 3.21867 1 4.10417 1H8.76633C9.19167 1 9.59958 1.17173 9.90025 1.4788L13.0298 4.6652C13.3313 4.97133 13.5 5.38667 13.5 5.81973V13.3667C13.5 13.7998 13.331 14.2153 13.0301 14.5216C12.7293 14.8279 12.3213 15 11.8958 15H4.10417C3.67871 15 3.27069 14.8279 2.96985 14.5216C2.66901 14.2153 2.5 13.7998 2.5 13.3667V2.63333Z"
+                                                fill="#a1aab2"></path>
+                                        </svg></div>
+                                </div><span class="css-jk5git">내 이력서</span>
+                            </div>
+                            <div class="GNB-menu__noti-container css-176b8zp">
+                                <button type="button" class="css-4qldrf">내 이력서</button>
+                            </div>
+                        </a></div>
+
                     <div class="dropdownList__wrapper css-3fe575"><a aria-label="탐색" href="/ex/jps"
+                            class="css-avxbst">
+                            <div class="css-wodprq">
+                                <div class="GNB-menu__noti-container">
+                                    <div class="rallit-icon  css-1sepp5i"><svg width="20" height="20" fill="none"
+                                            viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M14.374 8.75a5.623 5.623 0 0 1-5.625 5.625A5.627 5.627 0 0 1 3.124 8.75a5.625 5.625 0 1 1 11.25 0zm-1.025 5.925a7.5 7.5 0 1 1 1.325-1.325l3.8 3.8a.938.938 0 1 1-1.325 1.325l-3.8-3.8z"
+                                                fill="#00CCAA"></path>
+                                        </svg></div>
+                                </div>
+                                <span class="css-ekuvz3">탐색</span>
+                            </div>
+                            <div class="GNB-menu__noti-container css-176b8zp"><button type="button"
+                                    class="css-4qldrf">채용 공고</button></div>
+                        </a>
+                        <div class="dropdownList__container css-1gkmlwz">
+                            <div class="css-0">
+                                <div class="css-1n7ju9x">
+                                    <div class="css-14ypdl9">
+                                        <div class="css-1so5lt">
+                                            <div class="css-1fdx6k3">
+                                                <label class="css-1k185p7">직군</label>
+                                                <ul class="css-1piurjj"></ul>
+                                            </div>
+                                            <div class="css-ziljwy">
+                                                <label class="css-pwu5ys">직무</label>
+                                                <ul class="css-1piurjj">
+                                                    <p class="css-1kxn32n">직군을 선택해주세요</p>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- <div class="dropdownList__wrapper css-3fe575"><a aria-label="탐색" href="/ex/jps"
                             class="css-avxbst">
                             <div class="css-wodprq">
                                 <div class="GNB-menu__noti-container">
@@ -171,8 +226,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div><a aria-label="이력서" href="https://i.ytimg.com/vi/5rCcqk2QxrM/maxresdefault.jpg" class="css-avxbst">
+                    </div> -->
+                   <!-- <div><a aria-label="이력서" href="https://i.ytimg.com/vi/5rCcqk2QxrM/maxresdefault.jpg" class="css-avxbst">
                             <div class="css-wodprq">
                                 <div class="GNB-menu__noti-container">
                                     <div class="rallit-icon  css-1sepp5i"><svg width="20" height="20"
@@ -185,8 +240,8 @@
                             </div>
                             <div class="GNB-menu__noti-container css-176b8zp"><button type="button"
                                     class="css-4qldrf">이력서</button></div>
-                        </a></div>
-                </div>
+                        </a></div> -->
+           
                 <div class="right-GNB css-5by9vu">
                     <div data-error="false" class="css-1xxao48"><label>
                             <div class=" header__search-wrapper css-1u763tv"><input type="text"

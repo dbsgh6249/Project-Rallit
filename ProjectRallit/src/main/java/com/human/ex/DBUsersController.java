@@ -68,21 +68,21 @@ public class DBUsersController {
 	}
 	@RequestMapping(value = "/company/register", method = RequestMethod.POST)
 	public String companySignUp(H_UsersDto dto, HttpServletRequest request) throws Exception {
-//		String full = request.getParameter("full_address");
-//		String[] list = full.split(" ");
-//		String temp = "";
-//		for(int i = 0; i < list.length ; i++) {
-//			System.out.println(list[i]);
-//			if(i>=2) {
-//				temp += list[i]+" ";
-//			}
-//		}
-//		dto.setUser_province(list[0]);
-//		dto.setUser_city(list[1]);
-//		temp += dto.getUser_address();
-//		dto.setUser_address(temp);
-//		
-//		System.out.println("dto 수정 값 : " + (String)dto.getUser_address());
+		String full = request.getParameter("full_address");
+		String[] list = full.split(" ");
+		String temp = "";
+		for(int i = 0; i < list.length ; i++) {
+			System.out.println(list[i]);
+			if(i>=2) {
+				temp += list[i]+" ";
+			}
+		}
+		dto.setUser_province(list[0]);
+		dto.setUser_city(list[1]);
+		temp += dto.getUser_address();
+		dto.setUser_address(temp);
+		
+		System.out.println("dto 수정 값 : " + (String)dto.getUser_address());
 //		user_info insert
 		System.out.println(dto);
 		user_service.insert(dto,request);

@@ -51,6 +51,12 @@
     <script src="https://cdn.rallit.com/js/postcode.v2.js" defer=""></script>
     <script src="https://cdn.rallit.com/js/kakao.v1.14.0.min.js" defer=""></script>
     <meta name="next-head-count" content="38">
+        <link rel="preload" href="fonts/Pretendard/Pretendard-Bold.subset.woff2" as="font" crossorigin="">
+    <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Bold.subset.woff" as="font" crossorigin="">
+    <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Medium.subset.woff2" as="font" crossorigin="">
+    <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Medium.subset.woff" as="font" crossorigin="">
+    <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Regular.subset.woff2" as="font" crossorigin="">
+    <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Regular.subset.woff" as="font" crossorigin="">
 </head>
 
 <!-- <body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGJ7X69" height="0" width="0"

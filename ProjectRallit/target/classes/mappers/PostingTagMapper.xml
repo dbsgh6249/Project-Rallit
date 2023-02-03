@@ -6,11 +6,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="com.human.dao.IPostingTagDao">
 <insert id="insert">
 insert into PostingTag
-values(posting_num_seq.currval ,#{languageTag})
+values(#{posting_num} ,#{languageTag})
 </insert>
 
 <select id="select" resultType="com.human.dto.PostingTagDto"><!-- 글번호에 해당하는 태그 -->
 select * from PostingTag where posting_num=#{posting_num}
+</select>
+<select id="selectPosting_num" resultType="String">
+select languageTag from PostingTag where posting_num=#{posting_num}
 </select>
 
 <delete id="delete"> <!-- 채용공고 삭제시 해당 글번호에 해당하는 태그 전체 삭제 -->

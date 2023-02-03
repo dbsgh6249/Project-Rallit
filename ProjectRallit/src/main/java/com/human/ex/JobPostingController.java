@@ -1,10 +1,10 @@
 package com.human.ex;
 
-import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
@@ -15,6 +15,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.human.dto.H_UsersDto;
@@ -38,7 +39,8 @@ public class JobPostingController {
 	private IPostingTagService postingTag_Service;
 	@Autowired
 	private IJobPostingInfoService jobPostingInfo_Service;
-	
+	@Resource(name = "uploadPath")
+	private String uploadPath;
 	
 	@RequestMapping(value = "/jobPosting/insert", method = RequestMethod.GET)
 	public String jobPostingInsert() {
@@ -46,8 +48,9 @@ public class JobPostingController {
 		return "/jobPosting/insert";
 	}
 	@RequestMapping(value = "/jobPosting/insert", method = RequestMethod.POST)
-	public String jobPostingInsert(JobPostingDto dto, JobPostingInfoVo vo, RedirectAttributes ra) throws Exception {
+	public String jobPostingInsert(JobPostingDto dto, JobPostingInfoVo vo, MultipartFile file, RedirectAttributes ra) throws Exception {
 		jobPostingInfo_Service.insertJobPostingInfo(dto, vo);
+		// 파일 업로드 처리 예정. vo서비스에서 한번에 처리할 지 고민중
 		return "redirect:/jobPosting/selectAll";
 	}
 	@RequestMapping(value = "/jobPosting/update", method = RequestMethod.GET)

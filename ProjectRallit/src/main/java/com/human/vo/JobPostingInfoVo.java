@@ -21,7 +21,7 @@ public class JobPostingInfoVo {
 	private String text5;			// 혜택 및 복지
 	private String text6;			// 한마디
 	
-	private List<String> postingTags;
+	private List<String> postingTags;	// 태그
 	
 	public JobPostingInfoVo() {}
 	public JobPostingInfoVo(JobPostingDto dto, List<String> postingTags) {
@@ -170,6 +170,5 @@ public class JobPostingInfoVo {
 	public void setPostingTags(List<String> postingTags) {
 		this.postingTags = postingTags;
 	}
-
 
 }

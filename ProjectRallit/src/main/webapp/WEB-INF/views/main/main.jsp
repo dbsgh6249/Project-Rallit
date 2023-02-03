@@ -1,6 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
+
+<sec:authentication property="isAuthenticated()">
+	<sec:authentication property="principal" var="principal"/> 
+</sec:authentication>
 <html lang="ko">
 
 <head>
@@ -194,6 +200,8 @@
                                             fill="#535961"></path>
                                     </svg></button></div>
                         </label></div>
+                   
+                   <c:if test="${principal.user.name eq null}">
                     <div class="css-fi5x0a"><a
                             href="jobSeeker/login"
                             class="css-avxbst">
@@ -212,6 +220,7 @@
                             <div class="GNB-menu__noti-container css-176b8zp"><button type="button"
                                     class="css-niuhbk">회원가입</button></div>
                         </a></div>
+                    </c:if>
                     <li class="css-xgy32p"><button type="button" class="css-ea4tpn">
                             <div class="rallit-icon  css-1sepp5i"><svg width="20" height="20" fill="none"
                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

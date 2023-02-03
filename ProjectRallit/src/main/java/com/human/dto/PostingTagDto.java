@@ -4,13 +4,6 @@ public class PostingTagDto {
 	private int posting_num;
 	private String languageTag;
 	private String modifyTag; // 수정 후 태그
-
-	public PostingTagDto() {}
-	public PostingTagDto(int posting_num, String languageTag) {
-		super();
-		this.posting_num = posting_num;
-		this.languageTag = languageTag;
-	}
 	
 	@Override
 	public String toString() {

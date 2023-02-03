@@ -95,7 +95,7 @@
                                 </svg></h1>
                         </div>
                     </a>
-                    <div><a aria-label="내 이력서" href="/resume" class="css-avxbst">
+                    <div><a aria-label="내 이력서" href="https://i.ytimg.com/vi/5rCcqk2QxrM/maxresdefault.jpg" class="css-avxbst">
                             <div class="css-wodprq">
                                 <div class="GNB-menu__noti-container">
                                     <div class="GNB-menu__noti css-0"><svg width="0" height="0" viewBox="0 0 4 4"
@@ -116,7 +116,7 @@
                                     </svg></div><button type="button" class="css-4qldrf">내 이력서</button>
                             </div>
                         </a></div>
-                    <div class="dropdownList__wrapper css-3fe575"><a aria-label="탐색" href="/positions"
+                    <div class="dropdownList__wrapper css-3fe575"><a aria-label="탐색" href="/ex/jps"
                             class="css-avxbst">
                             <div class="css-wodprq">
                                 <div class="GNB-menu__noti-container">

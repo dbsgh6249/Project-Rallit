@@ -5,6 +5,9 @@
 <head>
     <link href="${pageContext.request.contextPath}/resources/css/main.css"
       rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="resources/manifest.json"></script>
     <style>
 
@@ -56,8 +59,19 @@
     <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Medium.subset.woff" as="font" crossorigin="">
     <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Regular.subset.woff2" as="font" crossorigin="">
     <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Regular.subset.woff" as="font" crossorigin="">
+	<script>
+    	$(document).ready(function(){
+    		$("#posting").hover(
+    				function(){
+    					$("#posting2").stop().slideDown();
+    				},
+    				function(){
+    					$("#posting2").stop().slideUp();
+    				});	
+    	});
+    </script>
 </head>
-
+<body>
 <!-- <body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGJ7X69" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript> -->
     <div id="__next" data-reactroot="">
@@ -133,10 +147,10 @@
                                         </svg></div>
                                 </div><span class="css-jk5git">탐색</span>
                             </div>
-                            <div class="GNB-menu__noti-container css-176b8zp">
+                            <div class="GNB-menu__noti-container css-176b8zp" id="posting">
                             <button type="button" class="css-4qldrf">채용 공고</button></div>
                         </a>
-                        <div class="dropdownList__container css-1gkmlwz">
+                        <div class="dropdownList__container css-1gkmlwz" id="posting2">
                             <div class="css-1395hwr">
                                 <div class="css-1n7ju9x">
                                     <div class="css-14ypdl9">

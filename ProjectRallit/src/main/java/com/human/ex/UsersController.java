@@ -28,9 +28,9 @@ public class UsersController {
 //	private IH_UsersService user_service;
 	
 	
-	@RequestMapping(value = "/jobSeeker/register", method = RequestMethod.GET)
+	@RequestMapping(value = "/main/register", method = RequestMethod.GET)
 	public String seekerregister(Locale locale, Model model) {
-		return "/jobSeeker/register";
+		return "/main/register";
 	}
 	
 }

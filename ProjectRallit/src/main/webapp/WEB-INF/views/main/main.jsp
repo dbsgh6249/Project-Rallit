@@ -4,9 +4,12 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 
-<sec:authentication property="isAuthenticated()">
-	<sec:authentication property="principal" var="principal"/> 
-</sec:authentication>
+<!-- 세션정보 접근 -->
+<!-- 이제 어디에서든지 principal.~ 로 접근가능 -->
+<sec:authorize access="isAuthenticated()">
+	<sec:authentication property="principal" var="principal"/>
+    <!-- principal property가 UserDetails임-->
+</sec:authorize>
 <html lang="ko">
 <head>
     <link href="${pageContext.request.contextPath}/resources/css/main.css"
@@ -205,10 +208,9 @@
                                             fill="#535961"></path>
                                     </svg></button></div>
                         </label></div>
-                   
-                   <c:if test="${principal.user.name eq null}">
+                   <sec:authorize access="isAnonymous()">
                     <div class="css-fi5x0a"><a
-                            href="jobSeeker/login"
+                            href="main/login"
                             class="css-avxbst">
                             <div class="css-wodprq">
                                 <div class="GNB-menu__noti-container"></div><span class="css-jk5git"></span>
@@ -217,7 +219,7 @@
                                     class="css-niuhbk">로그인</button></div>
                         </a></div>
                     <div class="css-fi5x0a"><a
-                            href="jobSeeker/register"
+                            href="main/register"
                             class="css-avxbst">
                             <div class="css-wodprq">
                                 <div class="GNB-menu__noti-container"></div><span class="css-jk5git"></span>
@@ -225,7 +227,9 @@
                             <div class="GNB-menu__noti-container css-176b8zp"><button type="button"
                                     class="css-niuhbk">회원가입</button></div>
                         </a></div>
-                    </c:if>
+                     </sec:authorize>
+                     
+                     <sec:authorize access="isAuthenticated()">
                     <li class="css-xgy32p"><button type="button" class="css-ea4tpn">
                             <div class="rallit-icon  css-1sepp5i"><svg width="20" height="20" fill="none"
                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -237,6 +241,7 @@
                                         fill="#a1aab2"></path>
                                 </svg></div><span class="css-jk5git">MY 랠릿</span>
                         </button></li>
+                     </sec:authorize>
                 </div>
             </nav>
             <div class="css-1ljwjjg"></div>

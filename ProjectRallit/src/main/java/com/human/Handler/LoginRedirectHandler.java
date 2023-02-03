@@ -8,6 +8,7 @@ import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -22,7 +23,9 @@ public class LoginRedirectHandler implements AuthenticationSuccessHandler {
 			Authentication authentication) throws IOException, ServletException {
 		// 로그인에 성공하면 이동하는 페이지
 		List<String> roleNames=new ArrayList<String>();
-		//권한들 읽어오기(로그인한 사람의)/roleNames에 추가 
+		//권한들 읽어오기(로그인한 사람의)/roleNames에 추가
+		HttpSession session = request.getSession();
+		System.out.println(session);
 		authentication.getAuthorities().forEach(authority ->{
 			roleNames.add(authority.getAuthority());
 			System.out.println("==role.authority=="+authority.getAuthority());

@@ -26,8 +26,8 @@ public class jobSeekerSecurityController {
 	public String userError(Locale locale, Model model) {
 		return "/jobSeeker/error";
 	}
-	@RequestMapping(value = "/jobSeeker/login", method = RequestMethod.GET)
+	@RequestMapping(value = "/main/login", method = RequestMethod.GET)
 	public String userLogin(Locale locale, Model model) {
-		return "/jobSeeker/login";
+		return "/main/login";
 	}
 }

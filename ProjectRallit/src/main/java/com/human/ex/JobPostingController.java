@@ -50,6 +50,7 @@ public class JobPostingController {
 	@RequestMapping(value = "/jobPosting/insert", method = RequestMethod.POST)
 	public String jobPostingInsert(JobPostingDto dto, JobPostingInfoVo vo, MultipartFile file, RedirectAttributes ra) throws Exception {
 		jobPostingInfo_Service.insertJobPostingInfo(dto, vo);
+		// 파일 업로드 처리 예정. vo서비스에서 한번에 처리할 지 고민중
 		return "redirect:/jobPosting/selectAll";
 	}
 	@RequestMapping(value = "/jobPosting/update", method = RequestMethod.GET)

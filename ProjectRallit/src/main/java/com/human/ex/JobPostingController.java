@@ -82,7 +82,7 @@ public class JobPostingController {
 	@RequestMapping(value = "/jobPosting/selectCompanyPosting", method = RequestMethod.GET)
 	public String jobPostingSelectCompanyPosting(String user_id,Model model) throws Exception {
 		model.addAttribute("list",jobPosting_Service.selectCompanyPosting(user_id));
-		// 이것도 태그 있는 거로 바꿀까 했는데 기업 마이페이지에서 전체조회는 제목/경력/마감일 정도만 표기할 것 같아서 따로 join 안 만들기로
+		// 이것도 태그 있는 거로 바꿀까 했는데 기업 마이페이지에서 전체조회는 제목/경력/마감일 정도만 표기할 것 같아서 따로 join 안 만들 듯
 		
 		return "/jobPosting/selectCompanyPosting";
 	}

@@ -155,7 +155,7 @@
                                 </svg></h1>
                         </div>
                     </a>
-                    <div class="dropdownList__wrapper css-3fe575"><a aria-label="탐색" href="/ex/jps"
+                    <div class="dropdownList__wrapper css-3fe575" id="posting"><a aria-label="탐색" href="/ex/jps"
                             class="css-avxbst">
                             <div class="css-wodprq">
                                 <div class="GNB-menu__noti-container">
@@ -167,7 +167,7 @@
                                         </svg></div>
                                 </div><span class="css-jk5git">탐색</span>
                             </div>
-                            <div class="GNB-menu__noti-container css-176b8zp" id="posting">
+                            <div class="GNB-menu__noti-container css-176b8zp">
                             <button type="button" class="css-4qldrf">채용 공고</button></div>
                         </a>
                         <div class="dropdownList__container css-1gkmlwz" id="posting2">

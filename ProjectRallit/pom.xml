@@ -44,13 +44,13 @@
 			<version>2.5.4</version>
 	</dependency>
 	<dependency>
-			<groupId>commons-fileupload</groupId>
+			<groupId>commons-fileupload</groupId> <!-- 업로드 -->
 			<artifactId>commons-fileupload</artifactId>
 			<version>1.3.1</version>
 		</dependency>
 
 		<dependency>
-			<groupId>org.imgscalr</groupId>
+			<groupId>org.imgscalr</groupId> <!-- 섬네일 이미지 생성 -->
 			<artifactId>imgscalr-lib</artifactId>
 			<version>4.2</version>
 		</dependency>

@@ -51,6 +51,12 @@
     <script src="https://cdn.rallit.com/js/postcode.v2.js" defer=""></script>
     <script src="https://cdn.rallit.com/js/kakao.v1.14.0.min.js" defer=""></script>
     <meta name="next-head-count" content="38">
+        <link rel="preload" href="fonts/Pretendard/Pretendard-Bold.subset.woff2" as="font" crossorigin="">
+    <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Bold.subset.woff" as="font" crossorigin="">
+    <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Medium.subset.woff2" as="font" crossorigin="">
+    <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Medium.subset.woff" as="font" crossorigin="">
+    <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Regular.subset.woff2" as="font" crossorigin="">
+    <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Regular.subset.woff" as="font" crossorigin="">
 </head>
 
 <!-- <body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGJ7X69" height="0" width="0"
@@ -116,7 +122,7 @@
                                 </svg></h1>
                         </div>
                     </a>
-                    <div class="dropdownList__wrapper css-3fe575"><a aria-label="탐색" href="/positions"
+                    <div class="dropdownList__wrapper css-3fe575"><a aria-label="탐색" href="/ex/jps"
                             class="css-avxbst">
                             <div class="css-wodprq">
                                 <div class="GNB-menu__noti-container">
@@ -128,8 +134,8 @@
                                         </svg></div>
                                 </div><span class="css-jk5git">탐색</span>
                             </div>
-                            <div class="GNB-menu__noti-container css-176b8zp"><button type="button"
-                                    class="css-4qldrf">채용 공고</button></div>
+                            <div class="GNB-menu__noti-container css-176b8zp">
+                            <button type="button" class="css-4qldrf">채용 공고</button></div>
                         </a>
                         <div class="dropdownList__container css-1gkmlwz">
                             <div class="css-1395hwr">
@@ -167,7 +173,7 @@
                             </div>
                         </div>
                     </div>
-                    <div><a aria-label="이력서" href="/resume" class="css-avxbst">
+                    <div><a aria-label="이력서" href="https://i.ytimg.com/vi/5rCcqk2QxrM/maxresdefault.jpg" class="css-avxbst">
                             <div class="css-wodprq">
                                 <div class="GNB-menu__noti-container">
                                     <div class="rallit-icon  css-1sepp5i"><svg width="20" height="20"
@@ -352,7 +358,7 @@
                 <section class="css-1xw6rpm">
                     <div class="css-1ixgpnt">
                         <h2 class="css-1elspdf">채용 중인 공고</h2>
-                        <div class="css-fl7us7"><a href="/positions">
+                        <div class="css-fl7us7"><a href="/ex/jps">
                                 <div class="css-p1vanc">
                                     <p class="css-byjqmz">전체보기</p><span>
                                         <div class="rallit-icon  css-1gvano"><svg xmlns="http://www.w3.org/2000/svg"
@@ -371,7 +377,8 @@
                         <c:forEach var="test" items="${test }"> <!-- c태그 forEach 실행 시작(채용공고 데이터) -->
                             <li>
                                 <article class="css-1pr9edg">
-                                    <a href="/positions/1235">
+                                <a href="/ex/jpd">
+                                    <!-- <a href="/positions/1235">  -->
                                         <figure class="css-1gd0osy"> <!-- 이 부분 이미지 삽입 방식 수정 예정 -->
                                             <img alt="주식회사 게임듀오 대표이미지" sizes="100vw"
                                                 srcset="https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=640 640w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 750w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 828w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1080w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1200w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1920w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 2048w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 3840w"

@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <link href="${pageContext.request.contextPath}/resources/css/main.css"
       rel="stylesheet" type="text/css">

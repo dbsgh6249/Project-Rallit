@@ -68,9 +68,12 @@
     				},
     				function(){
     					$("#posting2").stop().slideUp();
-    				});	
-    	});
-    	
+    				},
+    				function(){
+    					$("#posting3").stop().slideDown();
+    				}
+    				);	
+    	});   	
     	
     </script>
 </head>
@@ -158,7 +161,7 @@
                                 <div class="css-1n7ju9x">
                                     <div class="css-14ypdl9">
                                         <div class="css-1so5lt">
-                                            <div class="css-1fdx6k3"><label class="css-1k185p7">직군</label>
+                                            <div class="css-1fdx6k3" id="posting3"><label class="css-1k185p7">직군</label>
                                                 <ul class="css-1piurjj">
                                                     <li class="css-494cde"><button type="button" name="직군 개발"
                                                             class="css-184xd0e">개발</button></li>
@@ -178,7 +181,7 @@
                                                             class="css-184xd0e">엔지니어링</button></li>
                                                 </ul>
                                             </div>
-                                            <div class="css-ziljwy" id="posting3"><label class="css-pwu5ys">직무</label>
+                                            <div class="css-ziljwy"><label class="css-pwu5ys">직무</label>
                                                 <ul class="css-1piurjj">
                                                     <p class="css-1kxn32n">직군을 선택해주세요
                                                     	<li class="css-494cde"><button type="button" name="직군 개발"

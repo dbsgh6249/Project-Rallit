@@ -30,4 +30,17 @@ public class AdminSecurityController {
 		return "/main/main";
 	}
 	
+//	@RequestMapping(value = "/jobSeeker/user", method = RequestMethod.GET)
+//	public String seeker(Authentication authentication,HttpSession session) {
+//		SecurityContextHolder.getContext().setAuthentication(authentication);
+//		UsernamePasswordAuthenticationToken token = (UsernamePasswordAuthenticationToken)authentication;
+//        String id = token.getName();
+//        
+//        System.out.println("AdminController 값  : " + id);
+//        System.out.println("세션 : " + session.getId());
+//        session.setAttribute("user_login", session.getId());
+//        
+//		return "/main/main";
+//	}
+	
 }

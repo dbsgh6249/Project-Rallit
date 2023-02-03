@@ -60,7 +60,25 @@
     <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Medium.subset.woff" as="font" crossorigin="">
     <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Regular.subset.woff2" as="font" crossorigin="">
     <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Regular.subset.woff" as="font" crossorigin="">
-	<script>
+   	<script>
+/* 	
+    	$(document).ready(function(){
+    		$("#posting").hover(
+    				function(){
+    					$("#posting2").stop().slideDown();
+    				},
+    				function(){
+    					
+    				});	
+    		$("#posting2").hover(
+    				function(){
+    					
+    				},
+    				function(){
+    					$("#posting2").stop().slideUp();
+    				});	
+    	});   	 */
+    	
     	$(document).ready(function(){
     		$("#posting").hover(
     				function(){
@@ -68,13 +86,8 @@
     				},
     				function(){
     					$("#posting2").stop().slideUp();
-    				},
-    				function(){
-    					$("#posting3").stop().slideDown();
-    				}
-    				);	
-    	});   	
-    	
+    				});
+    	});
     </script>
 </head>
 <body>
@@ -141,7 +154,7 @@
                                 </svg></h1>
                         </div>
                     </a>
-                    <div class="dropdownList__wrapper css-3fe575"><a aria-label="탐색" href="/ex/jps"
+                    <div class="dropdownList__wrapper css-3fe575" id="posting"><a aria-label="탐색" href="/ex/jps"
                             class="css-avxbst">
                             <div class="css-wodprq">
                                 <div class="GNB-menu__noti-container">
@@ -153,7 +166,7 @@
                                         </svg></div>
                                 </div><span class="css-jk5git">탐색</span>
                             </div>
-                            <div class="GNB-menu__noti-container css-176b8zp" id="posting">
+                            <div class="GNB-menu__noti-container css-176b8zp">
                             <button type="button" class="css-4qldrf">채용 공고</button></div>
                         </a>
                         <div class="dropdownList__container css-1gkmlwz" id="posting2">
@@ -161,7 +174,7 @@
                                 <div class="css-1n7ju9x">
                                     <div class="css-14ypdl9">
                                         <div class="css-1so5lt">
-                                            <div class="css-1fdx6k3" id="posting3"><label class="css-1k185p7">직군</label>
+                                            <div class="css-1fdx6k3"><label class="css-1k185p7" id="posting3">직군</label>
                                                 <ul class="css-1piurjj">
                                                     <li class="css-494cde"><button type="button" name="직군 개발"
                                                             class="css-184xd0e">개발</button></li>
@@ -183,8 +196,8 @@
                                             </div>
                                             <div class="css-ziljwy"><label class="css-pwu5ys">직무</label>
                                                 <ul class="css-1piurjj">
-                                                    <p class="css-1kxn32n">직군을 선택해주세요
-                                                    	<li class="css-494cde"><button type="button" name="직군 개발"
+                                                    <p class="css-1kxn32n">직군을 선택해주세요</p>
+                                                    <li class="css-494cde"><button type="button" name="직군 개발"
                                                             class="css-184xd0e">개발</button></li>
                                                     <li class="css-494cde"><button type="button" name="직군 게임개발"
                                                             class="css-184xd0e">게임개발</button></li>
@@ -200,9 +213,6 @@
                                                             class="css-184xd0e">영업</button></li>
                                                     <li class="css-494cde"><button type="button" name="직군 엔지니어링"
                                                             class="css-184xd0e">엔지니어링</button></li>
-                                                </ul>
-                                                    </p>
-                                                    
                                                 </ul>
                                             </div>
                                         </div>
@@ -239,7 +249,7 @@
                                     </svg></button></div>
                         </label></div>
                 <div class="left-GNB css-p1vanc">        
-				<sec:authorize access="isAnonymous()">
+            <sec:authorize access="isAnonymous()">
                     <div class="css-fi5x0a"><a
                             href="main/login"
                             class="css-avxbst">
@@ -264,79 +274,10 @@
                    </div> 
                      
                      <sec:authorize access="isAuthenticated()">
-<<<<<<< HEAD
-          <!--  -->
-          <li class="css-1t40zbn">
-    <div class="dropdownList__wrapper css-3fe575"><a aria-label="MY 랠릿" href="/my" class="css-avxbst">
-            <div class="css-wodprq">
-                <div class="GNB-menu__noti-container">
-                    <div class="rallit-icon  css-1sepp5i"><svg width="20" height="20" fill="none" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M9.984 1.408c-2.817 0-5.1 2.354-5.1 5.257 0 1.806.883 3.4 2.23 4.346-2.903 1.095-5.05 3.814-5.42 7.084a.668.668 0 0 0 .663.747c.376 0 .68-.313.728-.703.438-3.52 3.36-6.217 6.9-6.217 3.517 0 6.523 2.85 6.91 6.183.046.398.353.725.737.725a.665.665 0 0 0 .664-.726c-.29-3.305-2.53-5.995-5.44-7.093a5.297 5.297 0 0 0 2.229-4.346c0-2.903-2.284-5.257-5.1-5.257zm-3.71 5.257c0-2.111 1.662-3.823 3.71-3.823 2.049 0 3.71 1.712 3.71 3.823 0 2.112-1.661 3.823-3.71 3.823-2.048 0-3.71-1.711-3.71-3.823z"
-                                fill="#a1aab2"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M9.984 1.567c-2.735 0-4.949 2.285-4.949 5.098 0 1.75.856 3.296 2.163 4.214l.248.175-.281.106c-2.85 1.075-4.958 3.745-5.32 6.954a.512.512 0 0 0 .512.569c.29 0 .538-.244.578-.564.448-3.601 3.435-6.356 7.05-6.356 3.592 0 6.664 2.908 7.06 6.323.039.33.29.585.587.585a.51.51 0 0 0 .512-.552c-.282-3.237-2.479-5.879-5.34-6.96l-.281-.106.248-.174a5.136 5.136 0 0 0 2.162-4.214c0-2.813-2.213-5.098-4.949-5.098zM4.732 6.665c0-2.993 2.353-5.415 5.252-5.415 2.9 0 5.253 2.422 5.253 5.415 0 1.755-.81 3.314-2.063 4.303 2.828 1.177 4.987 3.85 5.273 7.122a.821.821 0 0 1-.815.898c-.472 0-.834-.398-.888-.864-.377-3.252-3.316-6.044-6.76-6.044-3.464 0-6.32 2.64-6.749 6.08-.057.458-.417.84-.878.84a.824.824 0 0 1-.814-.923c.365-3.23 2.433-5.932 5.251-7.11a5.466 5.466 0 0 1-2.062-4.302zm1.391 0c0-2.2 1.73-3.981 3.861-3.981 2.13 0 3.861 1.78 3.861 3.981 0 2.201-1.73 3.982-3.86 3.982-2.131 0-3.862-1.78-3.862-3.982zm3.861-3.664C8.017 3 6.426 4.643 6.426 6.665c0 2.022 1.591 3.665 3.558 3.665 1.967 0 3.558-1.643 3.558-3.665 0-2.022-1.59-3.664-3.558-3.664z"
-                                fill="#a1aab2"></path>
-                        </svg></div>
-                </div><span class="css-jk5git">MY 랠릿</span>
-            </div>
-            <div class="GNB-menu__noti-container css-176b8zp"><button type="button" class="css-niuhbk">MY 랠릿</button>
-            </div>
-        </a>
-        <div class="dropdownList__container css-mumsip">
-            <ul class="css-1bwe846">
-                <li role="menuitem" class="css-83cc5o">
-                    <div class="css-47e4vb">
-                        <p class="dropdownList__title css-1182me">MY 홈</p>
-                        <p class="dropdownList__caption css-vzncwq"></p>
-                    </div>
-                </li>
-                <li role="menuitem" class="css-83cc5o">
-                    <div class="css-47e4vb">
-                        <p class="dropdownList__title css-1182me">작성 중인 지원서</p>
-                        <p class="dropdownList__caption css-vzncwq"></p>
-                    </div>
-                </li>
-                <li role="menuitem" class="css-83cc5o">
-                    <div class="css-47e4vb">
-                        <p class="dropdownList__title css-1182me">제출한 지원서</p>
-                        <p class="dropdownList__caption css-vzncwq"></p>
-                    </div>
-                </li>
-                <li role="menuitem" class="css-83cc5o">
-                    <div class="css-47e4vb">
-                        <p class="dropdownList__title css-1182me">북마크한 채용 공고</p>
-                        <p class="dropdownList__caption css-vzncwq"></p>
-                    </div>
-                </li>
-                <li role="menuitem" class="css-83cc5o">
-                    <div class="css-47e4vb">
-                        <p class="dropdownList__title css-1182me">설정</p>
-                        <p class="dropdownList__caption css-vzncwq"></p>
-                    </div>
-                </li>
-                <div class="css-yyqtxc"></div>
-                <li role="menuitem" class="css-jrt6fi">
-                    <div class="css-47e4vb">
-                        <p class="dropdownList__title css-1182me">로그아웃</p>
-                        <p class="dropdownList__caption css-vzncwq"></p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</li>
-          
-          
-          
-            <!--       <li class="css-xgy32p"><button type="button" class="css-ea4tpn">
-=======
                      <form action="${pageContext.request.contextPath}/main/logout" method="POST">
-                     	<input type="submit" value="로그아웃">
+                        <input type="submit" value="로그아웃">
                      </form>
                     <li class="css-xgy32p"><button type="button" class="css-ea4tpn">
->>>>>>> branch 'master' of https://github.com/dbsgh6249/Project-Rallit.git
                             <div class="rallit-icon  css-1sepp5i"><svg width="20" height="20" fill="none"
                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -347,8 +288,6 @@
                                         fill="#a1aab2"></path>
                                 </svg></div><span class="css-jk5git">MY 랠릿</span>
                         </button></li>
-                        
-                        -->
                      </sec:authorize>
                 </div>
             </nav>

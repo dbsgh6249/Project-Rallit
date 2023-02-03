@@ -57,7 +57,25 @@
     <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Medium.subset.woff" as="font" crossorigin="">
     <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Regular.subset.woff2" as="font" crossorigin="">
     <link rel="preload" href="resources/fonts/Pretendard/Pretendard-Regular.subset.woff" as="font" crossorigin="">
-	<script>
+ 	<script>
+/* 	
+    	$(document).ready(function(){
+    		$("#posting").hover(
+    				function(){
+    					$("#posting2").stop().slideDown();
+    				},
+    				function(){
+    					
+    				});	
+    		$("#posting2").hover(
+    				function(){
+    					
+    				},
+    				function(){
+    					$("#posting2").stop().slideUp();
+    				});	
+    	});   	 */
+    	
     	$(document).ready(function(){
     		$("#posting").hover(
     				function(){
@@ -65,9 +83,10 @@
     				},
     				function(){
     					$("#posting2").stop().slideUp();
-    				});	
+    				});
     	});
     </script>
+<<<<<<< HEAD
     
     <!-- MY랠릿 버튼------------------------------------------------ -->
      <script>
@@ -93,6 +112,9 @@
             </script>
             <!-- ------------------------------------------------------------- -->
     
+=======
+    <!-- ttt -->
+>>>>>>> branch 'master' of https://github.com/dbsgh6249/Project-Rallit.git
 </head>
 <body>
 <!-- <body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGJ7X69" height="0" width="0"
@@ -158,7 +180,7 @@
                                 </svg></h1>
                         </div>
                     </a>
-                    <div class="dropdownList__wrapper css-3fe575"><a aria-label="탐색" href="/ex/jps"
+                    <div class="dropdownList__wrapper css-3fe575" id="posting"><a aria-label="탐색" href="/ex/jps"
                             class="css-avxbst">
                             <div class="css-wodprq">
                                 <div class="GNB-menu__noti-container">
@@ -170,7 +192,7 @@
                                         </svg></div>
                                 </div><span class="css-jk5git">탐색</span>
                             </div>
-                            <div class="GNB-menu__noti-container css-176b8zp" id="posting">
+                            <div class="GNB-menu__noti-container css-176b8zp">
                             <button type="button" class="css-4qldrf">채용 공고</button></div>
                         </a>
                         <div class="dropdownList__container css-1gkmlwz" id="posting2">
@@ -237,7 +259,7 @@
                                     </svg></button></div>
                         </label></div>
                 <div class="left-GNB css-p1vanc">        
-				<sec:authorize access="isAnonymous()">
+            <sec:authorize access="isAnonymous()">
                     <div class="css-fi5x0a"><a
                             href="main/login"
                             class="css-avxbst">
@@ -267,12 +289,18 @@
           
           
            <sec:authorize access="isAuthenticated()">
+<<<<<<< HEAD
                       <div class="dropdown">
                         <button onclick="myFunction()" class="dropbtn">MY 랠릿</button>
                         <div id="myDropdown" class="dropdown-content">
                           <a href="#">내 정보</a>
                           <form class="1" action="${pageContext.request.contextPath}/main/logout" method="POST">
                      	<input class="1" type="submit" value="로그아웃">
+=======
+           <li class="css-xgy32p"><button type="button" class="css-ea4tpn">
+                     <form action="${pageContext.request.contextPath}/main/logout" method="POST">
+                        <input type="submit" value="로그아웃">
+>>>>>>> branch 'master' of https://github.com/dbsgh6249/Project-Rallit.git
                      </form>
                         </div>
                       </div>      

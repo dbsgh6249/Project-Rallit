@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -104,7 +105,10 @@
 
 
 </head>
-<body>
+<body>    
+<c:if test="${param.logout != null}">
+        <script>alert("로그아웃 되었습니다.")</script>
+</c:if>
 
     <div id="__next" data-reactroot="">
         <section class="inflab-integrated css-1cp3pcs">
@@ -298,6 +302,9 @@
                           <a href="#">내 정보</a>
                           <form class="1" action="${pageContext.request.contextPath}/main/logout" method="POST">
                      	<input class="1" type="submit" value="로그아웃">
+                     	<c:if test="">
+                     	<script>alert("로그아웃 되었습니다.")</script>
+						</c:if>                     
                      </form>
                         </div>
                       </div>      

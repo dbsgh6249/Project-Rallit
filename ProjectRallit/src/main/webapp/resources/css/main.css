@@ -507,15 +507,7 @@ div + .css-fi5x0a {
     display: none;
     width: auto;
 }
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
+
 .css-mumsip ul {
     padding: 6px;
     overflow: unset;
@@ -539,6 +531,7 @@ nav {
 a:-webkit-any-link:active {
    
 }
+
 :focus {
     outline: -webkit-focus-ring-color auto 5px;
 }
@@ -587,12 +580,15 @@ a:-webkit-any-link {
 }
 ul {
     display: block;
-    list-style-type: disc;
+    list-style-type: none;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+}
+li {
+	list-style-type: none;
 }
 .css-1bwe846 li {
     border-radius: unset;
@@ -795,9 +791,7 @@ li {
 .css-avxbst .GNB-menu__noti-container {
     position: relative;
 }
-ul {
-    list-style-type: disc;
-}
+
 .css-niuhbk:hover, .css-niuhbk:active {
     color: rgb(33, 37, 42);
 }

@@ -99,6 +99,15 @@
 			$("#posting2").stop().slideUp();
 		});
 	});
+	 
+	 $(documen).ready(function(){
+		 $("#Jobgroup1").hover(function(){
+			 $("#posting3").stop().slideDown();
+		 }, function(){
+			 $("#posting3").stop().slideUp();
+		 });
+	 });
+	 
 </script>
 
 
@@ -238,21 +247,21 @@
 											<div class="css-1fdx6k3">
 												<label class="css-1k185p7">직군</label>
 												<ul class="css-1piurjj">
-													<li class="css-494cde"><button type="button"
+													<li class="css-494cde" id="Jobgroup1"><button type="button"
 															name="직군 개발" class="css-184xd0e">개발</button></li>
-													<li class="css-494cde"><button type="button"
+													<li class="css-494cde" id="Jobgroup2"><button type="button"
 															name="직군 게임개발" class="css-184xd0e">게임개발</button></li>
-													<li class="css-494cde"><button type="button"
+													<li class="css-494cde" id="Jobgroup3"><button type="button"
 															name="직군 디자인" class="css-184xd0e">디자인</button></li>
-													<li class="css-494cde"><button type="button"
+													<li class="css-494cde" id="Jobgroup4"><button type="button"
 															name="직군 기획" class="css-184xd0e">기획</button></li>
-													<li class="css-494cde"><button type="button"
-															name="직군 마케팅" class="css-184xd0e">마케팅</button></li>
-													<li class="css-494cde"><button type="button"
+													<li class="css-494cde" id="Jobgroup5"><button type="button"
+															name="직군 마케팅"  class="css-184xd0e">마케팅</button></li>
+													<li class="css-494cde" id="Jobgroup6"><button type="button"
 															name="직군 경영/인사" class="css-184xd0e">경영/인사</button></li>
-													<li class="css-494cde"><button type="button"
+													<li class="css-494cde" id="Jobgroup7"><button type="button"
 															name="직군 영업" class="css-184xd0e">영업</button></li>
-													<li class="css-494cde"><button type="button"
+													<li class="css-494cde" id="Jobgroup8"><button type="button"
 															name="직군 엔지니어링" class="css-184xd0e">엔지니어링</button></li>
 												</ul>
 											</div>

@@ -5,6 +5,7 @@ import java.util.Date;
 public class JobPostingDto {
 	private int posting_num;		// 글번호
 	private String title;			// 글제목
+	private String user_id;
 	private Date dateCreated;		// 작성일
 	private Date deadline;			// 공고마감일
 	private String occ_main;		// 직종
@@ -19,12 +20,13 @@ public class JobPostingDto {
 	private String text6;			// 한마디
 
 	
+	
 	@Override
 	public String toString() {
-		return "JobPostingDto [posting_num=" + posting_num + ", title=" + title + ", dateCreated=" + dateCreated
-				+ ", deadline=" + deadline + ", occ_main=" + occ_main + ", occ_sub=" + occ_sub + ", minCareer="
-				+ minCareer + ", maxCareer=" + maxCareer + ", text1=" + text1 + ", text2=" + text2 + ", text3=" + text3
-				+ ", text4=" + text4 + ", text5=" + text5 + ", text6=" + text6 + "]";
+		return "JobPostingDto [posting_num=" + posting_num + ", title=" + title + ", user_id=" + user_id
+				+ ", dateCreated=" + dateCreated + ", deadline=" + deadline + ", occ_main=" + occ_main + ", occ_sub="
+				+ occ_sub + ", minCareer=" + minCareer + ", maxCareer=" + maxCareer + ", text1=" + text1 + ", text2="
+				+ text2 + ", text3=" + text3 + ", text4=" + text4 + ", text5=" + text5 + ", text6=" + text6 + "]";
 	}
 	public int getPosting_num() {
 		return posting_num;
@@ -130,5 +132,11 @@ public class JobPostingDto {
 	}
 	public void setText6(String text6) {
 		this.text6 = text6;
+	}
+	public String getUser_id() {
+		return user_id;
+	}
+	public void setUser_id(String user_id) {
+		this.user_id = user_id;
 	}
 }

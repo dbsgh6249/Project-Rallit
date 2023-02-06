@@ -5,6 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+iframe {width: 0px;height: 0px;border: 0px}
+</style>
+
 </head>
 <body>
 <form>
@@ -20,13 +24,8 @@
 <p>우대사항 : </p><input type="text" name="text4" placeholder="우대사항을 입력하세요"><br>
 <p>혜택 및 복지 : </p><input type="text" name="text5" placeholder="복지 내용을 입력하세요"><br>
 <p>한마디 : </p><input type="text" name="text6" placeholder="한마디를 입력하세요"><br>
-<p>사진 어떻게 넣을까.... ajax로 넣으려면 db에 공고가 들어가있기는 해야 하는데..... 그래야 들어간 공고에서 글번호 끌어오지
-그냥 input type=file 해서 권한 부여할 때처럼 각각 insert를 하나? 아니 글번호 시퀀스로 넣는데 그걸 어떻게 뽑더라......</p>
-
-</form>
-<form id="uploadPicture" action="/ex/jobPosting/picture_upload" method="post" enctype="multipart/form-data">
-파일 선택 : <input type="file" multiple="multiple" name="files">
-<input type="submit" value="전송">
+<p>사진 : </p><input type="file" name="uploadFile" accept="image/*" enctype="multipart/form-data"><br>
+<input type="submit" value="등록">
 </form>
 
 <iframe name="zeroFrame"></iframe>

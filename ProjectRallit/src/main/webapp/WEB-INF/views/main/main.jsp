@@ -21,6 +21,9 @@
 #posting3,#posting4,#posting5,#posting6,#posting7,#posting8,#posting9,#posting10 {
 	display: none;
 }
+.css-1kxn32n{
+	display : none;
+	}
 </style>
 <!-- 채용공고 hover dropDownMenu-->
 <script>
@@ -30,16 +33,58 @@
 		}, function() {
 			$("#posting2").stop().slideUp();
 		});
-	});
-	 
-	 $(documen).ready(function(){
-		 $("#Jobgroup1").hover(function(){
+		
+		$("#Jobgroup1").hover(function(){
 			 $("#posting3").stop().slideDown();
 		 }, function(){
 			 $("#posting3").stop().slideUp();
 		 });
-	 });
-
+		
+		$("#Jobgroup2").hover(function(){
+			 $("#posting4").stop().slideDown();
+		 }, function(){
+			 $("#posting4").stop().slideUp();
+		 });
+		
+		$("#Jobgroup3").hover(function(){
+			 $("#posting5").stop().slideDown();
+		 }, function(){
+			 $("#posting5").stop().slideUp();
+		 });
+		
+		$("#Jobgroup4").hover(function(){
+			 $("#posting6").stop().slideDown();
+		 }, function(){
+			 $("#posting6").stop().slideUp();
+		 });
+		
+		
+		$("#Jobgroup5").hover(function(){
+			 $("#posting7").stop().slideDown();
+		 }, function(){
+			 $("#posting7").stop().slideUp();
+		 });
+		
+		$("#Jobgroup6").hover(function(){
+			 $("#posting8").stop().slideDown();
+		 }, function(){
+			 $("#posting8").stop().slideUp();
+		 });
+		
+		$("#Jobgroup7").hover(function(){
+			 $("#posting9").stop().slideDown();
+		 }, function(){
+			 $("#posting9").stop().slideUp();
+		 });
+		
+		$("#Jobgroup8").hover(function(){
+			 $("#posting10").stop().slideDown();
+		 }, function(){
+			 $("#posting10").stop().slideUp();
+		 });
+	});
+	 
+	
 </script>
 <!-- MY랠릿 버튼------------------------------------------------ -->
 <script>

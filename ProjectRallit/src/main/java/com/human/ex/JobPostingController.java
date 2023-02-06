@@ -39,14 +39,12 @@ public class JobPostingController {
 	private IPostingTagService postingTag_Service;
 	@Autowired
 	private IJobPostingInfoService jobPostingInfo_Service;
-<<<<<<< HEAD
+
 	
 	/*
 	 * @Resource(name = "uploadPath") private String uploadPath;
 	 */
-=======
 
->>>>>>> branch 'master' of https://github.com/dbsgh6249/Project-Rallit.git
 	
 	@RequestMapping(value = "/jobPosting/insert", method = RequestMethod.GET)
 	public String jobPostingInsert() {

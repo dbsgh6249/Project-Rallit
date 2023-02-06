@@ -39,8 +39,10 @@ public class JobPostingController {
 	private IPostingTagService postingTag_Service;
 	@Autowired
 	private IJobPostingInfoService jobPostingInfo_Service;
-	@Resource(name = "uploadPath")
-	private String uploadPath;
+	
+	/*
+	 * @Resource(name = "uploadPath") private String uploadPath;
+	 */
 	
 	@RequestMapping(value = "/jobPosting/insert", method = RequestMethod.GET)
 	public String jobPostingInsert() {

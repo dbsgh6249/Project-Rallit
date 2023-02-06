@@ -10,7 +10,7 @@ values(#{user_id},#{user_pw},#{user_name},1,#{user_phone},#{user_company},#{user
 </insert>
 
 <select id="selectOne" resultType="com.human.dto.H_UsersDto"> <!-- 마이페이지 정보조회(select One), 로그인 시 사용 -->
-select * from h_users where user_id=#{user_id}
+select * from h_users where user_id='com'
 </select>
 <select id="selectAll" resultType="com.human.dto.H_UsersDto"> <!-- admin 회원관리(select All) -->
 select * from h_users user_id by user_id

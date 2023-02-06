@@ -3,11 +3,11 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.human.dao.IJobPostingDAO">
+<mapper namespace="com.human.dao.IJobPostingDao">
 <insert id="insert">insert into jobPosting 
 (posting_num,title,user_id,dateCreated,deadline,occ_main,occ_sub,minCareer,maxCareer,
-text1,text2,text3,text4,text5,text6,picture)
-values (jobPosting_seq.nextval,#{title},#{user_id},sysdate, #{deadline},#{occ_main},#{occ_sub},#{minCareer},#{maxCareer},
+text1,text2,text3,text4,text5,text6)
+values (posting_num_seq.nextval,#{title},#{user_id},sysdate, #{deadline},#{occ_main},#{occ_sub},#{minCareer},#{maxCareer},
 #{text1},#{text2},#{text3},#{text4},#{text5},#{text6})</insert>
 
 <select id="selectOne" resultType="com.human.dto.JobPostingDto"> <!-- 채용공고 상세페이지(Select One) -->

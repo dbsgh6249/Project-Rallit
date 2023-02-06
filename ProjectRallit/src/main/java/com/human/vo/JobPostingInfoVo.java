@@ -6,7 +6,7 @@ import com.human.dto.JobPostingDto;
 import com.human.dto.PostingTagDto;
 
 public class JobPostingInfoVo {
-	private int posting_num;		// 글번호
+	private Integer posting_num;		// 글번호
 	private String title;			// 글제목
 	private Date dateCreated;		// 작성일
 	private Date deadline;			// 공고마감일
@@ -51,7 +51,7 @@ public class JobPostingInfoVo {
 				+ ", text4=" + text4 + ", text5=" + text5 + ", text6=" + text6 + ", postingTags=" + postingTags + "]";
 	}
 
-	public int getPosting_num() {
+	public Integer getPosting_num() {
 		return posting_num;
 	}
 

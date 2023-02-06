@@ -5,10 +5,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>채용공고 입력</title>
 <style>
 .container{    
-    text-align: center;  
     margin-left: 20px;
     margin-right: 20px;   
 }
@@ -72,7 +71,7 @@ outline: none;
 	vertical-align: middle;
 }
 .postingBar .jobPostingtext textarea {
-	border-bottom: 1px solid #00C471;
+	border: 1px solid #00C471;
 	display:block;
 	width: 80%;
 	height:300px;
@@ -86,7 +85,7 @@ outline: none;
 <div class='container'>
 <h2>채용공고 등록하기</h2>
 <span class='postingBar'>
-<form id='jobPostingInsert' name='postingForm' action='jobPosting/insert' method='post'>
+<form id='jobPostingInsert' name='postingForm' action='/ex/jobPosting/insert' method='post'>
 <p>제목</p><input type="text" name="title"><br>
 <p>회사 id</p> <br>
 <c:forEach items="${list }" var="authoritiesDto">
@@ -98,8 +97,8 @@ outline: none;
 <p>공고 마감일</p><input type="date" name="deadline"><br>
 <p>직군</p><input type="text" name="occ_main"><br>
 <p>직무</p><input type="text" name="occ_sub"><br>
-<p>경력</p><input type="text" name="minCareer" placeholder="숫자로 입력하세요(신입의 경우 0)">
-			~<input type="text" name="maxCareer" placeholder="숫자로 입력하세요"><br>
+<p>경력</p><input type="number" name="minCareer" placeholder="신입의 경우 0" min='0'>
+			~<input type="number" name="maxCareer" placeholder="숫자로 입력하세요"><br>
 <p>소개</p>
 <div class='jobPostingtext'>
 <textarea name="text1" placeholder="회사 소개글을 입력하세요"></textarea><br>

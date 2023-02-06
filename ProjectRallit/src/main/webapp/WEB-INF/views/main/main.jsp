@@ -11,87 +11,19 @@
 	rel="stylesheet" type="text/css">
 <script src="https://code.jquery.com/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-<script type="text/javascript" async=""
-	src="https://www.googletagmanager.com/gtag/js?id=G-QL4WB566QC&amp;l=dataLayer&amp;cx=c"></script>
-<script
-	src="https://connect.facebook.net/signals/config/663413858428656?v=2.9.95&amp;r=stable"
-	async=""></script>
-<script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
-<script async=""
-	src="https://www.googletagmanager.com/gtm.js?id=GTM-WGJ7X69"></script>
-<script>
-	(function(w, d, s, l, i) {
-		w[l] = w[l] || [];
-		w[l].push({
-			'gtm.start' : new Date().getTime(),
-			event : 'gtm.js'
-		});
-		var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l='
-				+ l
-				: '';
-		j.async = true;
-		j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-		f.parentNode.insertBefore(j, f);
-	})(window, document, 'script', 'dataLayer', 'GTM-WGJ7X69');
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <meta charset="utf-8">
 <title>휴먼 프로젝트 - 랠릿</title>
-<meta name="viewport"
-	content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-<meta name="thumbnail"
-	content="https://cdn.rallit.com/image/meta-image.png">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.rallit.com/">
-<meta property="og:image"
-	content="https://cdn.rallit.com/image/meta-image.png">
-<meta property="og:description"
-	content="업계에서 검증된 회사들의 채용 채용 공고를 랠릿에서 만나보세요">
-<meta property="og:site_name" content="랠릿">
-<meta property="og:locale" content="ko_KR">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<meta name="thumbnail" content="https://cdn.rallit.com/image/meta-image.png"> <!--타이틀 아이콘-->
 
-<meta name="naver-site-verification"
-	content="135ce61c0b836150b85556ca84fd83229e12ab67">
-<meta name="theme-color" content="#ffffff">
-<link rel="icon" href="https://cdn.rallit.com/image/favicon.ico"
-	sizes="any">
-<link rel="icon" href="https://cdn.rallit.com/image/favicon.svg"
-	type="image/svg+xml">
-<link rel="mask-icon" href="https://cdn.rallit.com/image/favicon.svg"
-	color="#000000">
-<link rel="apple-touch-icon"
-	href="https://cdn.rallit.com/image/favicon-180x180.png">
-<script src="https://cdn.rallit.com/js/postcode.v2.js" defer=""></script>
-<script src="https://cdn.rallit.com/js/kakao.v1.14.0.min.js" defer=""></script>
-<meta name="next-head-count" content="38">
 <style>
 #posting3,#posting4,#posting5,#posting6,#posting7,#posting8,#posting9,#posting10 {
 	display: none;
 }
 </style>
+<!-- 채용공고 hover dropDownMenu-->
 <script>
-	/* 	
-	 $(document).ready(function(){
-	 $("#posting").hover(
-	 function(){
-	 $("#posting2").stop().slideDown();
-	 },
-	 function(){
-	
-	 });	
-	 $("#posting2").hover(
-	 function(){
-	
-	 },
-	 function(){
-	 $("#posting2").stop().slideUp();
-	 });	
-	 });   	 */
-
 	$(document).ready(function() {
 		$("#posting").hover(function() {
 			$("#posting2").stop().slideDown();
@@ -107,10 +39,8 @@
 			 $("#posting3").stop().slideUp();
 		 });
 	 });
-	 
+
 </script>
-
-
 <!-- MY랠릿 버튼------------------------------------------------ -->
 <script>
 	/* When the user clicks on the button, 
@@ -134,12 +64,8 @@
 	}
 </script>
 <!-- ------------------------------------------------------------- -->
-
-
-
 </head>
 <body>
-
 	<div id="__next" data-reactroot="">
 		<section class="inflab-integrated css-1cp3pcs">
 			<div class="inflab-integrated__header">
@@ -531,7 +457,7 @@
 
 						<sec:authorize access="isAnonymous()">
 							<div class="css-fi5x0a">
-								<a href="main/register" class="css-avxbst">
+								<a href="/main/register" class="css-avxbst">
 									<div class="css-wodprq">
 										<div class="GNB-menu__noti-container"></div>
 										<span class="css-jk5git"></span>

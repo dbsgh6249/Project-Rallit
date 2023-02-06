@@ -167,7 +167,15 @@ div + .css-fi5x0a {
     max-width: 80.000rem;
     width: 100%;
 }
-
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 @media (max-width: 768px) {
     .css-1cp3pcs .inflab-integrated__header {
         padding: 0 16px;
@@ -535,7 +543,7 @@ div + .css-fi5x0a {
 }
 
 .css-1ttw3p7 {
-    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,'Helvetica Neue','Segoe UI','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif;
     font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
@@ -2430,16 +2438,6 @@ li {
     height: 3.933rem;
 }
 
-.css-o8aacz .left-GNB,
-.css-o8aacz .right-GNB {
-    display: grid;
-    gap: 24px;
-    grid-template-columns: repeat(4, auto);
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: 100%;
-}
 
 .css-o8aacz .right-GNB {
     grid-template-columns: repeat(5, auto);
@@ -2594,19 +2592,6 @@ li {
     }
 }
 
-.css-1ttw3p7 {
-    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.42;
-    letter-spacing: -0.3px;
-    margin: 0;
-    white-space: pre-line;
-    word-break: break-all;
-    color: #21252a;
-}
 
 .css-3fe575 {
     position: relative;
@@ -2767,6 +2752,27 @@ li {
     font-weight: 500;
     padding: 12px 20px;
     background-color: rgb(248, 249, 250);
+    color: rgb(53, 58, 64);
+}
+.css-1xupo39 button {
+    border-bottom: 1px solid rgb(242, 244, 246);
+}
+.css-19bo4h0 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    padding: 12px 0px;
+    background-color: rgb(255, 255, 255);
     color: rgb(53, 58, 64);
 }
 .css-494cde {

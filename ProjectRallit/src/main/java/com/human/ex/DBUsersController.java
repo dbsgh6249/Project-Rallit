@@ -32,8 +32,11 @@ public class DBUsersController {
 	@Autowired
 	private IAuthoritiesService authorities_service;
 	
-	
-	@RequestMapping(value = "/seeker/register", method = RequestMethod.POST)
+	@RequestMapping(value = "/main/register", method = RequestMethod.GET)
+	public String register(Locale locale, Model model) {
+		return "/main/register";
+	}
+	@RequestMapping(value = "/main/register", method = RequestMethod.POST)
 	public String seekersingup(H_UsersDto dto, HttpServletRequest request) throws Exception {
 		String full = request.getParameter("full_address");
 		String[] list = full.split(" ");
@@ -64,10 +67,18 @@ public class DBUsersController {
 		
 		authorities_service.insertSeeker(authoritiesDto);
 		
-		return "/jobSeeker/login";
+		return "/main/login";
 	}
-	@RequestMapping(value = "/company/register", method = RequestMethod.POST)
+	
+	
+	@RequestMapping(value = "/main/registerK", method = RequestMethod.GET)
+	public String registerK(Locale locale, Model model) {
+		System.out.println("aaaaaaaaaaaaa기업 회원가입");
+		return "/main/registerK";
+	}
+	@RequestMapping(value = "/main/registerK", method = RequestMethod.POST)
 	public String companySignUp(H_UsersDto dto, HttpServletRequest request) throws Exception {
+		System.out.println("bbbbbbbbbbbbb기업 회원가입");
 		String full = request.getParameter("full_address");
 		String[] list = full.split(" ");
 		String temp = "";
@@ -97,6 +108,6 @@ public class DBUsersController {
 		
 		authorities_service.insertCompany(authoritiesDto);
 		
-		return "/company/login";
+		return "/main/login";
 	}
 }

@@ -201,9 +201,14 @@
 								</div> <span>채용</span>
 						</a></li>
 					</ul>
-					<a href="jobSeeker/login"> <!--기업서비스 로그인 링크-->
-						<p class="css-11cix4b">기업 서비스</p>
+					
+					<sec:authorize access="isAnonymous()">
+					<div>
+					<a href="main/registerK"> <!--기업서비스 로그인 링크-->
+						<p class="css-11cix4b">기업 회원가입</p>
 					</a>
+					</div>
+					</sec:authorize>
 				</div>
 			</div>
 		</section>
@@ -562,7 +567,7 @@
 
 						<sec:authorize access="isAnonymous()">
 							<div class="css-fi5x0a">
-								<a href="/main/register" class="css-avxbst">
+								<a href="main/register" class="css-avxbst">
 									<div class="css-wodprq">
 										<div class="GNB-menu__noti-container"></div>
 										<span class="css-jk5git"></span>

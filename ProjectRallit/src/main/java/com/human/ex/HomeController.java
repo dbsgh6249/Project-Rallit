@@ -42,9 +42,9 @@ public class HomeController {
 		
 		return "/main/main";
 	}
-	@RequestMapping(value = "/temporary/register", method = RequestMethod.GET)
+	@RequestMapping(value = "/main/main", method = RequestMethod.GET)
 	public String testregister(Locale locale, Model model) {
-		return "/temporary/register";
+		return "/main/main";
 	}
 	
 	//test용

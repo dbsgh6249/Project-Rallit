@@ -38,65 +38,65 @@
 
 		$("#Jobgroup1").hover(function() {
 			$(".css-1kxn32n").hide();
-			$("#posting3").stop().slideDown();
+			$("#posting3").show();
 		}, function() {
-			$("#posting3").stop().slideUp();
+			$("#posting3").hide();
 			$(".css-1kxn32n").show();
 		});
 
 		$("#Jobgroup2").hover(function() {
 			$(".css-1kxn32n").hide();
-			$("#posting4").stop().slideDown();
+			$("#posting4").show();
 		}, function() {
-			$("#posting4").stop().slideUp();
+			$("#posting4").hide();
 			$(".css-1kxn32n").show();
 		});
 
 		$("#Jobgroup3").hover(function() {
 			$(".css-1kxn32n").hide();
-			$("#posting5").stop().slideDown();
+			$("#posting5").show();
 		}, function() {
-			$("#posting5").stop().slideUp();
+			$("#posting5").hide();
 			$(".css-1kxn32n").show();
 		});
 
 		$("#Jobgroup4").hover(function() {
 			$(".css-1kxn32n").hide();
-			$("#posting6").stop().slideDown();
+			$("#posting6").show();
 		}, function() {
-			$("#posting6").stop().slideUp();
+			$("#posting6").hide();
 			$(".css-1kxn32n").show();
 		});
 
 		$("#Jobgroup5").hover(function() {
 			$(".css-1kxn32n").hide();
-			$("#posting7").stop().slideDown();
+			$("#posting7").show();
 		}, function() {
-			$("#posting7").stop().slideUp();
+			$("#posting7").hide();
 			$(".css-1kxn32n").show();
 		});
 
 		$("#Jobgroup6").hover(function() {
 			$(".css-1kxn32n").hide();
-			$("#posting8").stop().slideDown();
+			$("#posting8").show();
 		}, function() {
-			$("#posting8").stop().slideUp();
+			$("#posting8").hide();
 			$(".css-1kxn32n").show();
 		});
 
 		$("#Jobgroup7").hover(function() {
 			$(".css-1kxn32n").hide();
-			$("#posting9").stop().slideDown();
+			$("#posting9").show();
 		}, function() {
-			$("#posting9").stop().slideUp();
+			$("#posting9").hide();
 			$(".css-1kxn32n").show();
 		});
 
 		$("#Jobgroup8").hover(function() {
 			$(".css-1kxn32n").hide();
-			$("#posting10").stop().slideDown();
+			$("#posting10").show();
 		}, function() {
-			$("#posting10").stop().slideUp();
+			$("#posting10").hide();
 			$(".css-1kxn32n").show();
 		});
 	});

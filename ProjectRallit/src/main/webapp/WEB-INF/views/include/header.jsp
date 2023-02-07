@@ -297,7 +297,7 @@
 												</ul>
 											</div>
 											<div class="css-ziljwy">
-												<label class="css-pwu5ys">직무</label>
+												<label class="css-pwu5ys" id="a1">직무</label>
 												<ul class="css-1piurjj">
 													<p class="css-1kxn32n">직군을 선택해주세요</p>
 												</ul>	

@@ -233,7 +233,6 @@
 											<div class="css-1fdx6k3">
 												<label class="css-1k185p7">직군</label>
 												<ul class="css-1piurjj">
-												
 													<li class="css-494cde" id="Jobgroup1"><button type="button"
 															name="직군 개발" class="css-184xd0e">개발</button></li>
 													<li class="css-494cde" id="Jobgroup2"><button type="button"
@@ -250,7 +249,6 @@
 															name="직군 영업" class="css-184xd0e">영업</button></li>
 													<li class="css-494cde" id="Jobgroup8"><button type="button"
 															name="직군 엔지니어링" class="css-184xd0e">엔지니어링</button></li>
-															
 												</ul>
 											</div>
 											<div class="css-ziljwy">
@@ -266,7 +264,7 @@
 															개발자</button></li>
 													<li class="css-1xupo39"><button type="button"
 															name="직무 프론트엔드/웹퍼블리셔" class="css-19bo4h0">프론트엔드/웹퍼블리셔</button></li>
-													<li class="css-1xupo39"><button type ="button"
+													<li class="css-1xupo39"><button type="button"
 															name="직무 SW 엔지니어" class="css-19bo4h0">SW 엔지니어</button></li>
 													<li class="css-1xupo39"><button type="button"
 															name="직무 안드로이드 개발자" class="css-19bo4h0">안드로이드

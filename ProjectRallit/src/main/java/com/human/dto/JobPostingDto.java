@@ -22,17 +22,18 @@ public class JobPostingDto {
 	private String text4;			// 우대사항
 	private String text5;			// 혜택 및 복지
 	private String text6;			// 한마디
+	private Integer sal;
+	private int viewCnt;
 	
 	
-
-
-
+	
 	@Override
 	public String toString() {
 		return "JobPostingDto [posting_num=" + posting_num + ", title=" + title + ", user_id=" + user_id
 				+ ", dateCreated=" + dateCreated + ", deadline=" + deadline + ", occ_main=" + occ_main + ", occ_sub="
 				+ occ_sub + ", minCareer=" + minCareer + ", maxCareer=" + maxCareer + ", text1=" + text1 + ", text2="
-				+ text2 + ", text3=" + text3 + ", text4=" + text4 + ", text5=" + text5 + ", text6=" + text6 + "]";
+				+ text2 + ", text3=" + text3 + ", text4=" + text4 + ", text5=" + text5 + ", text6=" + text6 + ", sal="
+				+ sal + ", viewCnt=" + viewCnt + "]";
 	}
 
 
@@ -184,6 +185,26 @@ public class JobPostingDto {
 
 	public void setUser_id(String user_id) {
 		this.user_id = user_id;
+	}
+
+
+	public int getViewCnt() {
+		return viewCnt;
+	}
+
+
+	public void setViewCnt(int viewCnt) {
+		this.viewCnt = viewCnt;
+	}
+
+
+	public Integer getSal() {
+		return sal;
+	}
+
+
+	public void setSal(Integer sal) {
+		this.sal = sal;
 	}
 
 

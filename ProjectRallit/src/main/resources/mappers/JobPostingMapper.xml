@@ -6,9 +6,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="com.human.dao.IJobPostingDao">
 <insert id="insert">insert into jobPosting 
 (posting_num,title,user_id,dateCreated,deadline,occ_main,occ_sub,minCareer,maxCareer,
-text1,text2,text3,text4,text5,text6)
+text1,text2,text3,text4,text5,text6,sal,viewCnt)
 values (posting_num_seq.nextval,#{title},#{user_id},sysdate, #{deadline},#{occ_main},#{occ_sub},#{minCareer},#{maxCareer},
-#{text1},#{text2},#{text3},#{text4},#{text5},#{text6})</insert>
+#{text1},#{text2},#{text3},#{text4},#{text5},#{text6},#{sal},0)</insert>
 
 <select id="selectOne" resultType="com.human.dto.JobPostingDto"> <!-- 채용공고 상세페이지(Select One) -->
 select * from posting_num_seq where posting_num = #{posting_num}
@@ -22,7 +22,11 @@ select * from JobPosting where user_id=#{user_id} order by posting_num
 update jobPosting set 
 title =#{title},deadline=#{deadline},occ_main=#{occ_main},occ_sub=#{occ_sub},minCareer=#{minCareer},maxCareer=#{maxCareer},
 text1=#{text1},text2=#{text2},text3=#{text3},text4=#{text4},text5=#{text5},
-text6=#{text6}  where posting_num = #{posting_num} </update>
+text6=#{text6},sal=#{sal}  where posting_num = #{posting_num} </update>
+
+<update id="viewUpdate">
+update jobPosting set viewCnt=viewCnt+1 where posting_num = #{posting_num}
+</update>
 
 <delete id="delete"> delete from jobPosting where posting_num = #{posting_num} </delete><!-- 삭제(admin) -->
 

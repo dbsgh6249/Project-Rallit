@@ -55,4 +55,10 @@ public class JobPostingServiceImpl implements IJobPostingService{
 		IJobPostingDao dao = sqlSession.getMapper(IJobPostingDao.class);
 		return dao.selectMaxPostingNum();
 	}
+
+	@Override
+	public void viewUpdate(int posting_num) throws Exception {
+		IJobPostingDao dao = sqlSession.getMapper(IJobPostingDao.class);
+		dao.viewUpdate(posting_num);
+	}
 }

@@ -10,5 +10,6 @@ public interface IJobPostingService {
 	public List<JobPostingDto> selectAll() throws Exception;
 	public void delete(int posting_num) throws Exception;
 	public void update(JobPostingDto dto) throws Exception;
+	public void viewUpdate(int posting_num) throws Exception;
 	public Integer selectMaxPostingNum() throws Exception;
 }

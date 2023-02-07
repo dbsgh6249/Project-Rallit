@@ -80,6 +80,19 @@ outline: none;
 	resize: vertical;
 }
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+	$(function(){
+		$("#addTag").click(function(){
+			event.preventDefault();
+			$("#displayTag").append("<div><input type='text' name='languageTag'> <button>X</button></div>");
+		})
+		$("#displayTag").on("click","button",fuction(){
+			event.preventDefault();
+			$(this).parent().remove();
+		})
+	})
+</script>
 </head>
 <body>
 <div class='container'>
@@ -125,6 +138,7 @@ outline: none;
 <div class='jobPostingtext'>
 <textarea name="text6" placeholder="한마디를 입력하세요"></textarea><br><br>
 </div>
+<div id='displayTag'></div><button id='addTag'>태그 추가</button>
 </form>
 <button type="submit" id='insertbtn' form='jobPostingInsert'>등록</button>
 </span>

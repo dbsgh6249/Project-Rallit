@@ -27,7 +27,7 @@
 			authentication-failure-url="/main/login?error"
 			username-parameter="id" password-parameter="password" />
 		<logout logout-url="/main/logout"
-		logout-success-url="/"
+		logout-success-url="/?logout"
 		invalidate-session="true" />
 		<!--화면 없이 해당 주소로 오면 session이 지워지고 로그아웃이 진행됨 -->
 		<!-- 에러 났을 때 에러 처리하는 페이지 -->

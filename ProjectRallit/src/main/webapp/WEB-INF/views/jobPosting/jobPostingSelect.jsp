@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <link href="${pageContext.request.contextPath}/resources/css/jobPostingSelect.css"
       rel="stylesheet" type="text/css">
-<%@include file = "../include/header.jsp" %>
+<%@include file = "../include/header.jsp" %> 
 
         <main class="css-ac13em">
             <div class="css-er4t7v">

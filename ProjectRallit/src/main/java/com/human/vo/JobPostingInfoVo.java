@@ -21,10 +21,10 @@ public class JobPostingInfoVo {
 	private String text5;			// 혜택 및 복지
 	private String text6;			// 한마디
 	
-	private List<String> postingTags;	// 태그
+	private List<String> languageTags;	// 태그
 	
 	public JobPostingInfoVo() {}
-	public JobPostingInfoVo(JobPostingDto dto, List<String> postingTags) {
+	public JobPostingInfoVo(JobPostingDto dto, List<String> languageTags) {
 		this.posting_num = dto.getPosting_num();
 		this.title = dto.getTitle();
 		this.dateCreated = dto.getDateCreated();
@@ -40,7 +40,7 @@ public class JobPostingInfoVo {
 		this.text5 = dto.getText5();
 		this.text6 = dto.getText6();
 		
-		this.postingTags = postingTags;
+		this.languageTags = languageTags;
 	}
 	
 	@Override
@@ -48,7 +48,7 @@ public class JobPostingInfoVo {
 		return "JobPostingInfoVo [posting_num=" + posting_num + ", title=" + title + ", dateCreated=" + dateCreated
 				+ ", deadline=" + deadline + ", occ_main=" + occ_main + ", occ_sub=" + occ_sub + ", minCareer="
 				+ minCareer + ", maxCareer=" + maxCareer + ", text1=" + text1 + ", text2=" + text2 + ", text3=" + text3
-				+ ", text4=" + text4 + ", text5=" + text5 + ", text6=" + text6 + ", postingTags=" + postingTags + "]";
+				+ ", text4=" + text4 + ", text5=" + text5 + ", text6=" + text6 + ", languageTags=" + languageTags + "]";
 	}
 
 	public Integer getPosting_num() {
@@ -163,12 +163,12 @@ public class JobPostingInfoVo {
 		this.text6 = text6;
 	}
 
-	public List<String> getPostingTags() {
-		return postingTags;
+	public List<String> getLanguageTags() {
+		return languageTags;
 	}
 
-	public void setPostingTags(List<String> postingTags) {
-		this.postingTags = postingTags;
+	public void setLanguageTags(List<String> languageTags) {
+		this.languageTags = languageTags;
 	}
 
 }

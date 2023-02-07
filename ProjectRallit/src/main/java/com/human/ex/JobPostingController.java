@@ -53,16 +53,17 @@ public class JobPostingController {
 		return "/jobPosting/jobPostingInsert";
 	}
 	@RequestMapping(value = "/jobPosting/insert", method = RequestMethod.POST)
-	public String jobPostingInsert(JobPostingDto dto,Model model) throws Exception {
+	public String jobPostingInsert(JobPostingDto dto,JobPostingInfoVo vo, Model model) throws Exception {
 		System.out.println(dto);
-		jobPosting_Service.insert(dto);
+		System.out.println(vo);
+		jobPostingInfo_Service.insertJobPostingInfo(dto, vo);
 		String user_id = dto.getUser_id();
 		H_UsersDto hUsersDto = hUsers_Service.selectOne(user_id);
 		String userName = hUsersDto.getUser_company();
-		String address = hUsersDto.getUser_city() + hUsersDto.getUser_province() + hUsersDto.getUser_address();
+		String address = hUsersDto.getUser_province()+" "+hUsersDto.getUser_city()+" "+hUsersDto.getUser_address();
 		model.addAttribute("company", userName);
 		model.addAttribute("address", address);
-		model.addAttribute("jobPosting", dto);
+		model.addAttribute("jobPosting", vo);
 		return "/jobPosting/jobPostingDetail";
 	}
 	@RequestMapping(value = "/jobPosting/update", method = RequestMethod.GET)
@@ -88,12 +89,14 @@ public class JobPostingController {
 	}
 	@RequestMapping(value = "/jobPosting/selectOne", method = RequestMethod.GET)
 	public void jobPostingSelectOne(@RequestParam("posting_num")int posting_num,Model model) throws Exception {
+		jobPosting_Service.viewUpdate(posting_num);
 		model.addAttribute("dto",jobPostingInfo_Service.selectOne(posting_num));
 	}
 	@RequestMapping(value = "/jobPosting/selectCompanyPosting", method = RequestMethod.GET)
 	public void jobPostingSelectCompanyPosting(String user_id,Model model) throws Exception {
 		model.addAttribute("list",jobPosting_Service.selectCompanyPosting(user_id));
 		// 이것도 태그 있는 거로 바꿀까 했는데 기업 마이페이지에서 전체조회는 제목/경력/마감일 정도만 표기할 것 같아서 따로 join 안 만들 듯
+		// 근데 이걸 여기 만드는 의미가 있나 싶음 마이페이지에서 조회할 거 아닌가
 	}
 	
 }

@@ -119,8 +119,7 @@
 									class="updateInput" type="text" placeholder="애플 코리아 충남 두정점"
 									name=""><br> <br> <label class="input_label">주소</label><br>
 								<input class="inputsubmit" type="button" onclick="daumPost()"
-									value="우편주소찾기"><br> <br> 
-									<p class="css-17rq0qv">우편주소찾기 후 상세 주소를 입력해 주세요.</p>
+									value="우편주소찾기"><br>
 									<input type="text"
 									id="full_address" name="full_address" placeholder="주소" readonly>
 								<br>

@@ -6,7 +6,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
  <link href="${pageContext.request.contextPath}/resources/css/jobPostingDetail.css"
       rel="stylesheet" type="text/css">
-<%@include file = "../include/header.jsp" %>; <!-- header섹션 -->
+<%@include file = "../include/header.jsp" %> <!-- header섹션 -->
 
   <main class="css-ac13em">
             <div class="css-cho4vs">

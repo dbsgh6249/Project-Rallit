@@ -4,7 +4,7 @@
 	uri="http://www.springframework.org/security/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<%@include file = "../include/header.jsp" %>;
+<%@include file = "../include/header.jsp" %>
 		<main class="css-ac13em">
 		<h1 class="css-8mcuh1">랠릿 메인페이지</h1>
 		<section class="css-14c50mj">

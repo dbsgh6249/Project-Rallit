@@ -7,7 +7,7 @@
 <%@include file="../include/header.jsp"%>
 <%@include file="../include/findAdress.jsp"%>
 <link href="${pageContext.request.contextPath}/resources/css/myInfo.css"
-	rel="stylesheet" type="text/css">
+	rel="stylesheet" type="text/css"><!--  -->
 
 
 

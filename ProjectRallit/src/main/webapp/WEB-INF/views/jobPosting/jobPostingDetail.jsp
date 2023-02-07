@@ -107,7 +107,7 @@
                             <h2 class="css-16a5xne">${jobPosting.title }, 어떤 일을 하나요?</h2>
                             <p class="css-19hzmb1">업무 컬럼을 추가하나</p>
                             <ul class="css-104fbyc">
-                            <c:forEach items='${jobPosting.postingTags }' var='postingTag'>
+                            <c:forEach items='${jobPosting.languageTags }' var='postingTag'>
                                 <div class="css-kgsirb">
                                 	<span>${postingTag }</span>
                                 </div>

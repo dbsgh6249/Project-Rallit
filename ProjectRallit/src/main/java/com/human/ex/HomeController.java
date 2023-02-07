@@ -71,5 +71,10 @@ public class HomeController {
 		
 		return "jobSeeker/userDeleteAccount";
 	}
-	
+	//test용
+		@RequestMapping(value = "/infoUp", method = RequestMethod.GET)
+		public String infoUpdate(Model model) {
+			
+			return "jobSeeker/userUpdateAccount";
+		}
 }

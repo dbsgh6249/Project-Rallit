@@ -54,8 +54,6 @@ public class JobPostingController {
 	}
 	@RequestMapping(value = "/jobPosting/insert", method = RequestMethod.POST)
 	public String jobPostingInsert(JobPostingDto dto,JobPostingInfoVo vo, Model model) throws Exception {
-		System.out.println(dto);
-		System.out.println(vo);
 		jobPostingInfo_Service.insertJobPostingInfo(dto, vo);
 		String user_id = dto.getUser_id();
 		H_UsersDto hUsersDto = hUsers_Service.selectOne(user_id);
@@ -83,14 +81,16 @@ public class JobPostingController {
 		return "redirect:/jobPosting/selectAll";
 	}
 	@RequestMapping(value = "/jobPosting/selectAll", method = RequestMethod.GET)
-	public void jobPostingSelectAll(Model model) throws Exception {
+	public String jobPostingSelectAll(Model model) throws Exception {
 		List<JobPostingInfoVo> jobPostingInfoVos = jobPostingInfo_Service.selectAll();
 		model.addAttribute("list",jobPostingInfoVos);
+		return "/jobPosting/jobPostingSelect";
 	}
 	@RequestMapping(value = "/jobPosting/selectOne", method = RequestMethod.GET)
-	public void jobPostingSelectOne(@RequestParam("posting_num")int posting_num,Model model) throws Exception {
+	public String jobPostingSelectOne(@RequestParam("posting_num")int posting_num,Model model) throws Exception {
 		jobPosting_Service.viewUpdate(posting_num);
 		model.addAttribute("dto",jobPostingInfo_Service.selectOne(posting_num));
+		return "/jobPosting/jobPostingDetail";
 	}
 	@RequestMapping(value = "/jobPosting/selectCompanyPosting", method = RequestMethod.GET)
 	public void jobPostingSelectCompanyPosting(String user_id,Model model) throws Exception {

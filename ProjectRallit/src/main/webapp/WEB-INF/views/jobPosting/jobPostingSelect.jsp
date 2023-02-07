@@ -3,7 +3,38 @@
 <link href="${pageContext.request.contextPath}/resources/css/jobPostingSelect.css"
       rel="stylesheet" type="text/css">
 <%@include file = "../include/header.jsp" %> 
+<!-- <script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
 
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+		if (!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				}
+			}
+		}
+	}
+</script> -->
+<script>
+	function myFunction(){
+		if($("#job2").css("display")=="none"){
+			$("#job2").show();
+		}else {
+			$("#job2").hide();
+		}
+	}
+
+
+</script>
         <main class="css-ac13em">
             <div class="css-er4t7v">
                 <form class="css-1cezf7h">
@@ -22,8 +53,8 @@
                     <div class="css-w1yi09">
                         <div class="css-16gay4m">
                             <div class="css-61lo31">
-                                <section class="css-79elbk">
-                                    <div class="css-15www6d">
+                                <section onclick="myFunction()" class="css-79elbk" id="job1">
+                                    <div class="css-15www6d" id="job2">
                                         <div class="rallit-icon  css-ncl23e"><svg width="16" height="15"
                                                 viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -31,14 +62,17 @@
                                                     fill="#353a40"></path>
                                             </svg></div>
                                         <p class="css-c6ean7">직군 · 직무 전체</p>
-                                        <div class="rallit-icon  css-14udmg8"><svg width="18" height="18" fill="none"
-                                                viewbox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M14.378 6.997c.33.33.33.864 0 1.193l-4.781 4.782a.844.844 0 0 1-1.194 0L3.623 8.19a.844.844 0 1 1 1.192-1.193L9 11.182l4.185-4.185a.844.844 0 0 1 1.193 0z"
-                                                    fill="#535961"></path>
-                                            </svg></div>
-                                        <div class="css-8j8hl3"></div>
-                                    </div>
+							<div class="rallit-icon  css-14udmg8">
+								<svg width="18" height="18" fill="none" viewbox="0 0 18 18"
+									xmlns="http://www.w3.org/2000/svg">
+                                                <path
+										fill-rule="evenodd" clip-rule="evenodd"
+										d="M14.378 6.997c.33.33.33.864 0 1.193l-4.781 4.782a.844.844 0 0 1-1.194 0L3.623 8.19a.844.844 0 1 1 1.192-1.193L9 11.182l4.185-4.185a.844.844 0 0 1 1.193 0z"
+										fill="#535961"></path>
+                                            </svg>
+											</div>
+							<div class="css-8j8hl3"></div>
+						</div>
                                     <div class="css-8l82ta">
                                         <div class="css-14ypdl9">
                                             <div class="css-1so5lt">
@@ -52,16 +86,30 @@
                                                     </ul>
                                                 </div>
 
-                                                <div class="css-ziljwy">
-                                                    <label class="css-pwu5ys">직무</label>
-                                                    <ul class="css-1piurjj">
-                                                        <li class="css-494cde">
-                                                            <button type="button" name="직무 전체"
-                                                                class="css-19bo4h0">전체</button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+									<div class="css-ziljwy">
+										<label class="css-pwu5ys">직무</label>
+										<ul class="css-1piurjj" id="job2">
+											<li class="css-494cde"><button type="button"
+													name="직군 전체" class="css-qru78a">전체</button></li>
+											<li class="css-494cde"><button type="button"
+													name="직군 개발" class="css-184xd0e">개발</button></li>
+											<li class="css-494cde"><button type="button"
+													name="직군 게임개발" class="css-184xd0e">게임개발</button></li>
+											<li class="css-494cde"><button type="button"
+													name="직군 디자인 선택됨" class="css-lgaez0">디자인</button></li>
+											<li class="css-494cde"><button type="button"
+													name="직군 기획" class="css-184xd0e">기획</button></li>
+											<li class="css-494cde"><button type="button"
+													name="직군 마케팅" class="css-184xd0e">마케팅</button></li>
+											<li class="css-494cde"><button type="button"
+													name="직군 경영/인사" class="css-184xd0e">경영/인사</button></li>
+											<li class="css-494cde"><button type="button"
+													name="직군 영업" class="css-184xd0e">영업</button></li>
+											<li class="css-494cde"><button type="button"
+													name="직군 엔지니어링" class="css-184xd0e">엔지니어링</button></li>
+										</ul>
+									</div>
+								</div>
                                         </div>
                                     </div>
                                 </section>

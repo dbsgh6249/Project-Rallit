@@ -432,26 +432,6 @@ h1 {
     gap: 0.000rem;
 }
 
-.css-avxbst {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-}
 
 .css-avxbst .GNB-menu__noti-container {
     position: relative;
@@ -762,6 +742,7 @@ li {
 .css-83cc5o p {
     margin: 0px;
 }
+
 .css-4qldrf {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2428,22 +2409,22 @@ li {
 
 
 .css-avxbst {
-    display: -webkit-box;
-    display: -webkit-flex;
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
+    /* -webkit-flex-direction: column; */
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-align-items: center;
+    /* -webkit-align-items: center; */
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    -webkit-justify-content: center;
+    /* -webkit-justify-content: center; */
     justify-content: center;
-    width: -webkit-max-content;
+    /* width: -webkit-max-content; */
     width: -moz-max-content;
     width: max-content;
 }
@@ -4175,10 +4156,6 @@ body>div {
 a {
     color: inherit;
     text-decoration: none
-}
-
-* {
-    box-sizing: border-box
 }
 .css-cho4vs {
     padding: 33px 0px 354px;

@@ -4,7 +4,7 @@
 	uri="http://www.springframework.org/security/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<%@include file = "../include/header.jsp" %>;
+<%@include file = "../include/header.jsp" %>; <!-- header섹션 -->
 
   <main class="css-ac13em">
             <div class="css-cho4vs">
@@ -34,4 +34,4 @@
         </main>
 
 
-<%@include file = "../include/footer.jsp" %>;
+<%@include file = "../include/footer.jsp" %>; <!-- footer섹션 -->

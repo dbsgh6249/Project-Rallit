@@ -22,8 +22,8 @@ public class JobPostingInfoServiceImpl implements IJobPostingInfoService{
 	public void insertJobPostingInfo(JobPostingDto dto, JobPostingInfoVo vo) throws Exception {
 		postingService.insert(dto);
 		vo.setPosting_num(postingService.selectMaxPostingNum());
-		if(vo.getPostingTags()!=null) {
-			for(String tag : vo.getPostingTags()) {
+		if(vo.getLanguageTags()!=null) {
+			for(String tag : vo.getLanguageTags()) {
 				if(tag.equals("")) {
 					continue;
 				}

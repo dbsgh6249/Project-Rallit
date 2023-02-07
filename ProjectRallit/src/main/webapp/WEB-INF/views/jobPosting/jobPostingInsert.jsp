@@ -25,13 +25,16 @@
     margin-bottom: -10px;
     padding-left: 10px;
 }
+.postingBar input[type="number"]{
+	width:130px;
+}
 .postingBar button{
     border-color:#ced4ec;
     border-style: solid;
     border-radius: 5px;
     border-width: 1px;
-    height: 48px;
-    width: 312px;   
+    height: 40px;
+    width: 80px;   
     margin-bottom: -10px;
     padding-left: 10px;
 }
@@ -39,7 +42,7 @@
 border-color:#00C471;
 outline: none;
 }
-.postingBar button[type="submit"]{
+.postingBar input[type="submit"]{
     height: 44px;
     width: 320px;
     font-weight: bolder;
@@ -71,23 +74,22 @@ outline: none;
 	vertical-align: middle;
 }
 .postingBar .jobPostingtext textarea {
-	border: 1px solid #00C471;
+	border: 1px solid #ced4ec;
 	display:block;
 	width: 80%;
 	height:300px;
 	box-sizing: border-box;
-	border: 0;
 	resize: vertical;
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script>
 	$(function(){
-		$("#addTag").click(function(){
+		$("button").click(function(){
 			event.preventDefault();
-			$("#displayTag").append("<div><input type='text' name='languageTag'> <button>X</button></div>");
+			$("#displayTag").append("<div><input type='text' name='languageTag'> <button>X</button></div><br>");
 		})
-		$("#displayTag").on("click","button",fuction(){
+		$("#displayTag").on("click","button",function(){
 			event.preventDefault();
 			$(this).parent().remove();
 		})
@@ -97,12 +99,13 @@ outline: none;
 <body>
 <div class='container'>
 <h2>채용공고 등록하기</h2>
+<br><br><br><br>
 <span class='postingBar'>
 <form id='jobPostingInsert' name='postingForm' action='/ex/jobPosting/insert' method='post'>
 <input type='hidden' name='posting_num' value='${dto.posting_num }'>
 <input type='hidden' name='datecreated'value='${dto.datecreated }'>
-<p>제목</p><input type="text" name="title"><br>
-<p>회사 id</p> <br>
+<p>제목</p><input type="text" name="title"><br><br>
+<p>회사 id</p>
 <c:forEach items="${list }" var="authoritiesDto">
 <label class='selectCompanyId'>
 <input type='radio' name='user_id' value='${authoritiesDto.user_id }'>
@@ -112,7 +115,7 @@ outline: none;
 <p>공고 마감일</p><input type="date" name="deadline"><br>
 <p>직군</p><input type="text" name="occ_main"><br>
 <p>직무</p><input type="text" name="occ_sub"><br>
-<p>경력</p><input type="number" name="minCareer" placeholder="신입의 경우 0" min='0'>
+<p>경력</p><input type="number" name="minCareer" placeholder="숫자로 입력하세요" min='0'>
 			~<input type="number" name="maxCareer" placeholder="숫자로 입력하세요"><br>
 <p>소개</p>
 <div class='jobPostingtext'>
@@ -135,12 +138,13 @@ outline: none;
 <textarea name="text5" placeholder="복지 내용을 입력하세요"></textarea><br>
 </div>
 <p>한마디</p>
-<div class='jobPostingtext'>
-<textarea name="text6" placeholder="한마디를 입력하세요"></textarea><br><br>
-</div>
-<div id='displayTag'></div><button id='addTag'>태그 추가</button>
+<input type='text' name='text' placeholder='한마디를 입력하세요'><br><br>
+<p>연봉</p><input type="number" name="sal" placeholder="숫자로 입력하세요"><br><br><br>
+<p>언어 태그</p><button>태그 추가</button><br><br><div id='displayTag'></div>
+<br><br><br>
+<input type="submit" id='insertbtn' value='등록'>
 </form>
-<button type="submit" id='insertbtn' form='jobPostingInsert'>등록</button>
+
 </span>
 
 </div>

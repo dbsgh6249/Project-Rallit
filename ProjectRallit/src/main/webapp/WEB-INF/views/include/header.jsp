@@ -28,6 +28,7 @@
 <!-- 채용공고 hover dropDownMenu-->
 <script>
 	
+	
 	$(document).ready(function() {
 		$("#posting").hover(function() {
 			$("#posting2").stop().slideDown();
@@ -35,75 +36,113 @@
 			$("#posting2").stop().slideUp();
 			$(".css-1kxn32n").show();
 		});
+		
 
-		$("#Jobgroup1").hover(function() {
+
+
+	$("#Jobgroup1").hover(function() {
 			$(".css-1kxn32n").hide();
 			$("#posting3").show();
 		}, function() {
-			$("#posting3").hover(function(){
-				
-			},function(){
+			$("#posting3").hover(function() {
+
+			}, function() {
 				$("#posting3").hide();
-				$(".css-1kxn32n".show();
-			});
-			/* $("#posting3").hide();
-			$(".css-1kxn32n").show(); */
+				$(".css-1kxn32n").show();
+			})
+
 		});
 
-		$("#Jobgroup2").hover(function() {
+		
+	$("#Jobgroup2").hover(function() {
 			$(".css-1kxn32n").hide();
 			$("#posting4").show();
 		}, function() {
-			$("#posting4").hide();
-			$(".css-1kxn32n").show();
+
+			$("#posting4").hover(function() {
+
+			}, function() {
+				$("#posting4").hide();
+				$(".css-1kxn32n").show();
+			})
 		});
 
-		$("#Jobgroup3").hover(function() {
+		
+	$("#Jobgroup3").hover(function() {
 			$(".css-1kxn32n").hide();
 			$("#posting5").show();
 		}, function() {
-			$("#posting5").hide();
-			$(".css-1kxn32n").show();
-		});
+			$("#posting5").hover(function() {
 
-		$("#Jobgroup4").hover(function() {
+			}, function() {
+				$("#posting5").hide();
+				$(".css-1kxn32n").show();
+			})
+		});
+	
+
+	$("#Jobgroup4").hover(function() {
 			$(".css-1kxn32n").hide();
 			$("#posting6").show();
 		}, function() {
-			$("#posting6").hide();
-			$(".css-1kxn32n").show();
+			$("#posting6").hover(function() {
+
+			}, function() {
+				$("#posting6").hide();
+				$(".css-1kxn32n").show();
+			})
 		});
 
-		$("#Jobgroup5").hover(function() {
+	
+
+	$("#Jobgroup5").hover(function() {
 			$(".css-1kxn32n").hide();
 			$("#posting7").show();
 		}, function() {
-			$("#posting7").hide();
-			$(".css-1kxn32n").show();
+			$("#posting7").hover(function() {
+
+			}, function() {
+				$("#posting7").hide();
+				$(".css-1kxn32n").show();
+			})
 		});
 
-		$("#Jobgroup6").hover(function() {
+	$("#Jobgroup6").hover(function() {
 			$(".css-1kxn32n").hide();
 			$("#posting8").show();
 		}, function() {
-			$("#posting8").hide();
-			$(".css-1kxn32n").show();
+			$("#posting8").hover(function() {
+
+			}, function() {
+				$("#posting8").hide();
+				$(".css-1kxn32n").show();
+			})
 		});
 
-		$("#Jobgroup7").hover(function() {
+
+	$("#Jobgroup7").hover(function() {
 			$(".css-1kxn32n").hide();
 			$("#posting9").show();
 		}, function() {
-			$("#posting9").hide();
-			$(".css-1kxn32n").show();
+			$("#posting9").hover(function() {
+
+			}, function() {
+				$("#posting9").hide();
+				$(".css-1kxn32n").show();
+			})
 		});
 
-		$("#Jobgroup8").hover(function() {
+
+	$("#Jobgroup8").hover(function() {
 			$(".css-1kxn32n").hide();
 			$("#posting10").show();
 		}, function() {
-			$("#posting10").hide();
-			$(".css-1kxn32n").show();
+			$("#posting10").hover(function() {
+
+			}, function() {
+				$("#posting10").hide();
+				$(".css-1kxn32n").show();
+			})
 		});
 	});
 </script>

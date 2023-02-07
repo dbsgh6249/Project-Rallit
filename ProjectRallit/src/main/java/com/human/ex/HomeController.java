@@ -59,6 +59,17 @@ public class HomeController {
 		
 		return "jobPosting/jobPostingSelect";
 	}
-	
+	//test용
+	@RequestMapping(value = "/info", method = RequestMethod.GET)
+	public String myInfo(Model model) {
+		
+		return "jobSeeker/userMyInfo";
+	}
+	//test용
+	@RequestMapping(value = "/infoDel", method = RequestMethod.GET)
+	public String infoDelete(Model model) {
+		
+		return "jobSeeker/userDeleteAccount";
+	}
 	
 }

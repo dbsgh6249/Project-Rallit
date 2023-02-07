@@ -1,0 +1,239 @@
+@charset "UTF-8";
+body, html {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #21252a;
+    background-color: #fff;
+    -ms-overflow-style: none;
+}
+.css-ac13em {
+    margin-top: 0;
+    background-color: #fff;
+}
+* {
+    box-sizing: border-box;
+}
+user agent stylesheet
+main {
+    display: block;
+}
+.css-ftt0tl {
+    display: flex;
+    margin: 0px auto;
+    max-width: 76.533rem;
+    padding: 0px 32px;
+    cursor: default;
+}
+.css-uebuml {
+    display: none;
+}
+.css-1qtribh {
+    position: inherit;
+    top: 0px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+}
+.css-139kjpe {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 8px 20px;
+    width: 100%;
+    border-bottom: 1px solid rgb(242, 244, 246);
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    color: rgb(33, 37, 42);
+    cursor: pointer;
+}
+.css-1vgm1p2 {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid rgb(234, 236, 238);
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 37, 42);
+    padding: 0px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 11px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: -0.3px;
+    font-weight: bold;
+    height: 2.133rem;
+    width: 2.133rem;
+}
+.css-1vgm1p2 .rallit-icon {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0px;
+}
+<style>
+.css-12r39mb {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.css-1vgm1p2 .rallit-icon > svg > path {
+    fill: rgb(33, 37, 42);
+}
+.css-ac13em {
+    margin-top: 0;
+    background-color: #fff;
+}
+.css-ftt0tl {
+    display: flex;
+    margin: 0px auto;
+    max-width: 76.533rem;
+    padding: 0px 32px;
+    cursor: default;
+}
+.css-uebuml {
+    display: none;
+}
+.css-1qtribh {
+    position: inherit;
+    top: 0px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+}
+.css-139kjpe {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 8px 20px;
+    width: 100%;
+    border-bottom: 1px solid rgb(242, 244, 246);
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    color: rgb(33, 37, 42);
+    cursor: pointer;
+}
+.css-1vgm1p2 {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid rgb(234, 236, 238);
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 37, 42);
+    padding: 0px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 11px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: -0.3px;
+    font-weight: bold;
+    height: 2.133rem;
+    width: 2.133rem;
+}
+.css-1vgm1p2 .rallit-icon {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0px;
+}
+<style>
+.css-12r39mb {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+.css-1xgvj9r {
+    display: flex;
+    position: relative;
+    height: calc(100vh - 98px);
+}
+.css-1b7sljm {
+    all: unset;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 10.2rem;
+    padding: 24px 0px 12px;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.css-e0v95d {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 2.667rem;
+}
+.css-jvnoiv {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 12px;
+    width: 100%;
+    height: 100%;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: 500;
+    color: rgb(83, 89, 97);
+    cursor: pointer;
+    border-radius: 6px;
+}
+a {
+    text-decoration: none;
+}
+.css-4cw3x0 {
+    background-color: rgb(242, 244, 246);
+    width: 1px;
+    height: auto;
+    margin: 0px 0px 0px 10px;
+}
+

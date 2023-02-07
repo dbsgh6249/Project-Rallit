@@ -4,6 +4,8 @@
 	uri="http://www.springframework.org/security/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+ <link href="${pageContext.request.contextPath}/resources/css/jobPostingDetail.css"
+      rel="stylesheet" type="text/css">
 <%@include file = "../include/header.jsp" %>; <!-- header섹션 -->
 
   <main class="css-ac13em">

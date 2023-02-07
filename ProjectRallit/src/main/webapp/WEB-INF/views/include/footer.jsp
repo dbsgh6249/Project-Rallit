@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
     <link href="${pageContext.request.contextPath}/resources/css/main.css"
 	rel="stylesheet" type="text/css">
+		
 		<footer class="css-nzv1o8">
 			<div class="css-yyqtxc"></div>
 			<div class="css-8t0ewa">

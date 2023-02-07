@@ -55,5 +55,3 @@
                 <a href=""><img src="../resources/imgs/applelogo.png" alt=""></a>
             </div>
     </div>
-</body>
-</html>

@@ -86,6 +86,8 @@ outline: none;
 <h2>채용공고 등록하기</h2>
 <span class='postingBar'>
 <form id='jobPostingInsert' name='postingForm' action='/ex/jobPosting/insert' method='post'>
+<input type='hidden' name='posting_num' value='${dto.posting_num }'>
+<input type='hidden' name='datecreated'value='${dto.datecreated }'>
 <p>제목</p><input type="text" name="title"><br>
 <p>회사 id</p> <br>
 <c:forEach items="${list }" var="authoritiesDto">

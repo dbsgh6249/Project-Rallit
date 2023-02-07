@@ -53,12 +53,14 @@ public class JobPostingController {
 		return "/jobPosting/jobPostingInsert";
 	}
 	@RequestMapping(value = "/jobPosting/insert", method = RequestMethod.POST)
-	public String jobPostingInsert(JobPostingDto dto, JobPostingInfoVo vo, RedirectAttributes ra) throws Exception {
-		jobPostingInfo_Service.insertJobPostingInfo(dto, vo);
-		// 파일 업로드 처리 예정. vo서비스에서 한번에 처리할 지 고민중
-		H_UsersDto hUsersDto = hUsers_Service.selectOne(dto.getUser_id());
+	public String jobPostingInsert(JobPostingDto dto,RedirectAttributes ra) throws Exception {
+		System.out.println(dto);
+		jobPosting_Service.insert(dto);
+		String user_id = dto.getUser_id();
+		H_UsersDto hUsersDto = hUsers_Service.selectOne(user_id);
 		ra.addAttribute("company", hUsersDto);
-		ra.addAttribute("jobPosting", vo);
+		System.out.println(hUsersDto);
+		ra.addAttribute("jobPosting", dto);
 		return "redirect:/jobPosting/jobPostingDetail";
 	}
 	@RequestMapping(value = "/jobPosting/update", method = RequestMethod.GET)

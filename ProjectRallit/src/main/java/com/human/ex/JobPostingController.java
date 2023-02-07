@@ -57,15 +57,11 @@ public class JobPostingController {
 		System.out.println(dto);
 		jobPosting_Service.insert(dto);
 		String user_id = dto.getUser_id();
-		System.out.println(user_id);
 		H_UsersDto hUsersDto = hUsers_Service.selectOne(user_id);
-		System.out.println(user_id);
-		System.out.println(hUsersDto);
 		ra.addAttribute("company", hUsersDto);
 		System.out.println(hUsersDto);
 		ra.addAttribute("jobPosting", dto);
-		System.out.println(hUsersDto);
-		return "redirect:/main/main";
+		return "redirect:/jobPosting/jobPostingDetail";
 	}
 	@RequestMapping(value = "/jobPosting/update", method = RequestMethod.GET)
 	public String jobPostingUpdate() {

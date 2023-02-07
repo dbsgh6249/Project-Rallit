@@ -74,7 +74,7 @@
             </div>
         </form>
             <div class="login">
-                <span>이미 계정이 있으신가요?</span><a href="login_Kservice.html">로그인</a>
+                <span>이미 계정이 있으신가요?</span><a href="login">로그인</a>
             </div>
         </main>
     </div>

@@ -67,7 +67,7 @@ public class JobPostingServiceImpl implements IJobPostingService{
 		IJobPostingDao dao = sqlSession.getMapper(IJobPostingDao.class);
 		dao.updateJobGroupVcnt(occ_sub);
 	}
-
+//
 	@Override
 	public List<String> selectJobGroup() throws Exception {
 		IJobPostingDao dao = sqlSession.getMapper(IJobPostingDao.class);

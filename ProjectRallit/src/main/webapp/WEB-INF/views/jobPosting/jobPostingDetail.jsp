@@ -7,7 +7,7 @@
 <head>
      <link href="${pageContext.request.contextPath}/resources/css/jobPostingDetail.css"
       rel="stylesheet" type="text/css">
-<%@include file = "../include/header.jsp" %> 
+<%@include file = "../include/header.jsp"%> 
         <main class="css-ac13em">
             <section class="css-1f20ni2">
                 <header class="css-j9rl1c"><button type="button" class="css-dg9k1l"><svg width="20" height="20"

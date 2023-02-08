@@ -20,69 +20,120 @@
 			$("#job2").stop().slideUp();
 		}
 	}
- 	$(document).ready(function(){
- 		$("#jobGroup1").hover(function(){
- 			$("#jobGroup1-1").show();
- 		},function(){
- 			$("#jobGroup1-1").hide();
- 		});
- 		
- 		
- 		$("#jobGroup2").mouseover(function(){
- 	 		$("#jobGroup2-1").show();
- 	 	}) 
- 	 	$("#jobGroup2-1").mouseleave(function(){
- 	 		$("#jobGroup2-1").hide();
- 	 	})
- 	 	
- 	 	
- 		$("#jobGroup3").hover(function(){
- 	 		$("#jobGroup3-1").show();
- 	 	}, function(){
- 	 		$("#jobGroup3-1").hide();
- 	 	});
- 		
- 		$("#jobGroup4").hover(function(){
- 	 		$("#jobGroup4-1").show();
- 	 	}, function(){
- 	 		$("#jobGroup4-1").hide();
- 	 	});
- 		
- 		$("#jobGroup5").hover(function(){
- 	 		$("#jobGroup5-1").show();
- 	 	}, function(){
- 	 		$("#jobGroup5-1").hide();
- 	 	});
- 		
- 		$("#jobGroup6").hover(function(){
- 	 		$("#jobGroup6-1").show();
- 	 	}, function(){
- 	 		$("#jobGroup6-1").hide();
- 	 	});
- 		
- 		$("#jobGroup7").hover(function(){
- 	 		$("#jobGroup7-1").show();
- 	 	}, function(){
- 	 		$("#jobGroup7-1").hide();
- 	 	});
- 		
- 		$("#jobGroup8").hover(function(){
- 	 		$("#jobGroup8-1").show();
- 	 	}, function(){
- 	 		$("#jobGroup8-1").hide();
- 	 	});
- 		
- 		$("#jobGroup9").hover(function(){
- 	 		$("#jobGroup9-1").show();
- 	 	}, function(){
- 	 		$("#jobGroup9-1").hide();
- 	 	});
- 		
- 	});
  	
-	
- 
 
+
+	$(document).ready(function() {
+
+		$("#jobGroup1").mouseover(function() {
+			$("#jobGroup1-1").show();
+		})
+
+		$("#jobGroup2").mouseover(function() {
+			$("#jobGroup1-1").hide();
+			$("#jobGroup3-1").hide();
+			$("#jobGroup4-1").hide();
+			$("#jobGroup5-1").hide();
+			$("#jobGroup6-1").hide();
+			$("#jobGroup7-1").hide();
+			$("#jobGroup8-1").hide();
+			$("#jobGroup9-1").hide();
+			$("#jobGroup2-1").show();
+
+		})
+		
+
+		$("#jobGroup3").mouseover(function() {
+			$("#jobGroup1-1").hide();
+			$("#jobGroup2-1").hide();
+			$("#jobGroup4-1").hide();
+			$("#jobGroup5-1").hide();
+			$("#jobGroup6-1").hide();
+			$("#jobGroup7-1").hide();
+			$("#jobGroup8-1").hide();
+			$("#jobGroup9-1").hide();
+			$("#jobGroup3-1").show();
+		})
+		
+
+		$("#jobGroup4").mouseover(function() {
+			$("#jobGroup1-1").hide();
+			$("#jobGroup2-1").hide();
+			$("#jobGroup3-1").hide();
+			$("#jobGroup5-1").hide();
+			$("#jobGroup6-1").hide();
+			$("#jobGroup7-1").hide();
+			$("#jobGroup8-1").hide();
+			$("#jobGroup9-1").hide();
+			$("#jobGroup4-1").show();
+		})
+		
+
+		$("#jobGroup5").mouseover(function() {
+			$("#jobGroup1-1").hide();
+			$("#jobGroup2-1").hide();
+			$("#jobGroup3-1").hide();
+			$("#jobGroup4-1").hide();
+			$("#jobGroup6-1").hide();
+			$("#jobGroup7-1").hide();
+			$("#jobGroup8-1").hide();
+			$("#jobGroup9-1").hide();
+			$("#jobGroup5-1").show();
+		})
+
+		
+		$("#jobGroup6").mouseover(function() {
+			$("#jobGroup1-1").hide();
+			$("#jobGroup2-1").hide();
+			$("#jobGroup4-1").hide();
+			$("#jobGroup5-1").hide();
+			$("#jobGroup3-1").hide();
+			$("#jobGroup7-1").hide();
+			$("#jobGroup8-1").hide();
+			$("#jobGroup9-1").hide();
+			$("#jobGroup6-1").show();
+		})
+
+		
+		$("#jobGroup7").mouseover(function() {
+			$("#jobGroup1-1").hide();
+			$("#jobGroup2-1").hide();
+			$("#jobGroup4-1").hide();
+			$("#jobGroup5-1").hide();
+			$("#jobGroup6-1").hide();
+			$("#jobGroup3-1").hide();
+			$("#jobGroup8-1").hide();
+			$("#jobGroup9-1").hide();
+			$("#jobGroup7-1").show();
+		})
+
+		
+		$("#jobGroup8").mouseover(function() {
+			$("#jobGroup1-1").hide();
+			$("#jobGroup2-1").hide();
+			$("#jobGroup4-1").hide();
+			$("#jobGroup5-1").hide();
+			$("#jobGroup6-1").hide();
+			$("#jobGroup7-1").hide();
+			$("#jobGroup3-1").hide();
+			$("#jobGroup9-1").hide();
+			$("#jobGroup8-1").show();
+		})
+
+		
+		$("#jobGroup9").mouseover(function() {
+			$("#jobGroup1-1").hide();
+			$("#jobGroup2-1").hide();
+			$("#jobGroup4-1").hide();
+			$("#jobGroup5-1").hide();
+			$("#jobGroup6-1").hide();
+			$("#jobGroup7-1").hide();
+			$("#jobGroup8-1").hide();
+			$("#jobGroup3-1").hide();
+			$("#jobGroup9-1").show();
+		})
+		
+	});
 </script>
         <main class="css-ac13em">
             <div class="css-er4t7v">

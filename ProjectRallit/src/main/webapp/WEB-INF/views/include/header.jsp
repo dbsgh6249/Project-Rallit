@@ -161,7 +161,9 @@
 <!-- ------------------------------------------------------------- -->
 </head>
 <body>
+
 	<div id="__next" data-reactroot="">
+	${user_autho }
 		<section class="inflab-integrated css-1cp3pcs">
 			<div class="inflab-integrated__header">
 				<div class="inflab-integrated__container">
@@ -579,10 +581,11 @@
 						<div class="dropdown">
 							<button onclick="myFunction()" class="dropbtn">MY 랠릿</button>
 							<div id="myDropdown" class="dropdown-content">
-							
-							<%if(session.getAttribute("user_autho")=="ROLE_ADMIN"){%>
-									<a href="/ex/info">ADMIN</a>
-		<%}%>
+						
+						${user_autho }
+						<c:if test="${user_autho eq'ROLE_ADMIN'}">
+						<a href="/ex/admin/user">ADMIN</a><br>
+						</c:if>
 								<a href="/ex/info">내 정보</a>
 								<form class="1"
 									action="${pageContext.request.contextPath}/main/logout"

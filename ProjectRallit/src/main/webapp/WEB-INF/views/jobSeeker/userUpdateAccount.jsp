@@ -7,7 +7,8 @@
 <%@include file="../include/header.jsp"%>
 <%@include file="../include/findAdress.jsp"%>
 <link href="${pageContext.request.contextPath}/resources/css/myInfo.css"
-	rel="stylesheet" type="text/css"><!--  -->
+	rel="stylesheet" type="text/css">
+<!--  -->
 
 
 
@@ -96,41 +97,43 @@
 					<h2 class="my-dashboard__title css-fstzjo">나의 정보를 변경합니다.</h2>
 				</header>
 
-				    <form action="" method="get">
-        <div class="css-1miajvq">
-            <div class="css-1mezue1">
-                <p class="css-1aweud3">변경을 원하는 정보를 입력 후 수정하기 버튼을 누르십시오.</p><br>
-                <div class="w3-section">
-                    <label class="input_label">E-mail</label><br> <input
-                        class="updateInput" type="text"
-                        placeholder="example@inflab.com" name="user_id"><br> <br>
-                    <label class="input_label">PassWord</label><br> <input
-                        class="updateInput" type="text" placeholder="******" name="user_pw"><br>
-                    <br> <label class="input_label">이름</label><br> <input
-                        class="updateInput" type="text" placeholder="독고OO" name="user_name"><br>
-                    <br> <label class="input_label">Phone number</label><br>
-                    <input class="updateInput" type="text"
-                        placeholder="010-0000-0000" name="user_phone"><br> <br>
-                    <label class="input_label">회사명</label><br> <input
-                        class="updateInput" type="text" placeholder="애플 코리아 충남 두정점" name=""><br>
-                    <br> <label class="input_label">주소</label><br> 
-                    <input class="inputsubmit" type="button" onclick="daumPost()"
-                            value="우편주소찾기"><br> <br> <input type="text"
-                            id="full_address" name="full_address" placeholder="주소"
-                            readonly> <br>
-                        <p></p>
-                        <input type="text" id="input_label" name="user_address"
-                            placeholder="상세주소"><br> 
+				<form action="" method="get">
+					<div class="css-1miajvq">
+						<div class="css-1mezue1">
+							<p class="css-1aweud3">변경을 원하는 정보를 입력 후 수정하기 버튼을 누르십시오.</p>
+							<br>
+							<div class="w3-section">
+								<label class="input_label">이메일</label><br> <input
+									class="updateInput" type="text"
+									placeholder="example@inflab.com" name="user_id"><br>
+								<br> <label class="input_label">비밀번호</label><br> <input
+									class="updateInput" type="text" placeholder="******"
+									name="user_pw"><br> <br> <label
+									class="input_label">이름</label><br> <input
+									class="updateInput" type="text" placeholder="독고OO"
+									name="user_name"><br> <br> <label
+									class="input_label">전화번호</label><br> <input
+									class="updateInput" type="text" placeholder="010-0000-0000"
+									name="user_phone"><br> <br> <label
+									class="input_label">회사명</label><br> <input
+									class="updateInput" type="text" placeholder="애플 코리아 충남 두정점"
+									name=""><br> <br> <label class="input_label">주소</label><br>
+								<input class="inputsubmit" type="button" onclick="daumPost()"
+									value="우편주소찾기"><br>
+									<input type="text"
+									id="full_address" name="full_address" placeholder="주소" readonly>
+								<br>
+								<p></p>
+								<input type="text" id="input_label" name="user_address"
+									placeholder="상세주소"><br>
 
-                    <p class="css-17rq0qv">우편주소찾기 후 상세 주소를 입력해 주세요.</p>
-                    <button class="css-1146gk" type="submit">수정하기</button>
-
-                    </form>
+								<br>
+								<button class="css-1146gk" type="submit">수정하기</button>
+								
 							</div>
 						</div>
 					</div>
 				</form>
-
 			</div>
 	</section>
 </div>

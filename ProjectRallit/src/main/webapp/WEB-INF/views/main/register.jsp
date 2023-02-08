@@ -80,7 +80,7 @@
 					
 				<p>주소</p>
 				<br> 
-				<input type="button" onclick="daumPost()" value="우편주소찾기"><br><br>
+				<input type="button" onclick="daumPost()" value="우편주소찾기"><br>
 				<input type="text" id="full_address" name="full_address" 
 				placeholder="주소" readonly>
 				<br>

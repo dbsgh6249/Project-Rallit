@@ -448,44 +448,190 @@
                                     <div class="css-1wa0ju9">
                                         <div class="css-1hme9m9">
                                             <div class="css-1nas4it">
-                                                <ul class="css-17hlfph">
-                                                    <input name="jobLevel" value="[]" class="css-1hyfx7x">
-                                                    <li>
-                                                        <input type="checkbox" class=" css-1okpmge" name="all"
-                                                            checked="">
-                                                        <span class="css-1fcgcqn"><svg width="16" height="16"
-                                                                fill="none" viewbox="0 0 14 14"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
-                                                                    fill="#fff"></path>
-                                                            </svg></span>
-                                                        </span>
-                                                        <p aria-label="all 선택됨" class="css-j1cgtv">전체</p>
-                                                        </label>
-                                                        <div class="css-yyqtxc"></div>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                            <label class="css-1bdb30f">경력</label>
+									<ul class="css-17hlfph">
+										<input name="jobLevel" class="css-1hyfx7x" value="[]">
+										<li><label class=" css-1xyrx5t"><span
+												class="css-8lru5t"><input class=" css-1okpmge"
+													name="all" type="checkbox" checked=""><span
+													class="css-1fcgcqn"><svg width="16" height="16"
+															fill="none" viewBox="0 0 14 14"
+															xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd"
+																d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
+																fill="#fff"></path></svg></span></span>
+											<p aria-label="all 선택됨" class="css-j1cgtv">전체</p></label>
+										<div class="css-yyqtxc"></div></li>
+										<li><label class=" css-1xyrx5t"><span
+												class="css-8lru5t"><input class=" css-1okpmge"
+													name="IRRELEVANT" type="checkbox"><span
+													class="css-824ew2"><svg width="16" height="16"
+															fill="none" viewBox="0 0 14 14"
+															xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd"
+																d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
+																fill="#fff"></path></svg></span></span>
+											<p aria-label="IRRELEVANT" class="css-1w9tlv3">경력무관</p></label>
+										<div class="css-yyqtxc"></div></li>
+										<li><label class=" css-1xyrx5t"><span
+												class="css-8lru5t"><input class=" css-1okpmge"
+													name="INTERN" type="checkbox"><span
+													class="css-824ew2"><svg width="16" height="16"
+															fill="none" viewBox="0 0 14 14"
+															xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd"
+																d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
+																fill="#fff"></path></svg></span></span>
+											<p aria-label="INTERN" class="css-1w9tlv3">인턴</p></label>
+										<div class="css-yyqtxc"></div></li>
+										<li><label class=" css-1xyrx5t"><span
+												class="css-8lru5t"><input class=" css-1okpmge"
+													name="BEGINNER" type="checkbox"><span
+													class="css-824ew2"><svg width="16" height="16"
+															fill="none" viewBox="0 0 14 14"
+															xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd"
+																d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
+																fill="#fff"></path></svg></span></span>
+											<p aria-label="BEGINNER" class="css-1w9tlv3">신입 (1년이하)</p></label>
+										<div class="css-yyqtxc"></div></li>
+										<li><label class=" css-1xyrx5t"><span
+												class="css-8lru5t"><input class=" css-1okpmge"
+													name="JUNIOR" type="checkbox"><span
+													class="css-824ew2"><svg width="16" height="16"
+															fill="none" viewBox="0 0 14 14"
+															xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd"
+																d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
+																fill="#fff"></path></svg></span></span>
+											<p aria-label="JUNIOR" class="css-1w9tlv3">주니어 (1~3년)</p></label>
+										<div class="css-yyqtxc"></div></li>
+										<li><label class=" css-1xyrx5t"><span
+												class="css-8lru5t"><input class=" css-1okpmge"
+													name="MIDDLE" type="checkbox"><span
+													class="css-824ew2"><svg width="16" height="16"
+															fill="none" viewBox="0 0 14 14"
+															xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd"
+																d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
+																fill="#fff"></path></svg></span></span>
+											<p aria-label="MIDDLE" class="css-1w9tlv3">미들 (4~8년)</p></label>
+										<div class="css-yyqtxc"></div></li>
+										<li><label class=" css-1xyrx5t"><span
+												class="css-8lru5t"><input class=" css-1okpmge"
+													name="SENIOR" type="checkbox"><span
+													class="css-824ew2"><svg width="16" height="16"
+															fill="none" viewBox="0 0 14 14"
+															xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd"
+																d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
+																fill="#fff"></path></svg></span></span>
+											<p aria-label="SENIOR" class="css-1w9tlv3">시니어 (9년 이상)</p></label>
+										<div class="css-yyqtxc"></div></li>
+										<li><label class=" css-1xyrx5t"><span
+												class="css-8lru5t"><input class=" css-1okpmge"
+													name="TOP" type="checkbox"><span class="css-824ew2"><svg
+															width="16" height="16" fill="none" viewBox="0 0 14 14"
+															xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd"
+																d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
+																fill="#fff"></path></svg></span></span>
+											<p aria-label="TOP" class="css-1w9tlv3">Lead 레벨</p></label></li>
+									</ul>
+								</div>
                                             <div class="divider css-o0h0s9"></div>
                                             <div class="css-1nas4it"><label class="css-1bdb30f">지역</label>
-                                                <ul class="css-17hlfph"><input name="jobLevel" value="[]"
-                                                        class="css-1hyfx7x">
-                                                    <li><label class=" css-1xyrx5t"><span class="css-8lru5t"><input
-                                                                    type="checkbox" class=" css-1okpmge" name="all"
-                                                                    checked=""><span class="css-1fcgcqn"><svg width="16"
-                                                                        height="16" fill="none" viewbox="0 0 14 14"
-                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                            d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
-                                                                            fill="#fff"></path>
-                                                                    </svg></span></span>
-                                                            <p aria-label="all 선택됨" class="css-j1cgtv">전체</p>
-                                                        </label>
-                                                        <div class="css-yyqtxc"></div>
-                                                    </li>
-                                                </ul>
-                                            </div>
+									<ul class="css-17hlfph">
+										<input name="jobLevel" class="css-1hyfx7x" value="[]">
+										<li><label class=" css-1xyrx5t"><span
+												class="css-8lru5t"><input class=" css-1okpmge"
+													name="all" type="checkbox" checked=""><span
+													class="css-1fcgcqn"><svg width="16" height="16"
+															fill="none" viewBox="0 0 14 14"
+															xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd"
+																d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
+																fill="#fff"></path></svg></span></span>
+											<p aria-label="all 선택됨" class="css-j1cgtv">전체</p></label>
+										<div class="css-yyqtxc"></div></li>
+										<li><label class=" css-1xyrx5t"><span
+												class="css-8lru5t"><input class=" css-1okpmge"
+													name="SEOUL" type="checkbox"><span
+													class="css-824ew2"><svg width="16" height="16"
+															fill="none" viewBox="0 0 14 14"
+															xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd"
+																d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
+																fill="#fff"></path></svg></span></span>
+											<p aria-label="SEOUL" class="css-1w9tlv3">서울</p></label>
+										<div class="css-yyqtxc"></div></li>
+										<li><label class=" css-1xyrx5t"><span
+												class="css-8lru5t"><input class=" css-1okpmge"
+													name="GANGNAM" type="checkbox"><span
+													class="css-824ew2"><svg width="16" height="16"
+															fill="none" viewBox="0 0 14 14"
+															xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd"
+																d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
+																fill="#fff"></path></svg></span></span>
+											<p aria-label="GANGNAM" class="css-1w9tlv3">강남</p></label>
+										<div class="css-yyqtxc"></div></li>
+										<li><label class=" css-1xyrx5t"><span
+												class="css-8lru5t"><input class=" css-1okpmge"
+													name="MAPO" type="checkbox"><span
+													class="css-824ew2"><svg width="16" height="16"
+															fill="none" viewBox="0 0 14 14"
+															xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd"
+																d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
+																fill="#fff"></path></svg></span></span>
+											<p aria-label="MAPO" class="css-1w9tlv3">마포</p></label>
+										<div class="css-yyqtxc"></div></li>
+										<li><label class=" css-1xyrx5t"><span
+												class="css-8lru5t"><input class=" css-1okpmge"
+													name="SEOCHO" type="checkbox"><span
+													class="css-824ew2"><svg width="16" height="16"
+															fill="none" viewBox="0 0 14 14"
+															xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd"
+																d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
+																fill="#fff"></path></svg></span></span>
+											<p aria-label="SEOCHO" class="css-1w9tlv3">서초</p></label>
+										<div class="css-yyqtxc"></div></li>
+										<li><label class=" css-1xyrx5t"><span
+												class="css-8lru5t"><input class=" css-1okpmge"
+													name="GURO_GASAN" type="checkbox"><span
+													class="css-824ew2"><svg width="16" height="16"
+															fill="none" viewBox="0 0 14 14"
+															xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd"
+																d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
+																fill="#fff"></path></svg></span></span>
+											<p aria-label="GURO_GASAN" class="css-1w9tlv3">구로/가산</p></label>
+										<div class="css-yyqtxc"></div></li>
+										<li><label class=" css-1xyrx5t"><span
+												class="css-8lru5t"><input class=" css-1okpmge"
+													name="GYEONGGI" type="checkbox"><span
+													class="css-824ew2"><svg width="16" height="16"
+															fill="none" viewBox="0 0 14 14"
+															xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd"
+																d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
+																fill="#fff"></path></svg></span></span>
+											<p aria-label="GYEONGGI" class="css-1w9tlv3">경기</p></label>
+										<div class="css-yyqtxc"></div></li>
+										<li><label class=" css-1xyrx5t"><span
+												class="css-8lru5t"><input class=" css-1okpmge"
+													name="PANGYO" type="checkbox"><span
+													class="css-824ew2"><svg width="16" height="16"
+															fill="none" viewBox="0 0 14 14"
+															xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd"
+																d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
+																fill="#fff"></path></svg></span></span>
+											<p aria-label="PANGYO" class="css-1w9tlv3">판교/분당</p></label></li>
+									</ul>
+								</div>
                                         </div>
                                         <div class="css-7xkmdu">
                                             <div class="css-yyqtxc"></div>

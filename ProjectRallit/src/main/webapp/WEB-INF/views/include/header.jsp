@@ -574,11 +574,15 @@
 					<!-- -------------------------MY 랠릿 드롭다운 메뉴 버튼 ------------------------ -->
 
 
-
+		
 					<sec:authorize access="isAuthenticated()">
 						<div class="dropdown">
 							<button onclick="myFunction()" class="dropbtn">MY 랠릿</button>
 							<div id="myDropdown" class="dropdown-content">
+							
+							<%if(session.getAttribute("user_autho")=="ROLE_ADMIN"){%>
+									<a href="/ex/info">ADMIN</a>
+		<%}%>
 								<a href="/ex/info">내 정보</a>
 								<form class="1"
 									action="${pageContext.request.contextPath}/main/logout"
@@ -598,28 +602,7 @@
 						</div>
 					</sec:authorize>
 					
-					<sec:authorize access="isAuthenticated()">
-					<div class="dropdown">
-							<button onclick="myFunction()" class="dropbtn">MY 랠릿</button>
-							<div id="myDropdown" class="dropdown-content">
-								<a href="/ex/info">내 정보</a>
-								<form class="1"
-									action="${pageContext.request.contextPath}/main/logout"
-									method="POST">
-									<input style="height:44px;" class="1" type="submit" value="로그아웃웃" id="logout">
-									<script>
-										document.getElementById("logout")
-												.addEventListener('click',
-														logout);
-										function logout() {
-											alert("로그아웃 되었습니다.")
-
-										}
-									</script>
-								</form>
-							</div>
-						</div>
-					</sec:authorize>
+					
 
 					<!--------------------------------------------------------------------------- -->
 

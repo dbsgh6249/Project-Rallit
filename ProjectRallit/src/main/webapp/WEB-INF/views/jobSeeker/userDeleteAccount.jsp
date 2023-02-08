@@ -4,10 +4,10 @@
 	uri="http://www.springframework.org/security/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+
+<%@include file = "../include/header.jsp" %> <!-- header섹션 -->
  <link href="${pageContext.request.contextPath}/resources/css/jobPostingDetail.css"
       rel="stylesheet" type="text/css">
-<%@include file = "../include/header.jsp" %> <!-- header섹션 -->
-
   <main class="css-ac13em">
             <div class="css-cho4vs">
                 <nav aria-label="top-bar" class="css-ipnh08">
@@ -29,7 +29,7 @@
                                 법령에 의거하여 탈퇴 후 최장 5년간 저장됩니다.</p>
                             <p class="css-101o7j4">위의 내용에 동의하여 탈퇴를 원하실 경우, 아래의 “탈퇴하기” 버튼을 클릭해 주세요.</p>
                         </div>
-                        <div class="css-1v7dd7t"><button class="css-1cbgkmn" type="button">탈퇴하기</button></div>
+                        <div class="css-1v7dd7t"><button onclick="alert('탈퇴?? 아 에바임 ㅋㅋ 진짜 다시 생각하셈')" class="css-1cbgkmn" type="button">탈퇴하기</button></div>
                     </div>
                 </div>
             </div>

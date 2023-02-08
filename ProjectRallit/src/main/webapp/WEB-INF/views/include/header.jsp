@@ -593,7 +593,7 @@
 								<form class="1"
 									action="${pageContext.request.contextPath}/main/logout"
 									method="POST">
-									<input class="1" type="submit" value="로그아웃" id="logout">
+									<input style="height:44px;" class="1" type="submit" value="로그아웃" id="logout">
 									<script>
 										document.getElementById("logout")
 												.addEventListener('click',

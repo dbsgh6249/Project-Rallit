@@ -26,10 +26,10 @@
 </script> -->
 <script>
 	function myFunction(){
-		if($("#job2").css("display")=="none"){
-			$("#job2").show();
+		if($("#job1").css("display")=="none"){
+			$("#job1").stop().slideDown();
 		}else {
-			$("#job2").hide();
+			$("#job1").stop().slideUp();
 		}
 	}
 
@@ -54,7 +54,7 @@
                         <div class="css-16gay4m">
                             <div class="css-61lo31">
                                 <section onclick="myFunction()" class="css-79elbk" id="job1">
-                                    <div class="css-15www6d" id="job2">
+                                    <div class="css-15www6d">
                                         <div class="rallit-icon  css-ncl23e"><svg width="16" height="15"
                                                 viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path

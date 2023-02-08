@@ -3,35 +3,33 @@
 <link href="${pageContext.request.contextPath}/resources/css/jobPostingSelect.css"
       rel="stylesheet" type="text/css">
 <%@include file = "../include/header.jsp" %> 
-<!-- <script>
-	/* When the user clicks on the button, 
-	toggle between hiding and showing the dropdown content */
-	function myFunction() {
-		document.getElementById("myDropdown").classList.toggle("show");
+<style>
+#jobGroup2-1,#jobGroup3-1,#jobGroup4-1,#jobGroup5-1,#jobGroup6-1,#jobGroup7-1,#jobGroup8-1,#jobGroup9-1{
+	display : none;
 	}
-
-	// Close the dropdown if the user clicks outside of it
-	window.onclick = function(event) {
-		if (!event.target.matches('.dropbtn')) {
-			var dropdowns = document.getElementsByClassName("dropdown-content");
-			var i;
-			for (i = 0; i < dropdowns.length; i++) {
-				var openDropdown = dropdowns[i];
-				if (openDropdown.classList.contains('show')) {
-					openDropdown.classList.remove('show');
-				}
-			}
-		}
-	}
-</script> -->
+</style>
 <script>
- 	function myFunction(){
+ 	function myFunction1(){
 		if($("#job2").css("display")=="none"){
 			$("#job2").stop().slideDown();
 		}else {
 			$("#job2").stop().slideUp();
 		}
 	}
+ 	$(document).ready(function(){
+ 		$("#jobGroup1").hover(function(){
+ 			$("#jobGroup1-1").show();
+ 		},function(){
+ 			$("#jobGroup1-1").hide();
+ 		});
+ 	});
+ 	
+	
+ 	$("#jobGroup2").hover(function(){
+ 		$("#jobGroup2-1").show();
+ 	}, function(){
+ 		$("#jobGroup2-1").hide();
+ 	});
  
 
 </script>
@@ -53,8 +51,8 @@
                     <div class="css-w1yi09">
                         <div class="css-16gay4m">
                             <div class="css-61lo31">
-                                <section onclick="myFunction()" class="css-79elbk" id="job1">
-                                    <div class="css-15www6d">
+                                <section class="css-79elbk" id="job1">
+                                    <div class="css-15www6d" onclick="myFunction1()">
                                         <div class="rallit-icon  css-ncl23e"><svg width="16" height="15"
                                                 viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -76,37 +74,224 @@
                                     <div class="css-8l82ta" id="job2"> 
                                         <div class="css-14ypdl9">
                                             <div class="css-1so5lt">
-                                                <div class="css-1fdx6k3">
-                                                    <label class="css-1k185p7">직군</label>
-                                                    <ul class="css-1piurjj">
-                                                        <li class="css-494cde">
-                                                            <button type="button" name="직군 전체 선택됨"
-                                                                class="css-19tuitx">전체</button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
+									<div class="css-1fdx6k3">
+										<label class="css-1k185p7">직군</label>
+										<ul class="css-1piurjj">
+											<li class="css-494cde" id="jobGroup1"><button type="button"
+													name="직군 전체 선택됨" class="css-19tuitx">전체</button></li>
+											<li class="css-494cde" id="jobGroup2"><button type="button"
+													name="직군 개발" class="css-184xd0e">개발</button></li>
+											<li class="css-494cde" id="jobGroup3"><button type="button"
+													name="직군 게임개발" class="css-184xd0e">게임개발</button></li>
+											<li class="css-494cde" id="jobGroup4"><button type="button"
+													name="직군 디자인" class="css-184xd0e">디자인</button></li>
+											<li class="css-494cde" id="jobGroup5"><button type="button"
+													name="직군 기획" class="css-184xd0e">기획</button></li>
+											<li class="css-494cde" id="jobGroup6"><button type="button"
+													name="직군 마케팅" class="css-184xd0e">마케팅</button></li>
+											<li class="css-494cde" id="jobGroup7"><button type="button"
+													name="직군 경영/인사" class="css-184xd0e">경영/인사</button></li>
+											<li class="css-494cde" id="jobGroup8"><button type="button"
+													name="직군 영업" class="css-184xd0e">영업</button></li>
+											<li class="css-494cde" id="jobGroup9"><button type="button"
+													name="직군 엔지니어링" class="css-184xd0e">엔지니어링</button></li>
+										</ul>
+									</div>
 
 									<div class="css-ziljwy">
 										<label class="css-pwu5ys">직무</label>
-										<ul class="css-1piurjj">
+										<ul class="css-1piurjj" id="jobGroup1-1">
+											<li class="css-1xupo39"><button type="button"
+													name="직무 전체 선택됨" class="css-19bo4h0">전체</button></li>
+										</ul>	
+										<ul class="css-1piurjj" id="jobGroup2-1">
+											<li class="css-1xupo39"><button type="button"
+													name="직무 전체 선택됨" class="css-19bo4h0">전체</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 백엔드/서버 개발자" class="css-19bo4h0">백엔드/서버
+													개발자</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 프론트엔드/웹퍼블리셔" class="css-19bo4h0">프론트엔드/웹퍼블리셔</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 SW 엔지니어" class="css-19bo4h0">SW 엔지니어</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 안드로이드 개발자" class="css-19bo4h0">안드로이드 개발자</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 IOS 개발자" class="css-19bo4h0">IOS 개발자</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 크로스플랫폼 앱 개발자" class="css-19bo4h0">크로스플랫폼
+													앱 개발자</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 데이터 엔지니어" class="css-19bo4h0">데이터 엔지니어</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 데이터 사이언티스트" class="css-19bo4h0">데이터
+													사이언티스트</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 데이터 분석가" class="css-19bo4h0">데이터 분석가</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 머신러닝 엔지니어" class="css-19bo4h0">머신러닝 엔지니어</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 DBA" class="css-19bo4h0">DBA</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 DevOps" class="css-19bo4h0">DevOps</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 시스템/네트워크 관리자" class="css-19bo4h0">시스템/네트워크
+													관리자</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 QA/테스트엔지니어" class="css-19bo4h0">QA/테스트엔지니어</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 기술지원" class="css-19bo4h0">기술지원</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 보안 엔지니어" class="css-19bo4h0">보안 엔지니어</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 블록체인 엔지니어" class="css-19bo4h0">블록체인 엔지니어</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 HW/임베디드 엔지니어" class="css-19bo4h0">HW/임베디드
+													엔지니어</button></li>
 											<li class="css-494cde"><button type="button"
-													name="직군 전체" class="css-qru78a">전체</button></li>
+													name="직무 애자일/스크럼 마스터" class="css-19bo4h0">애자일/스크럼
+													마스터</button></li>
+										</ul>
+										<ul class="css-1piurjj" id="jobGroup3-1">
+											<li class="css-1xupo39"><button type="button"
+													name="직무 전체 선택됨" class="css-3uulrl">전체</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 게임 서버 개발자" class="css-19bo4h0">게임 서버 개발자</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 게임 클라이언트 개발자" class="css-19bo4h0">게임
+													클라이언트 개발자</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 게임 기획자" class="css-19bo4h0">게임 기획자</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 게임 그래픽 디자이너" class="css-19bo4h0">게임 그래픽
+													디자이너</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 게임 아티스트" class="css-19bo4h0">게임 아티스트</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 모바일 게임 개발자" class="css-19bo4h0">모바일 게임
+													개발자</button></li>
 											<li class="css-494cde"><button type="button"
-													name="직군 개발" class="css-184xd0e">개발</button></li>
+													name="직무 게임 운영자" class="css-19bo4h0">게임 운영자</button></li>
+										</ul>
+										<ul class="css-1piurjj" id="jobGroup4-1">
+											<li class="css-1xupo39"><button type="button"
+													name="직무 전체 선택됨" class="css-19bo4h0">전체</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 프로덕트 디자이너" class="css-19bo4h0">프로덕트 디자이너</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 웹/앱 디자이너" class="css-19bo4h0">웹/앱 디자이너</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 그래픽 디자이너" class="css-19bo4h0">그래픽 디자이너</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 BI/BX 디자이너" class="css-19bo4h0">BI/BX
+													디자이너</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 광고 디자이너" class="css-19bo4h0">광고 디자이너</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 영상/모션 디자이너" class="css-19bo4h0">영상/모션
+													디자이너</button></li>
 											<li class="css-494cde"><button type="button"
-													name="직군 게임개발" class="css-184xd0e">게임개발</button></li>
+													name="직무 운영 디자이너" class="css-19bo4h0">운영 디자이너</button></li>
+										</ul>
+										<ul class="css-1piurjj" id="jobGroup5-1">
+											<li class="css-1xupo39"><button type="button"
+													name="직무 전체 선택됨" class="css-19bo4h0">전체</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 서비스 기획자" class="css-19bo4h0">서비스 기획자</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 PO/PM" class="css-19bo4h0">PO/PM</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 비즈니스 분석가" class="css-19bo4h0">비즈니스 분석가</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 사업개발/기획자" class="css-19bo4h0">사업개발/기획자</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 전략 기획자" class="css-19bo4h0">전략 기획자</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 해외 사업개발/기획자" class="css-19bo4h0">해외
+													사업개발/기획자</button></li>
 											<li class="css-494cde"><button type="button"
-													name="직군 디자인 선택됨" class="css-lgaez0">디자인</button></li>
+													name="직무 상품 기획자/MD" class="css-19bo4h0">상품 기획자/MD</button></li>
+										</ul>
+										<ul class="css-1piurjj" id="jobGroup6-1">
+											<li class="css-1xupo39"><button type="button"
+													name="직무 전체 선택됨" class="css-19bo4h0">전체</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 퍼포먼스 마케터" class="css-19bo4h0">퍼포먼스 마케터</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 콘텐츠 마케터" class="css-19bo4h0">콘텐츠 마케터</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 디지털 마케터" class="css-19bo4h0">디지털 마케터</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 마케팅 기획자" class="css-19bo4h0">마케팅 기획자</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 브랜드 마케터" class="css-19bo4h0">브랜드 마케터</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 광고 기획자" class="css-19bo4h0">광고 기획자</button></li>
 											<li class="css-494cde"><button type="button"
-													name="직군 기획" class="css-184xd0e">기획</button></li>
+													name="직무 CRM 전문가" class="css-19bo4h0">CRM 전문가</button></li>
+										</ul>
+										<ul class="css-1piurjj" id="jobGroup7-1">
+											<li class="css-1xupo39"><button type="button"
+													name="직무 전체 선택됨" class="css-19bo4h0">전체</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 경영지원" class="css-19bo4h0">경영지원</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 회계/경리" class="css-19bo4h0">회계/경리</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 조직관리" class="css-19bo4h0">조직관리</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 정보보호 담당자" class="css-19bo4h0">정보보호 담당자</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 인사/평가" class="css-19bo4h0">인사/평가</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 교육" class="css-19bo4h0">교육</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 채용담당자" class="css-19bo4h0">채용담당자</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 서비스 운영" class="css-19bo4h0">서비스 운영</button></li>
 											<li class="css-494cde"><button type="button"
-													name="직군 마케팅" class="css-184xd0e">마케팅</button></li>
+													name="직무 CS 매니저" class="css-19bo4h0">CS 매니저</button></li>
+										</ul>
+										<ul class="css-1piurjj" id="jobGroup8-1">
+											<li class="css-1xupo39"><button type="button"
+													name="직무 전체 선택됨" class="css-19bo4h0">전체</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 기업영업" class="css-19bo4h0">기업영업</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 영업 관리자" class="css-19bo4h0">영업 관리자</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 기술영업" class="css-19bo4h0">기술영업</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 솔루션 컨설턴트" class="css-19bo4h0">솔루션 컨설턴트</button></li>
 											<li class="css-494cde"><button type="button"
-													name="직군 경영/인사" class="css-184xd0e">경영/인사</button></li>
+													name="직무 세일즈" class="css-19bo4h0">세일즈</button></li>
+										</ul>
+										<ul class="css-1piurjj" id="jobGroup9-1">
+											<li class="css-1xupo39"><button type="button"
+													name="직무 전체 선택됨" class="css-19bo4h0">전체</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 기계 엔지니어" class="css-19bo4h0">기계 엔지니어</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 전자 엔지니어" class="css-19bo4h0">전자 엔지니어</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 전기 엔지니어" class="css-19bo4h0">전기 엔지니어</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 로봇·자동화" class="css-19bo4h0">로봇·자동화</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 CAD·3D 설계자" class="css-19bo4h0">CAD·3D
+													설계자</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 제품 엔지니어" class="css-19bo4h0">제품 엔지니어</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 제어 엔지니어" class="css-19bo4h0">제어 엔지니어</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 장비 엔지니어" class="css-19bo4h0">장비 엔지니어</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 전기기계 공학자" class="css-19bo4h0">전기기계 공학자</button></li>
+											<li class="css-1xupo39"><button type="button"
+													name="직무 설비 엔지니어" class="css-19bo4h0">설비 엔지니어</button></li>
 											<li class="css-494cde"><button type="button"
-													name="직군 영업" class="css-184xd0e">영업</button></li>
-											<li class="css-494cde"><button type="button"
-													name="직군 엔지니어링" class="css-184xd0e">엔지니어링</button></li>
+													name="직무 공정 엔지니어" class="css-19bo4h0">공정 엔지니어</button></li>
 										</ul>
 									</div>
 								</div>

@@ -23,7 +23,7 @@ public class JobPostingDto {
 	private String text5;			// 혜택 및 복지
 	private String text6;			// 한마디
 	private Integer sal;
-	private int viewCnt;
+	private Integer viewCnt;
 	
 	
 	
@@ -188,12 +188,12 @@ public class JobPostingDto {
 	}
 
 
-	public int getViewCnt() {
+	public Integer getViewCnt() {
 		return viewCnt;
 	}
 
 
-	public void setViewCnt(int viewCnt) {
+	public void setViewCnt(Integer viewCnt) {
 		this.viewCnt = viewCnt;
 	}
 

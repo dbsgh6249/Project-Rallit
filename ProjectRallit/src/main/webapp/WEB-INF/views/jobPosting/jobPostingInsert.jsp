@@ -202,7 +202,7 @@ option {
 					<br>
 				</div>
 				<p>한마디</p>
-				<input type='text' name='text' placeholder='한마디를 입력하세요'><br>
+				<input type='text' name='text6' placeholder='한마디를 입력하세요'><br>
 				<br>
 				<p>연봉</p>
 				<input type="number" name="sal" placeholder="숫자로 입력하세요"><br>

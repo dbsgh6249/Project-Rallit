@@ -2666,6 +2666,7 @@ li {
 }
 .css-494cde button {
     border-bottom: unset;
+    
 }
 .css-184xd0e {
     display: flex;
@@ -2684,6 +2685,7 @@ li {
     padding: 12px 20px;
     background-color: rgb(248, 249, 250);
     color: rgb(53, 58, 64);
+    outline : 0;
 }
 .css-1xupo39 button {
     border-bottom: 1px solid rgb(242, 244, 246);

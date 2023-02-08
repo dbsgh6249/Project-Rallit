@@ -1397,12 +1397,15 @@ a {
     all: unset;
     border-bottom-left-radius: 6px;
 }
+
 .css-494cde {
     all: unset;
+    outline : 0;
 }
 
 .css-494cde button {
     border-bottom: unset;
+      outline : 0;
 }
 .css-19tuitx {
     display: -webkit-box;

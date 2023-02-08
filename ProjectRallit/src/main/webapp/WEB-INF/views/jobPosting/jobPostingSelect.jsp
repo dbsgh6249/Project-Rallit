@@ -7,6 +7,10 @@
 #jobGroup2-1,#jobGroup3-1,#jobGroup4-1,#jobGroup5-1,#jobGroup6-1,#jobGroup7-1,#jobGroup8-1,#jobGroup9-1{
 	display : none;
 	}
+	
+	
+
+	
 </style>
 <script>
  	function myFunction1(){

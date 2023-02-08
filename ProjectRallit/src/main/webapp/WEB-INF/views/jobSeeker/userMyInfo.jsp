@@ -20,62 +20,11 @@
                                             fill="#535961"></path>
                                     </svg></div>
                             </button></div>
-                        <div class="dropdownList__wrapper css-11yz4m4">
-                            <div class="dropdownList__container css-gqe409">
-                                <ul class="css-733rfy">
-                                    <li role="menuitem" class="css-umd2x0">
-                                        <div class="css-47e4vb">
-                                            <p class="dropdownList__title css-1182me">MY 홈</p>
-                                            <p class="dropdownList__caption css-vzncwq"></p>
-                                        </div>
-                                    </li>
-                                    <li role="menuitem" class="css-83cc5o">
-                                        <div class="css-47e4vb">
-                                            <p class="dropdownList__title css-1182me">작성 중인 지원서</p>
-                                            <p class="dropdownList__caption css-vzncwq"></p>
-                                        </div>
-                                    </li>
-                                    <li role="menuitem" class="css-83cc5o">
-                                        <div class="css-47e4vb">
-                                            <p class="dropdownList__title css-1182me">제출한 지원서</p>
-                                            <p class="dropdownList__caption css-vzncwq"></p>
-                                        </div>
-                                    </li>
-                                    <li role="menuitem" class="css-83cc5o">
-                                        <div class="css-47e4vb">
-                                            <p class="dropdownList__title css-1182me">북마크한 채용 공고</p>
-                                            <p class="dropdownList__caption css-vzncwq"></p>
-                                        </div>
-                                    </li>
-                                    <li role="menuitem" class="css-83cc5o">
-                                        <div class="css-47e4vb">
-                                            <p class="dropdownList__title css-1182me">설정</p>
-                                            <p class="dropdownList__caption css-vzncwq"></p>
-                                        </div>
-                                    </li>
-                                    <div class="css-yrphod"></div>
-                                    <li role="menuitem" class="css-jrt6fi">
-                                        <div class="css-47e4vb">
-                                            <p class="dropdownList__title css-1182me">로그아웃</p>
-                                            <p class="dropdownList__caption css-vzncwq"></p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                       
                     </div>
                     <div role="none" class="css-ntzr4d"></div>
                 </nav>
-                <aside class="css-1xgvj9r">
-                    <ul class="css-1b7sljm">
-                        <li class="css-e0v95d"><a href="/my" class="css-tukp59">MY 홈</a></li>
-                        <li class="css-e0v95d"><a href="/my/draft-applicants" class="css-jvnoiv">작성 중인 지원서</a></li>
-                        <li class="css-e0v95d"><a href="/my/submitted-applicants" class="css-jvnoiv">제출한 지원서</a></li>
-                        <li class="css-e0v95d"><a href="/my/bookmarks" class="css-jvnoiv">북마크한 채용 공고</a></li>
-                        <li class="css-e0v95d"><a href="/my/settings" class="css-jvnoiv">설정</a></li>
-                    </ul>
-                    <div class="LNB__border-bottom css-4cw3x0"></div>
-                </aside>
+               <%@include file = "../include/myHomeMenu.jsp" %>
                 <section class="css-8jj0t0">
                     <h1 class="css-vvbno4">MY 홈</h1>
                     <div class="css-uaw2kl">

@@ -2713,6 +2713,9 @@ li {
     all: unset;
     border-bottom-left-radius: 6px;
 }
+button:active {
+    outline: none;
+}
 .css-1so5lt {
     display: grid;
     grid-template-columns: 130px 1fr;

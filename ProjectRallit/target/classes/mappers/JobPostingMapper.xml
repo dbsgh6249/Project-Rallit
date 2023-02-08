@@ -24,9 +24,15 @@ title =#{title},deadline=#{deadline},occ_main=#{occ_main},occ_sub=#{occ_sub},min
 text1=#{text1},text2=#{text2},text3=#{text3},text4=#{text4},text5=#{text5},
 text6=#{text6},sal=#{sal}  where posting_num = #{posting_num} </update>
 
-<update id="viewUpdate">
+<update id="viewUpdate"> <!-- Select One 시 해당 채용공고 조회수+1 -->
 update jobPosting set viewCnt=viewCnt+1 where posting_num = #{posting_num}
 </update>
+<update id="updateJobGroupVcnt"> <!-- Select One 시 해당하는 직무 조회수+1 -->
+update jobGroup set viewCnt=viewCnt+1 where occ_sub=#{occ_sub}
+</update>
+<select id="selectJobGroup" resultType="String">
+<![CDATA[select occ_sub from (select occ_sub from jobGroup order by viewCnt desc) where rowNum <= 8]]>
+</select>
 
 <delete id="delete"> delete from jobPosting where posting_num = #{posting_num} </delete><!-- 삭제(admin) -->
 

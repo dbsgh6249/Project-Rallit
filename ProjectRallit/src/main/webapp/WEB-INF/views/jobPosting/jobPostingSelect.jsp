@@ -26,9 +26,18 @@
 	$(document).ready(function() {
 
 		$("#jobGroup1").mouseover(function() {
+			$("#jobGroup2-1").hide();
+			$("#jobGroup3-1").hide();
+			$("#jobGroup4-1").hide();
+			$("#jobGroup5-1").hide();
+			$("#jobGroup6-1").hide();
+			$("#jobGroup7-1").hide();
+			$("#jobGroup8-1").hide();
+			$("#jobGroup9-1").hide();
 			$("#jobGroup1-1").show();
 		})
 
+		
 		$("#jobGroup2").mouseover(function() {
 			$("#jobGroup1-1").hide();
 			$("#jobGroup3-1").hide();

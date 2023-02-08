@@ -29,6 +29,7 @@
 <script>
 	
 	
+	
 	$(document).ready(function() {
 		$("#posting").hover(function() {
 			$("#posting2").stop().slideDown();
@@ -36,114 +37,103 @@
 			$("#posting2").stop().slideUp();
 			$(".css-1kxn32n").show();
 		});
-		
 
-
-
-	$("#Jobgroup1").hover(function() {
+		$("#Jobgroup1").mouseover(function() {
+			$("#posting4").hide();
+			$("#posting5").hide();
+			$("#posting6").hide();
+			$("#posting7").hide();
+			$("#posting8").hide();
+			$("#posting9").hide();
+			$("#posting10").hide();
 			$(".css-1kxn32n").hide();
 			$("#posting3").show();
-		}, function() {
-			$("#posting3").hover(function() {
+		})
 
-			}, function() {
-				$("#posting3").hide();
-				$(".css-1kxn32n").show();
-			})
-
-		});
-
-		
-	$("#Jobgroup2").hover(function() {
+		$("#Jobgroup2").mouseover(function() {
+			$("#posting3").hide();
+			$("#posting5").hide();
+			$("#posting6").hide();
+			$("#posting7").hide();
+			$("#posting8").hide();
+			$("#posting9").hide();
+			$("#posting10").hide();
 			$(".css-1kxn32n").hide();
 			$("#posting4").show();
-		}, function() {
+		})
 
-			$("#posting4").hover(function() {
-
-			}, function() {
-				$("#posting4").hide();
-				$(".css-1kxn32n").show();
-			})
-		});
-
-		
-	$("#Jobgroup3").hover(function() {
+		$("#Jobgroup3").mouseover(function() {
+			$("#posting4").hide();
+			$("#posting3").hide();
+			$("#posting6").hide();
+			$("#posting7").hide();
+			$("#posting8").hide();
+			$("#posting9").hide();
+			$("#posting10").hide();
 			$(".css-1kxn32n").hide();
 			$("#posting5").show();
-		}, function() {
-			$("#posting5").hover(function() {
+		})
 
-			}, function() {
-				$("#posting5").hide();
-				$(".css-1kxn32n").show();
-			})
-		});
-	
-
-	$("#Jobgroup4").hover(function() {
+		$("#Jobgroup4").mouseover(function() {
+			$("#posting4").hide();
+			$("#posting5").hide();
+			$("#posting3").hide();
+			$("#posting7").hide();
+			$("#posting8").hide();
+			$("#posting9").hide();
+			$("#posting10").hide();
 			$(".css-1kxn32n").hide();
 			$("#posting6").show();
-		}, function() {
-			$("#posting6").hover(function() {
+		})
 
-			}, function() {
-				$("#posting6").hide();
-				$(".css-1kxn32n").show();
-			})
-		});
-
-	
-
-	$("#Jobgroup5").hover(function() {
+		$("#Jobgroup5").mouseover(function() {
+			$("#posting4").hide();
+			$("#posting5").hide();
+			$("#posting6").hide();
+			$("#posting3").hide();
+			$("#posting8").hide();
+			$("#posting9").hide();
+			$("#posting10").hide();
 			$(".css-1kxn32n").hide();
 			$("#posting7").show();
-		}, function() {
-			$("#posting7").hover(function() {
+		})
 
-			}, function() {
-				$("#posting7").hide();
-				$(".css-1kxn32n").show();
-			})
-		});
-
-	$("#Jobgroup6").hover(function() {
+		$("#Jobgroup6").mouseover(function() {
+			$("#posting4").hide();
+			$("#posting5").hide();
+			$("#posting6").hide();
+			$("#posting7").hide();
+			$("#posting3").hide();
+			$("#posting9").hide();
+			$("#posting10").hide();
 			$(".css-1kxn32n").hide();
 			$("#posting8").show();
-		}, function() {
-			$("#posting8").hover(function() {
+		})
 
-			}, function() {
-				$("#posting8").hide();
-				$(".css-1kxn32n").show();
-			})
-		});
-
-
-	$("#Jobgroup7").hover(function() {
+		$("#Jobgroup7").mouseover(function() {
+			$("#posting4").hide();
+			$("#posting5").hide();
+			$("#posting6").hide();
+			$("#posting7").hide();
+			$("#posting8").hide();
+			$("#posting3").hide();
+			$("#posting10").hide();
 			$(".css-1kxn32n").hide();
 			$("#posting9").show();
-		}, function() {
-			$("#posting9").hover(function() {
+		})
 
-			}, function() {
-				$("#posting9").hide();
-				$(".css-1kxn32n").show();
-			})
-		});
-
-
-	$("#Jobgroup8").hover(function() {
+		$("#Jobgroup8").mouseover(function() {
+			$("#posting4").hide();
+			$("#posting5").hide();
+			$("#posting6").hide();
+			$("#posting7").hide();
+			$("#posting8").hide();
+			$("#posting9").hide();
+			$("#posting3").hide();
 			$(".css-1kxn32n").hide();
 			$("#posting10").show();
-		}, function() {
-			$("#posting10").hover(function() {
-
-			}, function() {
-				$("#posting10").hide();
-				$(".css-1kxn32n").show();
-			})
-		});
+		})
+		
 	});
 </script>
 <!-- MY랠릿 버튼------------------------------------------------ -->

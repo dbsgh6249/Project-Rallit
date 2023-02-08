@@ -22,14 +22,59 @@
  		},function(){
  			$("#jobGroup1-1").hide();
  		});
+ 		
+ 		
+ 		$("#jobGroup2").hover(function(){
+ 	 		$("#jobGroup2-1").show();
+ 	 	}, function(){
+ 	 		$("#jobGroup2-1").hide();
+ 	 	});
+ 		
+ 		$("#jobGroup3").hover(function(){
+ 	 		$("#jobGroup3-1").show();
+ 	 	}, function(){
+ 	 		$("#jobGroup3-1").hide();
+ 	 	});
+ 		
+ 		$("#jobGroup4").hover(function(){
+ 	 		$("#jobGroup4-1").show();
+ 	 	}, function(){
+ 	 		$("#jobGroup4-1").hide();
+ 	 	});
+ 		
+ 		$("#jobGroup5").hover(function(){
+ 	 		$("#jobGroup5-1").show();
+ 	 	}, function(){
+ 	 		$("#jobGroup5-1").hide();
+ 	 	});
+ 		
+ 		$("#jobGroup6").hover(function(){
+ 	 		$("#jobGroup6-1").show();
+ 	 	}, function(){
+ 	 		$("#jobGroup6-1").hide();
+ 	 	});
+ 		
+ 		$("#jobGroup7").hover(function(){
+ 	 		$("#jobGroup7-1").show();
+ 	 	}, function(){
+ 	 		$("#jobGroup7-1").hide();
+ 	 	});
+ 		
+ 		$("#jobGroup8").hover(function(){
+ 	 		$("#jobGroup8-1").show();
+ 	 	}, function(){
+ 	 		$("#jobGroup8-1").hide();
+ 	 	});
+ 		
+ 		$("#jobGroup9").hover(function(){
+ 	 		$("#jobGroup9-1").show();
+ 	 	}, function(){
+ 	 		$("#jobGroup9-1").hide();
+ 	 	});
+ 		
  	});
  	
 	
- 	$("#jobGroup2").hover(function(){
- 		$("#jobGroup2-1").show();
- 	}, function(){
- 		$("#jobGroup2-1").hide();
- 	});
  
 
 </script>
@@ -154,7 +199,7 @@
 										</ul>
 										<ul class="css-1piurjj" id="jobGroup3-1">
 											<li class="css-1xupo39"><button type="button"
-													name="직무 전체 선택됨" class="css-3uulrl">전체</button></li>
+													name="직무 전체 선택됨" class="css-19bo4h0">전체</button></li>
 											<li class="css-1xupo39"><button type="button"
 													name="직무 게임 서버 개발자" class="css-19bo4h0">게임 서버 개발자</button></li>
 											<li class="css-1xupo39"><button type="button"

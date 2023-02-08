@@ -21,6 +21,9 @@ public class LoginRedirectHandler implements AuthenticationSuccessHandler {
 	@Override
 	public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
 			Authentication authentication) throws IOException, ServletException {
+		SecurityContextHolder.getContext().setAuthentication(authentication);
+		UsernamePasswordAuthenticationToken token1 = (UsernamePasswordAuthenticationToken)authentication;
+        String user_id = token1.getName();
 		// 로그인에 성공하면 이동하는 페이지
 		List<String> roleNames=new ArrayList<String>();
 		//권한들 읽어오기(로그인한 사람의)/roleNames에 추가
@@ -29,35 +32,24 @@ public class LoginRedirectHandler implements AuthenticationSuccessHandler {
 		authentication.getAuthorities().forEach(authority ->{
 			roleNames.add(authority.getAuthority());
 			System.out.println("==role.authority=="+authority.getAuthority());
+			
+			session.setAttribute("user_login", user_id);
+			session.setAttribute("user_autho", authority.getAuthority());
+			System.out.println(session.getAttribute("user_login"));
+			System.out.println(session.getAttribute("user_autho"));
 		});
 		
 		//권한에 따라 페이지 이동
 		if(roleNames.contains("ROLE_ADMIN")) {
-			SecurityContextHolder.getContext().setAuthentication(authentication);
-	         System.out.println(SecurityContextHolder.getContext().getAuthentication());
-	         UsernamePasswordAuthenticationToken token = (UsernamePasswordAuthenticationToken)authentication;
-	         String id = token.getName();
-	         System.out.println("됐냐? : " + id);
+	         System.out.println("check : " + session.getAttribute("user_autho"));
 			response.sendRedirect("/ex/admin/user");
 			return;
 		}
 		if(roleNames.contains("ROLE_COMPANY")) {
-			SecurityContextHolder.getContext().setAuthentication(authentication);
-	         System.out.println(SecurityContextHolder.getContext().getAuthentication());
-	         UsernamePasswordAuthenticationToken token = (UsernamePasswordAuthenticationToken)authentication;
-	         String id = token.getName();
-	         System.out.println("됐냐? : " + id);
 			response.sendRedirect("/ex/company/user");
 			return;
 		}
 		if(roleNames.contains("ROLE_SEEKER")) {
-			SecurityContextHolder.getContext().setAuthentication(authentication);
-	         System.out.println(SecurityContextHolder.getContext().getAuthentication());
-	         UsernamePasswordAuthenticationToken token = (UsernamePasswordAuthenticationToken)authentication;
-	         String id = token.getName();
-	         Collection<GrantedAuthority> authorities = token.getAuthorities();
-	         System.out.println("됐냐? : " + id + authorities);
-	         
 			response.sendRedirect("/ex/jobSeeker/user");
 			return;
 		}

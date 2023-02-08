@@ -250,15 +250,7 @@ main {
     background-color: #fff;
     width: 10.2rem;
 }
-.css-1b7sljm {
-    all: unset;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    width: 10.2rem;
-    padding: 24px 0px 12px;
-}
+
 .css-8jj0t0 {
     display: flex;
     flex-direction: column;
@@ -476,6 +468,7 @@ h2 {
     align-items: center;
     height: 2.667rem;
 }
+
 .css-tukp59:hover {
     background-color:#f2f4f6;
 }

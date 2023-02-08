@@ -464,15 +464,18 @@
                                             <label class="css-1bdb30f">경력</label>
 									<ul class="css-17hlfph">
 										<input name="jobLevel" class="css-1hyfx7x" value="[]">
-										<li><label class=" css-1xyrx5t"><span
-												class="css-8lru5t"><input class=" css-1okpmge"
-													name="all" type="checkbox" checked=""><span
-													class="css-1fcgcqn"><svg width="16" height="16"
-															fill="none" viewBox="0 0 14 14"
-															xmlns="http://www.w3.org/2000/svg">
-															<path fill-rule="evenodd" clip-rule="evenodd"
-																d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
-																fill="#fff"></path></svg></span></span>
+										<li>
+										<label class=" css-1xyrx5t">
+										<span class="css-8lru5t">
+										<input class=" css-1okpmge" name="all" type="checkbox" checked="">
+										<span class="css-1fcgcqn">
+										<svg width="16" height="16" fill="none" viewBox="0 0 14 14"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M12.057 3.692a.657.657 0 0 1 0 .928l-6.343 6.344a.657.657 0 0 1-.928 0L1.942 8.12a.656.656 0 0 1 .928-.927l2.38 2.38 5.88-5.88a.656.656 0 0 1 .927 0z"
+										fill="#fff"></path></svg>
+										</span>
+										</span>
 											<p aria-label="all 선택됨" class="css-j1cgtv">전체</p></label>
 										<div class="css-yyqtxc"></div></li>
 										<li><label class=" css-1xyrx5t"><span

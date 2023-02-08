@@ -18,7 +18,7 @@ public class CompanySecurityController {
 	@RequestMapping(value = "/company/user", method = RequestMethod.GET)
 	public String member(Locale locale, Model model) {
 	
-		return "/company/user";
+		return "/main/main";
 	}
 	
 }

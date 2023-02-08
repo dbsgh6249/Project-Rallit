@@ -579,7 +579,16 @@
 						<div class="dropdown">
 							<button onclick="myFunction()" class="dropbtn">MY 랠릿</button>
 							<div id="myDropdown" class="dropdown-content">
-								<a href="/ex/info">내 정보</a>
+						<c:choose>
+						<c:when test="${user_autho == 'ROLE_ADMIN'}">
+						<a href="/ex/admin/user">관리자 페이지</a>
+						</c:when>
+						<c:otherwise>
+						<a href="/ex/info">내 정보</a>
+						</c:otherwise>
+						</c:choose>
+						
+
 								<form class="1"
 									action="${pageContext.request.contextPath}/main/logout"
 									method="POST">

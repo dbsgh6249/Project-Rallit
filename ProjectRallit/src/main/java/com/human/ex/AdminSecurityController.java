@@ -27,7 +27,7 @@ public class AdminSecurityController {
         System.out.println("세션 : " + session.getId());
         session.setAttribute("user_login", session.getId());
         
-		return "/main/main";
+		return "/admin/user";
 	}
 	
 //	@RequestMapping(value = "/jobSeeker/user", method = RequestMethod.GET)

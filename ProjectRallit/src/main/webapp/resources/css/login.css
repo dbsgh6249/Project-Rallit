@@ -36,12 +36,12 @@ border-color:#00C471;
 outline: none;
 }
 .loginbar button[type="submit"]{
-    height: 44px;
+    height: 48px;
     width: 320px;
     font-weight: bolder;
     color: white;
     border: none;
-    background-color: #00C471;
+    background-color: #1bcd9d;
     cursor: pointer;
 }
 .loginbar p{

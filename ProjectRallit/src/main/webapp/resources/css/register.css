@@ -45,7 +45,7 @@
         border-style: solid;
         border-radius: 5px;
         border-width: 1px;
-        height: 48px;
+        height: 34px;
         width: 320px;
         padding-left: 15px;
     }
@@ -71,10 +71,10 @@
         font-size: 15px;
         font-weight: bolder;
         color: white;
-        margin-top: 5px;
-        height : 52px;
+        margin-top: 20px;
+        height : 40px;
         width : 339px;
-        background-color: #00C471;
+        background-color: #1bcd9d;
         cursor: pointer;
         
     }
@@ -84,11 +84,12 @@
         font-weight: bolder;
         color: white;
         margin-top: 5px;
+        margin-bottom:10px;
         border-radius: 5px;
         border-width: 1px;
-        height : 52px;
+        height : 40px;
         width : 339px;
-        background-color: #00C471;
+        background-color: #1bcd9d;
         cursor: pointer;
         
         

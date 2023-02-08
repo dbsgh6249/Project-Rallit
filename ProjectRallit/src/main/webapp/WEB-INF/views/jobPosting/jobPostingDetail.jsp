@@ -105,7 +105,6 @@
                         </section>
                         <section class="css-y1gt6f">
                             <h2 class="css-16a5xne">${jobPosting.title }, 어떤 일을 하나요?</h2>
-                            <p class="css-19hzmb1">업무 컬럼을 추가하나</p>
                             <ul class="css-104fbyc">
                             <c:forEach items='${jobPosting.languageTags }' var='postingTag'>
                                 <div class="css-kgsirb">
@@ -185,7 +184,7 @@
                                         <dl class="css-dnxlq5">
                                             <div class="css-150elap">
                                                 <dt class="css-1u8yjw6">최소 연봉</dt>
-                                                <dd class="css-1pvdrt3">연봉 컬럼 추가 필요</dd>
+                                                <dd class="css-1pvdrt3">${jobPosting.sal }</dd>
                                             </div>
                                         </dl>
                                         <dl class="css-dnxlq5">

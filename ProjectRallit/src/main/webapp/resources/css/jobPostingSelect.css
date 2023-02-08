@@ -522,6 +522,7 @@ a {
  .css-4qldrf:active {
      color: #21252a;
  }
+ 
 
  .css-4qldrf:hover::after,
  .css-4qldrf:active::after {
@@ -1397,12 +1398,15 @@ a {
     all: unset;
     border-bottom-left-radius: 6px;
 }
+
 .css-494cde {
     all: unset;
+    outline : 0;
 }
 
 .css-494cde button {
     border-bottom: unset;
+      outline : 0;
 }
 .css-19tuitx {
     display: -webkit-box;
@@ -2581,6 +2585,12 @@ a {
     width: auto;
     height: auto;
 }
+
+.css-1w9tlv3:active,
+.css-1w9tlv3:visited{
+	color : #00B594;
+}
+
 .css-1w9tlv3 {
     margin: 0;
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;

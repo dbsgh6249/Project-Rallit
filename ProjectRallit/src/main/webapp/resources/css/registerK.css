@@ -5,11 +5,20 @@
         font-size: 15px;
     }
     #root{
-        height: auto;
-        width: auto;
+	margin-top:20px;
+    }
+    input{
+    padding-left:10px;}
+  
+    input:hover{
+    background-color: rgba(237, 237, 237);}
+    div#root{
+        margin-left:0px;
+        display: flex;
+       justify-content: center; 
+       align-items: center;
     }
     main{
-        margin-left: 450px;
         height: 584px;
         width: 400px;
 
@@ -24,38 +33,38 @@
     }
     .idbar input {
         
-        margin-top: 10px;
+        margin-top: 5px;
     border: 1px solid #c6cad0;
      border-radius: 5px;
-     height: 43px;
+     height: 40px;
      width: 390px;   
     }
     .pwbar input{
-        margin-top: 10px;
+        margin-top: 5px;
     border: 1px solid #c6cad0;
      border-radius: 5px;
-     height: 43px;
+     height: 40px;
      width: 390px;   
     }
     .managerbar input{
-        margin-top: 10px;
+        margin-top: 5px;
         border: 1px solid #c6cad0;
      border-radius: 5px;
-     height: 43px;
+     height: 40px;
      width: 390px;   
     }
     .belongbar input{
-        margin-top: 10px;
+        margin-top: 5px;
         border: 1px solid #c6cad0;
      border-radius: 5px;
-     height: 43px;
+     height: 40px;
      width: 390px;   
     }
     .phonenumbar input{
-        margin-top: 10px;
+        margin-top: 5px;
         border: 1px solid #c6cad0;
      border-radius: 5px;
-     height: 43px;
+     height: 40px;
      width: 390px;   
     }
     .nonebar{
@@ -68,7 +77,7 @@
         border-radius: 5px;
         border-style: none;
         background-color: #1bcd9d;
-        height: 53px;
+        height: 50px;
         width: 400px;
     }
     .button input:focus{

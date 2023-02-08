@@ -47,4 +47,16 @@ public class H_UsersServiceImpl implements IH_UsersService {
 		dao.update(dto);
 	}
 
+	@Override
+	public List<H_UsersDto> selectJobSeeker() throws Exception {
+		IH_UsersDao dao = sqlSession.getMapper(IH_UsersDao.class);
+		return dao.selectJobSeeker();
+	}
+
+	@Override
+	public List<H_UsersDto> selectCompany() throws Exception {
+		IH_UsersDao dao = sqlSession.getMapper(IH_UsersDao.class);
+		return dao.selectCompany();
+	}
+
 }

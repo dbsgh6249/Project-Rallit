@@ -13,7 +13,7 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <meta charset="utf-8">
-<title>휴먼 프로젝트 - 랠릿</title>
+<title>휴먼 프로젝트 - 랠릿 Admin</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 <meta name="thumbnail" content="https://cdn.rallit.com/image/meta-image.png"> <!--타이틀 아이콘-->
 

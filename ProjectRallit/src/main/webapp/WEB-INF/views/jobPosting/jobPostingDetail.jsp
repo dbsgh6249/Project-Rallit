@@ -185,7 +185,7 @@
                                         <dl class="css-dnxlq5">
                                             <div class="css-150elap">
                                                 <dt class="css-1u8yjw6">최소 연봉</dt>
-                                                <dd class="css-1pvdrt3">연봉 컬럼 추가 필요</dd>
+                                                <dd class="css-1pvdrt3">${jobPosting.sal }/dd>
                                             </div>
                                         </dl>
                                         <dl class="css-dnxlq5">

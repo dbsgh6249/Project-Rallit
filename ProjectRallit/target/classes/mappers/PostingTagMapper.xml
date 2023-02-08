@@ -5,27 +5,27 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <mapper namespace="com.human.dao.IPostingTagDao">
 <insert id="insert">
-insert into PostingTag
+insert into Posting_Tag
 values(#{posting_num} ,#{languageTag})
 </insert>
 
 <select id="select" resultType="com.human.dto.PostingTagDto"><!-- 글번호에 해당하는 태그 -->
-select * from PostingTag where posting_num=#{posting_num}
+select * from Posting_Tag where posting_num=#{posting_num}
 </select>
 <select id="selectPosting_num" resultType="String">
-select languageTag from PostingTag where posting_num=#{posting_num}
+select languageTag from Posting_Tag where posting_num=#{posting_num}
 </select>
 
 <delete id="delete"> <!-- 채용공고 삭제시 해당 글번호에 해당하는 태그 전체 삭제 -->
-delete from PostingTag where posting_num=#{posting_num}
+delete from Posting_Tag where posting_num=#{posting_num}
 </delete>
 
 <delete id="deleteTag"> <!-- 태그 개별 삭제 -->
-delete from PostingTag where posting_num=#{posting_num} and languageTag=#{languageTag}
+delete from Posting_Tag where posting_num=#{posting_num} and languageTag=#{languageTag}
 </delete>
 
 <update id="update"> <!-- 태그 변경(여러 개 수정 시 각각 실행 필요) -->
-update PostingTag set languageTag=#{modifyTag}
+update Posting_Tag set languageTag=#{modifyTag}
  where posting_num=#{posting_num} and languageTag=#{languageTag}
 </update>
 

@@ -143,6 +143,19 @@
 		})
 		
 	});
+	
+
+</script>
+<script>
+
+	function myFunction2(){
+	if($("#CR").css("display")=="none"){
+		$("#CR").stop().slideDown();
+		
+	}else {
+		$("#CR").stop().slideUp();
+	}
+}
 </script>
         <main class="css-ac13em">
             <div class="css-er4t7v">
@@ -162,7 +175,7 @@
                     <div class="css-w1yi09">
                         <div class="css-16gay4m">
                             <div class="css-61lo31">
-                                <section class="css-79elbk" id="job1">
+                                <section class="css-79elbk">
                                     <div class="css-15www6d" onclick="myFunction1()">
                                         <div class="rallit-icon  css-ncl23e"><svg width="16" height="15"
                                                 viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -410,7 +423,7 @@
                                     </div>
                                 </section>
                                 <section class="css-79elbk">
-                                    <div class="css-1dfhl4z">
+                                    <div class="css-1dfhl4z" onclick="myFunction2()">
                                         <div class="css-1wir516">
                                             <div class="rallit-icon  css-ncl23e"><svg width="16" height="16"
                                                     viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -445,7 +458,7 @@
                                             <p class="css-159r7cq">필터</p>
                                         </div>
                                     </div>
-                                    <div class="css-1wa0ju9">
+                                    <div class="css-1wa0ju9" id="CR">
                                         <div class="css-1hme9m9">
                                             <div class="css-1nas4it">
                                             <label class="css-1bdb30f">경력</label>

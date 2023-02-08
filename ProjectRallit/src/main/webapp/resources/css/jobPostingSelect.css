@@ -522,6 +522,7 @@ a {
  .css-4qldrf:active {
      color: #21252a;
  }
+ 
 
  .css-4qldrf:hover::after,
  .css-4qldrf:active::after {
@@ -2584,6 +2585,12 @@ a {
     width: auto;
     height: auto;
 }
+
+.css-1w9tlv3:active,
+.css-1w9tlv3:visited{
+	color : #00B594;
+}
+
 .css-1w9tlv3 {
     margin: 0;
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;

@@ -28,12 +28,14 @@
  		});
  		
  		
- 		$("#jobGroup2").hover(function(){
+ 		$("#jobGroup2").mouseover(function(){
  	 		$("#jobGroup2-1").show();
- 	 	}, function(){
+ 	 	}) 
+ 	 	$("#jobGroup2-1").mouseleave(function(){
  	 		$("#jobGroup2-1").hide();
- 	 	});
- 		
+ 	 	})
+ 	 	
+ 	 	
  		$("#jobGroup3").hover(function(){
  	 		$("#jobGroup3-1").show();
  	 	}, function(){

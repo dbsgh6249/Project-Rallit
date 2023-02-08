@@ -25,14 +25,14 @@
 	}
 </script> -->
 <script>
-	function myFunction(){
-		if($("#job1").css("display")=="none"){
-			$("#job1").stop().slideDown();
+ 	function myFunction(){
+		if($("#job2").css("display")=="none"){
+			$("#job2").stop().slideDown();
 		}else {
-			$("#job1").stop().slideUp();
+			$("#job2").stop().slideUp();
 		}
 	}
-
+ 
 
 </script>
         <main class="css-ac13em">
@@ -73,7 +73,7 @@
 											</div>
 							<div class="css-8j8hl3"></div>
 						</div>
-                                    <div class="css-8l82ta">
+                                    <div class="css-8l82ta" id="job2"> 
                                         <div class="css-14ypdl9">
                                             <div class="css-1so5lt">
                                                 <div class="css-1fdx6k3">
@@ -88,7 +88,7 @@
 
 									<div class="css-ziljwy">
 										<label class="css-pwu5ys">직무</label>
-										<ul class="css-1piurjj" id="job2">
+										<ul class="css-1piurjj">
 											<li class="css-494cde"><button type="button"
 													name="직군 전체" class="css-qru78a">전체</button></li>
 											<li class="css-494cde"><button type="button"

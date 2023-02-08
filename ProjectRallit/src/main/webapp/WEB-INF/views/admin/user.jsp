@@ -3,16 +3,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-admin 페이지<br>
-admin만 들어올 수 있습니다.
+<%@include file = "../include/headerAdmin.jsp" %>
 <sec:authorize access="isAnonymous()">
 		<p>
 			<a href="<c:url value="/user/login" />">로그인</a>
@@ -24,5 +15,4 @@ admin만 들어올 수 있습니다.
 			<input type="submit" value="로그아웃" />
 		</form:form>
 	</sec:authorize>
-</body>
-</html>
+<%@include file = "../include/footer.jsp" %>

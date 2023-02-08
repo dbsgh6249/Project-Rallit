@@ -162,6 +162,8 @@
 </head>
 <body>
 	<div id="__next" data-reactroot="">
+	${user_login }
+	${user_autho }
 		<section class="inflab-integrated css-1cp3pcs">
 			<div class="inflab-integrated__header">
 				<div class="inflab-integrated__container">

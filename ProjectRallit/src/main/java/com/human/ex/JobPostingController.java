@@ -51,6 +51,7 @@ public class JobPostingController {
 		List<AuthoritiesDto> authoritiesDtos = authorities_Service.selectCompany();
 		model.addAttribute("list",authoritiesDtos);
 		return "/jobPosting/jobPostingInsert";
+		// insert,update,delete admin에만 넣을 권한이라 차후 /jobPosting/부분 /admin/으로 수정예정
 	}
 	@RequestMapping(value = "/jobPosting/insert", method = RequestMethod.POST)
 	public String jobPostingInsert(JobPostingDto dto,JobPostingInfoVo vo, Model model) throws Exception {

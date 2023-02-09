@@ -517,7 +517,7 @@
 												function(event) {
 
 													event.preventDefault();
-													alert("호로록로롤")
+													
 
 													$(".css-okq0lf").show();
 
@@ -562,9 +562,9 @@
 										<p class="css-wlnobz">인프런 계정이 있다면 바로 시작할 수 있어요.</p>
 										<div class="css-1nrcks9">
 											<a
-												href="https://www.inflearn.com/signup?referUrl=https%3A%2F%2Fwww.rallit.com%2F%3F"><button
+												href="main/login"><button
 													class="css-19a2zyv" type="button">회원가입</button></a><a
-												href="https://www.inflearn.com/signin?referUrl=https%3A%2F%2Fwww.rallit.com%2F%3F"><button
+												href="main/register"><button
 													class="css-1bdr6y4" type="button">로그인</button></a>
 										</div>
 									</div>

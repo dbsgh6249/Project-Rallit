@@ -12,12 +12,14 @@ public class JobPostingInfoVo {
 	private Integer posting_num;		// 글번호
 	private String title;			// 글제목
 	private String user_id;
+	private String user_company;		// 회사명
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date dateCreated;		// 작성일
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date deadline;			// 공고마감일
 	private String occ_main;		// 직종
 	private String occ_sub;
+	private String address;
 	private int minCareer;			// 경력 최솟값
 	private int maxCareer;			// 경력 최댓값
 	private String text1;			// 소개
@@ -54,6 +56,18 @@ public class JobPostingInfoVo {
 		this.languageTags = languageTags;
 	}
 	
+	public String getUser_company() {
+		return user_company;
+	}
+	public void setUser_company(String user_company) {
+		this.user_company = user_company;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
 	public Integer getPosting_num() {
 		return posting_num;
 	}

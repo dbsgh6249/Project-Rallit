@@ -19,7 +19,7 @@
                         <div class="css-70qvj9"><img
                                 src="https://cdn.rallit.com/image/2022-03-14/k-kO_VYdDeIKSLHcv9Vfz.png"
                                 alt="(주)백패커 로고 이미지" class="css-g298dc">
-                            <h2 class="css-10lpnky">${company }</h2>
+                            <h2 class="css-10lpnky">${jobPosting.users_company }</h2>
                         </div>
                     </a>
                     <h1 class="css-17ueevk">${jobPosting.title }</h1>
@@ -100,7 +100,7 @@
                     </section>
                     <div class="css-1vbiael">
                         <section class="css-1yoja6p">
-                            <h2 class="css-16a5xne">${company }, 어떤 곳인가요?</h2>
+                            <h2 class="css-16a5xne">${jobPosting.users_company }, 어떤 곳인가요?</h2>
                             <p class="css-19hzmb1"> ${jobPosting.text1 }</p>
                         </section>
                         <section class="css-y1gt6f">

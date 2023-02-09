@@ -160,9 +160,11 @@ option {
 				<input type="text" name="title"><br>
 				<br>
 				<p>회사 id</p>
-				<c:forEach items="${list }" var="authoritiesDto">
-					<label class='selectCompanyId'> <input type='radio'	name='user_id' value='${authoritiesDto.user_id }'>
-					<span class='userId_value'>${authoritiesDto.user_id }</span><br>
+				<c:forEach items="${list }" var="hUsersDto">
+					<label class='selectCompanyId'> <input type='radio'	name='user_id' value='${hUsersDto.user_id }'>
+					<input type='hidden' name='user_company' value='${hUsersDto.user_company }'>
+					<input type="hidden" name="address" value="${hUsersDto.user_province }+' '+${hUsersDto.user_city}">
+					<span class='userId_value'>${hUsersDto.user_id }</span><br>
 					</label>
 				</c:forEach>
 				<p>공고 마감일</p>

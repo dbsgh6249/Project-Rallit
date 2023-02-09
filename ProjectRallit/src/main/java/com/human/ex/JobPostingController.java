@@ -48,8 +48,8 @@ public class JobPostingController {
 	
 	@RequestMapping(value = "/jobPosting/insert", method = RequestMethod.GET)
 	public String jobPostingInsert(Model model) throws Exception {
-		List<AuthoritiesDto> authoritiesDtos = authorities_Service.selectCompany();
-		model.addAttribute("list",authoritiesDtos);
+		List<H_UsersDto> hUsersDtos = hUsers_Service.selectCompany();
+		model.addAttribute("list",hUsersDtos);
 		return "/jobPosting/jobPostingInsert";
 		// insert,update,delete admin에만 넣을 권한이라 차후 /jobPosting/부분 /admin/으로 수정예정
 	}
@@ -58,9 +58,7 @@ public class JobPostingController {
 		jobPostingInfo_Service.insertJobPostingInfo(dto, vo);
 		String user_id = dto.getUser_id();
 		H_UsersDto hUsersDto = hUsers_Service.selectOne(user_id);
-		String userName = hUsersDto.getUser_company();
-		String address = hUsersDto.getUser_province()+" "+hUsersDto.getUser_city()+" "+hUsersDto.getUser_address();
-		model.addAttribute("company", userName);
+		String address = vo.getAddress()+" "+hUsersDto.getUser_address();
 		model.addAttribute("address", address);
 		model.addAttribute("jobPosting", vo);
 		return "/jobPosting/jobPostingDetail";

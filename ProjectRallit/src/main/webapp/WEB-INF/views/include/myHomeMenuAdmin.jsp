@@ -42,7 +42,7 @@ $("#menu").on("mouseleave",function(){
             </ul>
         </li>
         <li>
-            <div class="bbox" style="cursor: pointer;" onclick="location.href='/ex/admin/jobPosting2';">채용 공고  📝</div>
+            <div class="bbox" style="cursor: pointer;" onclick="location.href='/ex/admin/jobPosting';">채용 공고  📝</div>
         </li>
     </ul>
 </aside>

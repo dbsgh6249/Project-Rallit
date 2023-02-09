@@ -8,5 +8,6 @@ import com.human.vo.JobPostingInfoVo;
 public interface IJobPostingInfoService {
 	public void insertJobPostingInfo(JobPostingDto dto, JobPostingInfoVo vo) throws Exception;
 	public List<JobPostingInfoVo> selectAll() throws Exception;
+	public List<JobPostingInfoVo> selectPostingMain() throws Exception;
 	public JobPostingInfoVo selectOne(int posting_num) throws Exception;
 }

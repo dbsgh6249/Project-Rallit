@@ -48,26 +48,23 @@ public class HomeController {
 	@RequestMapping(value = "/main", method = RequestMethod.GET)
 	public String jobPostingSelectAll(Model model) throws Exception {
 		System.out.println("메인 페이지로 이동");
-		List<JobPostingInfoVo> jobPostingInfoVos = jobPostingInfo_Service.selectAll();
+		List<JobPostingInfoVo> jobPostingInfoVos = jobPostingInfo_Service.selectPostingMain();
 		List<String> jobGroups = jobPosting_Service.selectJobGroup();
 		model.addAttribute("list",jobPostingInfoVos);
 		model.addAttribute("jobGroup", jobGroups);
 		return "/main/main";
 	}
 
-	
-	//test용
 	@RequestMapping(value = "/jpd", method = RequestMethod.GET)
 	public String jpd(Model model) {
 		
 		return "jobPosting/jobPostingDetail";
 	}
-	//test용
+	// 메인페이지에서 전체보기 or 채용공고 누르면 이동
 	@RequestMapping(value = "/jobPostList", method = RequestMethod.GET)
 	public String jps(Model model) throws Exception {
 		System.out.println("채용공고 페이지");
 		List<JobPostingInfoVo> jobPostingInfoVos = jobPostingInfo_Service.selectAll();
-		List<String> jobGroups = jobPosting_Service.selectJobGroup();
 		model.addAttribute("list",jobPostingInfoVos);
 		return "jobPosting/jobPostingSelect";
 	}

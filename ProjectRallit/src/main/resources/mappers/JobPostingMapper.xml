@@ -33,6 +33,9 @@ update jobGroup set viewCnt=viewCnt+1 where occ_sub=#{occ_sub}
 <select id="selectJobGroup" resultType="String">
 <![CDATA[select occ_sub from (select occ_sub from jobGroup order by viewCnt desc) where rowNum <= 8]]>
 </select>
+<select id="selectPostingMain" resultType="com.human.dto.JobPostingDto">
+<![CDATA[select * from (select * from JobPosting where posting_num > 0 order by deadline asc) where rowNum <= 20]]>
+</select>
 
 <delete id="delete"> delete from jobPosting where posting_num = #{posting_num} </delete><!-- 삭제(admin) -->
 

@@ -56,4 +56,17 @@ public class JobPostingInfoServiceImpl implements IJobPostingInfoService{
 		return jobPostigInfoVo;
 	}
 
+	@Override
+	public List<JobPostingInfoVo> selectPostingMain() throws Exception {
+		List<JobPostingInfoVo> jobPostingInfoVos = new ArrayList<JobPostingInfoVo>();
+		List<JobPostingDto> jobPostingDtos = postingService.selectPostingMain();
+		if(jobPostingDtos != null) {
+			for(JobPostingDto dto : jobPostingDtos) {
+				List<String> tags = tagService.selectPosting_num(dto.getPosting_num());
+				jobPostingInfoVos.add(new JobPostingInfoVo(dto,tags));
+			}
+		}
+		return jobPostingInfoVos;
+	}
+
 }

@@ -8,7 +8,7 @@
       rel="stylesheet" type="text/css">
              <link href="${pageContext.request.contextPath}/resources/css/jobPostingInsert.css"
       rel="stylesheet" type="text/css">
-     <title>채용공고 입력</title>
+     <title>채용공고 입력</title><!--  -->
 
 <script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script>

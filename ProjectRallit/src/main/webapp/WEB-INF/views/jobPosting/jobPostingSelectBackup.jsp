@@ -7,108 +7,8 @@
 #jobGroup2-1,#jobGroup3-1,#jobGroup4-1,#jobGroup5-1,#jobGroup6-1,#jobGroup7-1,#jobGroup8-1,#jobGroup9-1{
 	display : none;
 	}
-	.css-1gd0osy img {
-    opacity: 1;
-    background-color: #fff;
-    object-fit: cover;
-    object-position: center center;
-}
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
-.css-1gw9rd1 {
-    /* display: -webkit-box; */
-    /* display: -webkit-flex; */
-    display: -ms-flexbox;
-    display: flex;
-    /* -webkit-flex-direction: column; */
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    /* -webkit-justify-content: space-between; */
-    justify-content: space-between;
-    margin-top: 10px;
-    height: 100%;
-}
-.css-fk1zjv {
-    /* margin: 0; */
-    /* font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,'Helvetica Neue','Segoe UI','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif; */
-    /* font-size: 14px; */
-    /* font-stretch: normal; */
-    /* font-style: normal; */
-    /* line-height: 1.43; */
-    /* letter-spacing: normal; */
-    /* font-weight: normal; */
-    /* white-space: pre-line; */
-    text-align: start;
-    /* word-break: break-all; */
-    display: -webkit-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
-    word-break: break-all;
-    white-space: pre-line;
-    -webkit-line-clamp: 1;
-}
-.css-1gw9rd1 .summary__company-name {
-    margin: 0;
-    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,'Helvetica Neue','Segoe UI','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif;
-    font-size: 14px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
-    font-weight: normal;
-}
-	.css-803uab {
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    min-height: calc(100vh - 420px);
-    margin-top: 16px;
-    padding: 0px 32px;
-}
-.css-1gd0osy {
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-    padding-top: 55.46875%;
-    border-radius: 6px;
-    border: solid 1px #f2f4f6;
-}
-.css-1pr9edg {
-    position: relative;
-    height: 100%;
-    color: #21252a;
-}
- .css-1ioq3lh {
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(4, minmax(0px, 1fr));
-    gap: 2.667rem 1.333rem;
-    margin: 0px auto;
-    padding: 0px;
-    width: 100%;
-    max-width: 1084px;
-    list-style: none;
-}
-ul {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-body, html {
-font-size: 15px;
-    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,sans-serif;
-    -webkit-font-smoothing: antialiased;
-        -webkit-text-size-adjust: none;
-    -webkit-tap-highlight-color: transparent;
-    color: #21252a;
-    }
+	
+	
 
 	
 </style>
@@ -812,8 +712,7 @@ font-size: 15px;
                                 </div>
                             </label></div>
                     </div>
-                    <section aria-hidden="false" class="css-1iypyez">
-                    </section>
+                    <section aria-hidden="false" class="css-1iypyez"></section>
                     <div class="css-1f1da9z">
                         <button disabled="" type="button" class="css-bsl9f8">
                             <div class="rallit-icon  css-94fifh"><svg width="20" height="20" fill="none"
@@ -823,7 +722,6 @@ font-size: 15px;
                                         fill="#a1aab2"></path>
                                 </svg></div><span style="width: 45px;">초기화</span>
                         </button>
-                        
                         <button aria-label="더보기" class="css-bkukvc" type="button">
                             <div class="rallit-icon  css-12r39mb"><svg width="18" height="18" fill="none"
                                     viewbox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
@@ -832,7 +730,6 @@ font-size: 15px;
                                         fill="#535961"></path>
                                 </svg></div>
                         </button>
-                        
                     </div>
                 </div>
                 <button type="button" id="button-skill-tags" class="css-1l2hvxr">직무스킬<span>0</span></button>
@@ -873,60 +770,17 @@ font-size: 15px;
                 </div>
             </div>
             <section class="css-803uab">
-               <ul class="css-1ioq3lh">
-               <c:forEach items="${list }" var="jobPosting">
-                  <!-- c태그 forEach 실행 시작(채용공고 데이터) -->
-                  <li>
-                     <article class="css-1pr9edg">
-                        <a href="/ex/jpd"> <!-- <a href="/positions/1235">  -->
-                           <figure class="css-1gd0osy">
-                              <!-- 이 부분 이미지 삽입 방식 수정 예정 -->
-                              <!-- 사진첨부 가능해지면 처리 예정(23.02.09 10:22) -->
-                              <img alt="주식회사 게임듀오 대표이미지" sizes="100vw"
-                                 srcset="https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=640 640w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 750w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 828w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1080w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1200w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1920w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 2048w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 3840w"
-                                 src="https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720"
-                                 decoding="async" data-nimg="future-fill" loading="lazy"
-                                 style="position: absolute; height: 100%; width: 100%; left: 0; top: 0; right: 0; bottom: 0; color: transparent">
-                           </figure>
-                           <div class="css-1gw9rd1">
-                              <div>
-                                 <div role="button" tabindex="0">
-                                    <p class="summary__company-name css-fk1zjv">${jobPosting.user_company}<!--회사명-->
-                                    </p>
-                                 </div>
-                                 <div role="button" tabindex="0">
-                                    <h3 class="summary__title css-1to8sx0">${jobPosting.title}
-                                    </h3>
-                                 </div>
-                              </div>
-                              <ul class="css-1kivyvq">
-                              	<c:forEach items= '${jobPosting.languageTags }' var='postingTag'>
-                              		<li class="css-1uz98zw">
-                                    	<p class="css-1cyvqo4">${postingTag}</p>                                	
-                                    </li>
-                              	</c:forEach>
-                              </ul>
-                              <div class="css-1rtzn1u">
-                                 <span>
-                                    <p class="css-oz575p">${jobPosting.minCareer} ~ ${jobPosting.maxCareer}년
-                                       <!--ex.주니어 (1~3년) if넣어서 경력에 따른 표현 (+ 안 쓸 것 같음 귀찮아(23.02.09 10:22))-->
-                                    </p>
-                                 </span>
-                                 <div class="css-106dojg"></div>
-                                 <span>
-                                    <p class="css-oz575p">${jobPosting.address}
-                                    </p>
-                                 </span>
-                              </div>
-                           </div>
-                        </a> <!-- 북마크 버림(23.02.09 10:22) -->
-                     </article>
-                  </li>
-               </c:forEach>
-               <!-- c태그 forEach 실행 종료(채용공고 데이터) -->
-
-
-            </ul>
+                <div class="css-hm7m5k">
+                    <span class="css-19ul9ik"><svg width="44" height="44" viewbox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 1.778C6.354 1.778 1.778 6.354 1.778 12S6.354 22.222 12 22.222 22.222 17.646 22.222 12 17.646 1.778 12 1.778zM0 12C0 5.373 5.373 0 12 0s12 5.373 12 12-5.373 12-12 12S0 18.627 0 12z"
+                                fill="#CBF4ED"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M.931 10.5c.514 0 .931.417.931.931 0 5.913 4.794 10.707 10.707 10.707a.931.931 0 0 1 0 1.862C5.627 24 0 18.373 0 11.431c0-.514.417-.931.931-.931z"
+                                fill="#00CCAA"></path>
+                        </svg></span>
+                </div>
             </section>
         </main>
     <%@include file = "../include/footer.jsp" %>;

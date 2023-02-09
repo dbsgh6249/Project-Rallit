@@ -1,0 +1,104 @@
+@charset "UTF-8";
+.container {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+::placeholder {
+	position: relative;
+	color: #ced4ec;
+}
+
+.postingBar input {
+	border-color: #ced4ec;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+	height: 48px;
+	width: 312px;
+	margin-bottom: -10px;
+	padding-left: 10px;
+}
+
+.postingBar input[type="number"] {
+	width: 130px;
+}
+
+.postingBar button {
+	border-color: #ced4ec;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+	height: 40px;
+	width: 80px;
+	margin-bottom: -10px;
+	padding-left: 10px;
+}
+
+.postingBar input:focus {
+	border-color: #00C471;
+	outline: none;
+}
+
+.postingBar input[type="submit"] {
+	height: 44px;
+	width: 320px;
+	font-weight: bolder;
+	color: white;
+	border: none;
+	background-color: #00C471;
+	cursor: pointer;
+}
+
+.postingBar p {
+	font-size: 15px;
+}
+
+.postingBar input[type='radio'] {
+	vertical-align: middle;
+	appearance: none;
+	border: max(2px, 0.1em) solid gray;
+	border-radius: 50%;
+	width: 1.25em;
+	height: 1.25em;
+}
+
+.postingBar input[type='radio']:checked {
+	border: 0.4em solid #00C471;
+}
+
+.selectCompanyId {
+	font-size: 20px;
+	line-height: 2rem;
+	padding: 0.2em 0.4em;
+}
+
+.userId_value {
+	vertical-align: middle;
+}
+
+.postingBar .jobPostingtext textarea {
+	border: 1px solid #ced4ec;
+	display: block;
+	width: 80%;
+	height: 300px;
+	box-sizing: border-box;
+	resize: vertical;
+}
+form>span {
+	display:none;
+}
+select {
+	width: inherit;
+	height: 25px;
+	barground: transparent;
+	border-color: #ced4ec;
+	border-radius: 4px;
+	outline: 0 none;
+	padding: 0 5px;
+	position: relative;
+}
+option {
+	padding: 3px 0;
+	font-size: 15px;
+}

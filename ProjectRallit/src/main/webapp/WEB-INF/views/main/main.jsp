@@ -6,7 +6,9 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <%@include file = "../include/header.jsp"%>
+ <style>
  
+</style>
  <link href="${pageContext.request.contextPath}/resources/css/main.css"
       rel="stylesheet" type="text/css">
       <main class="css-ac13em">

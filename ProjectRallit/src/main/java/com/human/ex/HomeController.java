@@ -55,11 +55,7 @@ public class HomeController {
 		return "/main/main";
 	}
 
-	@RequestMapping(value = "/jpd", method = RequestMethod.GET)
-	public String jpd(Model model) {
-		
-		return "jobPosting/jobPostingDetail";
-	}
+
 	// 메인페이지에서 전체보기 or 채용공고 누르면 이동
 	@RequestMapping(value = "/jobPostList", method = RequestMethod.GET)
 	public String jps(Model model) throws Exception {
@@ -69,6 +65,19 @@ public class HomeController {
 		return "jobPosting/jobPostingSelect";
 	}
 	//test용
+	@RequestMapping(value = "/jpd", method = RequestMethod.GET)
+	public String jpd(Model model) {
+		
+		return "jobPosting/jobPostingDetail";
+	}
+	//test용
+		@RequestMapping(value = "/jpi", method = RequestMethod.GET)
+		public String jobPostingInsert(Model model) {
+			
+			return "jobPosting/jobPostingInsert";
+		}
+	
+	
 	@RequestMapping(value = "/info", method = RequestMethod.GET)
 	public String myInfo(Model model) {
 		

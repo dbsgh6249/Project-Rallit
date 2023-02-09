@@ -7,7 +7,7 @@
 
 <%@include file = "../include/header.jsp"%>
  <style>
- 
+
 </style>
  <link href="${pageContext.request.contextPath}/resources/css/main.css"
       rel="stylesheet" type="text/css">

@@ -199,7 +199,7 @@
                   <!-- c태그 forEach 실행 시작(채용공고 데이터) -->
                   <li>
                      <article class="css-1pr9edg">
-                        <a href="/ex/jpd"> <!-- <a href="/positions/1235">  -->
+                        <a href="/ex/jpd"> <!-- 뭐 /jobPosting/selectOne?${jobPosting.posting_num} 이라도 쓰지 않을까 싶음(23.02.09 10:22) -->
                            <figure class="css-1gd0osy">
                               <!-- 이 부분 이미지 삽입 방식 수정 예정 -->
                               <!-- 사진첨부 가능해지면 처리 예정(23.02.09 10:22) -->

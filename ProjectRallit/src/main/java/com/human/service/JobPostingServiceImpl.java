@@ -73,4 +73,10 @@ public class JobPostingServiceImpl implements IJobPostingService{
 		IJobPostingDao dao = sqlSession.getMapper(IJobPostingDao.class);
 		return dao.selectJobGroup();
 	}
+
+	@Override
+	public List<JobPostingDto> selectPostingMain() throws Exception {
+		IJobPostingDao dao = sqlSession.getMapper(IJobPostingDao.class);
+		return dao.selectPostingMain();
+	}
 }

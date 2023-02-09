@@ -38,27 +38,32 @@
             
             <form action="">
             <div class="idbar">
-                <span class="idtext">아이디(이메일)</span><br>
+                <span>아이디(이메일)</span><br>
                 <input type="text" placeholder="example@email.com">
             </div>
             <div class="nonebar"></div>
             <div class="pwbar">
-                <span class="pwtext">비밀번호</span><br>
+                <span>비밀번호</span><br>
                 <input type="password" placeholder="**********">
+            </div>
+             <div class="nonebar"></div>
+            <div class="pwbar">
+                <span>회사명</span><br>
+                <input type="text" placeholder="애플 코리아 천안 두정점">
             </div>
             <div class="nonebar"></div>
             <div class="managerbar">
-                <span class="manager">당담자 이름</span><br>
+                <span>당담자 이름</span><br>
                 <input type="text" placeholder="실명으로 입력">
             </div>
             <div class="nonebar"></div>
             <div class="belongbar">
-                <span class="belongtext">소속</span><br>
+                <span>소속</span><br>
                 <input type="text" placeholder="인사팀">
             </div>
             <div class="nonebar"></div>
             <div class="phonenumbar">
-                <span class="phonetext">휴대폰 번호</span>
+                <span>휴대폰 번호</span>
                 <input type="text" placeholder="01012345678">
             </div>
             <div class="nonebar"></div>

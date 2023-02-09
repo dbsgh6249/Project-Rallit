@@ -24,6 +24,12 @@ $("#menu>li>div").hover(function () {
 $("menu>li>div").on("click",function(){
     selecDiv=$(this);
 })
+$("#menu").on("mouseleave",function(){
+                    setTimeout(function(){
+                        $(".sub").stop().slideUp(300);
+                        selectDiv.next().stop().slideDown(300);
+                    },2000)
+                })
 })
 </script>
 <aside class="css-1xgvj9r">

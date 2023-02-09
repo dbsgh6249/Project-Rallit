@@ -9,27 +9,36 @@
 <head>
 <link href="${pageContext.request.contextPath}/resources/css/main.css"
 	rel="stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath}/resources/css/resume.css"
+	rel="stylesheet" type="text/css">	
 <script src="https://code.jquery.com/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <meta charset="utf-8">
 <title>휴먼 프로젝트 - 랠릿</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-<meta name="thumbnail" content="https://cdn.rallit.com/image/meta-image.png"> <!--타이틀 아이콘-->
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<meta name="thumbnail"
+	content="https://cdn.rallit.com/image/meta-image.png">
+<!--타이틀 아이콘-->
 
 <style>
-#posting3,#posting4,#posting5,#posting6,#posting7,#posting8,#posting9,#posting10 {
+#posting3, #posting4, #posting5, #posting6, #posting7, #posting8,
+	#posting9, #posting10 {
 	display: none;
 }
 /* .css-1kxn32n{
 	display : none;
 	} */
+	
+	.css-okq0lf{
+	display : none;
+	z-index : 10000;
+	}
 </style>
 <!-- 채용공고 hover dropDownMenu-->
 <script>
-	
-	
-	
 	$(document).ready(function() {
 		$("#posting").hover(function() {
 			$("#posting2").stop().slideDown();
@@ -133,7 +142,7 @@
 			$(".css-1kxn32n").hide();
 			$("#posting10").show();
 		})
-		
+
 	});
 </script>
 <!-- MY랠릿 버튼------------------------------------------------ -->
@@ -193,13 +202,13 @@
 								</div> <span>채용</span>
 						</a></li>
 					</ul>
-					
+
 					<sec:authorize access="isAnonymous()">
-					<div>
-					<a href="main/registerK"> <!--기업서비스 로그인 링크-->
-						<p class="css-11cix4b">기업 회원가입</p>
-					</a>
-					</div>
+						<div>
+							<a href="main/registerK"> <!--기업서비스 로그인 링크-->
+								<p class="css-11cix4b">기업 회원가입</p>
+							</a>
+						</div>
 					</sec:authorize>
 				</div>
 			</div>
@@ -275,30 +284,30 @@
 											<div class="css-1fdx6k3">
 												<label class="css-1k185p7">직군</label>
 												<ul class="css-1piurjj">
-													<li class="css-494cde" id="Jobgroup1"><button type="button"
-															name="직군 개발" class="css-184xd0e">개발</button></li>
-													<li class="css-494cde" id="Jobgroup2"><button type="button"
-															name="직군 게임개발" class="css-184xd0e">게임개발</button></li>
-													<li class="css-494cde" id="Jobgroup3"><button type="button"
-															name="직군 디자인" class="css-184xd0e">디자인</button></li>
-													<li class="css-494cde" id="Jobgroup4"><button type="button"
-															name="직군 기획" class="css-184xd0e">기획</button></li>
-													<li class="css-494cde" id="Jobgroup5"><button type="button"
-															name="직군 마케팅"  class="css-184xd0e">마케팅</button></li>
-													<li class="css-494cde" id="Jobgroup6"><button type="button"
-															name="직군 경영/인사" class="css-184xd0e">경영/인사</button></li>
-													<li class="css-494cde" id="Jobgroup7"><button type="button"
-															name="직군 영업" class="css-184xd0e">영업</button></li>
-													<li class="css-494cde" id="Jobgroup8"><button type="button"
-															name="직군 엔지니어링" class="css-184xd0e">엔지니어링</button></li>
+													<li class="css-494cde" id="Jobgroup1"><button
+															type="button" name="직군 개발" class="css-184xd0e">개발</button></li>
+													<li class="css-494cde" id="Jobgroup2"><button
+															type="button" name="직군 게임개발" class="css-184xd0e">게임개발</button></li>
+													<li class="css-494cde" id="Jobgroup3"><button
+															type="button" name="직군 디자인" class="css-184xd0e">디자인</button></li>
+													<li class="css-494cde" id="Jobgroup4"><button
+															type="button" name="직군 기획" class="css-184xd0e">기획</button></li>
+													<li class="css-494cde" id="Jobgroup5"><button
+															type="button" name="직군 마케팅" class="css-184xd0e">마케팅</button></li>
+													<li class="css-494cde" id="Jobgroup6"><button
+															type="button" name="직군 경영/인사" class="css-184xd0e">경영/인사</button></li>
+													<li class="css-494cde" id="Jobgroup7"><button
+															type="button" name="직군 영업" class="css-184xd0e">영업</button></li>
+													<li class="css-494cde" id="Jobgroup8"><button
+															type="button" name="직군 엔지니어링" class="css-184xd0e">엔지니어링</button></li>
 												</ul>
 											</div>
 											<div class="css-ziljwy">
 												<label class="css-pwu5ys" id="a1">직무</label>
 												<ul class="css-1piurjj">
 													<p class="css-1kxn32n">직군을 선택해주세요</p>
-												</ul>	
-												<ul class="css-1piurjj" id="posting3">													
+												</ul>
+												<ul class="css-1piurjj" id="posting3">
 													<li class="css-1xupo39"><button type="button"
 															name="직무 전체 선택됨" class="css-19bo4h0">전체</button></li>
 													<li class="css-1xupo39"><button type="button"
@@ -501,16 +510,16 @@
 						</div>
 					</div>
 					<div>
-						<a aria-label="이력서"
-							href="/ex/resume"
-							id="resume" class="css-avxbst"> <script>
+						<a aria-label="이력서" href="/ex/resume" id="resume"
+							class="css-avxbst"> <script>
 								document.querySelector("#resume")
 										.addEventListener("click",
 												function(event) {
 
 													event.preventDefault();
+													alert("호로록로롤")
 
-													alert('test');
+													$(".css-okq0lf").show();
 
 												}, false);
 							</script>
@@ -531,9 +540,37 @@
 							</div>
 							<div class="GNB-menu__noti-container css-176b8zp">
 								<button type="button" class="css-4qldrf">이력서</button>
-							
 							</div>
 						</a>
+						<section class="css-okq0lf">
+							<div role="banner" class="css-757x7s"></div>
+							<div tabindex="0" class="css-5uom7f">
+								<header class="css-1xet2e3">
+									<h2 class="css-fstzjo">로그인/회원가입</h2>
+									<button aria-label="모달 닫기" type="button" class="css-z9uv3y"
+									onclick="location.href='/ex/main'">
+										<svg width="20" height="20" fill="none" viewBox="0 0 16 16"
+											xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M2.768 2.79a.916.916 0 0 1 1.293 0l3.927 3.92 3.928-3.92a.916.916 0 0 1 1.505.994.913.913 0 0 1-.212.297L9.28 8l3.928 3.92a.914.914 0 0 1 .023 1.313.915.915 0 0 1-1.316-.024L7.988 9.29l-3.927 3.92a.916.916 0 0 1-1.539-.652.912.912 0 0 1 .246-.639L6.695 8 2.768 4.08a.912.912 0 0 1 0-1.29z"
+												fill="#535961"></path></svg>
+									</button>
+								</header>
+								<div class="css-4q4s82">
+									<div>
+										<p class="css-wlnobz">랠릿에서 원하는 회사와 채용 공고를 만나 보세요!</p>
+										<p class="css-wlnobz">인프런 계정이 있다면 바로 시작할 수 있어요.</p>
+										<div class="css-1nrcks9">
+											<a
+												href="https://www.inflearn.com/signup?referUrl=https%3A%2F%2Fwww.rallit.com%2F%3F"><button
+													class="css-19a2zyv" type="button">회원가입</button></a><a
+												href="https://www.inflearn.com/signin?referUrl=https%3A%2F%2Fwww.rallit.com%2F%3F"><button
+													class="css-1bdr6y4" type="button">로그인</button></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
 					</div>
 				</div>
 				<div class="right-GNB css-5by9vu">
@@ -588,25 +625,26 @@
 					<!-- -------------------------MY 랠릿 드롭다운 메뉴 버튼 ------------------------ -->
 
 
-		
+
 					<sec:authorize access="isAuthenticated()">
 						<div class="dropdown">
 							<button onclick="myFunction()" class="dropbtn">MY 랠릿</button>
 							<div id="myDropdown" class="dropdown-content">
-						<c:choose>
-						<c:when test="${user_autho == 'ROLE_ADMIN'}">
-						<a href="/ex/admin/user">관리자 페이지</a>
-						</c:when>
-						<c:otherwise>
-						<a href="/ex/info">내 정보</a>
-						</c:otherwise>
-						</c:choose>
-						
+								<c:choose>
+									<c:when test="${user_autho == 'ROLE_ADMIN'}">
+										<a href="/ex/admin/user">관리자 페이지</a>
+									</c:when>
+									<c:otherwise>
+										<a href="/ex/info">내 정보</a>
+									</c:otherwise>
+								</c:choose>
+
 
 								<form class="1"
 									action="${pageContext.request.contextPath}/main/logout"
 									method="POST">
-									<input style="height:44px;" class="1" type="submit" value="로그아웃" id="logout">
+									<input style="height: 44px;" class="1" type="submit"
+										value="로그아웃" id="logout">
 									<script>
 										document.getElementById("logout")
 												.addEventListener('click',
@@ -620,8 +658,8 @@
 							</div>
 						</div>
 					</sec:authorize>
-					
-					
+
+
 
 					<!--------------------------------------------------------------------------- -->
 

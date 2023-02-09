@@ -1,0 +1,338 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+    outline:0;
+}
+section {
+    display: block;
+}
+.css-okq0lf {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    transform: scale(1);
+}
+body, html {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #21252a;
+    background-color: #fff;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+
+.css-okq0lf {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    transform: scale(1);
+}
+* {
+    box-sizing: border-box;
+}
+
+section {
+    display: block;
+}
+body, html {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #21252a;
+    background-color: #fff;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+:root {
+    --swiper-navigation-size: 44px;
+}
+
+:root {
+    --swiper-theme-color: #007aff;
+}
+
+
+.css-5uom7f:focus{
+	outline:0;
+}
+.css-5uom7f {
+    position: relative;
+    margin: 450px auto;
+    padding: 1.867rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    min-height: 10.667rem;
+    max-height: 45.333rem;
+   
+    background-color: rgb(255, 255, 255);
+    transition: all 0.1s ease-in 0s;
+    z-index: 100;
+    width: 28rem;
+    transform: scale(1);
+    outline:0;
+    border-radius:10px;
+}
+header {
+    display: block;
+}
+
+.css-1xet2e3 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 0.667rem;
+    color: rgb(33, 37, 42);
+}
+
+div {
+    display: block;
+}
+.css-4q4s82 {
+    flex: 1 1 auto;
+    overflow: auto;
+    color: rgb(53, 58, 64);
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+.css-1nrcks9 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: start;
+    -webkit-box-align: start;
+    align-items: start;
+    gap: 0rem;
+    margin-top: 20px;
+}
+
+.css-4q4s82 {
+    flex: 1 1 auto;
+    overflow: auto;
+    color: rgb(53, 58, 64);
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.css-fstzjo {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    font-weight: bold;
+    white-space: pre-line;
+    word-break: break-all;
+    margin: 0px;
+}
+.css-wlnobz {
+    margin: 0px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+    white-space: pre-line;
+    text-align: start;
+    word-break: break-all;
+}
+
+.css-19a2zyv {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid rgb(234, 236, 238);
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 37, 42);
+    padding: 8px 12px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+button:focus{
+	outline:0;
+}
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+.css-4q4s82 {
+    flex: 1 1 auto;
+    overflow: auto;
+    color: rgb(53, 58, 64);
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.css-1bdr6y4 {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: rgb(0, 204, 170);
+    color: rgb(255, 255, 255);
+    padding: 8px 12px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.css-1nrcks9 button {
+    width: 100%;
+}
+
+
+.css-4q4s82 {
+    flex: 1 1 auto;
+    overflow: auto;
+    color: rgb(53, 58, 64);
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.css-z9uv3y {
+    margin-left: auto;
+    padding: 0px;
+    display: flex;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.css-1xet2e3 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 0.667rem;
+    color: rgb(33, 37, 42);
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #21252a;
+    background-color: #fff;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

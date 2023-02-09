@@ -159,13 +159,6 @@
 	}
 </script>
 <!-- ------------------------------------------------------------- -->
-<script>
-document.querySelector("#resume").addEventListener("click", function(event) {
-
-	alert('test');
-	event.preventDefault();
-	}, false);
-</script>
 
 </head>
 <body>
@@ -510,7 +503,18 @@ document.querySelector("#resume").addEventListener("click", function(event) {
 					<div>
 						<a aria-label="이력서"
 							href="/ex/resume"
-							class="css-avxbst" id="resume">
+							id="resume" class="css-avxbst"> <script>
+								document.querySelector("#resume")
+										.addEventListener("click",
+												function(event) {
+
+													event.preventDefault();
+
+													alert('test');
+
+												}, false);
+							</script>
+
 							<div class="css-wodprq">
 								<div class="GNB-menu__noti-container">
 									<div class="rallit-icon  css-1sepp5i">

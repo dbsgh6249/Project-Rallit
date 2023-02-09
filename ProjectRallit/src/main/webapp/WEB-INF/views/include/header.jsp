@@ -159,12 +159,12 @@
 	}
 </script>
 <!-- ------------------------------------------------------------- -->
-	<script>
-									function resume() {
+<script>
+	function resume() {
 
-										alert("호로롤록 ");
-									}
-								</script>
+		alert("호로롤록 ");
+	}
+</script>
 
 </head>
 <body>
@@ -508,7 +508,7 @@
 					</div>
 					<div>
 						<a aria-label="이력서"
-							href="https://i.ytimg.com/vi/5rCcqk2QxrM/maxresdefault.jpg"
+							href="/ex/resume"
 							class="css-avxbst">
 							<div class="css-wodprq">
 								<div class="GNB-menu__noti-container">

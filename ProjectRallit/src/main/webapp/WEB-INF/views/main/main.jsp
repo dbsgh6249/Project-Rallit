@@ -231,7 +231,7 @@
                               </ul>
                               <div class="css-1rtzn1u">
                                  <span>
-                                    <p class="css-oz575p">${jobPosting.minCareer} ~ ${jobPosting.maxCareer}년
+                                    <p class="css-oz575p">${jobPosting.minCareer}~${jobPosting.maxCareer}년
                                        <!--ex.주니어 (1~3년) if넣어서 경력에 따른 표현 (+ 안 쓸 것 같음 귀찮아(23.02.09 10:22))-->
                                     </p>
                                  </span>

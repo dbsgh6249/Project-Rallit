@@ -64,6 +64,13 @@ public class HomeController {
 		model.addAttribute("list",jobPostingInfoVos);
 		return "jobPosting/jobPostingSelect";
 	}
+	
+	@RequestMapping(value = "/resume", method = RequestMethod.GET)
+	public String resume(Model model){
+		System.out.println("이력서 로그인");
+		
+		return "/main/resume";
+	}
 	//test용
 	@RequestMapping(value = "/jpd", method = RequestMethod.GET)
 	public String jpd(Model model) {

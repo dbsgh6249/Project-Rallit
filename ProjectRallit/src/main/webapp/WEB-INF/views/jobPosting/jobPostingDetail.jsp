@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -19,7 +20,7 @@
                         <div class="css-70qvj9"><img
                                 src="https://cdn.rallit.com/image/2022-03-14/k-kO_VYdDeIKSLHcv9Vfz.png"
                                 alt="(주)백패커 로고 이미지" class="css-g298dc">
-                            <h2 class="css-10lpnky">${jobPosting.users_company }</h2>
+                            <h2 class="css-10lpnky">${jobPosting.user_company }</h2>
                         </div>
                     </a>
                     <h1 class="css-17ueevk">${jobPosting.title }</h1>
@@ -100,7 +101,7 @@
                     </section>
                     <div class="css-1vbiael">
                         <section class="css-1yoja6p">
-                            <h2 class="css-16a5xne">${jobPosting.users_company }, 어떤 곳인가요?</h2>
+                            <h2 class="css-16a5xne">${jobPosting.user_company }, 어떤 곳인가요?</h2>
                             <p class="css-19hzmb1"> ${jobPosting.text1 }</p>
                         </section>
                         <section class="css-y1gt6f">
@@ -158,13 +159,13 @@
                             </section>
                         </section>
                         <section class="css-1p3fgy4">
-                            <h2 class="css-16a5xne">${company }에서 전하는 미래 동료에게 한마디</h2>
+                            <h2 class="css-16a5xne">${jobPosting.user_company }에서 전하는 미래 동료에게 한마디</h2>
                             <p class="css-19hzmb1">${jobPosting.text6 }</p>
                         </section>
                         <div class="css-1r56nfl"></div>
                         <section class="css-1xcwzc">
                             <h2 class="css-1lazorv">근무 지역</h2>
-                            <p class="css-1do0vae">${address } </p>
+                            <p class="css-1do0vae">${address} </p>
                         </section>
                     </div>
                     <div class="css-et343p">
@@ -184,13 +185,13 @@
                                         <dl class="css-dnxlq5">
                                             <div class="css-150elap">
                                                 <dt class="css-1u8yjw6">최소 연봉</dt>
-                                                <dd class="css-1pvdrt3">${jobPosting.sal }</dd>
+                                                <dd class="css-1pvdrt3">${jobPosting.sal }만원 이상</dd>
                                             </div>
                                         </dl>
                                         <dl class="css-dnxlq5">
                                             <div class="css-150elap">
                                                 <dt class="css-1u8yjw6">마감일</dt>
-                                                <dd class="css-1pvdrt3">${jobPosting.deadline}</dd>
+                                                <dd class="css-1pvdrt3"><fmt:formatDate pattern="yyyy년 MM월 dd일" value='${jobPosting.deadline}' />
                                             </div>
                                         </dl>
                                         <div class="css-16s6tkq">

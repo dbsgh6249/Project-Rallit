@@ -37,12 +37,12 @@ $("#menu").on("mouseleave",function(){
       <li>
             <div class="bbox">회원 관리  📝</div>
             <ul class="sub">
-                <li><a href="#">구직자</a></li>
-                <li><a href="#">회사</a></li>
+                <li><a href="/ex/admin/seekerList">구직자</a></li>
+                <li><a href="/ex/admin/companyList">회사</a></li>
             </ul>
         </li>
         <li>
-            <div class="bbox" style="cursor: pointer;" onclick="location.href='/ex/admin/jobPosting2';">채용 공고  📝</div>
+            <div class="bbox" style="cursor: pointer;" onclick="location.href='/ex/admin/jobPosting';">채용 공고  📝</div>
         </li>
     </ul>
 </aside>

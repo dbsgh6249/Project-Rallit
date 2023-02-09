@@ -3,7 +3,6 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@include file = "../include/headerAdmin.jsp" %>
       <link href="${pageContext.request.contextPath}/resources/css/myInfo.css"
       rel="stylesheet" type="text/css">
@@ -32,35 +31,30 @@
 	</nav>
 <%@include file = "../include/myHomeMenuAdmin.jsp" %>
 	<section class="css-8jj0t0">
-		<h1 class="css-vvbno4">채용 공고</h1>
+		<h1 class="css-vvbno4">회원 관리</h1>
 		<div class="css-uaw2kl">
 			<div class="css-9j3f84">
 				<header class="css-1en5oz">
-					<h2 class="my-dashboard__title css-fstzjo">채용공고 목록을 조회합니다</h2>
+					<h2 class="my-dashboard__title css-fstzjo">구직자 회원 목록을 조회합니다</h2>
 				</header>
 					<div class="css-1miajvq">
 						<div class="css-1mezue1">
 							<table>
 								<thead>
 									<tr>
-										<th>글번호</th>
-										<th>제목</th>
-										<th>회사명</th>
-										<th>직무</th>
-										<th>마감일</th>
-										<th>조회수</th>
+										<th>이름</th>
+										<th>id</th>
+										<th>전화번호</th>
+										<th>주소</th>
 									</tr>
 								</thead>
 								<tbody>
-									<c:forEach items="${list }" var="jobPosting">
+									<c:forEach items="${list }" var="user">
 									<tr>
-										<td>${jobPosting.posting_num }</td>
-										<td>${jobPosting.title }</td>
-										<td>${jobPosting.user_company }</td>
-										<td>${jobPosting.occ_sub }</td>
-										<td><fmt:formatDate pattern="yyyy-MM-dd" 
-      value="${jobPosting.deadline}" /> </td>
-										<td>${jobPosting.viewCnt }</td>
+										<td>${user.user_name }</td>
+										<td>${user.user_id }</td>
+										<td>${user.user_phone }</td>
+										<td>${user.user_province } ${user.user_city }</td>
 									</tr>
 									</c:forEach>
 								</tbody>

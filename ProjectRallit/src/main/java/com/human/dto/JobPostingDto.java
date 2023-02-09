@@ -8,6 +8,7 @@ public class JobPostingDto {
 	private Integer posting_num;		// 글번호
 	private String title;			// 글제목
 	private String user_id;
+	private String user_company;
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date dateCreated;		// 작성일
 	@DateTimeFormat(pattern="yyyy-MM-dd")
@@ -27,13 +28,12 @@ public class JobPostingDto {
 	
 	
 	
+
+
+
 	@Override
 	public String toString() {
-		return "JobPostingDto [posting_num=" + posting_num + ", title=" + title + ", user_id=" + user_id
-				+ ", dateCreated=" + dateCreated + ", deadline=" + deadline + ", occ_main=" + occ_main + ", occ_sub="
-				+ occ_sub + ", minCareer=" + minCareer + ", maxCareer=" + maxCareer + ", text1=" + text1 + ", text2="
-				+ text2 + ", text3=" + text3 + ", text4=" + text4 + ", text5=" + text5 + ", text6=" + text6 + ", sal="
-				+ sal + ", viewCnt=" + viewCnt + "]";
+		return "JobPostingDto [posting_num=" + posting_num + ", user_company=" + user_company + "]";
 	}
 
 
@@ -205,6 +205,16 @@ public class JobPostingDto {
 
 	public void setSal(Integer sal) {
 		this.sal = sal;
+	}
+
+
+	public String getUser_company() {
+		return user_company;
+	}
+
+
+	public void setUser_company(String user_company) {
+		this.user_company = user_company;
 	}
 
 

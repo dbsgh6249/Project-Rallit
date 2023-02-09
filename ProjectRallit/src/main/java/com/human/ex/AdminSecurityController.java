@@ -39,7 +39,7 @@ public class AdminSecurityController {
         
 		return "/admin/user";
 	}
-	@RequestMapping(value = "/admin/jobPosting2", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin/jobPosting", method = RequestMethod.GET)
 	public String adminJobPostList(Authentication authentication,HttpSession session,Model model) throws Exception {
         List<JobPostingInfoVo> jobPostingInfoVos = jobPostingInfo_Service.selectAll();
 		model.addAttribute("list",jobPostingInfoVos);

@@ -3,6 +3,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@include file = "../include/headerAdmin.jsp" %>
       <link href="${pageContext.request.contextPath}/resources/css/myInfo.css"
       rel="stylesheet" type="text/css">
@@ -57,7 +58,8 @@
 										<td>${jobPosting.title }</td>
 										<td>${jobPosting.user_company }</td>
 										<td>${jobPosting.occ_sub }</td>
-										<td>${jobPosting.deadline }</td>
+										<td><fmt:formatDate pattern="yyyy-MM-dd" 
+      value="${jobPosting.deadline}" /> </td>
 										<td>${jobPosting.viewCnt }</td>
 									</tr>
 									</c:forEach>

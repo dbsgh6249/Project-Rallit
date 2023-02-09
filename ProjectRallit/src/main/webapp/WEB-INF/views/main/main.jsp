@@ -174,7 +174,7 @@
             <div class="css-1ixgpnt">
                <h2 class="css-1elspdf">채용 중인 공고</h2>
                <div class="css-fl7us7">
-                  <a href="/ex/jps">
+                  <a href="/ex/jobPostList">
                      <div class="css-p1vanc">
                         <p class="css-byjqmz">전체보기</p>
                         <span>

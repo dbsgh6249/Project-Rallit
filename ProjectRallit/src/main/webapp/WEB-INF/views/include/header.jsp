@@ -160,10 +160,11 @@
 </script>
 <!-- ------------------------------------------------------------- -->
 <script>
-	function resume() {
+document.querySelector("#resume").addEventListener("click", function(event) {
 
-		alert("호로롤록 ");
-	}
+	alert('test');
+	event.preventDefault();
+	}, false);
 </script>
 
 </head>
@@ -509,7 +510,7 @@
 					<div>
 						<a aria-label="이력서"
 							href="/ex/resume"
-							class="css-avxbst">
+							class="css-avxbst" id="resume">
 							<div class="css-wodprq">
 								<div class="GNB-menu__noti-container">
 									<div class="rallit-icon  css-1sepp5i">
@@ -525,7 +526,7 @@
 								<span class="css-jk5git">이력서</span>
 							</div>
 							<div class="GNB-menu__noti-container css-176b8zp">
-								<button type="button" class="css-4qldrf" onclick = "resume()">이력서</button>
+								<button type="button" class="css-4qldrf">이력서</button>
 							
 							</div>
 						</a>

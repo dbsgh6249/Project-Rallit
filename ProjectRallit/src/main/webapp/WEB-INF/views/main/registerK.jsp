@@ -20,9 +20,6 @@
   })
 }
 </script>
-<style>
-
-</style>
 
 <body>
     <div id="root">

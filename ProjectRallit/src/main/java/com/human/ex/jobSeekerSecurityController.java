@@ -19,7 +19,7 @@ public class jobSeekerSecurityController {
 	@RequestMapping(value = "/jobSeeker/user", method = RequestMethod.GET)
 	public String user(Locale locale, Model model) {
 		System.out.println("aaa?");
-		return "/main/main";
+		return "redirect:/main";
 	}
 	
 	@RequestMapping(value = "/jobSeeker/error", method = RequestMethod.GET)

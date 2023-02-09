@@ -59,4 +59,10 @@ public class H_UsersServiceImpl implements IH_UsersService {
 		return dao.selectCompany();
 	}
 
+	@Override
+	public List<String> selectCompanyName(String user_id) throws Exception {
+		IH_UsersDao dao = sqlSession.getMapper(IH_UsersDao.class);
+		return dao.selectCompanyName(user_id);
+	}
+
 }

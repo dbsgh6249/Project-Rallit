@@ -17,11 +17,14 @@ public class JobPostingInfoServiceImpl implements IJobPostingInfoService{
 	private IJobPostingService postingService;
 	@Autowired
 	private IPostingTagService tagService;
+	@Autowired
+	private IH_UsersService usersService;
 
 	@Override
 	public void insertJobPostingInfo(JobPostingDto dto, JobPostingInfoVo vo) throws Exception {
 		postingService.insert(dto);
 		vo.setPosting_num(postingService.selectMaxPostingNum());
+		vo.setUser_company(usersService.selectCompanyName(dto.getUser_id()).get(0));		
 		if(vo.getLanguageTags()!=null) {
 			for(String tag : vo.getLanguageTags()) {
 				if(tag.equals("")) {
@@ -37,36 +40,43 @@ public class JobPostingInfoServiceImpl implements IJobPostingInfoService{
 
 	@Override
 	public List<JobPostingInfoVo> selectAll() throws Exception {
-		List<JobPostingInfoVo> jobPostingInfoVos = new ArrayList<JobPostingInfoVo>();
-		List<JobPostingDto> jobPostingDtos = postingService.selectAll();
-		if(jobPostingDtos != null) {
-			for(JobPostingDto dto : jobPostingDtos) {
-				List<String> tags = tagService.selectPosting_num(dto.getPosting_num());
-				jobPostingInfoVos.add(new JobPostingInfoVo(dto,tags));
+		List<JobPostingInfoVo> vos = new ArrayList<JobPostingInfoVo>();
+		List<JobPostingDto> dtos = postingService.selectAll();
+		if(dtos != null) {
+			for(int i=0;i<dtos.size();i++) {				
+				List<String> tags = tagService.selectPosting_num(dtos.get(i).getPosting_num());
+				vos.add(new JobPostingInfoVo(dtos.get(i),tags));
+				String id = dtos.get(i).getUser_id();
+				List<String> company = usersService.selectCompanyName(id);
+				vos.get(i).setUser_company(company.get(0));
 			}
 		}
-		return jobPostingInfoVos;
+		return vos;
 	}
 
 	@Override
 	public JobPostingInfoVo selectOne(int posting_num) throws Exception {
 		JobPostingDto dto = postingService.selectOne(posting_num);
 		List<String> tags = tagService.selectPosting_num(posting_num);
-		JobPostingInfoVo jobPostigInfoVo = new JobPostingInfoVo(dto,tags);		
-		return jobPostigInfoVo;
+		JobPostingInfoVo vo = new JobPostingInfoVo(dto,tags);	
+		vo.setUser_company(usersService.selectCompanyName(vo.getUser_id()).get(0));
+		return vo;
 	}
 
 	@Override
 	public List<JobPostingInfoVo> selectPostingMain() throws Exception {
-		List<JobPostingInfoVo> jobPostingInfoVos = new ArrayList<JobPostingInfoVo>();
-		List<JobPostingDto> jobPostingDtos = postingService.selectPostingMain();
-		if(jobPostingDtos != null) {
-			for(JobPostingDto dto : jobPostingDtos) {
-				List<String> tags = tagService.selectPosting_num(dto.getPosting_num());
-				jobPostingInfoVos.add(new JobPostingInfoVo(dto,tags));
+		List<JobPostingInfoVo> vos = new ArrayList<JobPostingInfoVo>();
+		List<JobPostingDto> dtos = postingService.selectPostingMain();
+		if(dtos != null) {
+			for(int i=0;i<dtos.size();i++) {
+				List<String> tags = tagService.selectPosting_num(dtos.get(i).getPosting_num());
+				vos.add(new JobPostingInfoVo(dtos.get(i),tags));
+				String id = dtos.get(i).getUser_id();
+				List<String> company = usersService.selectCompanyName(id);
+				vos.get(i).setUser_company(company.get(0));
 			}
 		}
-		return jobPostingInfoVos;
+		return vos;
 	}
 
 }

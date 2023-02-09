@@ -33,6 +33,15 @@ public class JobPostingInfoVo {
 	
 	private List<String> languageTags;	// 태그
 	
+	@Override
+	public String toString() {
+		return "JobPostingInfoVo [posting_num=" + posting_num + ", title=" + title + ", user_id=" + user_id
+				+ ", user_company=" + user_company + ", dateCreated=" + dateCreated + ", deadline=" + deadline
+				+ ", occ_main=" + occ_main + ", occ_sub=" + occ_sub + ", address=" + address + ", minCareer="
+				+ minCareer + ", maxCareer=" + maxCareer + ", text1=" + text1 + ", text2=" + text2 + ", text3=" + text3
+				+ ", text4=" + text4 + ", text5=" + text5 + ", text6=" + text6 + ", sal=" + sal + ", viewCnt=" + viewCnt
+				+ ", languageTags=" + languageTags + "]";
+	}
 	public JobPostingInfoVo() {}
 	public JobPostingInfoVo(JobPostingDto dto, List<String> languageTags) {
 		this.posting_num = dto.getPosting_num();

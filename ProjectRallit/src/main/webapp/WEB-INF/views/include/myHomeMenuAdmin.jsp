@@ -37,8 +37,8 @@ $("#menu").on("mouseleave",function(){
       <li>
             <div class="bbox">회원 관리  📝</div>
             <ul class="sub">
-                <li><a href="#">구직자</a></li>
-                <li><a href="#">회사</a></li>
+                <li><a href="/ex/admin/seekerList">구직자</a></li>
+                <li><a href="/ex/admin/companyList">회사</a></li>
             </ul>
         </li>
         <li>

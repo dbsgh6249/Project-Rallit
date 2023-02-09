@@ -82,7 +82,9 @@ public class JobPostingController {
 	@RequestMapping(value = "/jobPosting/selectAll", method = RequestMethod.GET)
 	public String jobPostingSelectAll(Model model) throws Exception {
 		List<JobPostingInfoVo> jobPostingInfoVos = jobPostingInfo_Service.selectAll();
+		List<String> jobGroups = jobPosting_Service.selectJobGroup();
 		model.addAttribute("list",jobPostingInfoVos);
+		model.addAttribute("jobGroup", jobGroups);
 		return "/jobPosting/jobPostingSelect";
 	}
 	@RequestMapping(value = "/jobPosting/selectOne", method = RequestMethod.GET)

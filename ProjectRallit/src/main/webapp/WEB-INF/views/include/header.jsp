@@ -159,12 +159,12 @@
 	}
 </script>
 <!-- ------------------------------------------------------------- -->
-	<script>
-									function resume() {
+<script>
+	function resume() {
 
-										alert("호로롤록 ");
-									}
-								</script>
+		alert("호로롤록 ");
+	}
+</script>
 
 </head>
 <body>
@@ -526,6 +526,7 @@
 							</div>
 							<div class="GNB-menu__noti-container css-176b8zp">
 								<button type="button" class="css-4qldrf" onclick = "resume()">이력서</button>
+								
 							
 							</div>
 						</a>

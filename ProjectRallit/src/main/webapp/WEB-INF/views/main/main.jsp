@@ -195,7 +195,7 @@
 
             <!---------------------------채용중인 공고 껍데기 자리----------------------->
             <ul class="css-1nwykk">
-               <c:forEach items="list" var="jobPosting">
+               <c:forEach items="${list }" var="jobPosting">
                   <!-- c태그 forEach 실행 시작(채용공고 데이터) -->
                   <li>
                      <article class="css-1pr9edg">
@@ -229,8 +229,7 @@
                               </ul>
                               <div class="css-1rtzn1u">
                                  <span>
-                                    <p class="css-oz575p">${jobPosting.minCareer}
-                                       ~ ${jobPosting.maxCareer}년
+                                    <p class="css-oz575p">${jobPosting.minCareer} ~ ${jobPosting.maxCareer}년
                                        <!--ex.주니어 (1~3년) if넣어서 경력에 따른 표현 (+ 안 쓸 것 같음 귀찮아(23.02.09 10:22))-->
                                     </p>
                                  </span>
@@ -253,7 +252,7 @@
          <section class="css-xi4ft8">
             <h2 class="css-6gjqqg">요즘 핫한 직업</h2>
             <ul class="css-pjp278">
-            <c:forEach items='jobGroup' var='occ_sub'>
+            <c:forEach items='${jobGroup }' var='occ_sub'>
             	<li>
                   <div href="/positions?jobGroup=DEVELOPER&amp;job=BACKEND_DEVELOPER" class="css-o1ev2s">
                   <!-- href 나중에 변경 필요(23.02.09 10:22) -->

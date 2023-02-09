@@ -42,8 +42,6 @@ public class JobPostingController {
 	@Autowired
 	private IJobPostingInfoService jobPostingInfo_Service;
 	@Autowired
-	private IAuthoritiesService authorities_Service;
-	@Autowired
 	private IH_UsersService hUsers_Service;
 	
 	@RequestMapping(value = "/jobPosting/insert", method = RequestMethod.GET)
@@ -79,14 +77,7 @@ public class JobPostingController {
 		jobPosting_Service.delete(posting_num);
 		return "redirect:/jobPosting/selectAll";
 	}
-	@RequestMapping(value = "/jobPosting/selectAll", method = RequestMethod.GET)
-	public String jobPostingSelectAll(Model model) throws Exception {
-		List<JobPostingInfoVo> jobPostingInfoVos = jobPostingInfo_Service.selectAll();
-		List<String> jobGroups = jobPosting_Service.selectJobGroup();
-		model.addAttribute("list",jobPostingInfoVos);
-		model.addAttribute("jobGroup", jobGroups);
-		return "/jobPosting/jobPostingSelect";
-	}
+
 	@RequestMapping(value = "/jobPosting/selectOne", method = RequestMethod.GET)
 	public String jobPostingSelectOne(@RequestParam("posting_num")int posting_num,Model model) throws Exception {
 		jobPosting_Service.viewUpdate(posting_num); // 글번호로 채용공고 조회수 업데이트

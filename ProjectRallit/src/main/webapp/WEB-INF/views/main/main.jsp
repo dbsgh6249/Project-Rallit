@@ -195,13 +195,14 @@
 
             <!---------------------------채용중인 공고 껍데기 자리----------------------->
             <ul class="css-1nwykk">
-               <c:forEach var="test" items="${test }">
+               <c:forEach items="list" var="jobPosting">
                   <!-- c태그 forEach 실행 시작(채용공고 데이터) -->
                   <li>
                      <article class="css-1pr9edg">
                         <a href="/ex/jpd"> <!-- <a href="/positions/1235">  -->
                            <figure class="css-1gd0osy">
                               <!-- 이 부분 이미지 삽입 방식 수정 예정 -->
+                              <!-- 사진첨부 가능해지면 처리 예정(23.02.09 10:22) -->
                               <img alt="주식회사 게임듀오 대표이미지" sizes="100vw"
                                  srcset="https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=640 640w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 750w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 828w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1080w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1200w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1920w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 2048w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 3840w"
                                  src="https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720"
@@ -211,50 +212,36 @@
                            <div class="css-1gw9rd1">
                               <div>
                                  <div role="button" tabindex="0">
-                                    <p class="summary__company-name css-fk1zjv">${test.company_id}<!--회사명-->
+                                    <p class="summary__company-name css-fk1zjv">${jobPosting.user_company}<!--회사명-->
                                     </p>
                                  </div>
                                  <div role="button" tabindex="0">
-                                    <h3 class="summary__title css-1to8sx0">${test.occupation}<!--직무(ex.서버 프로그래머)-->
+                                    <h3 class="summary__title css-1to8sx0">${jobPosting.title}
                                     </h3>
                                  </div>
                               </div>
                               <ul class="css-1kivyvq">
-                                 <li class="css-1uz98zw">
-                                    <p class="css-1cyvqo4">${test.mainwork}<!--ex Node.js-->
-                                    </p>
-                                 </li>
-                                 <li class="css-1uz98zw">
-                                    <p class="css-1cyvqo4">${test.mainwork}<!--ex TypeScript 배열처리로 나오게 하기 -->
-                                    </p>
-                                 </li>
+                              	<c:forEach items= '${jobPosting.languageTags }' var='postingTag'>
+                              		<li class="css-1uz98zw">
+                                    	<p class="css-1cyvqo4">${postingTag}</p>                                	
+                                    </li>
+                              	</c:forEach>
                               </ul>
                               <div class="css-1rtzn1u">
                                  <span>
-                                    <p class="css-oz575p">${test.minCareer}
-                                       ~ ${test.maxCareer}년
-                                       <!--ex.주니어 (1~3년) if넣어서 경력에 따른 표현-->
+                                    <p class="css-oz575p">${jobPosting.minCareer}
+                                       ~ ${jobPosting.maxCareer}년
+                                       <!--ex.주니어 (1~3년) if넣어서 경력에 따른 표현 (+ 안 쓸 것 같음 귀찮아(23.02.09 10:22))-->
                                     </p>
                                  </span>
                                  <div class="css-106dojg"></div>
                                  <span>
-                                    <p class="css-oz575p">${test.city}<!--ex.서울-->
+                                    <p class="css-oz575p">${jobPosting.address}
                                     </p>
                                  </span>
                               </div>
                            </div>
-                        </a>
-                        <button type="button" aria-label="북마크" class="css-mzz592">
-                           <div class="rallit-icon  css-1bdht9e">
-                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M4.75 2.5a.25.25 0 0 0-.25.25v9.91l3.023-2.489a.75.75 0 0 1 .954 0l3.023 2.49V2.75a.25.25 0 0 0-.25-.25h-6.5zM3 2.75C3 1.784 3.784 1 4.75 1h6.5c.966 0 1.75.784 1.75 1.75v11.5a.75.75 0 0 1-1.227.579L8 11.722l-3.773 3.107A.75.75 0 0 1 3 14.25V2.75z"
-                                    fill="#eaecee"></path>
-                                </svg>
-                           </div>
-                        </button>
+                        </a> <!-- 북마크 버림(23.02.09 10:22) -->
                      </article>
                   </li>
                </c:forEach>
@@ -266,58 +253,14 @@
          <section class="css-xi4ft8">
             <h2 class="css-6gjqqg">요즘 핫한 직업</h2>
             <ul class="css-pjp278">
-               <li>
-                  <div
-                     href="/positions?jobGroup=DEVELOPER&amp;job=BACKEND_DEVELOPER"
-                     class="css-o1ev2s">
-                     <h3 class="skill-tag-link__name css-b3w4y1">#백엔드/서버 개발자</h3>
+            <c:forEach items='jobGroup' var='occ_sub'>
+            	<li>
+                  <div href="/positions?jobGroup=DEVELOPER&amp;job=BACKEND_DEVELOPER" class="css-o1ev2s">
+                  <!-- href 나중에 변경 필요(23.02.09 10:22) -->
+                     <h3 class="skill-tag-link__name css-b3w4y1">${occ_sub}</h3>
                   </div>
                </li>
-               <li>
-                  <div
-                     href="/positions?jobGroup=DEVELOPER&amp;job=FRONTEND_DEVELOPER"
-                     class="css-o1ev2s">
-                     <h3 class="skill-tag-link__name css-b3w4y1">#프론트엔드/웹퍼블리셔</h3>
-                  </div>
-               </li>
-               <li>
-                  <div
-                     href="/positions?jobGroup=DEVELOPER&amp;job=SOFTWARE_ENGINEER"
-                     class="css-o1ev2s">
-                     <h3 class="skill-tag-link__name css-b3w4y1">#SW 엔지니어</h3>
-                  </div>
-               </li>
-               <li>
-                  <div
-                     href="/positions?jobGroup=DEVELOPER&amp;job=ANDROID_DEVELOPER"
-                     class="css-o1ev2s">
-                     <h3 class="skill-tag-link__name css-b3w4y1">#안드로이드 개발자</h3>
-                  </div>
-               </li>
-               <li>
-                  <div href="/positions?jobGroup=DEVELOPER&amp;job=IOS_DEVELOPER"
-                     class="css-o1ev2s">
-                     <h3 class="skill-tag-link__name css-b3w4y1">#IOS 개발자</h3>
-                  </div>
-               </li>
-               <li>
-                  <div href="/positions?jobGroup=DEVELOPER&amp;job=DEV_OPS"
-                     class="css-o1ev2s">
-                     <h3 class="skill-tag-link__name css-b3w4y1">#DevOps</h3>
-                  </div>
-               </li>
-               <li>
-                  <div href="/positions?jobGroup=DESIGN&amp;job=PRODUCT_DESIGNER"
-                     class="css-o1ev2s">
-                     <h3 class="skill-tag-link__name css-b3w4y1">#프로덕트 디자이너</h3>
-                  </div>
-               </li>
-               <li>
-                  <div href="/positions?jobGroup=DESIGN&amp;job=WEB_APP_DESIGNER"
-                     class="css-o1ev2s">
-                     <h3 class="skill-tag-link__name css-b3w4y1">#웹/앱 디자이너</h3>
-                  </div>
-               </li>
+            </c:forEach>
             </ul>
          </section>
       </div>

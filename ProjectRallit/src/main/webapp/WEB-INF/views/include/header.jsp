@@ -254,7 +254,7 @@
 						</div>
 					</a>
 					<div class="dropdownList__wrapper css-3fe575" id="posting">
-						<a aria-label="탐색" href="/ex/jps" class="css-avxbst">
+						<a aria-label="탐색" href="/ex/jobPostList" class="css-avxbst">
 							<div class="css-wodprq">
 								<div class="GNB-menu__noti-container">
 									<div class="rallit-icon  css-1sepp5i">

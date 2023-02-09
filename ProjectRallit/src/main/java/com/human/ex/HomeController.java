@@ -40,14 +40,14 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) throws Exception {
-		System.out.println("home controller");
+		System.out.println("프로젝트 실행");
 
-		return "redirect:/jobPosting/selectAll";
+		return "redirect:/main";
 	}
 	
-	@RequestMapping(value = "/jobPosting/selectAll", method = RequestMethod.GET)
+	@RequestMapping(value = "/main", method = RequestMethod.GET)
 	public String jobPostingSelectAll(Model model) throws Exception {
-		System.out.println("jobPostingController");
+		System.out.println("메인 페이지로 이동");
 		List<JobPostingInfoVo> jobPostingInfoVos = jobPostingInfo_Service.selectAll();
 		List<String> jobGroups = jobPosting_Service.selectJobGroup();
 		model.addAttribute("list",jobPostingInfoVos);
@@ -63,9 +63,12 @@ public class HomeController {
 		return "jobPosting/jobPostingDetail";
 	}
 	//test용
-	@RequestMapping(value = "/jps", method = RequestMethod.GET)
-	public String jps(Model model) {
-		
+	@RequestMapping(value = "/jobPostList", method = RequestMethod.GET)
+	public String jps(Model model) throws Exception {
+		System.out.println("채용공고 페이지");
+		List<JobPostingInfoVo> jobPostingInfoVos = jobPostingInfo_Service.selectAll();
+		List<String> jobGroups = jobPosting_Service.selectJobGroup();
+		model.addAttribute("list",jobPostingInfoVos);
 		return "jobPosting/jobPostingSelect";
 	}
 	//test용

@@ -14,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.human.dto.H_UsersDto;
 import com.human.service.IH_UsersService;
@@ -72,9 +73,11 @@ public class HomeController {
 		return "/main/resume";
 	}
 	//test용
-	@RequestMapping(value = "/jpd", method = RequestMethod.GET)
-	public String jpd(Model model) {
-		
+	@RequestMapping(value = "/readPost", method = RequestMethod.GET)
+	public String jpd(@RequestParam("posting_num") int posting_num, Model model) throws Exception {
+		JobPostingInfoVo vo = jobPostingInfo_Service.selectOne(posting_num);
+		jobPosting_Service.updateJobGroupVcnt(vo.getOcc_sub());
+		model.addAttribute("jobPosting", vo);
 		return "jobPosting/jobPostingDetail";
 	}
 	//test용

@@ -78,15 +78,6 @@ public class JobPostingController {
 		return "redirect:/jobPosting/selectAll";
 	}
 
-	@RequestMapping(value = "/jobPosting/selectOne", method = RequestMethod.GET)
-	public String jobPostingSelectOne(@RequestParam("posting_num")int posting_num,Model model) throws Exception {
-		jobPosting_Service.viewUpdate(posting_num); // 글번호로 채용공고 조회수 업데이트
-		JobPostingInfoVo vo = jobPostingInfo_Service.selectOne(posting_num); // 출력할 거 먼저 담아놓고
-		jobPosting_Service.updateJobGroupVcnt(vo.getOcc_sub()); // 직무 뽑아와서 조회수 업데이트
-		// 조회수용도 select도 만들어둘까?
-		model.addAttribute("dto",vo);
-		return "/jobPosting/jobPostingDetail";
-	}
 	@RequestMapping(value = "/jobPosting/selectCompanyPosting", method = RequestMethod.GET)
 	public void jobPostingSelectCompanyPosting(String user_id,Model model) throws Exception {
 		model.addAttribute("list",jobPosting_Service.selectCompanyPosting(user_id));

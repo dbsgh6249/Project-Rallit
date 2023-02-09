@@ -24,7 +24,8 @@ public class JobPostingInfoServiceImpl implements IJobPostingInfoService{
 	public void insertJobPostingInfo(JobPostingDto dto, JobPostingInfoVo vo) throws Exception {
 		postingService.insert(dto);
 		vo.setPosting_num(postingService.selectMaxPostingNum());
-		vo.setUser_company(usersService.selectCompanyName(dto.getUser_id()).get(0));		
+		List<String> company = usersService.selectCompanyName(vo.getUser_id());
+		vo.setUser_company(company.get(0));		
 		if(vo.getLanguageTags()!=null) {
 			for(String tag : vo.getLanguageTags()) {
 				if(tag.equals("")) {
@@ -59,7 +60,9 @@ public class JobPostingInfoServiceImpl implements IJobPostingInfoService{
 		JobPostingDto dto = postingService.selectOne(posting_num);
 		List<String> tags = tagService.selectPosting_num(posting_num);
 		JobPostingInfoVo vo = new JobPostingInfoVo(dto,tags);	
-		vo.setUser_company(usersService.selectCompanyName(vo.getUser_id()).get(0));
+		List<String> company = usersService.selectCompanyName(vo.getUser_id());
+		System.out.println(company.get(0));
+		vo.setUser_company(company.get(0));
 		return vo;
 	}
 

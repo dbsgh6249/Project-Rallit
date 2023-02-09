@@ -61,6 +61,7 @@ public class JobPostingInfoVo {
 		this.text6 = dto.getText6();
 		this.sal = dto.getSal();
 		this.viewCnt = dto.getViewCnt();
+		this.user_company = null;
 		
 		this.languageTags = languageTags;
 	}

@@ -11,7 +11,7 @@ values (posting_num_seq.nextval,#{title},#{user_id},sysdate, #{deadline},#{occ_m
 #{text1},#{text2},#{text3},#{text4},#{text5},#{text6},#{sal},0)</insert>
 
 <select id="selectOne" resultType="com.human.dto.JobPostingDto"> <!-- 채용공고 상세페이지(Select One) -->
-select * from posting_num_seq where posting_num = #{posting_num}
+select * from jobPosting where posting_num = #{posting_num}
 </select>
 
 <select id="selectCompanyPosting" resultType="com.human.dto.JobPostingDto"> <!-- 기업회원 마이페이지에서 조회되는 공고 목록 -->

@@ -257,8 +257,24 @@ a {
      word-break: break-all;
      font-weight: 500;
  }
-
+.css-14jxz7e {
+    padding: 0px;
+}
+.css-18dqyo9 {
+    position: absolute;
+    top: -3.733rem;
+    left: 50%;
+    width: 100%;
+    z-index: 2;
+    transform: translateX(-50%);
+    padding: 0px 32px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 1px 8px 0px;
+}
  .css-1gzra86 {
+  	 position: -webkit-sticky;
+ 	 position: sticky;
      z-index: 40;
      top: 0;
      display: -webkit-box;

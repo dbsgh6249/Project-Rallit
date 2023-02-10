@@ -64,7 +64,7 @@
 			</div>
 
 
-			<form action="/ex/seeker/register" method="POST">
+			<form action="/ex/main/register" method="POST">
 				<input type="hidden" name="user_company">
 				<p>이메일</p>
 				<br> <input type="text" name="user_id"

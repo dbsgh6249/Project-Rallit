@@ -7,7 +7,32 @@
 <%@include file = "../include/headerAdmin.jsp" %>
       <link href="${pageContext.request.contextPath}/resources/css/myInfo.css"
       rel="stylesheet" type="text/css">
-     
+ <head>
+ <style>
+ 	table {
+ 		font-size: .9em;
+ 		width: 95%;
+ 		border-collapse: collapse;
+ 		border-radius: 5px;
+ 		overflow: hidden;
+  	}
+  	th {text-align: left;}
+  	thead {
+  		font-weight: bold;
+  		color: #fff;
+  		background-color: #1bcd9d;
+  	}
+  	td, th {
+  		padding: 1em .5em;
+  		vertical-align: middle;
+  	}
+  	td {
+  		border-bottom: 1px solid #c6c9cc;
+  		border-right: 1px solid #c6c9cc;
+  		border-left: 1px solid #c6c9cc;
+  	}
+ </style>
+ </head>     
 <main class="css-ac13em">
 <div class="css-ftt0tl">
 	<nav class="css-uebuml">
@@ -38,7 +63,6 @@
 				<header class="css-1en5oz">
 					<h2 class="my-dashboard__title css-fstzjo">채용공고 목록을 조회합니다</h2>
 				</header>
-					<div class="css-1miajvq">
 						<div class="css-1mezue1">
 							<table>
 								<thead>
@@ -55,18 +79,19 @@
 									<c:forEach items="${list }" var="jobPosting">
 									<tr>
 										<td>${jobPosting.posting_num }</td>
-										<td>${jobPosting.title }</td>
+										<td>
+										<a href='/ex/readPost?posting_num=${jobPosting.posting_num }'>
+										${jobPosting.title }</a>
+										</td>
 										<td>${jobPosting.user_company }</td>
 										<td>${jobPosting.occ_sub }</td>
-										<td><fmt:formatDate pattern="yyyy-MM-dd" 
-      value="${jobPosting.deadline}" /> </td>
+										<td><fmt:formatDate pattern="yyyy-MM-dd" value="${jobPosting.deadline}" /> </td>
 										<td>${jobPosting.viewCnt }</td>
 									</tr>
 									</c:forEach>
 								</tbody>
 							</table>
 						</div>
-					</div>
 			</div>
 	</section>
 </div>

@@ -14,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.human.dto.H_UsersDto;
 import com.human.service.IH_UsersService;
@@ -43,8 +44,13 @@ public class AdminSecurityController {
 	public String adminJobPostList(Authentication authentication,HttpSession session,Model model) throws Exception {
         List<JobPostingInfoVo> jobPostingInfoVos = jobPostingInfo_Service.selectAll();
 		model.addAttribute("list",jobPostingInfoVos);
-		return "/admin/jobPosting";
+		return "/admin/jobPostingList";
 	}
+	@RequestMapping(value = "/admin/updateJobPosting", method = RequestMethod.GET)
+	public String updatePosting(@RequestParam("posting_num")int posting_num, Model model) throws Exception {
+		model.addAttribute("jobPosting",jobPostingInfo_Service.selectOne(posting_num));
+		return "/admin/updateJobPosting";
+	}// 태그 업데이트를 어디서 할 지가 고민... 한번에 다 받아서 처리가 가능할 것 같지 않음
 	
 	@RequestMapping(value = "/admin/seekerList", method = RequestMethod.GET)
 	public String seekerList(Model model) throws Exception {
@@ -61,18 +67,6 @@ public class AdminSecurityController {
 		model.addAttribute("list", companyList);
 		return "/admin/companyList";
 	}
-	
-//	@RequestMapping(value = "/jobSeeker/user", method = RequestMethod.GET)
-//	public String seeker(Authentication authentication,HttpSession session) {
-//		SecurityContextHolder.getContext().setAuthentication(authentication);
-//		UsernamePasswordAuthenticationToken token = (UsernamePasswordAuthenticationToken)authentication;
-//        String id = token.getName();
-//        
-//        System.out.println("AdminController 값  : " + id);
-//        System.out.println("세션 : " + session.getId());
-//        session.setAttribute("user_login", session.getId());
-//        
-//		return "/main/main";
-//	}
+
 	
 }

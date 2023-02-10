@@ -6,7 +6,32 @@
 <%@include file = "../include/headerAdmin.jsp" %>
       <link href="${pageContext.request.contextPath}/resources/css/myInfo.css"
       rel="stylesheet" type="text/css">
-     
+<head>
+ <style>
+ 	table {
+ 		font-size: .9em;
+ 		width: 95%;
+ 		border-collapse: collapse;
+ 		border-radius: 5px;
+ 		overflow: hidden;
+  	}
+  	th {text-align: left;}
+  	thead {
+  		font-weight: bold;
+  		color: #fff;
+  		background-color: #1bcd9d;
+  	}
+  	td, th {
+  		padding: 1em .5em;
+  		vertical-align: middle;
+  	}
+  	td {
+  		border-bottom: 1px solid #c6c9cc;
+  		border-right: 1px solid #c6c9cc;
+  		border-left: 1px solid #c6c9cc;
+  	}
+ </style>
+ </head>
 <main class="css-ac13em">
 <div class="css-ftt0tl">
 	<nav class="css-uebuml">

@@ -1,27 +1,22 @@
 @charset "UTF-8";
-.container {
-	margin-left: 20px;
-	margin-right: 20px;
-}
 
-::placeholder {
-	position: relative;
-	color: #ced4ec;
+
+.postingBar input.careerInput{
+	width:245px;
 }
 
 .postingBar input {
-	border-color: #ced4ec;
-	border-style: solid;
-	border-radius: 5px;
-	border-width: 1px;
-	height: 48px;
-	width: 312px;
-	margin-bottom: -10px;
-	padding-left: 10px;
-}
-
-.postingBar input[type="number"] {
-	width: 130px;
+    margin-top: 1px;
+    color: rgb(86, 100, 125);
+    width: 500px;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 12px;
+    background-color: rgb(238, 238, 238);
+    
 }
 
 .postingBar button {
@@ -42,13 +37,28 @@
 
 .postingBar input[type="submit"] {
 	height: 44px;
-	width: 320px;
+	width: 500px;
 	font-weight: bolder;
 	color: white;
 	border: none;
 	background-color: #00C471;
 	cursor: pointer;
 }
+
+input.taginput{
+	margin-top: 1px;
+    color: rgb(86, 100, 125);
+    width: 100px;
+    height: 25px;
+    font-size: 12px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 12px;
+    background-color: rgb(230, 230, 230);
+}
+
+
 
 .postingBar p {
 	font-size: 15px;
@@ -76,14 +86,42 @@
 .userId_value {
 	vertical-align: middle;
 }
-
+button.tagButton{
+	margin-bottom:10px;
+}
+button.tagDel{
+	width:25px;
+	height:25px;
+	border-radius:0%;
+	border:0px;
+	margin-right:20px;
+	item-align:center;
+}
+button.tagDel:hover{
+	background-color:none;
+}
+div.tagDiv{
+	float:left;
+	margin-right:0px;
+	margin-bottom:15px;
+}
+div.tagbox{
+	width:500px;
+}
+input.displayTag{
+	width:500px;
+}
 .postingBar .jobPostingtext textarea {
-	border: 1px solid #ced4ec;
+	border: 0px solid #ced4ec;
 	display: block;
-	width: 80%;
-	height: 300px;
+	width: 500px;
 	box-sizing: border-box;
 	resize: vertical;
+	border-radius:6px;
+	outline:none;
+	background-color: rgb(238, 238, 238);
+	padding:10px;
+	height:200px;
 }
 form>span {
 	display:none;

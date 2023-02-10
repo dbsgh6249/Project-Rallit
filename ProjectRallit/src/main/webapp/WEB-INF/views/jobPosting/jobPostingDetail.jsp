@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -184,13 +185,13 @@
                                         <dl class="css-dnxlq5">
                                             <div class="css-150elap">
                                                 <dt class="css-1u8yjw6">최소 연봉</dt>
-                                                <dd class="css-1pvdrt3">${jobPosting.sal }</dd>
+                                                <dd class="css-1pvdrt3">${jobPosting.sal }만원 이상</dd>
                                             </div>
                                         </dl>
                                         <dl class="css-dnxlq5">
                                             <div class="css-150elap">
                                                 <dt class="css-1u8yjw6">마감일</dt>
-                                                <dd class="css-1pvdrt3">${jobPosting.deadline}</dd>
+                                                <dd class="css-1pvdrt3"><fmt:formatDate pattern="yyyy년 MM월 dd일" value='${jobPosting.deadline}' />
                                             </div>
                                         </dl>
                                         <div class="css-16s6tkq">

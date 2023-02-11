@@ -195,15 +195,7 @@
                                             </div>
                                         </dl>
                                         <div class="css-16s6tkq">
-                                            <c:choose>
-									<c:when test="${user_autho == 'ROLE_ADMIN'}">
-										<a href="/ex/admin/user">공고 수정하기</a>
-									</c:when>
-									<c:otherwise>
-										<a href="/ex/info"><button class="css-85pt97" type="button">지원하기</button></a>
-									</c:otherwise>
-								</c:choose>
-                                            
+                                            <button class="css-85pt97" type="button">지원하기</button>
                                         </div>
                                     </div>
                                 </div>

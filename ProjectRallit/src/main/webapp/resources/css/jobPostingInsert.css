@@ -41,14 +41,18 @@
 	font-weight: bolder;
 	color: white;
 	border: none;
-	background-color: #00C471;
+	background-color: #18b574;
 	cursor: pointer;
+    margin-top:20px;
+}
+.postingBar input[type="submit"]:hover{
+    background-color: #5bce9e;
 }
 
 input.taginput{
 	margin-top: 1px;
     color: rgb(86, 100, 125);
-    width: 100px;
+    width: 116px;
     height: 25px;
     font-size: 12px;
     border: 0;
@@ -63,7 +67,6 @@ input.taginput{
 .postingBar p {
 	font-size: 15px;
 }
-
 .postingBar input[type='radio'] {
 	vertical-align: middle;
 	appearance: none;
@@ -88,17 +91,26 @@ input.taginput{
 }
 button.tagButton{
 	margin-bottom:10px;
+    height: 30px;
+    width:auto;
+    cursor:pointer;
+
 }
 button.tagDel{
+    font-size:larger;
+    font-weight: bolder;
+    cursor:pointer;
 	width:25px;
 	height:25px;
 	border-radius:0%;
 	border:0px;
 	margin-right:20px;
-	item-align:center;
 }
 button.tagDel:hover{
-	background-color:none;
+	background-color:rgba(255, 255, 255, 0);
+    transform: rotate( -20deg );
+    transition: 0.1s;
+    color:rgb(233, 41, 41);
 }
 div.tagDiv{
 	float:left;
@@ -129,7 +141,7 @@ form>span {
 select {
 	width: inherit;
 	height: 25px;
-	barground: transparent;
+	background: transparent;
 	border-color: #ced4ec;
 	border-radius: 4px;
 	outline: 0 none;
@@ -139,4 +151,7 @@ select {
 option {
 	padding: 3px 0;
 	font-size: 15px;
+}
+.css-8jj0t0{
+    max-width: 700px;
 }

@@ -208,6 +208,22 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- ---------------------------------밑으로 뜨는 관리자 메뉴 테스트 -->
+                                <c:choose>
+									<c:when test="${user_autho == 'ROLE_ADMIN'}">
+                                <div class="css-rzlz8n"></div>
+                                <div class="css-n1n4ej">
+                                    <button aria-label="관리자-수정" type="button"
+                                        class="css-j6s3yv">
+                                        수정하기
+                                    </button>
+                                    <button type="button" aria-label="관리자 삭제"
+                                        class="css-j6s3yv">
+                                        삭제하기
+                                    </button></div>
+                                    </c:when>
+                                    </c:choose>
+                                    <!-- ------------------------------------------------------------------------------------- -->
                             </aside>
                         </div>
                     </div>

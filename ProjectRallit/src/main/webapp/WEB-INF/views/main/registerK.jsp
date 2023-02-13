@@ -74,7 +74,7 @@
             </div>
             <div class="nonebar"></div>
             <div class="managerbar">
-                <span>당담자 이름</span><br>
+                <span>담당자 이름</span><br>
                 <input type="text" name="user_name" placeholder="실명으로 입력">
             </div>
             <div class="nonebar"></div>

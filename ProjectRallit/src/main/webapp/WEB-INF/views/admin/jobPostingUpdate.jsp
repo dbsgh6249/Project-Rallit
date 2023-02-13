@@ -39,7 +39,6 @@
 		});
 	});
 
-	})
 </script>
 <main class="css-ac13em">
 <div class="css-ftt0tl">
@@ -65,7 +64,7 @@
 	</nav>
 	<%@include file="../include/myHomeMenuAdmin.jsp"%>
 	<section class="css-8jj0t0">
-		<h1 class="css-vvbno4">채용 공고 등록하기</h1>
+		<h1 class="css-vvbno4">채용 공고 수정하기</h1>
 		<div class='container'>
 			<span class='postingBar'>
 				<form id='jobPostingInsert' name='postingForm'
@@ -131,7 +130,7 @@
 					
 
 					<div class="inputbox">
-						<input type="submit" id='insertbtn' value='등록'>
+						<input type="submit" id='insertbtn' value='수정하기'>
 					</div>
 				</form>
 

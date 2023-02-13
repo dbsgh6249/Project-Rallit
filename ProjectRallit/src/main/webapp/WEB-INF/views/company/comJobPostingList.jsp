@@ -10,6 +10,7 @@
 	rel="stylesheet" type="text/css">
 	<link href="${pageContext.request.contextPath}/resources/css/viewList.css"
 	rel="stylesheet" type="text/css">
+	<title>기업회원 공고목록</title>
 <head>
  <style>
  	table {
@@ -38,7 +39,7 @@
 </head>
 <!--  -->
 
-
+ 
 
 <main class="css-ac13em">
 <div class="css-ftt0tl">
@@ -83,7 +84,7 @@
 								</thead>
 								<tbody>
 									<c:forEach items="${list }" var="jobPosting">
-									<tr>
+									<tr style="cursor:pointer;" onclick="location.href='/ex/readPost?posting_num=${jobPosting.posting_num }'" class="colored">
 										<td>
 										<a href='/ex/readPost?posting_num=${jobPosting.posting_num }'>
 										${jobPosting.title }</a>

@@ -150,7 +150,7 @@
 					</div>
 
 					<div class="inputbox">
-						<input type="submit" id='insertbtn' value='등록'>
+						<input type="submit" id='insertbtn' value='등록하기'>
 					</div>
 				</form>
 

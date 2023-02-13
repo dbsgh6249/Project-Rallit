@@ -95,6 +95,12 @@ public class HomeController {
 			return "admin/jobPostingInsert";
 		}
 	
+		//test용
+				@RequestMapping(value = "/jpu", method = RequestMethod.GET)
+				public String jobPostingUpdate(Model model) {
+					
+					return "admin/jobPostingUpdate";
+				}
 	
 	@RequestMapping(value = "/info", method = RequestMethod.GET)
 	public String myInfo(HttpServletRequest request, Model model) {
@@ -146,7 +152,16 @@ public class HomeController {
 			user_service.update(dto);
 			System.out.println("1");
 			return "redirect:/info";
-		}
-
+		}		//test용
+				@RequestMapping(value = "/infoView", method = RequestMethod.GET)
+				public String infoView(HttpServletRequest request, Model model) {
+					HttpSession session = request.getSession();
+					if(session.getAttribute("user_autho").equals("ROLE_COMPANY")) {
+						return "company/comUserViewMyInfo";
+					}else {
+						return "jobSeeker/userViewMyInfo";
+					}
+					
+				}
 				
 }

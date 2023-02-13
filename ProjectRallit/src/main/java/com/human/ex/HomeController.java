@@ -16,6 +16,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.human.dto.H_UsersDto;
 import com.human.service.IH_UsersService;
@@ -120,6 +121,31 @@ public class HomeController {
 				return "jobSeeker/userUpdateAccount";
 			}
 			
+		}
+		@RequestMapping(value = "/infoUp", method = RequestMethod.POST)
+		public String updateDB(H_UsersDto dto, HttpServletRequest request) throws Exception {
+			System.out.println(dto);
+			HttpSession session = request.getSession();
+			dto.setUser_id((String)session.getAttribute("user_login"));
+			String full = request.getParameter("full_address");
+			String[] list = full.split(" ");
+			String temp = "";
+			for(int i = 0; i < list.length ; i++) {
+				System.out.println(list[i]);
+				if(i>=2) {
+					temp += list[i]+" ";
+				}
+			}
+			dto.setUser_province(list[0]);
+			dto.setUser_city(list[1]);
+			temp += dto.getUser_address();
+			dto.setUser_address(temp);
+			System.out.println("dto 수정 값 : " + (String)dto.getUser_address());
+//			user_info insert
+			System.out.println(dto);
+			user_service.update(dto);
+			System.out.println("1");
+			return "redirect:/info";
 		}
 
 				

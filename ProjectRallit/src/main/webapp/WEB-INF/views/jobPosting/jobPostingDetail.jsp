@@ -173,11 +173,20 @@
 									<c:when test="${user_autho == 'ROLE_ADMIN'}">
                                 <div class="css-rzlz8n"></div>
                                 <div class="css-n1n4ej">
+<<<<<<< HEAD
                                     <button style="height:25px; width:70px; background-color:#6e93ac; color:white; border-radius:6px;" aria-label="관리자-수정" type="button"
                                         class="css-j6s3yv" onclick="location.href='/ex/jpu'">
+=======
+                                    <button style="height:25px; width:70px; background-color:#478373; color:white; border-radius:6px;" aria-label="관리자-수정" type="button"
+                                        class="css-j6s3yv" onclick="location.href='/ex/admin/updateJobPosting?posting_num=${jobPosting.posting_num} '">
+>>>>>>> branch 'master' of https://github.com/dbsgh6249/Project-Rallit.git
                                         수정하기
                                     </button>
+<<<<<<< HEAD
                                     <button onclick="location.href=''" style="height:25px; width:70px; background-color:#6e93ac; color:white; border-radius:6px;" type="button" aria-label="관리자 삭제"
+=======
+                                    <button onclick="location.href='/ex/admin/deleteJobPosting?posting_num=${jobPosting.posting_num}'" style="height:25px; width:70px; background-color:#478373; color:white; border-radius:6px;" type="button" aria-label="관리자 삭제"
+>>>>>>> branch 'master' of https://github.com/dbsgh6249/Project-Rallit.git
                                         class="css-j6s3yv">
                                         삭제하기
                                     </button></div>

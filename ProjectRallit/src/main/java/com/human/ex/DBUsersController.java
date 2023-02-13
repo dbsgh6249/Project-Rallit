@@ -73,12 +73,10 @@ public class DBUsersController {
 	
 	@RequestMapping(value = "/main/registerK", method = RequestMethod.GET)
 	public String registerK(Locale locale, Model model) {
-		System.out.println("aaaaaaaaaaaaa기업 회원가입");
 		return "/main/registerK";
 	}
 	@RequestMapping(value = "/main/registerK", method = RequestMethod.POST)
 	public String companySignUp(H_UsersDto dto, HttpServletRequest request) throws Exception {
-		System.out.println("bbbbbbbbbbbbb기업 회원가입");
 		String full = request.getParameter("full_address");
 		String[] list = full.split(" ");
 		String temp = "";

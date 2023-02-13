@@ -84,30 +84,27 @@
 							<p class="css-1aweud3">변경을 원하는 정보를 입력 후 수정하기 버튼을 누르십시오.</p>
 							<br>
 							<div class="w3-section">
-								<!-- <label class="input_label">이메일</label><br> <input
-									class="updateInput" type="text"
-									placeholder="example@inflab.com" name="user_id"><br> -->
 								<br> <label class="input_label">비밀번호</label><br> <input
 									class="updateInput" type="password" placeholder="******"
 									name="user_pw"><br> <br> <label
 									class="input_label">이름</label><br> <input
-									class="updateInput" type="text" placeholder="독고OO"
+									class="updateInput" type="text" value="${user.user_name }"
 									name="user_name"><br> <br> <label
 									class="input_label">전화번호</label><br> <input
-									class="updateInput" type="text" placeholder="010-0000-0000"
+									class="updateInput" type="text" value="${user.user_phone }"
 									name="user_phone"><br> <br><!--  <input type="hidden" name = "user_company"> -->
 									<label
 									class="input_label">회사명</label><br><input
-									class="updateInput" type="text" placeholder="애플 코리아 충남 두정점"
+									class="updateInput" type="text" value="${user.user_company }"
 									name="user_company"><br> <br><label class="input_label">주소</label><br>
 								<input class="inputsubmit" type="button" onclick="daumPost()"
 									value="우편주소찾기"><br>
 									<input type="text"
-									id="full_address" name="full_address" placeholder="주소" readonly>
+									id="full_address" name="full_address" value="${user.user_province } ${user.user_city}" readonly>
 								<br>
 								<p></p>
 								<input type="text" id="input_label" name="user_address"
-									placeholder="상세주소"><br>
+									placeholder="${user.user_address }"><br>
 
 								<br>
 								<button class="css-1146gk" type="submit">수정하기</button>

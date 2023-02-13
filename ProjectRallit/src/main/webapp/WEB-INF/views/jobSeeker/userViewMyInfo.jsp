@@ -75,25 +75,17 @@ margin-top:10px;
                           
                            <div>
 <div>
-				<input type="hidden" name="user_company">
 				<p>이메일</p>
-				<input type="text" name="user_id"
-					placeholder="example@inflab.com" readonly><br>
+				<input type="text" placeholder="${user.user_id }" readonly><br>
 				<p>비밀번호</p>
-				<input type="password" name="user_pw" placeholder="******" readonly><br>
+				<input type="password" placeholder="******" readonly><br>
 				<p>이름</p>
-				<input type="text" name="user_name" placeholder="김OO" readonly><br>
+				<input type="text" placeholder="${user.user_name }" readonly><br>
 				<p>휴대폰 번호</p>
-				<input type="text" name="user_phone"
-					placeholder="010-0000-0000" readonly><br>
-					
-					
-				<p>주소</p>
-				
-	
-				<input type="text" id="full_address" name="full_address" 
-				placeholder="주소" readonly><br>
-				<input type="text" id="addr3" name="user_address" placeholder="상세주소" readonly><br><br>
+				<input type="text" name="user_phone"placeholder="${user.user_phone }" readonly><br>					
+				<p>주소</p>			
+				<input type="text" placeholder="${user.user_province } ${user.user_city}" readonly><br>
+				<input type="text" placeholder="${user.user_address }" readonly><br><br>
 
 
 	<div style="max-width:400px; text-align:right;">

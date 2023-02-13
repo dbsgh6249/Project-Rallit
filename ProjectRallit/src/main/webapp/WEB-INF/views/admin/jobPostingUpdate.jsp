@@ -67,23 +67,11 @@
 		<h1 class="css-vvbno4">채용 공고 수정하기</h1>
 		<div class='container'>
 			<span class='postingBar'>
-				<form id='jobPostingInsert' name='postingForm'
-					action='/ex/jobPosting/insert' method='post'>
-					<input type='hidden' name='posting_num' value='${dto.posting_num }'>
-					<input type='hidden' name='datecreated' value='${dto.datecreated }'>
+				<form id='jobPostingUpdate' name='updatePosting'
+					action='/ex/admin/updateJobPosting' method='post'>
+					<input type='hidden' name='posting_num' value='${jobPosting.posting_num }'>
 					<p>제목</p>
-					<input type="text" name="title">
-					<p>회사 ID</p>
-					<c:forEach items="${list }" var="hUsersDto">
-						<label class='selectCompanyId'> <input type='radio'
-							name='user_id' value='${hUsersDto.user_id }'> <input
-							type='hidden' name='user_company'
-							value='${hUsersDto.user_company }'> <input type="hidden"
-							name="address"
-							value="${hUsersDto.user_province }+' '+${hUsersDto.user_city}">
-							<span class='userId_value'>${hUsersDto.user_id }</span><br>
-						</label>
-					</c:forEach>
+					<input type="text" name="title" value="${jobPosting.title }">
 					<p>공고 마감일 선택</p>
 					<input type="date" name="deadline"><br>
 					<br>
@@ -93,39 +81,39 @@
 						type="text" id="fullOccu" readonly> <br>
 					<p>경력</p>
 					<input class="careerInput" type="number" name="minCareer"
-						placeholder="숫자로 입력하세요" min='0'> ~ <input
+						value="${jobPosting.minCareer }" min='0'> ~ <input
 						class="careerInput" type="number" name="maxCareer"
-						placeholder="숫자로 입력하세요"><br>
+						value="${jobPosting.maxCareer }"><br>
 					<p>소개</p>
 					<div class='jobPostingtext'>
-						<textarea name="text1" placeholder="회사 소개글을 입력하세요"></textarea>
+						<textarea name="text1">${jobPosting.text1 }</textarea>
 						<br>
 					</div>
 					<p>주요업무</p>
 					<div class='jobPostingtext'>
-						<textarea name="text2" placeholder="업무 내용을 입력하세요"></textarea>
+						<textarea name="text2">${jobPosting.text2 }</textarea>
 						<br>
 					</div>
 					<p>자격요건</p>
 					<div class='jobPostingtext'>
-						<textarea name="text3" placeholder="자격 요건을 입력하세요"></textarea>
+						<textarea name="text3">${jobPosting.text3 }</textarea>
 						<br>
 					</div>
 					<p>우대사항</p>
 					<div class='jobPostingtext'>
-						<textarea name="text4" placeholder="우대사항을 입력하세요"></textarea>
+						<textarea name="text4">${jobPosting.text4 }</textarea>
 						<br>
 					</div>
 					<p>혜택 및 복지</p>
 					<div class='jobPostingtext'>
-						<textarea name="text5" placeholder="복지 내용을 입력하세요"></textarea>
+						<textarea name="text5">${jobPosting.text5 }</textarea>
 						<br>
 					</div>
 					<p>한마디</p>
-					<input type='text' name='text6' placeholder='한마디를 입력하세요'><br>
+					<input type='text' name='text6' value="${jobPosting.text6 }"><br>
 					<br>
 					<p>연봉</p>
-					<input type="number" name="sal" placeholder="숫자로 입력하세요"><br>
+					<input type="number" name="sal" value="${jobPosting.sal }"><br>
 					<br> <br>
 					
 

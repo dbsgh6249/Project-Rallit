@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Locale;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -95,9 +96,13 @@ public class HomeController {
 	
 	
 	@RequestMapping(value = "/info", method = RequestMethod.GET)
-	public String myInfo(Model model) {
-		
-		return "jobSeeker/userMyInfo";
+	public String myInfo(HttpServletRequest request, Model model) {
+		HttpSession session = request.getSession();
+		if(session.getAttribute("user_autho").equals("ROLE_COMPANY")) {
+			return "company/comUser";
+		}else {
+			return "jobSeeker/userMyInfo";
+		}
 	}
 	//test용
 	@RequestMapping(value = "/infoDel", method = RequestMethod.GET)
@@ -107,8 +112,15 @@ public class HomeController {
 	}
 	//test용
 		@RequestMapping(value = "/infoUp", method = RequestMethod.GET)
-		public String infoUpdate(Model model) {
+		public String infoUpdate(HttpServletRequest request, Model model) {
+			HttpSession session = request.getSession();
+			if(session.getAttribute("user_autho").equals("ROLE_COMPANY")) {
+				return "company/comUserUpdateAccount";
+			}else {
+				return "jobSeeker/userUpdateAccount";
+			}
 			
-			return "jobSeeker/userUpdateAccount";
 		}
+
+				
 }

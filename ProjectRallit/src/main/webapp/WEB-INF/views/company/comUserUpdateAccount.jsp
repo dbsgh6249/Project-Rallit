@@ -34,7 +34,7 @@
 		</div>
 		<div role="none" class="css-ntzr4d"></div>
 	</nav>
-<%@include file = "../include/myHomeMenu.jsp" %>
+<%@include file = "../include/myHomeMenuCom.jsp" %>
 	<section class="css-8jj0t0">
 		<h1 class="css-vvbno4">내 정보 수정</h1>
 		<div class="css-uaw2kl">

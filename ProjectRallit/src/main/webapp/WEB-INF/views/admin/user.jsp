@@ -16,7 +16,7 @@
     	  to{
     	    transform: translatey(-20px);
     	  }};
-    	
+    	 
 .myinfoPic{
 height:90%;
 margin-left:200px;

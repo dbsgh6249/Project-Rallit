@@ -91,7 +91,7 @@
 								<br>  --><label class="input_label">비밀번호</label><br> <input
 									class="updateInput" type="password" placeholder="******"
 									name="user_pw"><br> <br> <label
-									class="input_label">이름2</label><br> <input
+									class="input_label">이름</label><br> <input
 									class="updateInput" type="text" placeholder="독고OO"
 									name="user_name"><br> <br> <label
 									class="input_label">전화번호</label><br> <input

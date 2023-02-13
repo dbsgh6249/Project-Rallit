@@ -92,7 +92,7 @@ public class HomeController {
 		@RequestMapping(value = "/jpi", method = RequestMethod.GET)
 		public String jobPostingInsert(Model model) {
 			
-			return "jobPosting/jobPostingInsert";
+			return "admin/jobPostingInsert";
 		}
 	
 	
@@ -145,7 +145,7 @@ public class HomeController {
 			System.out.println(dto);
 			user_service.update(dto);
 			System.out.println("1");
-			return "redirect:/main";
+			return "redirect:/info";
 		}
 
 				

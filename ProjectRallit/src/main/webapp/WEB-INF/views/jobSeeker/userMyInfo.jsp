@@ -6,7 +6,25 @@
 <%@include file = "../include/header.jsp"%>
       <link href="${pageContext.request.contextPath}/resources/css/myInfo.css"
       rel="stylesheet" type="text/css">
+     <style> 
      
+     @keyframes up-down{
+    	  from{
+    	    transform: translatey(0px);
+    	  }
+    	  to{
+    	    transform: translatey(-20px);
+    	  }
+    	}
+.myinfoPic{
+height:90%;
+margin-left:200px;
+margin-top:10px;
+}
+    	
+    	</style>
+    
+    
      
      <main class="css-ac13em">
             <div class="css-ftt0tl">
@@ -30,92 +48,10 @@
                     <div class="css-uaw2kl">
                         <div class="css-9j3f84">
                             <header class="css-1en5oz">
-                                <h2 class="my-dashboard__title css-fstzjo">작성 중인 지원서</h2><button type="button"
-                                    class="css-1il9omw"><a href="/my/draft-applicants"><span class="css-70qvj9">전체보기<div
-                                                class="rallit-icon  css-1gvano"><svg xmlns="http://www.w3.org/2000/svg"
-                                                    width="16" height="16" fill="none" viewBox="0 0 24 24">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#535961"
-                                                        d="M9.33 4.83c.439-.44 1.151-.44 1.59 0l6.375 6.374c.44.44.44 1.152 0 1.591L10.92 19.17a1.125 1.125 0 1 1-1.59-1.59L14.909 12l-5.58-5.58a1.125 1.125 0 0 1 0-1.59z">
-                                                    </path>
-                                                </svg></div></span></a></button>
+                                <h2 class="my-dashboard__title css-fstzjo">환영합니다! 원하는 메뉴를 선택하십시오.</h2>
                             </header>
-                            <div class="css-1miajvq">
-                                <div class="css-1mezue1">
-                                    <p class="css-1aweud3">작성 중인 지원서가 없어요.</p>
-                                    <p class="css-17rq0qv">관심있는 공고에 지원해 보세요.</p><button class="css-1146gk"
-                                        type="button">채용 공고 탐색하기</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="css-9j3f84">
-                            <header class="css-1en5oz">
-                                <h2 class="my-dashboard__title css-fstzjo">제출한 지원서</h2><button type="button"
-                                    class="css-1il9omw"><a href="/my/submitted-applicants"><span class="css-70qvj9">전체보기
-                                            <div class="rallit-icon  css-1gvano"><svg xmlns="http://www.w3.org/2000/svg"
-                                                    width="16" height="16" fill="none" viewBox="0 0 24 24">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#535961"
-                                                        d="M9.33 4.83c.439-.44 1.151-.44 1.59 0l6.375 6.374c.44.44.44 1.152 0 1.591L10.92 19.17a1.125 1.125 0 1 1-1.59-1.59L14.909 12l-5.58-5.58a1.125 1.125 0 0 1 0-1.59z">
-                                                    </path>
-                                                </svg></div></span></a></button>
-                            </header>
-                            <div class="css-sdee4m">
-                                <article class="css-11sg0mv"><a
-                                        href="/my/submitted-applicants?progressStatus=APPLY_RESUME&amp;pageNumber=1"
-                                        class="css-1ovlw77">
-                                        <div class="css-j36pxh"><span>서류지원</span>
-                                            <div class="rallit-icon  css-1gvano"><svg xmlns="http://www.w3.org/2000/svg"
-                                                    width="14" height="14" fill="none" viewBox="0 0 24 24">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#535961"
-                                                        d="M9.33 4.83c.439-.44 1.151-.44 1.59 0l6.375 6.374c.44.44.44 1.152 0 1.591L10.92 19.17a1.125 1.125 0 1 1-1.59-1.59L14.909 12l-5.58-5.58a1.125 1.125 0 0 1 0-1.59z">
-                                                    </path>
-                                                </svg></div>
-                                        </div>
-                                        <p class="css-ga0aqu">0</p>
-                                    </a></article>
-                                <article class="css-11sg0mv"><a
-                                        href="/my/submitted-applicants?progressStatus=PROGRESS&amp;pageNumber=1"
-                                        class="css-1ovlw77">
-                                        <div class="css-j36pxh"><span>진행중</span>
-                                            <div class="rallit-icon  css-1gvano"><svg xmlns="http://www.w3.org/2000/svg"
-                                                    width="14" height="14" fill="none" viewBox="0 0 24 24">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#535961"
-                                                        d="M9.33 4.83c.439-.44 1.151-.44 1.59 0l6.375 6.374c.44.44.44 1.152 0 1.591L10.92 19.17a1.125 1.125 0 1 1-1.59-1.59L14.909 12l-5.58-5.58a1.125 1.125 0 0 1 0-1.59z">
-                                                    </path>
-                                                </svg></div>
-                                        </div>
-                                        <p class="css-ga0aqu">0</p>
-                                    </a></article>
-                                <article class="css-11sg0mv"><a
-                                        href="/my/submitted-applicants?progressStatus=FINAL_PASS&amp;pageNumber=1"
-                                        class="css-1ovlw77">
-                                        <div class="css-j36pxh"><span>최종합격</span>
-                                            <div class="rallit-icon  css-1gvano"><svg xmlns="http://www.w3.org/2000/svg"
-                                                    width="14" height="14" fill="none" viewBox="0 0 24 24">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#535961"
-                                                        d="M9.33 4.83c.439-.44 1.151-.44 1.59 0l6.375 6.374c.44.44.44 1.152 0 1.591L10.92 19.17a1.125 1.125 0 1 1-1.59-1.59L14.909 12l-5.58-5.58a1.125 1.125 0 0 1 0-1.59z">
-                                                    </path>
-                                                </svg></div>
-                                        </div>
-                                        <p class="css-ga0aqu">0</p>
-                                    </a></article>
-                            </div>
-                        </div>
-                        <div class="css-9j3f84">
-                            <header class="css-1en5oz">
-                                <h2 class="my-dashboard__title css-fstzjo">북마크한 채용 공고</h2><button type="button"
-                                    class="css-1il9omw"><a href="/my/bookmarks"><span class="css-70qvj9">전체보기<div
-                                                class="rallit-icon  css-1gvano"><svg xmlns="http://www.w3.org/2000/svg"
-                                                    width="16" height="16" fill="none" viewBox="0 0 24 24">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#535961"
-                                                        d="M9.33 4.83c.439-.44 1.151-.44 1.59 0l6.375 6.374c.44.44.44 1.152 0 1.591L10.92 19.17a1.125 1.125 0 1 1-1.59-1.59L14.909 12l-5.58-5.58a1.125 1.125 0 0 1 0-1.59z">
-                                                    </path>
-                                                </svg></div></span></a></button>
-                            </header>
-                            <div class="css-0">
-                                <div class="css-1mezue1">
-                                    <p class="css-1aweud3">북마크한 채용 공고가 없어요.</p>
-                                    <p class="css-17rq0qv">관심있는 공고를 북마크해 보세요.</p><button class="css-1146gk"
-                                        type="button">채용 공고 탐색하기</button>
+                           <div>
+                           <img class="myinfoPic" src="resources/imgs/myinfo2.png" style="animation: up-down 2s infinite ease-in-out alternate; background-color:transparent;">
                                 </div>
                             </div>
                         </div>

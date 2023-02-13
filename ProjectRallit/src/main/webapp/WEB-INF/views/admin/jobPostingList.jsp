@@ -9,8 +9,20 @@
       rel="stylesheet" type="text/css">
        <link href="${pageContext.request.contextPath}/resources/css/viewList.css"
       rel="stylesheet" type="text/css">
+      <title>채용공고 목록</title>
  <head>
+<style>
+.insertP{
+border-radius:6px; 
+background-color:#1bcd9d; 
+color:white; height:30px; 
+cursor:pointer;"
+}
+.insertP:hover{
 
+    background-color:#3ce0b5; 
+}
+</style>
  </head>     
 <main class="css-ac13em">
 <div class="css-ftt0tl">
@@ -41,6 +53,8 @@
 			<div class="css-9j3f84">
 				<header class="css-1en5oz">
 					<h2 class="my-dashboard__title css-fstzjo">채용공고 목록을 조회합니다</h2>
+					<button class="insertP" 
+					onclick="location.href='/ex/jpi'">공고 등록</button>
 				</header>
 						<div class="css-1mezue1">
 							<table>

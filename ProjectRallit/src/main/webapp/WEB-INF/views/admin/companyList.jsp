@@ -9,8 +9,8 @@
       <link href="${pageContext.request.contextPath}/resources/css/viewList.css"
       rel="stylesheet" type="text/css">
  <head>
-
  </head>    
+ <title>기업회원 목록</title>
 <main class="css-ac13em">
 <div class="css-ftt0tl">
 	<nav class="css-uebuml">

@@ -9,7 +9,7 @@
        <link href="${pageContext.request.contextPath}/resources/css/viewList.css"
       rel="stylesheet" type="text/css">
 <head>
- 
+ <title>구직 회원 목록</title>
  </head>
 <main class="css-ac13em">
 <div class="css-ftt0tl">

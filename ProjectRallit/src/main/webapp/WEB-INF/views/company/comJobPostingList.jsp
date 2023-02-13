@@ -8,6 +8,8 @@
 <%@include file="../include/findAdress.jsp"%>
 <link href="${pageContext.request.contextPath}/resources/css/myInfo.css"
 	rel="stylesheet" type="text/css">
+	<link href="${pageContext.request.contextPath}/resources/css/viewList.css"
+	rel="stylesheet" type="text/css">
 <head>
  <style>
  	table {

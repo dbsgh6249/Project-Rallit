@@ -91,7 +91,7 @@ public class HomeController {
 		@RequestMapping(value = "/jpi", method = RequestMethod.GET)
 		public String jobPostingInsert(Model model) {
 			
-			return "jobPosting/jobPostingInsert";
+			return "admin/jobPostingInsert";
 		}
 	
 	

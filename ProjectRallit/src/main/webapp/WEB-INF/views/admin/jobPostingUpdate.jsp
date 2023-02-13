@@ -39,7 +39,6 @@
 		});
 	});
 
-	})
 </script>
 <main class="css-ac13em">
 <div class="css-ftt0tl">

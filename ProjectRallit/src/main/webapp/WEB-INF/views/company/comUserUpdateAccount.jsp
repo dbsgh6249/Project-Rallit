@@ -11,6 +11,7 @@
 	<title>기업회원 정보 수정</title>
 <!--  -->
 
+
 <script
 	src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -46,9 +47,6 @@
 		}).open()
 	}
 </script>
-
-
-
 <main class="css-ac13em">
 <div class="css-ftt0tl">
 	<nav class="css-uebuml">
@@ -82,14 +80,14 @@
 
 				<form action="/ex/infoUp" method="post">
 					<div class="css-1miajvq">
-						<div class="css-1mezue1">
+						
 							<p class="css-1aweud3">변경을 원하는 정보를 입력 후 수정하기 버튼을 누르십시오.</p>
 							<br>
 							<div class="w3-section">
 								<!-- <label class="input_label">이메일</label><br> <input
 									class="updateInput" type="text"
-									placeholder="example@inflab.com" name="user_id"><br>
-								<br>  --><label class="input_label">비밀번호</label><br> <input
+									placeholder="example@inflab.com" name="user_id"><br> -->
+								<br> <label class="input_label">비밀번호</label><br> <input
 									class="updateInput" type="password" placeholder="******"
 									name="user_pw"><br> <br> <label
 									class="input_label">이름</label><br> <input
@@ -97,10 +95,11 @@
 									name="user_name"><br> <br> <label
 									class="input_label">전화번호</label><br> <input
 									class="updateInput" type="text" placeholder="010-0000-0000"
-									name="user_phone"><br> <br> <label
-									class="input_label">회사명</label><br> <input
+									name="user_phone"><br> <br><!--  <input type="hidden" name = "user_company"> -->
+									<label
+									class="input_label">회사명</label><br><input
 									class="updateInput" type="text" placeholder="애플 코리아 충남 두정점"
-									name="user_company"><br> <br> <label class="input_label">주소</label><br>
+									name="user_company"><br> <br><label class="input_label">주소</label><br>
 								<input class="inputsubmit" type="button" onclick="daumPost()"
 									value="우편주소찾기"><br>
 									<input type="text"
@@ -114,7 +113,7 @@
 								<button class="css-1146gk" type="submit">수정하기</button>
 								
 							</div>
-						</div>
+						
 					</div>
 				</form>
 			</div>

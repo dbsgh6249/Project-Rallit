@@ -203,7 +203,7 @@
                                         </c:when>
                                         
                                         <c:otherwise>
-     <a href="/ex/"><button class="css-85pt97" style="width:250px; margin-top:15px; margin-bottom:10px;" type="button">지원하기</button></a>
+     <a href="/ex/"><button onclick="alert('지원하기')" class="css-85pt97" style="width:250px; margin-top:15px; margin-bottom:10px;" type="button">지원하기</button></a>
                                         </c:otherwise>
                                     </c:choose>
                                     </div>
@@ -217,7 +217,7 @@
                                         class="css-j6s3yv" onclick="location.href='/ex/jpu'">
                                         수정하기
                                     </button>
-                                    <button style="height:25px; width:70px; background-color:#478373; color:white; border-radius:6px;" type="button" aria-label="관리자 삭제"
+                                    <button onclick="location.href=''" style="height:25px; width:70px; background-color:#478373; color:white; border-radius:6px;" type="button" aria-label="관리자 삭제"
                                         class="css-j6s3yv">
                                         삭제하기
                                     </button></div>

@@ -9,8 +9,8 @@
 		<li class="css-e0v95d"><a href="/ex/company/jobPosting" class="css-tukp59">나의
 				공고 확인</a></li>
 
-		<li class="css-e0v95d"><a href="/ex/infoUp" class="css-jvnoiv">내
-				정보 수정</a></li>
+		<li class="css-e0v95d"><a href="/ex/infoView" class="css-jvnoiv">내
+				정보</a></li>
 
 		<li class="css-e0v95d"><a href="/ex/infoDel" class="css-jvnoiv">회원
 				탈퇴</a></li>

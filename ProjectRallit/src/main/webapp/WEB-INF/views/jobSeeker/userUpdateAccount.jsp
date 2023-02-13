@@ -79,7 +79,7 @@
 
 				<form action="/ex/infoUp" method="post">
 					<div class="css-1miajvq">
-						<div class="css-1mezue1">
+						
 							<p class="css-1aweud3">변경을 원하는 정보를 입력 후 수정하기 버튼을 누르십시오.</p>
 							<br>
 							<div class="w3-section">
@@ -94,11 +94,8 @@
 									name="user_name"><br> <br> <label
 									class="input_label">전화번호</label><br> <input
 									class="updateInput" type="text" placeholder="010-0000-0000"
-									name="user_phone"><br> <br><!--  <input type="hidden" name = "user_company"> -->
-									<label
-									class="input_label">회사명</label><br><input
-									class="updateInput" type="text" placeholder="애플 코리아 충남 두정점"
-									name="user_company"><br> <br><label class="input_label">주소</label><br>
+									name="user_phone"><br> <br>
+									<label class="input_label">주소</label><br>
 								<input class="inputsubmit" type="button" onclick="daumPost()"
 									value="우편주소찾기"><br>
 									<input type="text"
@@ -112,7 +109,7 @@
 								<button class="css-1146gk" type="submit">수정하기</button>
 								
 							</div>
-						</div>
+						
 					</div>
 				</form>
 			</div>

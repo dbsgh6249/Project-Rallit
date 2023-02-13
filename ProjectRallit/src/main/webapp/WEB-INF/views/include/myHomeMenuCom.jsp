@@ -6,7 +6,7 @@
 		<li class="css-e0v95d"><a href="/ex/info" class="css-tukp59">MY
 				홈</a></li>
 
-		<li class="css-e0v95d"><a href="/ex/info" class="css-tukp59">나의
+		<li class="css-e0v95d"><a href="/ex/company/jobPosting" class="css-tukp59">나의
 				공고 확인</a></li>
 
 		<li class="css-e0v95d"><a href="/ex/infoUp" class="css-jvnoiv">내

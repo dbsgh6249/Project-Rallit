@@ -214,10 +214,10 @@
                                 <div class="css-rzlz8n"></div>
                                 <div class="css-n1n4ej">
                                     <button style="height:25px; width:70px; background-color:#478373; color:white; border-radius:6px;" aria-label="관리자-수정" type="button"
-                                        class="css-j6s3yv" onclick="location.href='/ex/jpu'">
+                                        class="css-j6s3yv" onclick="location.href='/ex/admin/updateJobPosting?posting_num=${jobPosting.posting_num} '">
                                         수정하기
                                     </button>
-                                    <button onclick="location.href=''" style="height:25px; width:70px; background-color:#478373; color:white; border-radius:6px;" type="button" aria-label="관리자 삭제"
+                                    <button onclick="location.href='/ex/admin/deleteJobPosting?posting_num=${jobPosting.posting_num}'" style="height:25px; width:70px; background-color:#478373; color:white; border-radius:6px;" type="button" aria-label="관리자 삭제"
                                         class="css-j6s3yv">
                                         삭제하기
                                     </button></div>

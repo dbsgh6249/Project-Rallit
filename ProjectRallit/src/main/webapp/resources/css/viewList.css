@@ -2,7 +2,7 @@
 
 tr.colored:hover td{
 
-    background-color:#d0f7e9 !important;
+    background-color:#8dadc3; !important;
 
 }
 
@@ -19,7 +19,7 @@ tr.colored:hover td{
   	thead {
   		font-weight: bold;
   		color: #fff;
-  		background-color: #1bcd9d;
+  		background-color: #6e93ac;
   	}
   	td, th {
   		padding: 1em .5em;

@@ -31,7 +31,7 @@ html {
     grid-area: swiper / swiper / swiper / swiper;
     position: relative;
     overflow: hidden;
-    width: 100%;
+    width: 510px;
     margin-right: 48px;
     border: 1px solid rgb(242, 244, 246);
     border-radius: 6px;
@@ -4119,7 +4119,7 @@ body>div {
     position: absolute;
     left: 0px;
     bottom: 0px;
-    width: 100%;
+    width: 510px;
     height: 100%;
     z-index: 2;
 }

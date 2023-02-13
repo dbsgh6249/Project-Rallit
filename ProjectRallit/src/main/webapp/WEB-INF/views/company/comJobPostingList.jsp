@@ -20,7 +20,8 @@
  		border-radius: 5px;
  		overflow: hidden;
   	}
-  	th {text-align: left;}
+  	th {text-align: left;
+  	background-color:#6e93ac;}
   	thead {
   		font-weight: bold;
   		color: #fff;

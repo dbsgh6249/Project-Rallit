@@ -50,7 +50,7 @@
         padding-left: 15px;
     }
     .reg input:focus{
-    border-color:#00C471;
+    border-color:#6e93ac;
     outline: none;
 	}
     .reg p{
@@ -74,7 +74,7 @@
         margin-top: 20px;
         height : 40px;
         width : 339px;
-        background-color: #1bcd9d;
+        background-color: #6e93ac;
         cursor: pointer;
         
     }
@@ -89,14 +89,14 @@
         border-width: 1px;
         height : 40px;
         width : 339px;
-        background-color: #1bcd9d;
+        background-color: #6e93ac;
         cursor: pointer;
         
         
     }
      .reg select{
 		padding: 1px 2px;
-        border-color:#ced4ec;
+        border-color:#6e93ac;
         border-style: solid;
         border-radius: 5px;
         border-width: 1px;
@@ -105,7 +105,7 @@
         padding-left: 15px;
     }
     .reg select:focus {
-	border-color: #00C471;
+	border-color: #6e93ac;
 	outline: none;
 }
 

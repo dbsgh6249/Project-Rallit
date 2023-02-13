@@ -130,4 +130,5 @@
     }
     input[type="submit"]{
         cursor: pointer;
+        background-color:#6e93ac;
     }

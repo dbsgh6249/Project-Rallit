@@ -78,24 +78,24 @@ margin-top:10px;
 				<input type="hidden" name="user_company">
 				<p>이메일</p>
 				<input type="text" name="user_id"
-					placeholder="example@inflab.com" readonly><br>
+					placeholder="${user.user_id }" readonly><br>
 				<p>비밀번호</p>
 				<input type="password" name="user_pw" placeholder="******" readonly><br>
 				<p>회사명</p>
-				<input type="text" name="user_company" placeholder="애플코리아 두정점" readonly><br>
+				<input type="text" name="user_company" placeholder="${user.user_company }" readonly><br>
 				<p>담당자 이름</p>
-				<input type="text" name="user_name" placeholder="김OO" readonly><br>
+				<input type="text" name="user_name" placeholder="${user.user_name }" readonly><br>
 				<p>휴대폰 번호</p>
 				<input type="text" name="user_phone"
-					placeholder="010-0000-0000" readonly><br>
+					placeholder="${user.user_phone }" readonly><br>
 					
 					
 				<p>주소</p>
 				
 	
 				<input type="text" id="full_address" name="full_address" 
-				placeholder="주소" readonly><br>
-				<input type="text" id="addr3" name="user_address" placeholder="상세주소" readonly><br><br>
+				placeholder="${user.user_province } ${user.user_city}" readonly><br>
+				<input type="text" id="addr3" name="user_address" placeholder="${user.user_address }" readonly><br><br>
 
 
 	<div style="max-width:400px; text-align:right;">

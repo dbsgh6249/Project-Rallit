@@ -15,10 +15,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.human.dto.H_UsersDto;
+import com.human.dto.JobPostingDto;
 import com.human.service.IH_UsersService;
 import com.human.service.IJobPostingInfoService;
+import com.human.service.IJobPostingService;
+import com.human.service.IPostingTagService;
 import com.human.vo.JobPostingInfoVo;
 
 
@@ -29,6 +33,10 @@ public class AdminSecurityController {
 	private IJobPostingInfoService jobPostingInfo_Service;
 	@Autowired
 	private IH_UsersService user_service;
+	@Autowired
+	private IJobPostingService jobPosting_service;
+	@Autowired
+	private IPostingTagService tag_service;
 	
 	private static final Logger logger = LoggerFactory.getLogger(AdminSecurityController.class);
 	
@@ -49,8 +57,14 @@ public class AdminSecurityController {
 	@RequestMapping(value = "/admin/updateJobPosting", method = RequestMethod.GET)
 	public String updatePosting(@RequestParam("posting_num")int posting_num, Model model) throws Exception {
 		model.addAttribute("jobPosting",jobPostingInfo_Service.selectOne(posting_num));
-		return "/admin/updateJobPosting";
-	}// 태그 업데이트를 어디서 할 지가 고민... 한번에 다 받아서 처리가 가능할 것 같지 않음
+		return "/admin/jobPostingUpdate";
+	}
+	@RequestMapping(value = "/admin/updateJobPosting", method = RequestMethod.POST)
+	public String updateJobPosting(JobPostingDto dto, Model model) throws Exception {
+		jobPosting_service.update(dto);
+		model.addAttribute("jobPosting",jobPostingInfo_Service.selectOne(dto.getPosting_num()));
+		return "/jobPosting/jobPostingDetail";
+	}
 	
 	@RequestMapping(value = "/admin/seekerList", method = RequestMethod.GET)
 	public String seekerList(Model model) throws Exception {
@@ -60,13 +74,35 @@ public class AdminSecurityController {
 		return "/admin/jobSeekerList";
 	}
 	
-	@RequestMapping(value = "admin/companyList", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin/companyList", method = RequestMethod.GET)
 	public String companyList(Model model) throws Exception {
 		System.out.println("ROLE_COMPANY 목록 조회");
 		List<H_UsersDto> companyList = user_service.selectCompany();
 		model.addAttribute("list", companyList);
 		return "/admin/companyList";
 	}
-
+	@RequestMapping(value = "/admin/jobPostingInsert", method = RequestMethod.GET)
+	public String jobPostingInsert(Model model) throws Exception {
+		List<H_UsersDto> hUsersDtos = user_service.selectCompany();
+		model.addAttribute("list",hUsersDtos);
+		return "/admin/jobPostingInsert";
+	}
+	@RequestMapping(value = "/admin/insert", method = RequestMethod.POST)
+	public String jobPostingInsert(JobPostingDto dto,JobPostingInfoVo vo, Model model) throws Exception {
+		jobPostingInfo_Service.insertJobPostingInfo(dto, vo);
+		String user_id = dto.getUser_id();
+		H_UsersDto hUsersDto = user_service.selectOne(user_id);
+		String address = vo.getAddress()+" "+hUsersDto.getUser_address();
+		model.addAttribute("address", address);
+		model.addAttribute("jobPosting", vo);
+		return "/jobPosting/jobPostingDetail";
+	}
+	
+	@RequestMapping(value = "/admin/deleteJobPosting",method = RequestMethod.GET)
+	public String jobPostingDelete(@RequestParam("posting_num")int posting_num,RedirectAttributes ra) throws Exception{
+		tag_service.delete(posting_num);
+		jobPosting_service.delete(posting_num);
+		return "redirect:/main";
+	}
 	
 }

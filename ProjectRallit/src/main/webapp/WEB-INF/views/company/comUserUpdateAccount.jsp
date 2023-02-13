@@ -8,6 +8,7 @@
 <%@include file="../include/findAdress.jsp"%>
 <link href="${pageContext.request.contextPath}/resources/css/myInfo.css"
 	rel="stylesheet" type="text/css">
+	<title>기업회원 정보 수정</title>
 <!--  -->
 
 <script

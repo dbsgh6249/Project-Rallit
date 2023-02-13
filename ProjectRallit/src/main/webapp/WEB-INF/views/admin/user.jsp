@@ -6,7 +6,7 @@
 <%@include file = "../include/headerAdmin.jsp" %>
       <link href="${pageContext.request.contextPath}/resources/css/myInfo.css"
       rel="stylesheet" type="text/css">
-     
+     <title>관리자 마이페이지</title>
           <style> 
      
      @keyframes up-down{
@@ -47,12 +47,9 @@ margin-top:10px;
                     <div class="css-uaw2kl">
                         <div class="css-9j3f84">
                             <header class="css-1en5oz">
-                                <h2 class="my-dashboard__title css-fstzjo">환영합니다  관리자님! 원하는 메뉴를 선택하십시오.</h2>
+                                <h2 class="my-dashboard__title css-fstzjo">환영합니다  관리자님! 원하는 메뉴를 선택하십시오. <p style="animation: up-down 2s infinite ease-in-out alternate; font-size:20pt; font-weight:border; background-color:transparent;">😱</p></h2>
                             </header>
-                           <div>
-                           <p 
-                           style="animation: up-down 2s infinite ease-in-out alternate; font-size:200pt; font-weight:border; background-color:transparent;">😱</p>
-                                </div>
+          
                             </div>
                         </div>
                     </div>

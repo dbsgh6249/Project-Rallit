@@ -95,6 +95,12 @@ public class HomeController {
 			return "admin/jobPostingInsert";
 		}
 	
+		//test용
+				@RequestMapping(value = "/jpu", method = RequestMethod.GET)
+				public String jobPostingUpdate(Model model) {
+					
+					return "admin/jobPostingUpdate";
+				}
 	
 	@RequestMapping(value = "/info", method = RequestMethod.GET)
 	public String myInfo(HttpServletRequest request, Model model) {

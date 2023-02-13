@@ -70,12 +70,9 @@ cursor:pointer;"
 								</thead>
 								<tbody>
 									<c:forEach items="${list }" var="jobPosting">
-									<tr class="colored">
+								  <tr style="cursor:pointer;" onclick="location.href='/ex/readPost?posting_num=${jobPosting.posting_num }'" class="colored">
 										<td>${jobPosting.posting_num }</td>
-										<td>
-										<a href='/ex/readPost?posting_num=${jobPosting.posting_num }'>
-										${jobPosting.title }</a>
-										</td>
+										<td>${jobPosting.title }</td>
 										<td>${jobPosting.user_company }</td>
 										<td>${jobPosting.occ_sub }</td>
 										<td><fmt:formatDate pattern="yyyy-MM-dd" value="${jobPosting.deadline}" /> </td>

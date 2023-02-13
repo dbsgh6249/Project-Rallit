@@ -17,7 +17,7 @@
                 </nav>
                 <div class="css-wopn3h">
                     <div class="css-588s5y">
-                        <h1 class="css-19w2d2h">님,<br>정말로 랠릿을 떠나실건가요? 😢</h1>
+                        <h1 class="css-19w2d2h">${username }님,<br>정말로 랠릿을 떠나실건가요? 😢</h1>
                     </div>
                     <div class="delete-account__divider css-1wy2d5j"></div>
                     <div>

@@ -194,11 +194,18 @@
                                                 <dd class="css-1pvdrt3"><fmt:formatDate pattern="yyyy년 MM월 dd일" value='${jobPosting.deadline}' />
                                             </div>
                                         </dl>
-                                        <div class="css-16s6tkq">
-                 
-										<a href="/ex/info"><button class="css-85pt97" type="button">지원하기</button></a>
-	
-                                        </div>
+                                        <c:choose>
+									<c:when test="${user_autho == 'ROLE_ADMIN'}">
+									
+                                        </c:when>
+                                        <c:when test="${user_autho == 'ROLE_COMPANY'}">
+                                        
+                                        </c:when>
+                                        
+                                        <c:otherwise>
+     <a href="/ex/"><button class="css-85pt97" style="width:250px; margin-top:15px; margin-bottom:10px;" type="button">지원하기</button></a>
+                                        </c:otherwise>
+                                    </c:choose>
                                     </div>
                                 </div>
                                 <!-- ---------------------------------밑으로 뜨는 관리자 메뉴 테스트 -->
@@ -206,11 +213,11 @@
 									<c:when test="${user_autho == 'ROLE_ADMIN'}">
                                 <div class="css-rzlz8n"></div>
                                 <div class="css-n1n4ej">
-                                    <button aria-label="관리자-수정" type="button"
-                                        class="css-j6s3yv">
+                                    <button style="height:25px; width:70px; background-color:#478373; color:white; border-radius:6px;" aria-label="관리자-수정" type="button"
+                                        class="css-j6s3yv" onclick="location.href='/ex/jpu'">
                                         수정하기
                                     </button>
-                                    <button type="button" aria-label="관리자 삭제"
+                                    <button style="height:25px; width:70px; background-color:#478373; color:white; border-radius:6px;" type="button" aria-label="관리자 삭제"
                                         class="css-j6s3yv">
                                         삭제하기
                                     </button></div>

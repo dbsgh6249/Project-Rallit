@@ -4,6 +4,7 @@
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@include file = "../include/header.jsp"%>
+<title>기업회원 마이페이지</title>
       <link href="${pageContext.request.contextPath}/resources/css/myInfo.css"
       rel="stylesheet" type="text/css">
           <style> 

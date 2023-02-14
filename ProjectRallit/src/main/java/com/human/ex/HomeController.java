@@ -153,5 +153,16 @@ public class HomeController {
 			return "jobSeeker/userViewMyInfo";
 		}					
 	}
+	
+	@RequestMapping(value = "/privacy", method = RequestMethod.GET)
+	public String privacy(Model model){
+		System.out.println("개인정보 처리 방침 표시");
+		return "/otherFooter/privacyPolicy";
+	}
+	@RequestMapping(value = "/service", method = RequestMethod.GET)
+	public String service(Model model){
+		System.out.println("이용약관 표시");
+		return "/otherFooter/termsOfService";
+	}
 				
 }

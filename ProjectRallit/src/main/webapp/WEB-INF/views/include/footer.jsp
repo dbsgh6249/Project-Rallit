@@ -30,18 +30,18 @@
 					</div>
 					<div class="css-sx764e">
 						<div class="css-p1vanc">
-							<a href="https://business.rallit.com" target="_blank"
+							<a href="/ex/main/registerK" target="_blank"
 								rel="noreferrer" class="css-0">기업 서비스</a><a
 								href="https://www.inflearn.com" target="_blank" rel="noreferrer"
 								class="css-0">인프런</a>
 						</div>
 						<div class="css-szycpx">
-							<a href="/terms-of-service" target="_blank" rel="noreferrer"
-								class="css-0">이용약관</a><a href="/privacy-policy" target="_blank"
+							<a href="/ex/service" target="_blank" rel="noreferrer"
+								class="css-0">이용약관</a><a href="/ex/privacy" target="_blank"
 								rel="noreferrer" class="css-0">개인정보 처리방침</a><a
-								href="https://inflearn.typeform.com/rallit-cs#rallit_id=&amp;rallit_email="
+								href="https://i.ytimg.com/vi/5rCcqk2QxrM/maxresdefault.jpg"
 								target="_blank" rel="noreferrer" class="css-0">문의하기</a><a
-								href="/propose-feature">기능 제안하기</a>
+								href="https://i.ytimg.com/vi/5rCcqk2QxrM/maxresdefault.jpg">기능 제안하기</a>
 						</div>
 					</div>
 				</div>

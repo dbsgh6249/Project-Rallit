@@ -101,6 +101,7 @@
                                 <p class="css-19hzmb1">${jobPosting.text5 }</p>
                             </section>
                         </section>
+                        <br>
                         <section class="css-1p3fgy4">
                             <h2 class="css-16a5xne">${jobPosting.user_company }에서 전하는 미래 동료에게 한마디</h2>
                             <p class="css-19hzmb1">${jobPosting.text6 }</p>

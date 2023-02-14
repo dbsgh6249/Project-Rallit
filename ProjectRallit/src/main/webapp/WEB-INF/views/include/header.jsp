@@ -517,10 +517,12 @@
 												function(event) {
 
 													event.preventDefault();
+													if(${user_autho == null}){
+														$(".css-okq0lf").show();
+													}else{
+														alert('😔준비 중😔');
+													}
 													
-
-													$(".css-okq0lf").show();
-
 												}, false);
 							</script>
 

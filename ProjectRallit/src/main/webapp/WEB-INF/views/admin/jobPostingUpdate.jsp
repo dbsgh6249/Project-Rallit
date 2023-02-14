@@ -34,7 +34,6 @@
 			if ($(this).find("option:selected").index() > 0) {
 				var data1 = $("#occ_main>select>option:selected").val();
 				var data2 = $(this).find("option:selected").val();
-				$(".occupation").html(data1 + " &gt; " + data2); // 선택 직군-직무 출력용
 				$("#fullOccu").val(data1 + " > " + data2);
 			}
 		});
@@ -92,8 +91,8 @@
 					<br>
 					<p>채용 직군 > 직무 선택</p>
 					<span id="occ_main"></span> 
-					<span id="occ_sub"></span><br> <input
-						style="cursor: default;" class="fullOccu" name="fullOccu"
+					<span id="occ_sub"></span><br> 
+					<input style="cursor: default;" class="fullOccu" name="fullOccu"
 						type="text" id="fullOccu" readonly> <br>
 					<p>경력</p>
 					<input class="careerInput" type="number" name="minCareer"

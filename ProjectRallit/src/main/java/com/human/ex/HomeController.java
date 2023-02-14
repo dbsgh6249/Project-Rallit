@@ -81,6 +81,7 @@ public class HomeController {
 		System.out.println(posting_num);
 		JobPostingInfoVo vo = jobPostingInfo_Service.selectOne(posting_num);
 		jobPosting_Service.updateJobGroupVcnt(vo.getOcc_sub());
+		jobPosting_Service.viewUpdate(posting_num);
 		String user_id = vo.getUser_id();
 		H_UsersDto hUsersDto = user_service.selectOne(user_id);
 		String address = hUsersDto.getUser_province()+" "+hUsersDto.getUser_city()+" "+hUsersDto.getUser_address();

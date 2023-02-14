@@ -32,7 +32,7 @@
                         <div class="css-1v7dd7t"><button onclick="alert('탈퇴?? 아 에바임 ㅋㅋ 진짜 다시 생각하셈')" class="css-1cbgkmn" type="button">탈퇴하기</button></div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </main>
 
 

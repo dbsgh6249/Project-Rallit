@@ -109,7 +109,7 @@
                             <ul class="css-104fbyc">
                             <c:forEach items='${jobPosting.languageTags }' var='postingTag'>
                                 <div class="css-kgsirb">
-                                	<span>${postingTag }</span>
+                                   <span>${postingTag }</span>
                                 </div>
                             </c:forEach>
                             </ul>
@@ -195,8 +195,8 @@
                                             </div>
                                         </dl>
                                         <c:choose>
-									<c:when test="${user_autho == 'ROLE_ADMIN'}">
-									
+                           <c:when test="${user_autho == 'ROLE_ADMIN'}">
+                           
                                         </c:when>
                                         <c:when test="${user_autho == 'ROLE_COMPANY'}">
                                         
@@ -210,7 +210,7 @@
                                 </div>
                                 <!-- ---------------------------------밑으로 뜨는 관리자 메뉴 테스트 -->
                                 <c:choose>
-									<c:when test="${user_autho == 'ROLE_ADMIN'}">
+                           <c:when test="${user_autho == 'ROLE_ADMIN'}">
                                 <div class="css-rzlz8n"></div>
                                 <div class="css-n1n4ej">
                                     <button style="height:25px; width:70px; background-color:#478373; color:white; border-radius:6px;" aria-label="관리자-수정" type="button"

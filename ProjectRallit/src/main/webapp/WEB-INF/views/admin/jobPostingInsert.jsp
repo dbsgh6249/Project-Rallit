@@ -82,7 +82,7 @@
 		<div class='container'>
 			<span class='postingBar'>
 				<form id='jobPostingInsert' name='postingForm'
-					action='/ex/jobPosting/insert' method='post'>
+					action='/ex/admin/insert' method='post'>
 					<input type='hidden' name='posting_num' value='${dto.posting_num }'>
 					<input type='hidden' name='datecreated' value='${dto.datecreated }'>
 					<p>제목</p>

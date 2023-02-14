@@ -56,7 +56,7 @@ margin-right:25px;
 				<header class="css-1en5oz">
 					<h2 class="my-dashboard__title css-fstzjo">채용공고 목록을 조회합니다</h2>
 					<button class="insertP" 
-					onclick="location.href='/ex/jpi'">공고 등록</button>
+					onclick="location.href='/ex/admin/jobPostingInsert'">공고 등록</button>
 				</header>
 						<div class="css-1mezue1">
 							<table>

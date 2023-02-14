@@ -19,6 +19,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.human.dto.H_UsersDto;
 import com.human.dto.JobPostingDto;
+import com.human.dto.PostingTagDto;
 import com.human.service.IH_UsersService;
 import com.human.service.IJobPostingInfoService;
 import com.human.service.IJobPostingService;
@@ -60,7 +61,24 @@ public class AdminSecurityController {
 		return "/admin/jobPostingUpdate";
 	}
 	@RequestMapping(value = "/admin/updateJobPosting", method = RequestMethod.POST)
-	public String updateJobPosting(JobPostingDto dto, Model model) throws Exception {
+	public String updateJobPosting(JobPostingDto dto, Model model, PostingTagDto p_tag,
+			JobPostingInfoVo vo) 
+			throws Exception {
+		p_tag.setPosting_num(dto.getPosting_num());
+		tag_service.delete(dto.getPosting_num());
+		if(vo.getLanguageTags() != null) {
+			for(String tag : vo.getLanguageTags()) {
+				if(tag.equals("")) {
+					continue;
+				}
+				else {
+					PostingTagDto tDto = new PostingTagDto();
+					tDto.setPosting_num(vo.getPosting_num());
+					tDto.setLanguageTag(tag);
+					tag_service.insert(tDto);
+				}
+			}
+		}
 		jobPosting_service.update(dto);
 		model.addAttribute("jobPosting",jobPostingInfo_Service.selectOne(dto.getPosting_num()));
 		return "/jobPosting/jobPostingDetail";

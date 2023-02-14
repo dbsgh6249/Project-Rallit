@@ -4,6 +4,7 @@
 <%@ taglib prefix="sec"
 	uri="http://www.springframework.org/security/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@include file="../include/headerAdmin.jsp"%>
 <link href="${pageContext.request.contextPath}/resources/css/myInfo.css"
 	rel="stylesheet" type="text/css">
@@ -38,7 +39,21 @@
 			}
 		});
 	});
-
+	//Tag TEST
+	$(function() {
+		$("#insert_button")
+				.click(
+						function() {
+							event.preventDefault();
+							$("#displayTag")
+									.append(
+											"<div class='tagDiv'><input class='taginput' type='text' name='languageTags'> <button class='tagDel'>❌　</button></div>");
+						})
+		$("#displayTag").on("click", "button", function() {
+			event.preventDefault();
+			$(this).parent().remove();
+		})
+	})
 </script>
 <main class="css-ac13em">
 <div class="css-ftt0tl">
@@ -73,10 +88,11 @@
 					<p>제목</p>
 					<input type="text" name="title" value="${jobPosting.title }">
 					<p>공고 마감일 선택</p>
-					<input type="date" name="deadline"><br>
+					<input type="date" name="deadline" value="<fmt:formatDate pattern="yyyy-MM-dd" value='${jobPosting.deadline}'/>"><br>
 					<br>
 					<p>채용 직군 > 직무 선택</p>
-					<span id="occ_main"></span> <span id="occ_sub"></span><br> <input
+					<span id="occ_main"></span> 
+					<span id="occ_sub"></span><br> <input
 						style="cursor: default;" class="fullOccu" name="fullOccu"
 						type="text" id="fullOccu" readonly> <br>
 					<p>경력</p>
@@ -115,7 +131,20 @@
 					<p>연봉</p>
 					<input type="number" name="sal" value="${jobPosting.sal }"><br>
 					<br> <br>
-					
+					<p>언어 태그</p>
+					<div class="tagbox">
+						<button class="tagButton" id="insert_button">태그 추가</button>
+						<div id='displayTag'>
+							<c:forEach items='${jobPosting.languageTags }' var='postingTag'>
+								<div class='tagDiv'>
+									<input class='taginput' type='text' name='languageTags'
+										value="${postingTag }">
+									<button class='tagDel'>❌</button>
+								</div>
+							</c:forEach>
+						</div>
+					</div>
+
 
 					<div class="inputbox">
 						<input type="submit" id='insertbtn' value='수정하기'>

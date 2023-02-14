@@ -32,19 +32,43 @@
                             <div class="swiper-wrapper"
                                 style="transform: translate3d(-2060px, 0px, 0px); transition-duration: 0ms;">
                                 <div class="swiper-slide" style="width: 515px;">
-                                   
+                                    <figure class="css-1ymg2sk"><img alt="회사 대표 이미지" sizes="720px"
+                                            srcset="https://cdn.rallit.com/image/2022-11-23/j7XcOPhuRDvlqAiW447dB.jpg?w=16 16w, https://cdn.rallit.com/image/2022-11-23/j7XcOPhuRDvlqAiW447dB.jpg?w=32 32w, https://cdn.rallit.com/image/2022-11-23/j7XcOPhuRDvlqAiW447dB.jpg?w=48 48w, https://cdn.rallit.com/image/2022-11-23/j7XcOPhuRDvlqAiW447dB.jpg?w=64 64w, https://cdn.rallit.com/image/2022-11-23/j7XcOPhuRDvlqAiW447dB.jpg?w=96 96w, https://cdn.rallit.com/image/2022-11-23/j7XcOPhuRDvlqAiW447dB.jpg?w=128 128w, https://cdn.rallit.com/image/2022-11-23/j7XcOPhuRDvlqAiW447dB.jpg?w=256 256w, https://cdn.rallit.com/image/2022-11-23/j7XcOPhuRDvlqAiW447dB.jpg?w=384 384w, https://cdn.rallit.com/image/2022-11-23/j7XcOPhuRDvlqAiW447dB.jpg?w=640 640w, https://cdn.rallit.com/image/2022-11-23/j7XcOPhuRDvlqAiW447dB.jpg?w=750 750w, https://cdn.rallit.com/image/2022-11-23/j7XcOPhuRDvlqAiW447dB.jpg?w=828 828w, https://cdn.rallit.com/image/2022-11-23/j7XcOPhuRDvlqAiW447dB.jpg?w=1080 1080w, https://cdn.rallit.com/image/2022-11-23/j7XcOPhuRDvlqAiW447dB.jpg?w=1200 1200w, https://cdn.rallit.com/image/2022-11-23/j7XcOPhuRDvlqAiW447dB.jpg?w=1440 1920w, https://cdn.rallit.com/image/2022-11-23/j7XcOPhuRDvlqAiW447dB.jpg?w=1440 2048w, https://cdn.rallit.com/image/2022-11-23/j7XcOPhuRDvlqAiW447dB.jpg?w=1440 3840w"
+                                            src="https://cdn.rallit.com/image/2022-11-23/j7XcOPhuRDvlqAiW447dB.jpg"
+                                            decoding="async" data-nimg="future-fill"
+                                            class="swiper-lazy css-tlmr97 swiper-lazy-loaded" loading="lazy"
+                                            style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                                    </figure>
                                 </div>
                                 <div class="swiper-slide" style="width: 515px;">
-                                   
+                                    <figure class="css-1ymg2sk"><img alt="회사 대표 이미지" sizes="720px"
+                                            srcset="https://cdn.rallit.com/image/2022-11-23/mRplGJu1V58mzybEOr_oR.jpg?w=16 16w, https://cdn.rallit.com/image/2022-11-23/mRplGJu1V58mzybEOr_oR.jpg?w=32 32w, https://cdn.rallit.com/image/2022-11-23/mRplGJu1V58mzybEOr_oR.jpg?w=48 48w, https://cdn.rallit.com/image/2022-11-23/mRplGJu1V58mzybEOr_oR.jpg?w=64 64w, https://cdn.rallit.com/image/2022-11-23/mRplGJu1V58mzybEOr_oR.jpg?w=96 96w, https://cdn.rallit.com/image/2022-11-23/mRplGJu1V58mzybEOr_oR.jpg?w=128 128w, https://cdn.rallit.com/image/2022-11-23/mRplGJu1V58mzybEOr_oR.jpg?w=256 256w, https://cdn.rallit.com/image/2022-11-23/mRplGJu1V58mzybEOr_oR.jpg?w=384 384w, https://cdn.rallit.com/image/2022-11-23/mRplGJu1V58mzybEOr_oR.jpg?w=640 640w, https://cdn.rallit.com/image/2022-11-23/mRplGJu1V58mzybEOr_oR.jpg?w=750 750w, https://cdn.rallit.com/image/2022-11-23/mRplGJu1V58mzybEOr_oR.jpg?w=828 828w, https://cdn.rallit.com/image/2022-11-23/mRplGJu1V58mzybEOr_oR.jpg?w=1080 1080w, https://cdn.rallit.com/image/2022-11-23/mRplGJu1V58mzybEOr_oR.jpg?w=1200 1200w, https://cdn.rallit.com/image/2022-11-23/mRplGJu1V58mzybEOr_oR.jpg?w=1440 1920w, https://cdn.rallit.com/image/2022-11-23/mRplGJu1V58mzybEOr_oR.jpg?w=1440 2048w, https://cdn.rallit.com/image/2022-11-23/mRplGJu1V58mzybEOr_oR.jpg?w=1440 3840w"
+                                            src="https://cdn.rallit.com/image/2022-11-23/mRplGJu1V58mzybEOr_oR.jpg"
+                                            decoding="async" data-nimg="future-fill"
+                                            class="swiper-lazy css-tlmr97 swiper-lazy-loaded" loading="lazy"
+                                            style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                                    </figure>
                                 </div>
                                 <div class="swiper-slide" style="width: 515px;">
-                                   
+                                    <figure class="css-1ymg2sk"><img alt="회사 대표 이미지" sizes="720px"
+                                            srcset="https://cdn.rallit.com/image/2022-11-23/5HoCGlP3dDN_YZQKI59iz.jpg?w=16 16w, https://cdn.rallit.com/image/2022-11-23/5HoCGlP3dDN_YZQKI59iz.jpg?w=32 32w, https://cdn.rallit.com/image/2022-11-23/5HoCGlP3dDN_YZQKI59iz.jpg?w=48 48w, https://cdn.rallit.com/image/2022-11-23/5HoCGlP3dDN_YZQKI59iz.jpg?w=64 64w, https://cdn.rallit.com/image/2022-11-23/5HoCGlP3dDN_YZQKI59iz.jpg?w=96 96w, https://cdn.rallit.com/image/2022-11-23/5HoCGlP3dDN_YZQKI59iz.jpg?w=128 128w, https://cdn.rallit.com/image/2022-11-23/5HoCGlP3dDN_YZQKI59iz.jpg?w=256 256w, https://cdn.rallit.com/image/2022-11-23/5HoCGlP3dDN_YZQKI59iz.jpg?w=384 384w, https://cdn.rallit.com/image/2022-11-23/5HoCGlP3dDN_YZQKI59iz.jpg?w=640 640w, https://cdn.rallit.com/image/2022-11-23/5HoCGlP3dDN_YZQKI59iz.jpg?w=750 750w, https://cdn.rallit.com/image/2022-11-23/5HoCGlP3dDN_YZQKI59iz.jpg?w=828 828w, https://cdn.rallit.com/image/2022-11-23/5HoCGlP3dDN_YZQKI59iz.jpg?w=1080 1080w, https://cdn.rallit.com/image/2022-11-23/5HoCGlP3dDN_YZQKI59iz.jpg?w=1200 1200w, https://cdn.rallit.com/image/2022-11-23/5HoCGlP3dDN_YZQKI59iz.jpg?w=1440 1920w, https://cdn.rallit.com/image/2022-11-23/5HoCGlP3dDN_YZQKI59iz.jpg?w=1440 2048w, https://cdn.rallit.com/image/2022-11-23/5HoCGlP3dDN_YZQKI59iz.jpg?w=1440 3840w"
+                                            src="https://cdn.rallit.com/image/2022-11-23/5HoCGlP3dDN_YZQKI59iz.jpg"
+                                            decoding="async" data-nimg="future-fill"
+                                            class="swiper-lazy css-tlmr97 swiper-lazy-loaded" loading="lazy"
+                                            style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                                    </figure>
                                 </div>
                                 <div class="swiper-slide swiper-slide-prev" style="width: 515px;">
-                                   
+                                    <figure class="css-1ymg2sk"><img alt="회사 대표 이미지" sizes="720px"
+                                            srcset="https://cdn.rallit.com/image/2022-11-23/aJk3WyPa0uLNqLOOYvc5w.jpg?w=16 16w, https://cdn.rallit.com/image/2022-11-23/aJk3WyPa0uLNqLOOYvc5w.jpg?w=32 32w, https://cdn.rallit.com/image/2022-11-23/aJk3WyPa0uLNqLOOYvc5w.jpg?w=48 48w, https://cdn.rallit.com/image/2022-11-23/aJk3WyPa0uLNqLOOYvc5w.jpg?w=64 64w, https://cdn.rallit.com/image/2022-11-23/aJk3WyPa0uLNqLOOYvc5w.jpg?w=96 96w, https://cdn.rallit.com/image/2022-11-23/aJk3WyPa0uLNqLOOYvc5w.jpg?w=128 128w, https://cdn.rallit.com/image/2022-11-23/aJk3WyPa0uLNqLOOYvc5w.jpg?w=256 256w, https://cdn.rallit.com/image/2022-11-23/aJk3WyPa0uLNqLOOYvc5w.jpg?w=384 384w, https://cdn.rallit.com/image/2022-11-23/aJk3WyPa0uLNqLOOYvc5w.jpg?w=640 640w, https://cdn.rallit.com/image/2022-11-23/aJk3WyPa0uLNqLOOYvc5w.jpg?w=750 750w, https://cdn.rallit.com/image/2022-11-23/aJk3WyPa0uLNqLOOYvc5w.jpg?w=828 828w, https://cdn.rallit.com/image/2022-11-23/aJk3WyPa0uLNqLOOYvc5w.jpg?w=1080 1080w, https://cdn.rallit.com/image/2022-11-23/aJk3WyPa0uLNqLOOYvc5w.jpg?w=1200 1200w, https://cdn.rallit.com/image/2022-11-23/aJk3WyPa0uLNqLOOYvc5w.jpg?w=1440 1920w, https://cdn.rallit.com/image/2022-11-23/aJk3WyPa0uLNqLOOYvc5w.jpg?w=1440 2048w, https://cdn.rallit.com/image/2022-11-23/aJk3WyPa0uLNqLOOYvc5w.jpg?w=1440 3840w"
+                                            src="https://cdn.rallit.com/image/2022-11-23/aJk3WyPa0uLNqLOOYvc5w.jpg"
+                                            decoding="async" data-nimg="future-fill"
+                                            class="swiper-lazy css-tlmr97 swiper-lazy-loaded" loading="lazy"
+                                            style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                                    </figure>
                                 </div>
                                 <div class="swiper-slide swiper-slide-active" style="width: 515px;">
-                                    <figure class="css-1ymg2sk"><img alt="회사 대표 이미지" sizes="515px"
+                                    <figure class="css-1ymg2sk"><img alt="회사 대표 이미지" sizes="720px"
                                             srcset="https://cdn.rallit.com/image/2022-11-23/qm_JQ4wcB0K2glgpx4O2O.jpg?w=16 16w, https://cdn.rallit.com/image/2022-11-23/qm_JQ4wcB0K2glgpx4O2O.jpg?w=32 32w, https://cdn.rallit.com/image/2022-11-23/qm_JQ4wcB0K2glgpx4O2O.jpg?w=48 48w, https://cdn.rallit.com/image/2022-11-23/qm_JQ4wcB0K2glgpx4O2O.jpg?w=64 64w, https://cdn.rallit.com/image/2022-11-23/qm_JQ4wcB0K2glgpx4O2O.jpg?w=96 96w, https://cdn.rallit.com/image/2022-11-23/qm_JQ4wcB0K2glgpx4O2O.jpg?w=128 128w, https://cdn.rallit.com/image/2022-11-23/qm_JQ4wcB0K2glgpx4O2O.jpg?w=256 256w, https://cdn.rallit.com/image/2022-11-23/qm_JQ4wcB0K2glgpx4O2O.jpg?w=384 384w, https://cdn.rallit.com/image/2022-11-23/qm_JQ4wcB0K2glgpx4O2O.jpg?w=640 640w, https://cdn.rallit.com/image/2022-11-23/qm_JQ4wcB0K2glgpx4O2O.jpg?w=750 750w, https://cdn.rallit.com/image/2022-11-23/qm_JQ4wcB0K2glgpx4O2O.jpg?w=828 828w, https://cdn.rallit.com/image/2022-11-23/qm_JQ4wcB0K2glgpx4O2O.jpg?w=1080 1080w, https://cdn.rallit.com/image/2022-11-23/qm_JQ4wcB0K2glgpx4O2O.jpg?w=1200 1200w, https://cdn.rallit.com/image/2022-11-23/qm_JQ4wcB0K2glgpx4O2O.jpg?w=1440 1920w, https://cdn.rallit.com/image/2022-11-23/qm_JQ4wcB0K2glgpx4O2O.jpg?w=1440 2048w, https://cdn.rallit.com/image/2022-11-23/qm_JQ4wcB0K2glgpx4O2O.jpg?w=1440 3840w"
                                             src="https://cdn.rallit.com/image/2022-11-23/qm_JQ4wcB0K2glgpx4O2O.jpg"
                                             decoding="async" data-nimg="future-fill"
@@ -55,8 +79,24 @@
                             </div>
                         </div>
                         <div class="css-164zaq6">
-                            
-                           
+                            <div class="css-1fby83s"><button class="css-s6yz71" type="button">
+                                    <div class="rallit-icon  css-12r39mb"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="14" height="14" fill="none" viewBox="0 0 24 24">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#eaecee"
+                                                d="M14.67 19.17c-.439.44-1.151.44-1.59 0l-6.375-6.375a1.125 1.125 0 0 1 0-1.59l6.374-6.375a1.125 1.125 0 0 1 1.591 1.59L9.091 12l5.58 5.58c.439.439.439 1.151 0 1.59z">
+                                            </path>
+                                        </svg></div>
+                                </button><button class="css-1no16mp swiper-button-disabled" type="button" disabled="">
+                                    <div class="rallit-icon  css-1gvano"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="14" height="14" fill="none" viewBox="0 0 24 24">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#535961"
+                                                d="M9.33 4.83c.439-.44 1.151-.44 1.59 0l6.375 6.374c.44.44.44 1.152 0 1.591L10.92 19.17a1.125 1.125 0 1 1-1.59-1.59L14.909 12l-5.58-5.58a1.125 1.125 0 0 1 0-1.59z">
+                                            </path>
+                                        </svg></div>
+                                </button></div>
+                            <div class="css-7tzyz7">
+                                <p class="css-oz575p">5/5</p>
+                            </div>
                         </div>
                     </section>
                     <div class="css-1vbiael">
@@ -69,7 +109,7 @@
                             <ul class="css-104fbyc">
                             <c:forEach items='${jobPosting.languageTags }' var='postingTag'>
                                 <div class="css-kgsirb">
-                                	<span>${postingTag }</span>
+                                   <span>${postingTag }</span>
                                 </div>
                             </c:forEach>
                             </ul>
@@ -155,8 +195,8 @@
                                             </div>
                                         </dl>
                                         <c:choose>
-									<c:when test="${user_autho == 'ROLE_ADMIN'}">
-									
+                           <c:when test="${user_autho == 'ROLE_ADMIN'}">
+                           
                                         </c:when>
                                         <c:when test="${user_autho == 'ROLE_COMPANY'}">
                                         
@@ -170,23 +210,14 @@
                                 </div>
                                 <!-- ---------------------------------밑으로 뜨는 관리자 메뉴 테스트 -->
                                 <c:choose>
-									<c:when test="${user_autho == 'ROLE_ADMIN'}">
+                           <c:when test="${user_autho == 'ROLE_ADMIN'}">
                                 <div class="css-rzlz8n"></div>
                                 <div class="css-n1n4ej">
-<<<<<<< HEAD
-                                    <button style="height:25px; width:70px; background-color:#6e93ac; color:white; border-radius:6px;" aria-label="관리자-수정" type="button"
-                                        class="css-j6s3yv" onclick="location.href='/ex/jpu'">
-=======
                                     <button style="height:25px; width:70px; background-color:#478373; color:white; border-radius:6px;" aria-label="관리자-수정" type="button"
                                         class="css-j6s3yv" onclick="location.href='/ex/admin/updateJobPosting?posting_num=${jobPosting.posting_num} '">
->>>>>>> branch 'master' of https://github.com/dbsgh6249/Project-Rallit.git
                                         수정하기
                                     </button>
-<<<<<<< HEAD
-                                    <button onclick="location.href=''" style="height:25px; width:70px; background-color:#6e93ac; color:white; border-radius:6px;" type="button" aria-label="관리자 삭제"
-=======
                                     <button onclick="location.href='/ex/admin/deleteJobPosting?posting_num=${jobPosting.posting_num}'" style="height:25px; width:70px; background-color:#478373; color:white; border-radius:6px;" type="button" aria-label="관리자 삭제"
->>>>>>> branch 'master' of https://github.com/dbsgh6249/Project-Rallit.git
                                         class="css-j6s3yv">
                                         삭제하기
                                     </button></div>

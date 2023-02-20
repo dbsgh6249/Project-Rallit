@@ -48,7 +48,7 @@ public class CompanySecurityController {
 	@RequestMapping(value = "/company/user", method = RequestMethod.GET)
 	public String userMain(Locale locale, Model model) {
 		System.out.println("aaaA?Aaa?");
-		return "redirect:/info";
+		return "redirect:/main";
 	}
 	
 	

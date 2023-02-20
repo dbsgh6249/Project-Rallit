@@ -16,7 +16,7 @@ public class jobSeekerSecurityController {
 	private static final Logger logger = LoggerFactory.getLogger(jobSeekerSecurityController.class);
 	
 
-	@RequestMapping(value = "/jobSeeker/user", method = RequestMethod.GET)
+	@RequestMapping(value = "/jobSeeker/info", method = RequestMethod.GET)
 	public String user(Locale locale, Model model) {
 		System.out.println("aaa?");
 		return "redirect:/main";
@@ -30,4 +30,17 @@ public class jobSeekerSecurityController {
 	public String userLogin(Locale locale, Model model) {
 		return "/main/login";
 	}
+	
+	@RequestMapping(value = "/jobSeeker/userMyInfo", method = RequestMethod.GET)
+	public String userMyInfo(Locale locale, Model model) {
+		System.out.println("aaaA?Aaa?");
+		return "redirect:/info";
+	}
+	
+	@RequestMapping(value = "/jobSeeker/user", method = RequestMethod.GET)
+	public String userMain(Locale locale, Model model) {
+		System.out.println("aaaA?Aaa?");
+		return "redirect:/info";
+	}
+	
 }

@@ -25,7 +25,7 @@ public class CompanySecurityController {
 	@Autowired
 	private IJobPostingInfoService jobPostingInfo_Service;
 	
-	@RequestMapping(value = "/company/user", method = RequestMethod.GET)
+	@RequestMapping(value = "/company/info", method = RequestMethod.GET)
 	public String member(Locale locale, Model model) {
 	
 		return "redirect:/main";
@@ -36,5 +36,22 @@ public class CompanySecurityController {
 		model.addAttribute("list",jobPostingInfoVos);
 		return "/company/comJobPostingList";
 	}
+	
+	
+	@RequestMapping(value = "/company/comUser", method = RequestMethod.GET)
+	public String comInfo(Locale locale, Model model) {
+		System.out.println("bbbbbb?Aaa?");
+		return "redirect:/info";
+	}
+	
+	
+	@RequestMapping(value = "/company/user", method = RequestMethod.GET)
+	public String userMain(Locale locale, Model model) {
+		System.out.println("aaaA?Aaa?");
+		return "redirect:/info";
+	}
+	
+	
+	
 	
 }

@@ -7,31 +7,24 @@
 <%@include file = "../include/headerAdmin.jsp" %>
       <link href="${pageContext.request.contextPath}/resources/css/myInfo.css"
       rel="stylesheet" type="text/css">
+       <link href="${pageContext.request.contextPath}/resources/css/viewList.css"
+      rel="stylesheet" type="text/css">
+      <title>채용공고 목록</title>
  <head>
- <style>
- 	table {
- 		font-size: .9em;
- 		width: 95%;
- 		border-collapse: collapse;
- 		border-radius: 5px;
- 		overflow: hidden;
-  	}
-  	th {text-align: left;}
-  	thead {
-  		font-weight: bold;
-  		color: #fff;
-  		background-color: #1bcd9d;
-  	}
-  	td, th {
-  		padding: 1em .5em;
-  		vertical-align: middle;
-  	}
-  	td {
-  		border-bottom: 1px solid #c6c9cc;
-  		border-right: 1px solid #c6c9cc;
-  		border-left: 1px solid #c6c9cc;
-  	}
- </style>
+<style>
+.insertP{
+border-radius:6px; 
+background-color:#6e93ac;
+color:white; height:30px; 
+cursor:pointer;
+margin-right:25px;
+
+}
+.insertP:hover{
+
+    background-color:#8dadc3;
+}
+</style>
  </head>     
 <main class="css-ac13em">
 <div class="css-ftt0tl">
@@ -62,6 +55,8 @@
 			<div class="css-9j3f84">
 				<header class="css-1en5oz">
 					<h2 class="my-dashboard__title css-fstzjo">채용공고 목록을 조회합니다</h2>
+					<button class="insertP" 
+					onclick="location.href='/ex/admin/jobPostingInsert'">공고 등록</button>
 				</header>
 						<div class="css-1mezue1">
 							<table>
@@ -77,12 +72,9 @@
 								</thead>
 								<tbody>
 									<c:forEach items="${list }" var="jobPosting">
-									<tr>
+								  <tr style="cursor:pointer;" onclick="location.href='/ex/readPost?posting_num=${jobPosting.posting_num }'" class="colored">
 										<td>${jobPosting.posting_num }</td>
-										<td>
-										<a href='/ex/readPost?posting_num=${jobPosting.posting_num }'>
-										${jobPosting.title }</a>
-										</td>
+										<td>${jobPosting.title }</td>
 										<td>${jobPosting.user_company }</td>
 										<td>${jobPosting.occ_sub }</td>
 										<td><fmt:formatDate pattern="yyyy-MM-dd" value="${jobPosting.deadline}" /> </td>

@@ -23,8 +23,8 @@ select user_company from h_users where user_id=#{user_id}
 delete from h_users where user_id=#{user_id}
 </delete>
 <update id="update">
-update h_users set user_pw=#{user_pw},user_name=#{user_name},user_phone=#{user_phone},user_company=#{user_company},
-province=#{user_province},user_city=#{user_city}, address=#{address}
+update h_users set user_pw=#{user_pw},user_name=#{user_name},user_phone=#{user_phone},user_company=#{user_company, jdbcType=VARCHAR},
+user_province=#{user_province},user_city=#{user_city}, user_address=#{user_address}
  where user_id=#{user_id}
 </update>
 

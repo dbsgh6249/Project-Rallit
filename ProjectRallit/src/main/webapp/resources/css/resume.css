@@ -275,7 +275,7 @@ a:-webkit-any-link {
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 6px;
-    background-color: rgb(0, 204, 170);
+    background-color: #6e93ac;
     color: rgb(255, 255, 255);
     padding: 8px 12px;
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;

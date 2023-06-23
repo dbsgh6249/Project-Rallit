@@ -8,10 +8,18 @@
 	margin-top:20px;
     }
     input{
-    padding-left:10px;}
+    padding-left:10px;
+    outline:none;
+    }
   
     input:hover{
-    background-color: rgba(237, 237, 237);}
+    background-color: rgba(237, 237, 237);
+    outline:none;
+    }
+    input[button]:hover{
+    outline:none;
+    }
+    
     div#root{
         margin-left:0px;
         display: flex;
@@ -122,4 +130,5 @@
     }
     input[type="submit"]{
         cursor: pointer;
+        background-color:#6e93ac;
     }

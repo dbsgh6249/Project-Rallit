@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+tr.colored:hover td{
+
+    background-color:#8dadc3; !important;
+
+}
+
+
+<!-- -->
+ 	table {
+ 		font-size: .9em;
+ 		width: 95%;
+ 		border-collapse: collapse;
+ 		border-radius: 5px;
+ 		overflow: hidden;
+  	}
+  	th {text-align: left;}
+  	thead {
+  		font-weight: bold;
+  		color: #fff;
+  		background-color: #6e93ac;
+  	}
+  	td, th {
+  		padding: 1em .5em;
+  		vertical-align: middle;
+  	}
+  	td {
+  		border-bottom: 1px solid #c6c9cc;
+  		border-right: 1px solid #c6c9cc;
+  		border-left: 1px solid #c6c9cc;
+  	}

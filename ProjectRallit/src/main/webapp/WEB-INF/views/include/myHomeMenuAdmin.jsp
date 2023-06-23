@@ -35,6 +35,7 @@ $("#menu").on("mouseleave",function(){
 <aside class="css-1xgvj9r">
     <ul id="menu" class="wow" style="margin-top:30px;">
       <li>
+      		<div class="bbox" style="cursor: pointer;" onclick="location.href='/ex/admin/user';">HOME</div>
             <div class="bbox">회원 관리  📝</div>
             <ul class="sub">
                 <li><a href="/ex/admin/seekerList">구직자</a></li>

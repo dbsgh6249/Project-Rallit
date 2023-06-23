@@ -22,7 +22,7 @@
         <p>로그아웃 하였습니다.</p>
 </c:if>
  --%>    
- 		<div class="container">
+ 		<div class="container" style="margin-top:280px;">
         <span class="logoheader">
             
         </span>
@@ -47,11 +47,6 @@
         <a href="https://i.ytimg.com/vi/5rCcqk2QxrM/maxresdefault.jpg">비밀번호 찾기</a><span class="space">|</span>
         <a href="register.html">회원가입</a>
             </span>
-            <div class="fastlogin">
-                간편 로그인 <br>
-                <a href=""><img src="../resources/imgs/kakaoTalklogo.png" alt=""></a>
-                <a href=""><img src="../resources/imgs/googlelogo.png" alt=""></a>
-                <a href=""><img src="../resources/imgs/githublogo.png" alt=""></a>
-                <a href=""><img src="../resources/imgs/applelogo.png" alt=""></a>
-            </div>
+            
+               
     </div>

@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Locale;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +16,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.human.dto.H_UsersDto;
 import com.human.service.IH_UsersService;
@@ -79,6 +81,7 @@ public class HomeController {
 		System.out.println(posting_num);
 		JobPostingInfoVo vo = jobPostingInfo_Service.selectOne(posting_num);
 		jobPosting_Service.updateJobGroupVcnt(vo.getOcc_sub());
+		jobPosting_Service.viewUpdate(posting_num);
 		String user_id = vo.getUser_id();
 		H_UsersDto hUsersDto = user_service.selectOne(user_id);
 		String address = hUsersDto.getUser_province()+" "+hUsersDto.getUser_city()+" "+hUsersDto.getUser_address();
@@ -86,29 +89,80 @@ public class HomeController {
 		model.addAttribute("jobPosting", vo);
 		return "jobPosting/jobPostingDetail";
 	}
-	//test용
-		@RequestMapping(value = "/jpi", method = RequestMethod.GET)
-		public String jobPostingInsert(Model model) {
-			
-			return "jobPosting/jobPostingInsert";
-		}
-	
+
+	@RequestMapping(value = "/jpu", method = RequestMethod.GET)
+	public String jobPostingUpdate(@RequestParam("posting_num") Integer posting_num, Model model) throws Exception{
+		model.addAttribute("dto", jobPosting_Service.selectOne(posting_num));
+		return "admin/jobPostingUpdate";
+	}
 	
 	@RequestMapping(value = "/info", method = RequestMethod.GET)
-	public String myInfo(Model model) {
-		
-		return "jobSeeker/userMyInfo";
-	}
-	//test용
-	@RequestMapping(value = "/infoDel", method = RequestMethod.GET)
-	public String infoDelete(Model model) {
-		
-		return "jobSeeker/userDeleteAccount";
-	}
-	//test용
-		@RequestMapping(value = "/infoUp", method = RequestMethod.GET)
-		public String infoUpdate(Model model) {
-			
-			return "jobSeeker/userUpdateAccount";
+	public String myInfo(HttpServletRequest request, Model model) {
+		HttpSession session = request.getSession();
+		if(session.getAttribute("user_autho").equals("ROLE_COMPANY")) {
+			return "company/comUser";
+		}else {
+			return "jobSeeker/userMyInfo";
 		}
+	}
+
+	//test용
+	@RequestMapping(value = "/infoUp", method = RequestMethod.GET)
+	public String infoUpdate(HttpServletRequest request, Model model) throws Exception {
+		HttpSession session = request.getSession();
+		model.addAttribute("user", user_service.selectOne((String)session.getAttribute("user_login")));
+		if(session.getAttribute("user_autho").equals("ROLE_COMPANY")) {
+			return "company/comUserUpdateAccount";
+		}else {
+			return "jobSeeker/userUpdateAccount";
+		}	
+	}
+	@RequestMapping(value = "/infoUp", method = RequestMethod.POST)
+	public String updateDB(H_UsersDto dto, HttpServletRequest request) throws Exception {
+		System.out.println(dto);
+		HttpSession session = request.getSession();
+		dto.setUser_id((String)session.getAttribute("user_login"));
+		String full = request.getParameter("full_address");
+		String[] list = full.split(" ");
+		String temp = "";
+		for(int i = 0; i < list.length ; i++) {
+			System.out.println(list[i]);
+			if(i>=2) {
+				temp += list[i]+" ";
+			}
+		}
+		dto.setUser_province(list[0]);
+		dto.setUser_city(list[1]);
+		temp += dto.getUser_address();
+		dto.setUser_address(temp);
+		System.out.println("dto 수정 값 : " + (String)dto.getUser_address());
+//			user_info insert
+		System.out.println(dto);
+		user_service.update(dto);
+		System.out.println("1");
+		return "redirect:/info";
+	}		
+	
+	@RequestMapping(value = "/infoView", method = RequestMethod.GET)
+	public String infoView(HttpServletRequest request, Model model) throws Exception {
+		HttpSession session = request.getSession();
+		model.addAttribute("user", user_service.selectOne((String)session.getAttribute("user_login")));
+		if(session.getAttribute("user_autho").equals("ROLE_COMPANY")) {			
+			return "company/comUserViewMyInfo";
+		}else {
+			return "jobSeeker/userViewMyInfo";
+		}					
+	}
+	
+	@RequestMapping(value = "/privacy", method = RequestMethod.GET)
+	public String privacy(Model model){
+		System.out.println("개인정보 처리 방침 표시");
+		return "/otherFooter/privacyPolicy";
+	}
+	@RequestMapping(value = "/service", method = RequestMethod.GET)
+	public String service(Model model){
+		System.out.println("이용약관 표시");
+		return "/otherFooter/termsOfService";
+	}
+				
 }

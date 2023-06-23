@@ -74,7 +74,7 @@
             </div>
             <div class="nonebar"></div>
             <div class="managerbar">
-                <span>당담자 이름</span><br>
+                <span>담당자 이름</span><br>
                 <input type="text" name="user_name" placeholder="실명으로 입력">
             </div>
             <div class="nonebar"></div>
@@ -85,12 +85,12 @@
             <div class="nonebar"></div>
             <div class="addbar">
             	<span>주소</span>
-            	<input type="button" onclick="daumPost()" value="우편주소찾기"><br>
-				<input type="text" id="full_address" name="full_address" 
+            	<input style="cursor:pointer; outline:none;" type="button" onclick="daumPost()" value="우편주소찾기"><br>
+				<input style="width:390px; height:30px; margin-top: 10px; border: 1px solid #c6cad0; border-radius: 5px;" type="text" id="full_address" name="full_address" 
 				placeholder="주소" readonly>
 				<br>
 				<p></p>
-				<input type="text" id="addr3" name="user_address" placeholder="상세주소"><br>
+				<input style="width:390px; height:30px; border: 1px solid #c6cad0; border-radius: 5px;" type="text" id="addr3" name="user_address" placeholder="상세주소"><br>
             </div>
             <div class="button">
                 <br>

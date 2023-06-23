@@ -875,16 +875,17 @@ font-size: 15px;
             <section class="css-803uab">
                <ul class="css-1ioq3lh">
                <c:forEach items="${list }" var="jobPosting">
+                  <c:set var="ran"><%= java.lang.Math.round(java.lang.Math.random() * 21)+1%></c:set>
                   <!-- c태그 forEach 실행 시작(채용공고 데이터) -->
                   <li>
                      <article class="css-1pr9edg">
-                        <a href="/ex/jpd"> <!-- <a href="/positions/1235">  -->
+                        <a href="/ex/readPost?posting_num=${jobPosting.posting_num }"> <!-- <a href="/positions/1235">  -->
                            <figure class="css-1gd0osy">
                               <!-- 이 부분 이미지 삽입 방식 수정 예정 -->
                               <!-- 사진첨부 가능해지면 처리 예정(23.02.09 10:22) -->
-                              <img alt="주식회사 게임듀오 대표이미지" sizes="100vw"
-                                 srcset="https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=640 640w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 750w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 828w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1080w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1200w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 1920w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 2048w, https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720 3840w"
-                                 src="https://cdn.rallit.com/image/2022-12-20/fR6s4a6N3X4YxmOFJDvdo.png?w=720"
+                               <img 
+                                 srcset="resources/imgs/thumbnail/thum (${ran}).jpg"
+                                 src="resources/imgs/thumbnail/thum (${ran}).jpg"
                                  decoding="async" data-nimg="future-fill" loading="lazy"
                                  style="position: absolute; height: 100%; width: 100%; left: 0; top: 0; right: 0; bottom: 0; color: transparent">
                            </figure>

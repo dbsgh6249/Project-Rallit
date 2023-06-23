@@ -8,10 +8,45 @@
 <%@include file="../include/findAdress.jsp"%>
 <link href="${pageContext.request.contextPath}/resources/css/myInfo.css"
 	rel="stylesheet" type="text/css">
+	<title>기업회원 정보 수정</title>
 <!--  -->
 
 
+<script
+	src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script
+	src="${pageContext.request.contextPath }/resources/js/daumpost.js"></script>
+<script type="text/javascript">
+	function reg() {
+		var addr1 = $("#addr1").val()
+		var full_address = $("#full_address").val()
+		var addr3 = $("#user_city").val()
+		user_province = addr2;
+		$("full_address").val(full_address)
+		fo.submit()
+	}
+	function daumPost() {
+		new daum.Postcode({
+			oncomplete : function(data) {
+				//도로명일 경우 R, 지번일 경우 J 의 값을 가지고 있다.
+				console.log('data.userSelectedType : ' + data.userSelectedType)
+				console.log('data.roadAddress : ' + data.roadAddress)
+				console.log('data.jibunAddress : ' + data.jibunAddress)
+				console.log('data.zonecode : ' + data.zonecode)
+				var addr = ""
+				if (data.userSelectedType == 'R') {//도로명일 경우 R
+					addr = data.roadAddress
+				} else {//지번일 경우 J
+					addr = data.jibunAddress
+				}
+				$("#full_address").val(addr)
+				$("#addr3").focus()
 
+			}
+		}).open()
+	}
+</script>
 <main class="css-ac13em">
 <div class="css-ftt0tl">
 	<nav class="css-uebuml">
@@ -34,7 +69,7 @@
 		</div>
 		<div role="none" class="css-ntzr4d"></div>
 	</nav>
-<%@include file = "../include/myHomeMenu.jsp" %>
+<%@include file = "../include/myHomeMenuCom.jsp" %>
 	<section class="css-8jj0t0">
 		<h1 class="css-vvbno4">내 정보 수정</h1>
 		<div class="css-uaw2kl">
@@ -43,41 +78,39 @@
 					<h2 class="my-dashboard__title css-fstzjo">나의 정보를 변경합니다.</h2>
 				</header>
 
-				<form action="" method="get">
+				<form action="/ex/infoUp" method="post">
 					<div class="css-1miajvq">
-						<div class="css-1mezue1">
+						
 							<p class="css-1aweud3">변경을 원하는 정보를 입력 후 수정하기 버튼을 누르십시오.</p>
 							<br>
 							<div class="w3-section">
-								<label class="input_label">이메일</label><br> <input
-									class="updateInput" type="text"
-									placeholder="example@inflab.com" name="user_id"><br>
 								<br> <label class="input_label">비밀번호</label><br> <input
-									class="updateInput" type="text" placeholder="******"
+									class="updateInput" type="password" placeholder="******"
 									name="user_pw"><br> <br> <label
 									class="input_label">이름</label><br> <input
-									class="updateInput" type="text" placeholder="독고OO"
+									class="updateInput" type="text" value="${user.user_name }"
 									name="user_name"><br> <br> <label
 									class="input_label">전화번호</label><br> <input
-									class="updateInput" type="text" placeholder="010-0000-0000"
-									name="user_phone"><br> <br> <label
-									class="input_label">회사명</label><br> <input
-									class="updateInput" type="text" placeholder="애플 코리아 충남 두정점"
-									name=""><br> <br> <label class="input_label">주소</label><br>
+									class="updateInput" type="text" value="${user.user_phone }"
+									name="user_phone"><br> <br><!--  <input type="hidden" name = "user_company"> -->
+									<label
+									class="input_label">회사명</label><br><input
+									class="updateInput" type="text" value="${user.user_company }"
+									name="user_company"><br> <br><label class="input_label">주소</label><br>
 								<input class="inputsubmit" type="button" onclick="daumPost()"
 									value="우편주소찾기"><br>
 									<input type="text"
-									id="full_address" name="full_address" placeholder="주소" readonly>
+									id="full_address" name="full_address" value="${user.user_province } ${user.user_city}" readonly>
 								<br>
 								<p></p>
 								<input type="text" id="input_label" name="user_address"
-									placeholder="상세주소"><br>
+									placeholder="${user.user_address }"><br>
 
 								<br>
 								<button class="css-1146gk" type="submit">수정하기</button>
 								
 							</div>
-						</div>
+						
 					</div>
 				</form>
 			</div>
